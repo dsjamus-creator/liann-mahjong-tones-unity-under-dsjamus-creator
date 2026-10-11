@@ -1,0 +1,12 @@
+{
+  "name": "LiANN.MahjongTones.Tests",
+  "rootNamespace": "LiANN.MahjongTones.Tests",
+  "references": ["LiANN.MahjongTones", "UnityEngine.TestRunner", "UnityEditor.TestRunner"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": ["nunit.framework.dll"],
+  "autoReferenced": false,
+  "defineConstraints": ["UNITY_INCLUDE_TESTS"]
+}

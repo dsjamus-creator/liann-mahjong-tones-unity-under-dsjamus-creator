@@ -1,0 +1,5604 @@
+{
+ "schemaVersion": 1,
+ "source": "pinyin-tiles-playtest word-audio index + Tiles corpus glosses (CC-CEDICT-derived, CC BY-SA 4.0); labels per Tools~/data/label-overrides.json",
+ "words": [
+  {
+   "readingKey": "a1yi2",
+   "entryId": "ude:a3e5234306c432d6",
+   "hanzi": "阿姨",
+   "english": "maternal aunt",
+   "fullGloss": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:ge4",
+   "hskBand": 3,
+   "audio": "a1yi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ai4ren5",
+   "entryId": "ude:bbc7aae6eb887376",
+   "hanzi": "爱人",
+   "english": "spouse",
+   "fullGloss": "spouse (PRC); lover (non-PRC); CL:ge4",
+   "hskBand": 3,
+   "audio": "ai4ren5",
+   "picture": ""
+  },
+  {
+   "readingKey": "an1jing4",
+   "entryId": "ude:27130125c815382f",
+   "hanzi": "安静",
+   "english": "quiet",
+   "fullGloss": "quiet; peaceful; calm",
+   "hskBand": 3,
+   "audio": "an1jing4",
+   "picture": ""
+  },
+  {
+   "readingKey": "an1quan2",
+   "entryId": "ude:89652e3e73bb157f",
+   "hanzi": "安全",
+   "english": "safe",
+   "fullGloss": "safe; secure; safety; security",
+   "hskBand": 3,
+   "audio": "an1quan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ba4ba5",
+   "entryId": "ude:70793c6c3099d060",
+   "hanzi": "爸爸",
+   "english": "father",
+   "fullGloss": "(coll.) father; dad; CL:wei4",
+   "hskBand": 1,
+   "audio": "ba4ba5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bai2se4",
+   "entryId": "ude:3c7f2d228ee18572",
+   "hanzi": "白色",
+   "english": "white",
+   "fullGloss": "white; fig. reactionary; anti-communist",
+   "hskBand": 2,
+   "audio": "bai2se4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bai2tian1",
+   "entryId": "ude:deb244d2e9e2a0f3",
+   "hanzi": "白天",
+   "english": "daytime",
+   "fullGloss": "daytime; during the day; day; CL:ge4",
+   "hskBand": 1,
+   "audio": "bai2tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ban1ji2",
+   "entryId": "ude:0bec88f078045ba6",
+   "hanzi": "班级",
+   "english": "class",
+   "fullGloss": "class (group of students); grade (in school); Bangui, capital of Central African Republic",
+   "hskBand": 3,
+   "audio": "ban1ji2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ban1jia1",
+   "entryId": "ude:bf85636a409eca19",
+   "hanzi": "搬家",
+   "english": "to move house",
+   "fullGloss": "to move house; to relocate; to remove (sth)",
+   "hskBand": 3,
+   "audio": "ban1jia1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ban4gong1shi4",
+   "entryId": "ude:9b7634dc67b72d3e",
+   "hanzi": "办公室",
+   "english": "office",
+   "fullGloss": "office; business premises",
+   "hskBand": 3,
+   "audio": "ban4gong1shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bang1mang2",
+   "entryId": "ude:e3e93453e345d9dd",
+   "hanzi": "帮忙",
+   "english": "to help",
+   "fullGloss": "to help; to lend a hand; to do a favor; to do a good turn",
+   "hskBand": 2,
+   "audio": "bang1mang2",
+   "picture": ""
+  },
+  {
+   "readingKey": "bang1zhu4",
+   "entryId": "ude:00c363fa41d39940",
+   "hanzi": "帮助",
+   "english": "assistance",
+   "fullGloss": "assistance; aid; to help; to assist",
+   "hskBand": 3,
+   "audio": "bang1zhu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bao1zi5",
+   "entryId": "ude:506e567832646c22",
+   "hanzi": "包子",
+   "english": "baozi",
+   "fullGloss": "baozi; bao (steamed stuffed bun)",
+   "hskBand": 1,
+   "audio": "bao1zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bao4zhi3",
+   "entryId": "ude:8867ec0e8d313890",
+   "hanzi": "报纸",
+   "english": "newspaper",
+   "fullGloss": "newspaper; newsprint; CL:fen4,qi1,zhang1",
+   "hskBand": 3,
+   "audio": "bao4zhi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "bei1zi5",
+   "entryId": "ude:2b0665f33a8b2c4a",
+   "hanzi": "杯子",
+   "english": "cup",
+   "fullGloss": "cup; glass; CL:ge4,zhi1",
+   "hskBand": 1,
+   "audio": "bei1zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bei3fang1",
+   "entryId": "ude:6a5c721eec56ea41",
+   "hanzi": "北方",
+   "english": "north",
+   "fullGloss": "north; the northern part a country; China north of the Yellow River",
+   "hskBand": 3,
+   "audio": "bei3fang1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ben3zi5",
+   "entryId": "ude:a1347c0409f8d189",
+   "hanzi": "本子",
+   "english": "book",
+   "fullGloss": "book; notebook; CL:ben3; edition",
+   "hskBand": 2,
+   "audio": "ben3zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bi3ji4",
+   "entryId": "ude:106ec893bb05f689",
+   "hanzi": "笔记",
+   "english": "to take down",
+   "fullGloss": "to take down (in writing); notes; a type of literature consisting mainly of short sketches; CL:ben3; handwriting",
+   "hskBand": 3,
+   "audio": "bi3ji4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bi3ji4ben3",
+   "entryId": "ude:1b3231298a310b14",
+   "hanzi": "笔记本",
+   "english": "notebook",
+   "fullGloss": "notebook (stationery) (CL:ben3); (computing) laptop; notebook (abbr. for bi3 ji4 ben3 dian4 nao3)",
+   "hskBand": 3,
+   "audio": "bi3ji4ben3",
+   "picture": ""
+  },
+  {
+   "readingKey": "bi3jiao4",
+   "entryId": "ude:931be1254ff05fc9",
+   "hanzi": "比较",
+   "english": "to compare",
+   "fullGloss": "to compare; to contrast; comparatively; relatively; quite; comparison",
+   "hskBand": 3,
+   "audio": "bi3jiao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bi3sai4",
+   "entryId": "ude:88073820ef0c2090",
+   "hanzi": "比赛",
+   "english": "competition",
+   "fullGloss": "competition (sports etc); match; CL:chang3,ci4; to compete",
+   "hskBand": 3,
+   "audio": "bi3sai4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bi4xu1",
+   "entryId": "ude:35d7fc2c465b1db3",
+   "hanzi": "必需",
+   "english": "to have to",
+   "fullGloss": "to have to; must; compulsory; necessarily; to need; to require; essential; indispensable",
+   "hskBand": 3,
+   "audio": "bi4xu1",
+   "picture": ""
+  },
+  {
+   "readingKey": "bian4cheng2",
+   "entryId": "ude:54d0a129349db1ba",
+   "hanzi": "变成",
+   "english": "to change into",
+   "fullGloss": "to change into; to turn into; to become",
+   "hskBand": 3,
+   "audio": "bian4cheng2",
+   "picture": ""
+  },
+  {
+   "readingKey": "bian4hua4",
+   "entryId": "ude:e5b1a9d39c7045e6",
+   "hanzi": "变化",
+   "english": "to change",
+   "fullGloss": "(intransitive) to change; to vary; change; variation",
+   "hskBand": 3,
+   "audio": "bian4hua4",
+   "picture": ""
+  },
+  {
+   "readingKey": "biao3yan3",
+   "entryId": "ude:694c13d91a4da77b",
+   "hanzi": "表演",
+   "english": "play",
+   "fullGloss": "play; show; performance; exhibition; to perform; to act; to demonstrate; CL:chang3",
+   "hskBand": 3,
+   "audio": "biao3yan3",
+   "picture": ""
+  },
+  {
+   "readingKey": "bie2de5",
+   "entryId": "ude:37c44364315fdccc",
+   "hanzi": "别的",
+   "english": "else",
+   "fullGloss": "else; other",
+   "hskBand": 3,
+   "audio": "bie2de5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bie2ren5",
+   "entryId": "ude:017dd1c325d13233",
+   "hanzi": "别人",
+   "english": "other people",
+   "fullGloss": "other people; others; other person",
+   "hskBand": 3,
+   "audio": "bie2ren5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bin1guan3",
+   "entryId": "ude:558e8844da225723",
+   "hanzi": "宾馆",
+   "english": "guesthouse",
+   "fullGloss": "guesthouse; lodge; hotel; CL:ge4,jia1",
+   "hskBand": 3,
+   "audio": "bin1guan3",
+   "picture": ""
+  },
+  {
+   "readingKey": "bing1ji1ling2",
+   "entryId": "ude:337a0fee387c4bbc",
+   "hanzi": "冰激凌",
+   "english": "ice cream",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "bing1ji1ling2",
+   "picture": ""
+  },
+  {
+   "readingKey": "bing1xiang1",
+   "entryId": "ude:020d149371d2fe92",
+   "hanzi": "冰箱",
+   "english": "refrigerator",
+   "fullGloss": "refrigerator; (old) icebox",
+   "hskBand": 3,
+   "audio": "bing1xiang1",
+   "picture": ""
+  },
+  {
+   "readingKey": "bing4ren2",
+   "entryId": "ude:893c784b7707d605",
+   "hanzi": "病人",
+   "english": "sick person",
+   "fullGloss": "sick person; patient; invalid; CL:ge4",
+   "hskBand": 3,
+   "audio": "bing4ren2",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4cuo4",
+   "entryId": "ude:3c3dfc3d412f5dbe",
+   "hanzi": "不错",
+   "english": "correct",
+   "fullGloss": "correct; right; not bad; pretty good",
+   "hskBand": 2,
+   "audio": "bu4cuo4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4hao3yi4si5",
+   "entryId": "ude:7eac955e7b9369d7",
+   "hanzi": "不好意思",
+   "english": "to feel embarrassed",
+   "fullGloss": "to feel embarrassed; to find it embarrassing; to be sorry (for inconveniencing sb)",
+   "hskBand": 2,
+   "audio": "bu4hao3yi4si5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4jiu3",
+   "entryId": "ude:7bff6e5519664d2a",
+   "hanzi": "不久",
+   "english": "not long",
+   "fullGloss": "not long (after); before too long; soon; soon after",
+   "hskBand": 3,
+   "audio": "bu4jiu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4ke4qi5",
+   "entryId": "ude:edfe273528be3ef7",
+   "hanzi": "不客气",
+   "english": "you're welcome",
+   "fullGloss": "you're welcome; don't mention it; impolite; rude; blunt",
+   "hskBand": 1,
+   "audio": "bu4ke4qi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4tong2",
+   "entryId": "ude:218dc0e7f9a11712",
+   "hanzi": "不同",
+   "english": "different",
+   "fullGloss": "different; distinct; not the same; not alike",
+   "hskBand": 3,
+   "audio": "bu4tong2",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4xing2",
+   "entryId": "ude:3fce5ff4c281d394",
+   "hanzi": "不行",
+   "english": "won't do",
+   "fullGloss": "won't do; be out of the question; be no good; not work; not be capable; to go on foot; to walk",
+   "hskBand": 3,
+   "audio": "bu4xing2",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4yao4",
+   "entryId": "ude:cdd27f887be0eb24",
+   "hanzi": "不要",
+   "english": "don't!",
+   "fullGloss": "don't!; must not",
+   "hskBand": 1,
+   "audio": "bu4yao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "bu4yong4",
+   "entryId": "ude:bd90dc1142a60dfe",
+   "hanzi": "不用",
+   "english": "need not",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "bu4yong4",
+   "picture": ""
+  },
+  {
+   "readingKey": "cai4dan1",
+   "entryId": "ude:45afc637d91347f9",
+   "hanzi": "菜单",
+   "english": "menu",
+   "fullGloss": "menu; CL:fen4,zhang1",
+   "hskBand": 3,
+   "audio": "cai4dan1",
+   "picture": ""
+  },
+  {
+   "readingKey": "can1jia1",
+   "entryId": "ude:e8c4b6b829abea13",
+   "hanzi": "参加",
+   "english": "to participate",
+   "fullGloss": "to participate; to take part; to join",
+   "hskBand": 3,
+   "audio": "can1jia1",
+   "picture": ""
+  },
+  {
+   "readingKey": "cao3di4",
+   "entryId": "ude:0e50107924300834",
+   "hanzi": "草地",
+   "english": "lawn",
+   "fullGloss": "lawn; meadow; sod; turf; CL:pian4",
+   "hskBand": 3,
+   "audio": "cao3di4",
+   "picture": ""
+  },
+  {
+   "readingKey": "cha4bu5duo1",
+   "entryId": "ude:a1f11ac51dc9ffbf",
+   "hanzi": "差不多",
+   "english": "almost",
+   "fullGloss": "almost; nearly; more or less; about the same; good enough; not bad",
+   "hskBand": 3,
+   "audio": "cha4bu5duo1",
+   "picture": ""
+  },
+  {
+   "readingKey": "chang2chang2",
+   "entryId": "ude:e7dfbb9e1040584f",
+   "hanzi": "常常",
+   "english": "frequently",
+   "fullGloss": "frequently; often",
+   "hskBand": 3,
+   "audio": "chang2chang2",
+   "picture": ""
+  },
+  {
+   "readingKey": "chang2jian4",
+   "entryId": "ude:ebeeeafba0315212",
+   "hanzi": "常见",
+   "english": "commonly seen",
+   "fullGloss": "commonly seen; common; to see sth frequently",
+   "hskBand": 3,
+   "audio": "chang2jian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chang2yong4",
+   "entryId": "ude:a13564c966ebb2d1",
+   "hanzi": "常用",
+   "english": "in common usage",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "chang2yong4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chao1shi4",
+   "entryId": "ude:b2b1b3edfdf18714",
+   "hanzi": "超市",
+   "english": "supermarket",
+   "fullGloss": "supermarket (abbr. for chao1 ji2 shi4 chang3); CL:jia1",
+   "hskBand": 1,
+   "audio": "chao1shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "che1zhan4",
+   "entryId": "ude:4b3ad5701ec92171",
+   "hanzi": "车站",
+   "english": "rail station",
+   "fullGloss": "rail station; bus stop; CL:chu4,ge4",
+   "hskBand": 2,
+   "audio": "che1zhan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chen4shan1",
+   "entryId": "ude:76ab01a402c76660",
+   "hanzi": "衬衫",
+   "english": "shirt",
+   "fullGloss": "shirt; blouse; CL:jian4",
+   "hskBand": 3,
+   "audio": "chen4shan1",
+   "picture": ""
+  },
+  {
+   "readingKey": "cheng2ji4",
+   "entryId": "ude:4b0bb914eda85b25",
+   "hanzi": "成绩",
+   "english": "achievement",
+   "fullGloss": "achievement; performance records; grades; CL:xiang4,ge4; adoption (e.g. of a nephew as a son); to inherit; Agent Orange (herbicide)",
+   "hskBand": 3,
+   "audio": "cheng2ji4",
+   "picture": ""
+  },
+  {
+   "readingKey": "cheng2shi4",
+   "entryId": "ude:a4d5f29189ad309a",
+   "hanzi": "城市",
+   "english": "city",
+   "fullGloss": "city; town; CL:zuo4; to seize the opportunity; to strike while the iron is hot; to accomplish the objective; to succeed; form; pattern; formula; (Tw) (computing) program",
+   "hskBand": 3,
+   "audio": "cheng2shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chi2dao4",
+   "entryId": "ude:28f2f3dd8a4d3c5a",
+   "hanzi": "迟到",
+   "english": "to arrive late",
+   "fullGloss": "to arrive late; (old) highway for the emperor; highway",
+   "hskBand": 3,
+   "audio": "chi2dao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1fa1",
+   "entryId": "ude:a20d759653f6e8ed",
+   "hanzi": "出发",
+   "english": "to set off",
+   "fullGloss": "to set off; to start (on a journey)",
+   "hskBand": 3,
+   "audio": "chu1fa1",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1guo2",
+   "entryId": "ude:26235848da25f81a",
+   "hanzi": "出国",
+   "english": "to go abroad",
+   "fullGloss": "to go abroad; to leave the country",
+   "hskBand": 2,
+   "audio": "chu1guo2",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1lai2",
+   "entryId": "ude:e94befb022a74fa1",
+   "hanzi": "出来",
+   "english": "to come out",
+   "fullGloss": "to come out; to appear; to arise",
+   "hskBand": 2,
+   "audio": "chu1lai2",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1men2",
+   "entryId": "ude:390aea1c71c084c3",
+   "hanzi": "出门",
+   "english": "to go out",
+   "fullGloss": "to go out; to leave home; to go on a journey; away from home; (of a woman) to get married",
+   "hskBand": 2,
+   "audio": "chu1men2",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1qu4",
+   "entryId": "ude:daa1b5661019119e",
+   "hanzi": "出去",
+   "english": "to go out",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "chu1qu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1sheng1",
+   "entryId": "ude:37d95ba6261be0b0",
+   "hanzi": "出生",
+   "english": "to be born",
+   "fullGloss": "to be born; to make a sound; to speak; to cry out; rising (sun, moon etc); newborn; nascent; primary (biology); the initial consonant (or doubled consonant) of a Korean syllable",
+   "hskBand": 3,
+   "audio": "chu1sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1yuan4",
+   "entryId": "ude:94836b799a153de9",
+   "hanzi": "出院",
+   "english": "to leave hospital",
+   "fullGloss": "to leave hospital; to be discharged from hospital",
+   "hskBand": 3,
+   "audio": "chu1yuan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1zhong1",
+   "entryId": "ude:8645e2e7fae91266",
+   "hanzi": "初衷",
+   "english": "junior high school",
+   "fullGloss": "junior high school (abbr. for chu1 ji2 zhong1 xue2); original intention; to accompany a customer to their place",
+   "hskBand": 3,
+   "audio": "chu1zhong1",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1zu1che1",
+   "entryId": "ude:b554e426f6703f19",
+   "hanzi": "出租车",
+   "english": "taxi",
+   "fullGloss": "taxi; (Tw) rental car",
+   "hskBand": 1,
+   "audio": "chu1zu1che1",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu2le5",
+   "entryId": "ude:0feff83affd43c79",
+   "hanzi": "除了",
+   "english": "apart from",
+   "fullGloss": "apart from; besides; in addition to (used to exclude, as in,|,[chu2 le5 ta1, shei2 ye3 mei2 lai2] \"apart from him, nobody came\", or to include, as in,|,[chu2 le5 Ying1 yu3, ta1 ye3 hui4 Fa3 yu3] \"in addition to English, he also knows French\"); (used to introduce one of two habitual alternatives in the pattern chu2 le5 + A + jiu4 shi4 + B, \"either A or B\")",
+   "hskBand": 3,
+   "audio": "chu2le5",
+   "picture": ""
+  },
+  {
+   "readingKey": "chun1tian1",
+   "entryId": "ude:df5c1b8ff5fadfa2",
+   "hanzi": "春天",
+   "english": "spring",
+   "fullGloss": "spring (season); CL:ge4",
+   "hskBand": 3,
+   "audio": "chun1tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ci2dian3",
+   "entryId": "ude:f7834a0232478f21",
+   "hanzi": "词典",
+   "english": "dictionary",
+   "fullGloss": "dictionary; CL:ben3,bu4; variant of ci2 dian3",
+   "hskBand": 3,
+   "audio": "ci2dian3",
+   "picture": ""
+  },
+  {
+   "readingKey": "cong1ming5",
+   "entryId": "ude:14b7f212753efbf6",
+   "hanzi": "聪明",
+   "english": "intelligent",
+   "fullGloss": "intelligent; clever; bright; acute (of sight and hearing)",
+   "hskBand": 3,
+   "audio": "cong1ming5",
+   "picture": ""
+  },
+  {
+   "readingKey": "cong2xiao3",
+   "entryId": "ude:bbf2e9602d8fa3ac",
+   "hanzi": "从小",
+   "english": "from childhood",
+   "fullGloss": "from childhood; from a young age",
+   "hskBand": 2,
+   "audio": "cong2xiao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "da3kai1",
+   "entryId": "ude:607f1f1145242933",
+   "hanzi": "打开",
+   "english": "to open",
+   "fullGloss": "to open; to show (a ticket); to turn on; to switch on",
+   "hskBand": 2,
+   "audio": "da3kai1",
+   "picture": ""
+  },
+  {
+   "readingKey": "da3sao3",
+   "entryId": "ude:b10bf1e224bf42e3",
+   "hanzi": "打扫",
+   "english": "to clean",
+   "fullGloss": "to clean; to sweep",
+   "hskBand": 3,
+   "audio": "da3sao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "da3suan4",
+   "entryId": "ude:5cfed93dca3ae260",
+   "hanzi": "打算",
+   "english": "to plan",
+   "fullGloss": "to plan; to intend; to calculate; plan; intention; calculation; CL:ge4",
+   "hskBand": 3,
+   "audio": "da3suan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "da4gai4",
+   "entryId": "ude:0b1a5efad9f98167",
+   "hanzi": "大概",
+   "english": "roughly",
+   "fullGloss": "roughly; probably; rough; approximate; about; general idea",
+   "hskBand": 3,
+   "audio": "da4gai4",
+   "picture": ""
+  },
+  {
+   "readingKey": "da4jia1",
+   "entryId": "ude:6f0ec8a43534a7ca",
+   "hanzi": "大家",
+   "english": "everyone",
+   "fullGloss": "everyone; influential family; great expert; (before a two-syllable verb) considerably; greatly (exaggerate); vehemently (oppose); severely (punish); extensively (refurbish); effusively (praise)",
+   "hskBand": 1,
+   "audio": "da4jia1",
+   "picture": ""
+  },
+  {
+   "readingKey": "da4xiao3",
+   "entryId": "ude:aa425448c6aa006e",
+   "hanzi": "大小",
+   "english": "large and small",
+   "fullGloss": "large and small; size; adults and children; consideration of seniority; at any rate",
+   "hskBand": 3,
+   "audio": "da4xiao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "da4xiong2mao1",
+   "entryId": "ude:1cd0a9d1e4b79534",
+   "hanzi": "大熊猫",
+   "english": "giant panda",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "da4xiong2mao1",
+   "picture": ""
+  },
+  {
+   "readingKey": "da4xue2",
+   "entryId": "ude:afd657ef3bddf5fd",
+   "hanzi": "大学",
+   "english": "the Great Learning",
+   "fullGloss": "the Great Learning, one of the Four Books Si4 shu1 in Confucianism; university; college; CL:suo3",
+   "hskBand": 1,
+   "audio": "da4xue2",
+   "picture": ""
+  },
+  {
+   "readingKey": "da4xue2sheng1",
+   "entryId": "ude:064e24b4bef6d239",
+   "hanzi": "大学生",
+   "english": "university student",
+   "fullGloss": "university student; college student",
+   "hskBand": 1,
+   "audio": "da4xue2sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "da4yi1",
+   "entryId": "ude:3d31213caecdd9f4",
+   "hanzi": "大衣",
+   "english": "overcoat",
+   "fullGloss": "overcoat; topcoat; cloak; CL:jian4; first year of university",
+   "hskBand": 3,
+   "audio": "da4yi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "dan1xin1",
+   "entryId": "ude:b33ec4e4c70de2ad",
+   "hanzi": "担心",
+   "english": "anxious",
+   "fullGloss": "anxious; worried; uneasy; to worry; to be anxious; loyal heart; loyalty; to devote one's entire mind; variant of dan1 xin1",
+   "hskBand": 3,
+   "audio": "dan1xin1",
+   "picture": ""
+  },
+  {
+   "readingKey": "dan4gao1",
+   "entryId": "ude:7533017f950f6408",
+   "hanzi": "蛋糕",
+   "english": "cake",
+   "fullGloss": "cake; CL:kuai4,ge4",
+   "hskBand": 3,
+   "audio": "dan4gao1",
+   "picture": ""
+  },
+  {
+   "readingKey": "dan4shi4",
+   "entryId": "ude:857c040d1fc5688a",
+   "hanzi": "但是",
+   "english": "but",
+   "fullGloss": "but; however",
+   "hskBand": 2,
+   "audio": "dan4shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "dang1ran2",
+   "entryId": "ude:d119bad2ca4f5a6f",
+   "hanzi": "当然",
+   "english": "only natural",
+   "fullGloss": "only natural; as it should be; certainly; of course; without doubt",
+   "hskBand": 3,
+   "audio": "dang1ran2",
+   "picture": ""
+  },
+  {
+   "readingKey": "dao4chu4",
+   "entryId": "ude:43ed2aa83e9ac591",
+   "hanzi": "到处",
+   "english": "everywhere",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "dao4chu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "de2dao4",
+   "entryId": "ude:a1c5b771c627c0a9",
+   "hanzi": "得到",
+   "english": "to get",
+   "fullGloss": "to get; to obtain; to receive; to achieve the Dao; to become an immortal",
+   "hskBand": 3,
+   "audio": "de2dao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "de5hua4",
+   "entryId": "ude:a3a10cb7088c22d4",
+   "hanzi": "的话",
+   "english": "if",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "de5hua4",
+   "picture": ""
+  },
+  {
+   "readingKey": "di4dian3",
+   "entryId": "ude:b3e77755731b0d13",
+   "hanzi": "地点",
+   "english": "place",
+   "fullGloss": "place; site; location; venue; CL:ge4",
+   "hskBand": 3,
+   "audio": "di4dian3",
+   "picture": ""
+  },
+  {
+   "readingKey": "di4tie3",
+   "entryId": "ude:74b6915fbb86b038",
+   "hanzi": "地铁",
+   "english": "underground railway",
+   "fullGloss": "underground railway; subway; subway train",
+   "hskBand": 2,
+   "audio": "di4tie3",
+   "picture": ""
+  },
+  {
+   "readingKey": "di4tu2",
+   "entryId": "ude:3f3ec22059188767",
+   "hanzi": "地图",
+   "english": "map",
+   "fullGloss": "map; CL:zhang1,ben3",
+   "hskBand": 3,
+   "audio": "di4tu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "dian4hua4",
+   "entryId": "ude:d927f35fcf1a356b",
+   "hanzi": "电话",
+   "english": "telephone",
+   "fullGloss": "telephone; CL:bu4; phone call; CL:tong1; phone number",
+   "hskBand": 1,
+   "audio": "dian4hua4",
+   "picture": ""
+  },
+  {
+   "readingKey": "dian4nao3",
+   "entryId": "ude:405c8800f26abbc2",
+   "hanzi": "电脑",
+   "english": "computer",
+   "fullGloss": "computer; CL:tai2",
+   "hskBand": 1,
+   "audio": "dian4nao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "dian4shi4",
+   "entryId": "ude:b002ff78f5a3e32f",
+   "hanzi": "电视",
+   "english": "television",
+   "fullGloss": "television; TV; CL:tai2,bu4; court examination, the top grade imperial exam",
+   "hskBand": 1,
+   "audio": "dian4shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "dian4ti1",
+   "entryId": "ude:4435b66352beb652",
+   "hanzi": "电梯",
+   "english": "elevator",
+   "fullGloss": "elevator; escalator; CL:tai2,bu4",
+   "hskBand": 3,
+   "audio": "dian4ti1",
+   "picture": ""
+  },
+  {
+   "readingKey": "dian4ying3",
+   "entryId": "ude:92d3cacc3aafabea",
+   "hanzi": "电影",
+   "english": "movie",
+   "fullGloss": "movie; film; CL:bu4",
+   "hskBand": 1,
+   "audio": "dian4ying3",
+   "picture": ""
+  },
+  {
+   "readingKey": "dian4ying3yuan4",
+   "entryId": "ude:5a779216386387ad",
+   "hanzi": "电影院",
+   "english": "cinema",
+   "fullGloss": "cinema; movie theater; CL:jia1,zuo4",
+   "hskBand": 1,
+   "audio": "dian4ying3yuan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "dian4zi3shu1",
+   "entryId": "ude:077a8c0cbae5c9e6",
+   "hanzi": "电子书",
+   "english": "electronic book",
+   "fullGloss": "electronic book; e-book; e-book reader",
+   "hskBand": 3,
+   "audio": "dian4zi3shu1",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong1bei3",
+   "entryId": "ude:7b8ccd53b129c360",
+   "hanzi": "东北",
+   "english": "Northeast China",
+   "fullGloss": "Northeast China; Manchuria; northeast",
+   "hskBand": 3,
+   "audio": "dong1bei3",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong1fang1",
+   "entryId": "ude:8d0dfa9c57cf1469",
+   "hanzi": "东方",
+   "english": "the East",
+   "fullGloss": "the East; the Orient; two-character surname Dongfang; east",
+   "hskBand": 3,
+   "audio": "dong1fang1",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong1nan2",
+   "entryId": "ude:d2c8f80d907e26a5",
+   "hanzi": "东南",
+   "english": "southeast",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "dong1nan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong1tian1",
+   "entryId": "ude:a1147f6f8be9c39a",
+   "hanzi": "冬天",
+   "english": "winter",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "dong1tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong1xi5",
+   "entryId": "ude:153a1554dbd21710",
+   "hanzi": "东西",
+   "english": "thing",
+   "fullGloss": "thing; stuff; person; CL:ge4,jian4",
+   "hskBand": 1,
+   "audio": "dong1xi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong3de5",
+   "entryId": "ude:0588351dd67a2265",
+   "hanzi": "懂得",
+   "english": "to understand",
+   "fullGloss": "to understand; to know; to comprehend",
+   "hskBand": 3,
+   "audio": "dong3de5",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong4wu4",
+   "entryId": "ude:05063ecd7c53f332",
+   "hanzi": "动物",
+   "english": "animal",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "dong4wu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "dong4wu4yuan2",
+   "entryId": "ude:16a23d7b3c91442e",
+   "hanzi": "动物园",
+   "english": "zoo",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "dong4wu4yuan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "duan3ku4",
+   "entryId": "ude:ec0928ba96c51f4f",
+   "hanzi": "短裤",
+   "english": "short pants",
+   "fullGloss": "short pants; shorts",
+   "hskBand": 3,
+   "audio": "duan3ku4",
+   "picture": ""
+  },
+  {
+   "readingKey": "duan4lian4",
+   "entryId": "ude:9d46765c7b414603",
+   "hanzi": "锻炼",
+   "english": "to toughen",
+   "fullGloss": "to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills; to train oneself",
+   "hskBand": 3,
+   "audio": "duan4lian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "dui4bu5qi3",
+   "entryId": "ude:681c0408c0462c5b",
+   "hanzi": "对不起",
+   "english": "I'm sorry",
+   "fullGloss": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
+   "hskBand": 1,
+   "audio": "dui4bu5qi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "duo1shao5",
+   "entryId": "ude:2a0155b3ec93f648",
+   "hanzi": "多少",
+   "english": "how much?",
+   "fullGloss": "how much?; how many?; (phone number, student ID etc) what number?",
+   "hskBand": 1,
+   "audio": "duo1shao5",
+   "picture": ""
+  },
+  {
+   "readingKey": "er2qie3",
+   "entryId": "ude:fc1d20943757828b",
+   "hanzi": "而且",
+   "english": "but also",
+   "fullGloss": "(not only...) but also; moreover; in addition; furthermore",
+   "hskBand": 3,
+   "audio": "er2qie3",
+   "picture": ""
+  },
+  {
+   "readingKey": "er2zi5",
+   "entryId": "ude:a70cabe5c0555eb2",
+   "hanzi": "儿子",
+   "english": "son",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "er2zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "er3duo5",
+   "entryId": "ude:3206727b81daf0e1",
+   "hanzi": "耳朵",
+   "english": "ear",
+   "fullGloss": "ear; CL:zhi1,ge4,dui4; handle (on a cup)",
+   "hskBand": 3,
+   "audio": "er3duo5",
+   "picture": ""
+  },
+  {
+   "readingKey": "er3ji1",
+   "entryId": "ude:cb8ad433dd5d3743",
+   "hanzi": "耳机",
+   "english": "headphones",
+   "fullGloss": "headphones; earphones; telephone receiver",
+   "hskBand": 3,
+   "audio": "er3ji1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fa1sheng1",
+   "entryId": "ude:27df48d35be28a87",
+   "hanzi": "发生",
+   "english": "to happen",
+   "fullGloss": "to happen; to occur; to take place; to break out; to produce a sound; to vocalize; to give voice; to articulate views or demands",
+   "hskBand": 3,
+   "audio": "fa1sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fa1xian4",
+   "entryId": "ude:82213feb22b76e30",
+   "hanzi": "发现",
+   "english": "to notice",
+   "fullGloss": "to notice; to become aware of; to discover; to find; to detect; a discovery",
+   "hskBand": 3,
+   "audio": "fa1xian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "fa1zhan3",
+   "entryId": "ude:0f3d726f82f7e046",
+   "hanzi": "发展",
+   "english": "development",
+   "fullGloss": "development; growth; to develop; to grow; to expand",
+   "hskBand": 3,
+   "audio": "fa1zhan3",
+   "picture": ""
+  },
+  {
+   "readingKey": "fan4dian4",
+   "entryId": "ude:0d1a0afb62492262",
+   "hanzi": "饭店",
+   "english": "restaurant",
+   "fullGloss": "restaurant; hotel; CL:jia1",
+   "hskBand": 1,
+   "audio": "fan4dian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "fan4guan3",
+   "entryId": "ude:92124fe8a047d3da",
+   "hanzi": "饭馆",
+   "english": "restaurant",
+   "fullGloss": "restaurant; CL:jia1",
+   "hskBand": 2,
+   "audio": "fan4guan3",
+   "picture": ""
+  },
+  {
+   "readingKey": "fang1bian4",
+   "entryId": "ude:4a0430c6c221476c",
+   "hanzi": "方便",
+   "english": "convenient",
+   "fullGloss": "convenient; suitable; to facilitate; to make things easy; having money to spare; (euphemism) to relieve oneself",
+   "hskBand": 3,
+   "audio": "fang1bian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "fang1bian4mian4",
+   "entryId": "ude:cd6498a1a8b76b98",
+   "hanzi": "方便面",
+   "english": "instant noodles",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "fang1bian4mian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "fang1fa3",
+   "entryId": "ude:9a4d695944030e64",
+   "hanzi": "方法",
+   "english": "method",
+   "fullGloss": "method; way; technique; procedure",
+   "hskBand": 3,
+   "audio": "fang1fa3",
+   "picture": ""
+  },
+  {
+   "readingKey": "fang1xiang4",
+   "entryId": "ude:ef921d9525d7f32c",
+   "hanzi": "方向",
+   "english": "direction",
+   "fullGloss": "direction; orientation",
+   "hskBand": 3,
+   "audio": "fang1xiang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "fang2jian1",
+   "entryId": "ude:39cf1f754434a124",
+   "hanzi": "房间",
+   "english": "room",
+   "fullGloss": "room; CL:jian1",
+   "hskBand": 1,
+   "audio": "fang2jian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fang2zi5",
+   "entryId": "ude:f97986e11d31363d",
+   "hanzi": "房子",
+   "english": "house",
+   "fullGloss": "house; building (single- or two-story); apartment; room; CL:dong4,zhuang4,zuo4,tao4,jian1",
+   "hskBand": 3,
+   "audio": "fang2zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "fang4xin1",
+   "entryId": "ude:e0f7ee91a36ee696",
+   "hanzi": "放心",
+   "english": "to feel relieved",
+   "fullGloss": "to feel relieved; to feel reassured; to be at ease",
+   "hskBand": 3,
+   "audio": "fang4xin1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fei1chang2",
+   "entryId": "ude:e58d40ef43e702ae",
+   "hanzi": "非常",
+   "english": "very",
+   "fullGloss": "very; really; unusual; extraordinary",
+   "hskBand": 1,
+   "audio": "fei1chang2",
+   "picture": ""
+  },
+  {
+   "readingKey": "fei1ji1",
+   "entryId": "ude:a2fe679f26418581",
+   "hanzi": "飞机",
+   "english": "plane",
+   "fullGloss": "airplane; CL:jia4",
+   "hskBand": 1,
+   "audio": "fei1ji1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fen1kai1",
+   "entryId": "ude:29da450566386840",
+   "hanzi": "分开",
+   "english": "to separate",
+   "fullGloss": "to separate; to part",
+   "hskBand": 3,
+   "audio": "fen1kai1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fen1zhong1",
+   "entryId": "ude:5982baf22cbfc036",
+   "hanzi": "分钟",
+   "english": "minute",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "fen1zhong1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fu1qi1",
+   "entryId": "ude:ba0cc8e7154dee76",
+   "hanzi": "夫妻",
+   "english": "husband and wife",
+   "fullGloss": "husband and wife; married couple",
+   "hskBand": 3,
+   "audio": "fu1qi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "fu2wu4",
+   "entryId": "ude:2f5c409f3459379c",
+   "hanzi": "服务",
+   "english": "to serve",
+   "fullGloss": "to serve; service; CL:xiang4",
+   "hskBand": 3,
+   "audio": "fu2wu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "fu4jin4",
+   "entryId": "ude:aae9d1d1e2444a8c",
+   "hanzi": "附近",
+   "english": "nearby",
+   "fullGloss": "nearby; neighboring; (in the) vicinity (of); neighborhood",
+   "hskBand": 3,
+   "audio": "fu4jin4",
+   "picture": ""
+  },
+  {
+   "readingKey": "fu4xi2",
+   "entryId": "ude:5adb886734126233",
+   "hanzi": "复习",
+   "english": "to review",
+   "fullGloss": "to review; revision; CL:ci4; variant of fu4 xi2",
+   "hskBand": 3,
+   "audio": "fu4xi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "gan1jing4",
+   "entryId": "ude:8d8828d1f0b4bcb8",
+   "hanzi": "干净",
+   "english": "clean",
+   "fullGloss": "clean; neat",
+   "hskBand": 3,
+   "audio": "gan1jing4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gan3dao4",
+   "entryId": "ude:e21f579bd3c09b34",
+   "hanzi": "感到",
+   "english": "to feel",
+   "fullGloss": "to feel; to sense; to perceive; to hurry (to some place)",
+   "hskBand": 3,
+   "audio": "gan3dao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gan3mao4",
+   "entryId": "ude:b3bd0493c734b2ae",
+   "hanzi": "感冒",
+   "english": "to catch cold",
+   "fullGloss": "to catch cold; (common) cold; CL:chang2,ci4; (coll.) to be interested in (often used in the negative); (Tw) to detest; can't stand",
+   "hskBand": 3,
+   "audio": "gan3mao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gan3xing4qu4",
+   "entryId": "ude:b46aa3e9d9876338",
+   "hanzi": "感兴趣",
+   "english": "to be interested",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "gan3xing4qu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gang1cai2",
+   "entryId": "ude:be149bfe2ee3c98d",
+   "hanzi": "刚才",
+   "english": "just now",
+   "fullGloss": "just now; a moment ago; just now (variant of gang1 cai2); steel (as raw material); steel sheets, bars, tubes, ingots, wire etc",
+   "hskBand": 3,
+   "audio": "gang1cai2",
+   "picture": ""
+  },
+  {
+   "readingKey": "gang1gang5",
+   "entryId": "ude:0e7cf990c1476844",
+   "hanzi": "刚刚",
+   "english": "just recently",
+   "fullGloss": "just recently; just a moment ago",
+   "hskBand": 3,
+   "audio": "gang1gang5",
+   "picture": ""
+  },
+  {
+   "readingKey": "gao1tie3",
+   "entryId": "ude:4a38fabafd3a68fe",
+   "hanzi": "高铁",
+   "english": "high speed rail",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "gao1tie3",
+   "picture": ""
+  },
+  {
+   "readingKey": "gao1xing4",
+   "entryId": "ude:a5c615bca983c7e1",
+   "hanzi": "高兴",
+   "english": "happy",
+   "fullGloss": "happy; glad; willing (to do sth); in a cheerful mood",
+   "hskBand": 1,
+   "audio": "gao1xing4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gao1zhong1",
+   "entryId": "ude:87f6c855b16553f1",
+   "hanzi": "高中",
+   "english": "senior high school",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "gao1zhong1",
+   "picture": ""
+  },
+  {
+   "readingKey": "gao4su5",
+   "entryId": "ude:e33d1be368b0838d",
+   "hanzi": "告诉",
+   "english": "to tell",
+   "fullGloss": "to tell; to inform; to let know",
+   "hskBand": 2,
+   "audio": "gao4su5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ge1ge5",
+   "entryId": "ude:d01058db5c67759e",
+   "hanzi": "哥哥",
+   "english": "older brother",
+   "fullGloss": "older brother; CL:ge4,wei4",
+   "hskBand": 1,
+   "audio": "ge1ge5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ge4zi5",
+   "entryId": "ude:0843e0d95d50141c",
+   "hanzi": "个子",
+   "english": "stature",
+   "fullGloss": "stature; height; size (of a person or object); (agriculture) bundle of cereal stalks tied together",
+   "hskBand": 2,
+   "audio": "ge4zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "gen1ju4",
+   "entryId": "ude:dd49463426e64b8f",
+   "hanzi": "根据",
+   "english": "according to",
+   "fullGloss": "according to; based on; basis; foundation; CL:ge4",
+   "hskBand": 3,
+   "audio": "gen1ju4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gong1jiao1che1",
+   "entryId": "ude:b58ccf7324a9d897",
+   "hanzi": "公交车",
+   "english": "public transport vehicle",
+   "fullGloss": "public transport vehicle; town bus; CL:liang4",
+   "hskBand": 2,
+   "audio": "gong1jiao1che1",
+   "picture": ""
+  },
+  {
+   "readingKey": "gong1jin1",
+   "entryId": "ude:6ae0e1b766e4679f",
+   "hanzi": "公斤",
+   "english": "kilogram",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "gong1jin1",
+   "picture": ""
+  },
+  {
+   "readingKey": "gong1si1",
+   "entryId": "ude:8e22bc19dc4c3aab",
+   "hanzi": "公司",
+   "english": "company",
+   "fullGloss": "company; firm; corporation; CL:jia1; public and private (interests, initiative etc)",
+   "hskBand": 1,
+   "audio": "gong1si1",
+   "picture": ""
+  },
+  {
+   "readingKey": "gong1yuan2",
+   "entryId": "ude:ce32d18ca07f8d8e",
+   "hanzi": "公元",
+   "english": "park",
+   "fullGloss": "park (for public recreation); CL:zuo4; CE (Common Era); Christian Era; AD (Anno Domini)",
+   "hskBand": 3,
+   "audio": "gong1yuan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "gong1zuo4",
+   "entryId": "ude:3c4a5a23ab9f1e24",
+   "hanzi": "工作",
+   "english": "to work",
+   "fullGloss": "to work; (of a machine) to operate; job; work; task; CL:ge4,fen4,xiang4",
+   "hskBand": 1,
+   "audio": "gong1zuo4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gong1zuo4ri4",
+   "entryId": "ude:e5acf55fe08eb38a",
+   "hanzi": "工作日",
+   "english": "workday",
+   "fullGloss": "workday; working day; weekday",
+   "hskBand": 3,
+   "audio": "gong1zuo4ri4",
+   "picture": ""
+  },
+  {
+   "readingKey": "gu4shi5",
+   "entryId": "ude:8265e877bedf147f",
+   "hanzi": "故事",
+   "english": "narrative",
+   "fullGloss": "narrative; story; tale",
+   "hskBand": 3,
+   "audio": "gu4shi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "guan1ji1",
+   "entryId": "ude:a3174bfc7318bf24",
+   "hanzi": "关机",
+   "english": "to turn off",
+   "fullGloss": "to turn off (a machine or device); to finish shooting a film",
+   "hskBand": 3,
+   "audio": "guan1ji1",
+   "picture": ""
+  },
+  {
+   "readingKey": "guan1yu2",
+   "entryId": "ude:ddc00e2915df7f9c",
+   "hanzi": "关于",
+   "english": "pertaining to",
+   "fullGloss": "pertaining to; concerning; with regard to; about; a matter of",
+   "hskBand": 3,
+   "audio": "guan1yu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "guo2jia1",
+   "entryId": "ude:62430c425ca46f83",
+   "hanzi": "国家",
+   "english": "country",
+   "fullGloss": "country; nation; state",
+   "hskBand": 3,
+   "audio": "guo2jia1",
+   "picture": ""
+  },
+  {
+   "readingKey": "guo4lai2",
+   "entryId": "ude:c1715766b458ca88",
+   "hanzi": "过来",
+   "english": "to come over",
+   "fullGloss": "to come over; to manage; to handle; to be able to take care of",
+   "hskBand": 2,
+   "audio": "guo4lai2",
+   "picture": ""
+  },
+  {
+   "readingKey": "guo4qu4",
+   "entryId": "ude:0d022eeee2e98a48",
+   "hanzi": "过去",
+   "english": "past",
+   "fullGloss": "(in the) past; former; previous; to go over; to pass by",
+   "hskBand": 2,
+   "audio": "guo4qu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hai2shi5",
+   "entryId": "ude:8ebfdda30b2fb831",
+   "hanzi": "还是",
+   "english": "still",
+   "fullGloss": "still (as before); had better; unexpectedly; or",
+   "hskBand": 2,
+   "audio": "hai2shi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "hai2zi5",
+   "entryId": "ude:072b34ce97130236",
+   "hanzi": "孩子",
+   "english": "child",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "hai2zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "hai4pa4",
+   "entryId": "ude:54a367be20c8bb54",
+   "hanzi": "害怕",
+   "english": "to be afraid",
+   "fullGloss": "to be afraid; to be scared; to be afraid; to be frightened",
+   "hskBand": 3,
+   "audio": "hai4pa4",
+   "picture": ""
+  },
+  {
+   "readingKey": "han4yu3",
+   "entryId": "ude:e2cd22aa1e0fc0ac",
+   "hanzi": "汉语",
+   "english": "Chinese language",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "han4yu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "han4zi4",
+   "entryId": "ude:889b8961ba7d2e12",
+   "hanzi": "汉字",
+   "english": "Chinese character",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "han4zi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hao3chi1",
+   "entryId": "ude:7049a8e36b6b4484",
+   "hanzi": "好吃",
+   "english": "tasty",
+   "fullGloss": "tasty; delicious",
+   "hskBand": 1,
+   "audio": "hao3chi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "hao3duo1",
+   "entryId": "ude:e4370bdb2deb90b5",
+   "hanzi": "好多",
+   "english": "many",
+   "fullGloss": "many; quite a lot; much better",
+   "hskBand": 3,
+   "audio": "hao3duo1",
+   "picture": ""
+  },
+  {
+   "readingKey": "hao3kan4",
+   "entryId": "ude:d43a9b5c7f74f572",
+   "hanzi": "好看",
+   "english": "good-looking",
+   "fullGloss": "good-looking; nice-looking; (of a movie, book, TV show etc) good; in an embarrassing situation",
+   "hskBand": 1,
+   "audio": "hao3kan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hao3ting1",
+   "entryId": "ude:312ed0759a5fb1af",
+   "hanzi": "好听",
+   "english": "pleasant to hear",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "hao3ting1",
+   "picture": ""
+  },
+  {
+   "readingKey": "hao3xiang4",
+   "entryId": "ude:728e0829bcc75323",
+   "hanzi": "好像",
+   "english": "as if",
+   "fullGloss": "as if; to seem like; to seem; to be like (variant of hao3 xiang4)",
+   "hskBand": 3,
+   "audio": "hao3xiang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hao4ma3",
+   "entryId": "ude:a40bffcbdf3eb896",
+   "hanzi": "号码",
+   "english": "number",
+   "fullGloss": "number; CL:dui1,ge4",
+   "hskBand": 3,
+   "audio": "hao4ma3",
+   "picture": ""
+  },
+  {
+   "readingKey": "he2shi4",
+   "entryId": "ude:7a74b8c88bc35267",
+   "hanzi": "合适",
+   "english": "suitable",
+   "fullGloss": "suitable; fitting; appropriate; conforming to a pattern; up to standard; variant of he2 shi4; nuclear potential; nuclear test",
+   "hskBand": 3,
+   "audio": "he2shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hei1ban3",
+   "entryId": "ude:9f84b721d635071c",
+   "hanzi": "黑板",
+   "english": "blackboard",
+   "fullGloss": "blackboard; CL:kuai4,ge4",
+   "hskBand": 3,
+   "audio": "hei1ban3",
+   "picture": ""
+  },
+  {
+   "readingKey": "hei1se4",
+   "entryId": "ude:645ba05b87fc465e",
+   "hanzi": "黑色",
+   "english": "black",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "hei1se4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hong2cha2",
+   "entryId": "ude:4c6009a3c4a16434",
+   "hanzi": "红茶",
+   "english": "black tea",
+   "fullGloss": "black tea; CL:bei1,hu2",
+   "hskBand": 2,
+   "audio": "hong2cha2",
+   "picture": ""
+  },
+  {
+   "readingKey": "hong2lv4deng1",
+   "entryId": "ude:a89924d2c2180444",
+   "hanzi": "红绿灯",
+   "english": "traffic light",
+   "fullGloss": "traffic light; traffic signal",
+   "hskBand": 3,
+   "audio": "hong2lv4deng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "hong2se4",
+   "entryId": "ude:c04f3beb5f1554bf",
+   "hanzi": "红色",
+   "english": "red",
+   "fullGloss": "red (color); revolutionary",
+   "hskBand": 2,
+   "audio": "hong2se4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hou4lai2",
+   "entryId": "ude:7e20e0a80ff2b49d",
+   "hanzi": "后来",
+   "english": "afterwards",
+   "fullGloss": "afterwards; later; newly arrived",
+   "hskBand": 3,
+   "audio": "hou4lai2",
+   "picture": ""
+  },
+  {
+   "readingKey": "hou4mian5",
+   "entryId": "ude:74da2c9f141bdae3",
+   "hanzi": "后面",
+   "english": "the back",
+   "fullGloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
+   "hskBand": 2,
+   "audio": "hou4mian5",
+   "picture": ""
+  },
+  {
+   "readingKey": "hu4zhao4",
+   "entryId": "ude:df87fba24c9e2e16",
+   "hanzi": "护照",
+   "english": "passport",
+   "fullGloss": "passport; CL:ben3,ge4",
+   "hskBand": 3,
+   "audio": "hu4zhao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hua1yuan2",
+   "entryId": "ude:62b9dc17b7fd3db3",
+   "hanzi": "花园",
+   "english": "garden",
+   "fullGloss": "garden (for flowers, ornamental plants etc); (landscaped) park; yard with decorative plants; CL:zuo4; see Hua1 yuan2 Xian4",
+   "hskBand": 3,
+   "audio": "hua1yuan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "hua4jia1",
+   "entryId": "ude:175a40035498bc67",
+   "hanzi": "画家",
+   "english": "painter",
+   "fullGloss": "painter; CL:ge4",
+   "hskBand": 3,
+   "audio": "hua4jia1",
+   "picture": ""
+  },
+  {
+   "readingKey": "huan1ying2",
+   "entryId": "ude:d8ed8b5e66fc2b44",
+   "hanzi": "欢迎",
+   "english": "to welcome",
+   "fullGloss": "to welcome; welcome",
+   "hskBand": 3,
+   "audio": "huan1ying2",
+   "picture": ""
+  },
+  {
+   "readingKey": "huan2jing4",
+   "entryId": "ude:67fc3efdf30702bc",
+   "hanzi": "环境",
+   "english": "environment",
+   "fullGloss": "environment; circumstances; surroundings; CL:ge4; ambient",
+   "hskBand": 3,
+   "audio": "huan2jing4",
+   "picture": ""
+  },
+  {
+   "readingKey": "huang2se4",
+   "entryId": "ude:bce649e0b3535071",
+   "hanzi": "黄色",
+   "english": "yellow",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "huang2se4",
+   "picture": ""
+  },
+  {
+   "readingKey": "hui2da2",
+   "entryId": "ude:aa345ac352ec06e3",
+   "hanzi": "回答",
+   "english": "to reply",
+   "fullGloss": "to reply; to answer; reply; answer",
+   "hskBand": 3,
+   "audio": "hui2da2",
+   "picture": ""
+  },
+  {
+   "readingKey": "hui2lai5",
+   "entryId": "ude:dccb29b6e3cc2486",
+   "hanzi": "回来",
+   "english": "to return",
+   "fullGloss": "to return; to come back",
+   "hskBand": 2,
+   "audio": "hui2lai5",
+   "picture": ""
+  },
+  {
+   "readingKey": "hui2qu5",
+   "entryId": "ude:5869b5afa7081524",
+   "hanzi": "回去",
+   "english": "to return",
+   "fullGloss": "to return; to go back",
+   "hskBand": 2,
+   "audio": "hui2qu5",
+   "picture": ""
+  },
+  {
+   "readingKey": "hui4yi4",
+   "entryId": "ude:f63905b276ff3311",
+   "hanzi": "会意",
+   "english": "meeting",
+   "fullGloss": "meeting; conference; CL:chang3,jie4; combined ideogram (one of the Six Methods liu4 shu1 of forming Chinese characters); Chinese character that combines the meanings of existing elements; also known as joint ideogram or associative compound; to comprehend without being told explicitly; to cotton on; knowing (smile, glance etc)",
+   "hskBand": 3,
+   "audio": "hui4yi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "huo3che1",
+   "entryId": "ude:0be44fdf1fbad298",
+   "hanzi": "火车",
+   "english": "train",
+   "fullGloss": "train; CL:lie4,jie2,ban1,tang4",
+   "hskBand": 1,
+   "audio": "huo3che1",
+   "picture": ""
+  },
+  {
+   "readingKey": "huo4zhe3",
+   "entryId": "ude:1ed5208552cff76b",
+   "hanzi": "或者",
+   "english": "or",
+   "fullGloss": "or; possibly; maybe; perhaps",
+   "hskBand": 3,
+   "audio": "huo4zhe3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ji1chang3",
+   "entryId": "ude:9b3098445c7e9846",
+   "hanzi": "机场",
+   "english": "airport",
+   "fullGloss": "airport; airfield; (slang) service provider for Shadowsocks or similar software for circumventing Internet censorship; CL:jia1,chu4",
+   "hskBand": 2,
+   "audio": "ji1chang3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ji1dan4",
+   "entryId": "ude:aaf047e3670c3c40",
+   "hanzi": "鸡蛋",
+   "english": "egg",
+   "fullGloss": "(chicken) egg; hen's egg; CL:ge4,da2",
+   "hskBand": 1,
+   "audio": "ji1dan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ji1hu1",
+   "entryId": "ude:d985b86a0050c232",
+   "hanzi": "几乎",
+   "english": "almost",
+   "fullGloss": "almost; nearly; practically",
+   "hskBand": 3,
+   "audio": "ji1hu1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ji1hui4",
+   "entryId": "ude:17d9010764d056a3",
+   "hanzi": "机会",
+   "english": "opportunity",
+   "fullGloss": "opportunity; chance; occasion; CL:ge4",
+   "hskBand": 3,
+   "audio": "ji1hui4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ji1piao4",
+   "entryId": "ude:0d77d7b0230ea93c",
+   "hanzi": "机票",
+   "english": "plane ticket",
+   "fullGloss": "plane ticket; airline ticket; CL:zhang1",
+   "hskBand": 2,
+   "audio": "ji1piao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ji4de5",
+   "entryId": "ude:2cb2f07cf017df29",
+   "hanzi": "记得",
+   "english": "to remember",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "ji4de5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ji4jie2",
+   "entryId": "ude:458cd79a070bb4e7",
+   "hanzi": "季节",
+   "english": "time",
+   "fullGloss": "time; season; period; CL:ge4",
+   "hskBand": 3,
+   "audio": "ji4jie2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jia1ren2",
+   "entryId": "ude:f115d529840f261d",
+   "hanzi": "家人",
+   "english": "family member",
+   "fullGloss": "family member; (old) servant; beautiful woman; Yoshihito, personal name of the Taishō Da4 zheng4 emperor of Japan (1879-1926), reigned 1912-1926",
+   "hskBand": 1,
+   "audio": "jia1ren2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jia4qi1",
+   "entryId": "ude:7ccee2c9ced30cbd",
+   "hanzi": "假期",
+   "english": "vacation",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "jia4qi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "jian1chi2",
+   "entryId": "ude:67ba36b727a83777",
+   "hanzi": "坚持",
+   "english": "to persevere with",
+   "fullGloss": "to persevere with; to persist in; to insist on",
+   "hskBand": 3,
+   "audio": "jian1chi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jian3cha2",
+   "entryId": "ude:fc7ce56d68034802",
+   "hanzi": "检察",
+   "english": "inspection",
+   "fullGloss": "inspection; to examine; to inspect; CL:ci4; (law) to prosecute; to investigate",
+   "hskBand": 3,
+   "audio": "jian3cha2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jian3dan1",
+   "entryId": "ude:bf641ad300db8a22",
+   "hanzi": "简单",
+   "english": "simple",
+   "fullGloss": "simple; not complicated",
+   "hskBand": 3,
+   "audio": "jian3dan1",
+   "picture": ""
+  },
+  {
+   "readingKey": "jian4kang1",
+   "entryId": "ude:c889fdf8b01a0053",
+   "hanzi": "健康",
+   "english": "health",
+   "fullGloss": "health; healthy; old name for Nanjing, esp. during Southern dynasties",
+   "hskBand": 3,
+   "audio": "jian4kang1",
+   "picture": ""
+  },
+  {
+   "readingKey": "jian4mian4",
+   "entryId": "ude:c7d54961e290fac2",
+   "hanzi": "见面",
+   "english": "to meet",
+   "fullGloss": "to meet; to see each other; CL:ci4",
+   "hskBand": 3,
+   "audio": "jian4mian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jiao3zi5",
+   "entryId": "ude:bb2e476c899ebe16",
+   "hanzi": "饺子",
+   "english": "dumpling",
+   "fullGloss": "dumpling; pot-sticker; CL:ge4,zhi1; one Jiao coin (Mao, one-tenth of yuan)",
+   "hskBand": 1,
+   "audio": "jiao3zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "jiao4shi4",
+   "entryId": "ude:7afb0d19e117b5cb",
+   "hanzi": "教室",
+   "english": "classroom",
+   "fullGloss": "classroom; CL:jian1; churchman; clergy; to collate and annotate; (on book titles) collated and annotated",
+   "hskBand": 2,
+   "audio": "jiao4shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie2hun1",
+   "entryId": "ude:3ac635f0f1236449",
+   "hanzi": "结婚",
+   "english": "to marry",
+   "fullGloss": "to marry; to get married",
+   "hskBand": 3,
+   "audio": "jie2hun1",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie2mu4",
+   "entryId": "ude:96ab6297039dcbd0",
+   "hanzi": "节目",
+   "english": "program",
+   "fullGloss": "(TV or radio) program; show; item; act; segment; number (on the program of a concert, variety show or cultural event); a planned activity (in one's schedule); CL:chang3,xiang4,tai2,tao4,dang4; final scene (of a play); denouement",
+   "hskBand": 3,
+   "audio": "jie2mu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie2ri4",
+   "entryId": "ude:2a192ead2eeb3bb7",
+   "hanzi": "节日",
+   "english": "holiday",
+   "fullGloss": "holiday; festival; CL:ge4",
+   "hskBand": 3,
+   "audio": "jie2ri4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie2shu4",
+   "entryId": "ude:87b9fc89cf38021a",
+   "hanzi": "结束",
+   "english": "to end",
+   "fullGloss": "to end; to finish; to conclude; predestined fate (Buddhism)",
+   "hskBand": 3,
+   "audio": "jie2shu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie3jie5",
+   "entryId": "ude:144f8310607713ce",
+   "hanzi": "姐姐",
+   "english": "older sister",
+   "fullGloss": "older sister; CL:ge4",
+   "hskBand": 1,
+   "audio": "jie3jie5",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie3jue2",
+   "entryId": "ude:d7d89a5afdf7e17e",
+   "hanzi": "解决",
+   "english": "to solve",
+   "fullGloss": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
+   "hskBand": 3,
+   "audio": "jie3jue2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie3mei4",
+   "entryId": "ude:e17f072fd210e404",
+   "hanzi": "姐妹",
+   "english": "sisters",
+   "fullGloss": "sisters; siblings; sister (school, city etc)",
+   "hskBand": 3,
+   "audio": "jie3mei4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jie4shao4",
+   "entryId": "ude:e0b86d2b1d7c77f2",
+   "hanzi": "介绍",
+   "english": "to introduce",
+   "fullGloss": "to introduce (sb to sb); to give a presentation; to present (sb for a job etc); introduction",
+   "hskBand": 2,
+   "audio": "jie4shao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jin1nian2",
+   "entryId": "ude:e3ff52df96663c82",
+   "hanzi": "今年",
+   "english": "this year",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "jin1nian2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jin1tian1",
+   "entryId": "ude:8222dbe46ae5b186",
+   "hanzi": "今天",
+   "english": "today",
+   "fullGloss": "today; the present time; now",
+   "hskBand": 1,
+   "audio": "jin1tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "jin4lai2",
+   "entryId": "ude:93f06e0d003fbb85",
+   "hanzi": "近来",
+   "english": "to come in",
+   "fullGloss": "to come in; recently; lately",
+   "hskBand": 2,
+   "audio": "jin4lai2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jin4qu4",
+   "entryId": "ude:9d786cb0f67ba4a6",
+   "hanzi": "进去",
+   "english": "to go in",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "jin4qu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jing1chang2",
+   "entryId": "ude:1c7ba7c1be0dda82",
+   "hanzi": "经常",
+   "english": "frequently",
+   "fullGloss": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
+   "hskBand": 2,
+   "audio": "jing1chang2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jing1guo4",
+   "entryId": "ude:aa613616bb98887b",
+   "hanzi": "经过",
+   "english": "to pass",
+   "fullGloss": "to pass; to go through; process; course; CL:ge4",
+   "hskBand": 3,
+   "audio": "jing1guo4",
+   "picture": ""
+  },
+  {
+   "readingKey": "jing1li3",
+   "entryId": "ude:70ba17d8b86912f8",
+   "hanzi": "经理",
+   "english": "manager",
+   "fullGloss": "manager; director; CL:ge4,wei4,ming2",
+   "hskBand": 3,
+   "audio": "jing1li3",
+   "picture": ""
+  },
+  {
+   "readingKey": "jiu3dian4",
+   "entryId": "ude:e86894a6b9ed3f9b",
+   "hanzi": "酒店",
+   "english": "wine shop",
+   "fullGloss": "wine shop; pub (public house); hotel; restaurant; (Tw) hostess club",
+   "hskBand": 2,
+   "audio": "jiu3dian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ju4zi5",
+   "entryId": "ude:cee83c0319636a4a",
+   "hanzi": "句子",
+   "english": "sentence",
+   "fullGloss": "sentence; CL:ge4; a saw; CL:ba3",
+   "hskBand": 3,
+   "audio": "ju4zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "jue2de5",
+   "entryId": "ude:3330234f7e6eeb94",
+   "hanzi": "觉得",
+   "english": "to think that...",
+   "fullGloss": "to think that...; to feel that...; to feel (uncomfortable etc)",
+   "hskBand": 1,
+   "audio": "jue2de5",
+   "picture": ""
+  },
+  {
+   "readingKey": "jue2ding4",
+   "entryId": "ude:a2e22fa8b00f2f38",
+   "hanzi": "决定",
+   "english": "to decide",
+   "fullGloss": "to decide; to determine; to make up one's mind; decision (CL:ge4,xiang4)",
+   "hskBand": 3,
+   "audio": "jue2ding4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ka1fei1",
+   "entryId": "ude:a9558f505f6e17e5",
+   "hanzi": "咖啡",
+   "english": "coffee",
+   "fullGloss": "(loanword) coffee; CL:bei1",
+   "hskBand": 2,
+   "audio": "ka1fei1",
+   "picture": ""
+  },
+  {
+   "readingKey": "kai1hua1",
+   "entryId": "ude:1e23055193c760d4",
+   "hanzi": "开花",
+   "english": "to bloom",
+   "fullGloss": "to bloom; to blossom; to flower; (fig.) to burst; to split open; (fig.) to burst with joy; (fig.) to spring up everywhere; to flourish",
+   "hskBand": 3,
+   "audio": "kai1hua1",
+   "picture": ""
+  },
+  {
+   "readingKey": "kai1shi3",
+   "entryId": "ude:b6dac5a9f652132c",
+   "hanzi": "开始",
+   "english": "to begin",
+   "fullGloss": "to begin; to start; beginning; start",
+   "hskBand": 2,
+   "audio": "kai1shi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "kai1xin1",
+   "entryId": "ude:d517bbda0b149c2f",
+   "hanzi": "开心",
+   "english": "to feel happy",
+   "fullGloss": "to feel happy; to rejoice; to have a great time; to make fun of sb",
+   "hskBand": 3,
+   "audio": "kai1xin1",
+   "picture": ""
+  },
+  {
+   "readingKey": "kai1xue2",
+   "entryId": "ude:236139fc0df612ab",
+   "hanzi": "开学",
+   "english": "to start school",
+   "fullGloss": "(of a student) to start school; (of a semester) to begin; (old) to found a school; the start of a new term",
+   "hskBand": 2,
+   "audio": "kai1xue2",
+   "picture": ""
+  },
+  {
+   "readingKey": "kan4jian4",
+   "entryId": "ude:fb5a752f2a95a2b7",
+   "hanzi": "看见",
+   "english": "to see",
+   "fullGloss": "to see; to catch sight of",
+   "hskBand": 1,
+   "audio": "kan4jian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "kan4lai5",
+   "entryId": "ude:5d71e66d23f45a3a",
+   "hanzi": "看来",
+   "english": "apparently",
+   "fullGloss": "apparently; it seems that",
+   "hskBand": 3,
+   "audio": "kan4lai5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ke3ai4",
+   "entryId": "ude:32395081038e59b9",
+   "hanzi": "可爱",
+   "english": "adorable",
+   "fullGloss": "adorable; cute; lovely",
+   "hskBand": 3,
+   "audio": "ke3ai4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ke3neng2",
+   "entryId": "ude:42ee0b6677cda2c0",
+   "hanzi": "可能",
+   "english": "might",
+   "fullGloss": "might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:ge4",
+   "hskBand": 2,
+   "audio": "ke3neng2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ke3shi4",
+   "entryId": "ude:c5b558e99e564ff4",
+   "hanzi": "可是",
+   "english": "but",
+   "fullGloss": "but; however; (used for emphasis) indeed; reliable",
+   "hskBand": 3,
+   "audio": "ke3shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ke3yi3",
+   "entryId": "ude:2aa4d54a78c9be82",
+   "hanzi": "可以",
+   "english": "can",
+   "fullGloss": "can; may; possible; able to; not bad; pretty good",
+   "hskBand": 1,
+   "audio": "ke3yi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ke4ben3",
+   "entryId": "ude:9bc0fb479e6614d8",
+   "hanzi": "课本",
+   "english": "textbook",
+   "fullGloss": "textbook; CL:ben3; block printed edition",
+   "hskBand": 3,
+   "audio": "ke4ben3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ke4ren2",
+   "entryId": "ude:d6f4142ebc1b8804",
+   "hanzi": "客人",
+   "english": "visitor",
+   "fullGloss": "visitor; guest; customer; client; CL:wei4",
+   "hskBand": 3,
+   "audio": "ke4ren2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ke4wen2",
+   "entryId": "ude:ddb7a45247f02619",
+   "hanzi": "课文",
+   "english": "text",
+   "fullGloss": "text; CL:pian1; Kevin (name)",
+   "hskBand": 3,
+   "audio": "ke4wen2",
+   "picture": ""
+  },
+  {
+   "readingKey": "kong1tiao2",
+   "entryId": "ude:016c11a4b7d19c37",
+   "hanzi": "空调",
+   "english": "air conditioning",
+   "fullGloss": "air conditioning; air conditioner (including units that have a heating mode); CL:tai2",
+   "hskBand": 3,
+   "audio": "kong1tiao2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ku4zi5",
+   "entryId": "ude:5d14f73a50bb31b5",
+   "hanzi": "裤子",
+   "english": "trousers",
+   "fullGloss": "trousers; pants; CL:tiao2",
+   "hskBand": 2,
+   "audio": "ku4zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "kuai4le4",
+   "entryId": "ude:d930992f297ed680",
+   "hanzi": "快乐",
+   "english": "happy",
+   "fullGloss": "happy; joyful",
+   "hskBand": 2,
+   "audio": "kuai4le4",
+   "picture": ""
+  },
+  {
+   "readingKey": "kuai4zi5",
+   "entryId": "ude:b4534a34cc856737",
+   "hanzi": "筷子",
+   "english": "chopsticks",
+   "fullGloss": "chopsticks; CL:dui4,gen1,ba3,shuang1",
+   "hskBand": 3,
+   "audio": "kuai4zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "kuang4quan2shui3",
+   "entryId": "ude:907c04ff2a1612fa",
+   "hanzi": "矿泉水",
+   "english": "mineral water",
+   "fullGloss": "mineral water; CL:ping2,bei1",
+   "hskBand": 3,
+   "audio": "kuang4quan2shui3",
+   "picture": ""
+  },
+  {
+   "readingKey": "lai2zi4",
+   "entryId": "ude:e4af3b230dabcd7f",
+   "hanzi": "来自",
+   "english": "to come from",
+   "fullGloss": "to come from (a place); From: (in email header)",
+   "hskBand": 3,
+   "audio": "lai2zi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "lan2qiu2",
+   "entryId": "ude:c0b13f7748004bd8",
+   "hanzi": "篮球",
+   "english": "basketball",
+   "fullGloss": "basketball; CL:ge4,zhi1",
+   "hskBand": 2,
+   "audio": "lan2qiu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "lao3shi1",
+   "entryId": "ude:5a54f2c87bab66d6",
+   "hanzi": "老师",
+   "english": "teacher",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "lao3shi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "li2kai1",
+   "entryId": "ude:5ca8bd9bf8a4ef27",
+   "hanzi": "离开",
+   "english": "to depart",
+   "fullGloss": "to depart; to leave",
+   "hskBand": 3,
+   "audio": "li2kai1",
+   "picture": ""
+  },
+  {
+   "readingKey": "li3wu4",
+   "entryId": "ude:2de29b9efe522782",
+   "hanzi": "礼物",
+   "english": "gift",
+   "fullGloss": "gift; present; CL:jian4,fen4",
+   "hskBand": 3,
+   "audio": "li3wu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "li4shi3",
+   "entryId": "ude:5002d61e0d9efd7b",
+   "hanzi": "历史",
+   "english": "history",
+   "fullGloss": "history; CL:men2,duan4",
+   "hskBand": 3,
+   "audio": "li4shi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "lian4xi2",
+   "entryId": "ude:1ebca6d16450929c",
+   "hanzi": "练习",
+   "english": "to practice",
+   "fullGloss": "to practice; exercise; drill; practice; CL:ge4",
+   "hskBand": 3,
+   "audio": "lian4xi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "liang2kuai5",
+   "entryId": "ude:29c986b7aa488cb1",
+   "hanzi": "凉快",
+   "english": "pleasantly cool",
+   "fullGloss": "pleasantly cool (weather etc); to cool oneself; to cool off; (Tw) (slang) (of clothing) scanty; revealing; (coll.) to stay out of it; to butt out",
+   "hskBand": 3,
+   "audio": "liang2kuai5",
+   "picture": ""
+  },
+  {
+   "readingKey": "liao3jie3",
+   "entryId": "ude:79b297294e742b60",
+   "hanzi": "了解",
+   "english": "to understand",
+   "fullGloss": "to understand; to know about; to learn about; to find out; variant of liao3 jie3",
+   "hskBand": 3,
+   "audio": "liao3jie3",
+   "picture": ""
+  },
+  {
+   "readingKey": "lin2ju1",
+   "entryId": "ude:b68a77ee42b08b80",
+   "hanzi": "邻居",
+   "english": "neighbor",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "lin2ju1",
+   "picture": ""
+  },
+  {
+   "readingKey": "liu2xue2",
+   "entryId": "ude:f08a76d4d927fee7",
+   "hanzi": "留学",
+   "english": "to study abroad",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "liu2xue2",
+   "picture": ""
+  },
+  {
+   "readingKey": "liu2xue2sheng1",
+   "entryId": "ude:7cf3ac9604678026",
+   "hanzi": "留学生",
+   "english": "student studying abroad",
+   "fullGloss": "student studying abroad; returned student; foreign student; international student",
+   "hskBand": 3,
+   "audio": "liu2xue2sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "lou2ti1",
+   "entryId": "ude:f8f45b02c1fba6ea",
+   "hanzi": "楼梯",
+   "english": "stair",
+   "fullGloss": "stair; staircase; CL:ge4",
+   "hskBand": 3,
+   "audio": "lou2ti1",
+   "picture": ""
+  },
+  {
+   "readingKey": "lu4bian1",
+   "entryId": "ude:90cd98092d21322a",
+   "hanzi": "路边",
+   "english": "curb",
+   "fullGloss": "curb; roadside; wayside",
+   "hskBand": 3,
+   "audio": "lu4bian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "lu4kou3",
+   "entryId": "ude:1c12d9e02744c895",
+   "hanzi": "路口",
+   "english": "crossing",
+   "fullGloss": "crossing; intersection (of roads); see Lu4 kou3 Qu1",
+   "hskBand": 3,
+   "audio": "lu4kou3",
+   "picture": ""
+  },
+  {
+   "readingKey": "lu4shang5",
+   "entryId": "ude:d01133a2df8da404",
+   "hanzi": "路上",
+   "english": "on the road",
+   "fullGloss": "on the road; on the way; en route",
+   "hskBand": 2,
+   "audio": "lu4shang5",
+   "picture": ""
+  },
+  {
+   "readingKey": "lv3you2",
+   "entryId": "ude:34362e7f0d746ac7",
+   "hanzi": "旅游",
+   "english": "trip",
+   "fullGloss": "trip; journey; tourism; travel; tour; to travel",
+   "hskBand": 2,
+   "audio": "lv3you2",
+   "picture": ""
+  },
+  {
+   "readingKey": "lv4cha2",
+   "entryId": "ude:9caab0b48edf0f88",
+   "hanzi": "绿茶",
+   "english": "green tea",
+   "fullGloss": "green tea; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative; a girl who has these qualities",
+   "hskBand": 2,
+   "audio": "lv4cha2",
+   "picture": ""
+  },
+  {
+   "readingKey": "lv4se4",
+   "entryId": "ude:6084abcefac47c20",
+   "hanzi": "绿色",
+   "english": "green",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "lv4se4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ma1ma5",
+   "entryId": "ude:d3de4e29554ab3a6",
+   "hanzi": "妈妈",
+   "english": "mum",
+   "fullGloss": "mama; mommy; mother; CL:ge4,wei4",
+   "hskBand": 1,
+   "audio": "ma1ma5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ma3lu4",
+   "entryId": "ude:86d9c307cd6f10dd",
+   "hanzi": "马路",
+   "english": "street",
+   "fullGloss": "street; road; CL:tiao2; millipede; red deer; fool; idiot (from Japanese \"baka\")",
+   "hskBand": 3,
+   "audio": "ma3lu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ma3shang4",
+   "entryId": "ude:9e782aecebcbd9f2",
+   "hanzi": "马上",
+   "english": "at once",
+   "fullGloss": "at once; right away; immediately; on horseback (i.e. by military force)",
+   "hskBand": 3,
+   "audio": "ma3shang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "man3yi4",
+   "entryId": "ude:97ff7024d02dd841",
+   "hanzi": "满意",
+   "english": "satisfied",
+   "fullGloss": "satisfied; pleased; to one's satisfaction; to be full to overflowing; to be brimming over with",
+   "hskBand": 3,
+   "audio": "man3yi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "mei2guan1xi5",
+   "entryId": "ude:da65694950ffaa6c",
+   "hanzi": "没关系",
+   "english": "it doesn't matter",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "mei2guan1xi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "mei2shi4",
+   "entryId": "ude:7fb558a84115e006",
+   "hanzi": "没事",
+   "english": "it's not important",
+   "fullGloss": "it's not important; it's nothing; never mind; to have nothing to do; to be free; to be all right (out of danger or trouble); Charles Messier (1730-1817), French astronomer who catalogued nebulas and galaxies",
+   "hskBand": 1,
+   "audio": "mei2shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "mei2yi4si5",
+   "entryId": "ude:5aa5e02a38487aac",
+   "hanzi": "没意思",
+   "english": "boring",
+   "fullGloss": "boring; of no interest",
+   "hskBand": 2,
+   "audio": "mei2yi4si5",
+   "picture": ""
+  },
+  {
+   "readingKey": "mei2you3",
+   "entryId": "ude:5ea7e9d6e4fb7c18",
+   "hanzi": "没有",
+   "english": "haven't",
+   "fullGloss": "haven't; hasn't; doesn't exist; to not have; to not be",
+   "hskBand": 1,
+   "audio": "mei2you3",
+   "picture": ""
+  },
+  {
+   "readingKey": "men2kou3",
+   "entryId": "ude:cd36bde8bd858d22",
+   "hanzi": "门口",
+   "english": "doorway",
+   "fullGloss": "doorway; gate; CL:ge4",
+   "hskBand": 2,
+   "audio": "men2kou3",
+   "picture": ""
+  },
+  {
+   "readingKey": "men2piao4",
+   "entryId": "ude:dcadb137101fda22",
+   "hanzi": "门票",
+   "english": "ticket",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "men2piao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "mi3fan4",
+   "entryId": "ude:d6869e21d244381d",
+   "hanzi": "米饭",
+   "english": "rice",
+   "fullGloss": "(cooked) rice",
+   "hskBand": 1,
+   "audio": "mi3fan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "mian4bao1",
+   "entryId": "ude:2cdc0f31473bf4a1",
+   "hanzi": "面包",
+   "english": "bread",
+   "fullGloss": "bread; CL:pian4,kuai4",
+   "hskBand": 1,
+   "audio": "mian4bao1",
+   "picture": ""
+  },
+  {
+   "readingKey": "mian4qian2",
+   "entryId": "ude:fb5d248151e9a331",
+   "hanzi": "面前",
+   "english": "in front of",
+   "fullGloss": "in front of; facing; (in the) presence (of)",
+   "hskBand": 3,
+   "audio": "mian4qian2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ming2bai5",
+   "entryId": "ude:ddcec2fd37335466",
+   "hanzi": "明白",
+   "english": "clear",
+   "fullGloss": "clear; obvious; unequivocal; sensible; reasonable; to understand; to realize",
+   "hskBand": 3,
+   "audio": "ming2bai5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ming2dan1",
+   "entryId": "ude:3d505f2f8c1d91ea",
+   "hanzi": "名单",
+   "english": "list of names",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "ming2dan1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ming2nian2",
+   "entryId": "ude:753bff018178fbe9",
+   "hanzi": "明年",
+   "english": "next year",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "ming2nian2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ming2ren2",
+   "entryId": "ude:6fcdc5f20de3c595",
+   "hanzi": "名人",
+   "english": "personage",
+   "fullGloss": "personage; celebrity; Akihito, personal name of the Heisei Ping2 cheng2 emperor of Japan (1933-), reigned 1989-2019",
+   "hskBand": 3,
+   "audio": "ming2ren2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ming2tian1",
+   "entryId": "ude:68f6f0e623f99249",
+   "hanzi": "明天",
+   "english": "tomorrow",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "ming2tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ming2zi5",
+   "entryId": "ude:9603167fc6bdaf54",
+   "hanzi": "名字",
+   "english": "name",
+   "fullGloss": "name (of a person or thing); see song1 ming2",
+   "hskBand": 1,
+   "audio": "ming2zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "na3ge5",
+   "entryId": "ude:ed980ab6226dac8e",
+   "hanzi": "哪个",
+   "english": "which",
+   "fullGloss": "which; who",
+   "hskBand": 1,
+   "audio": "na3ge5",
+   "picture": ""
+  },
+  {
+   "readingKey": "na3li3",
+   "entryId": "ude:227d3fade2cb538e",
+   "hanzi": "哪里",
+   "english": "where?",
+   "fullGloss": "where?; somewhere; anywhere; wherever; nowhere (negative answer to question); humble expression denying compliment; also written",
+   "hskBand": 1,
+   "audio": "na3li3",
+   "picture": ""
+  },
+  {
+   "readingKey": "na3xie1",
+   "entryId": "ude:bec4e8f3fbd227d9",
+   "hanzi": "哪些",
+   "english": "which ones?",
+   "fullGloss": "which ones?; who?; what?",
+   "hskBand": 1,
+   "audio": "na3xie1",
+   "picture": ""
+  },
+  {
+   "readingKey": "na4bian5",
+   "entryId": "ude:2e249a6386bc6e17",
+   "hanzi": "那边",
+   "english": "over there",
+   "fullGloss": "over there; yonder",
+   "hskBand": 1,
+   "audio": "na4bian5",
+   "picture": ""
+  },
+  {
+   "readingKey": "na4ge5",
+   "entryId": "ude:396e615430ded8f7",
+   "hanzi": "那个",
+   "english": "that one",
+   "fullGloss": "that one; that thing; that (as opposed to this); (used before a verb or adjective for emphasis); (used to humorously or indirectly refer to sth embarrassing, funny etc, or when one can't think of the right word); (used in speech as a filler, similar to \"umm\", \"you know\" etc); (euph.) menstruation; sex; also pr. [nei4 ge5]",
+   "hskBand": 1,
+   "audio": "na4ge5",
+   "picture": ""
+  },
+  {
+   "readingKey": "na4me5",
+   "entryId": "ude:890f4d1ff458774e",
+   "hanzi": "那么",
+   "english": "like that",
+   "fullGloss": "like that; in that way; to that extent; (before a number)... or so; about...; then; in that case; variant of na4 me5",
+   "hskBand": 2,
+   "audio": "na4me5",
+   "picture": ""
+  },
+  {
+   "readingKey": "na4xie1",
+   "entryId": "ude:6f93bbeb3d6e7ceb",
+   "hanzi": "那些",
+   "english": "those",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "na4xie1",
+   "picture": ""
+  },
+  {
+   "readingKey": "na4yang4",
+   "entryId": "ude:06b436885d9ab4a4",
+   "hanzi": "那样",
+   "english": "that kind",
+   "fullGloss": "that kind; that sort",
+   "hskBand": 2,
+   "audio": "na4yang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "nai3cha2",
+   "entryId": "ude:295bcb48497308ba",
+   "hanzi": "奶茶",
+   "english": "milk tea",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "nai3cha2",
+   "picture": ""
+  },
+  {
+   "readingKey": "nai3nai5",
+   "entryId": "ude:1a3c6d13dcd68dc2",
+   "hanzi": "奶奶",
+   "english": "grandma",
+   "fullGloss": "(informal) grandma (paternal grandmother); (respectful) mistress of the house; CL:wei4; (coll.) boobies; breasts",
+   "hskBand": 2,
+   "audio": "nai3nai5",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2fang1",
+   "entryId": "ude:8df2f42558402aaf",
+   "hanzi": "南方",
+   "english": "south",
+   "fullGloss": "south; southern direction; (in China) southern regions, often referring to areas south of the Yangtze River; (of a marriage) the bridegroom's side; the husband's side",
+   "hskBand": 3,
+   "audio": "nan2fang1",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2guo4",
+   "entryId": "ude:49241062dae8bb9b",
+   "hanzi": "难过",
+   "english": "to feel sad",
+   "fullGloss": "to feel sad; to feel unwell; (of life) to be difficult",
+   "hskBand": 3,
+   "audio": "nan2guo4",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2kan4",
+   "entryId": "ude:10a95baf9c851844",
+   "hanzi": "难看",
+   "english": "ugly",
+   "fullGloss": "ugly; unsightly",
+   "hskBand": 3,
+   "audio": "nan2kan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2peng2you5",
+   "entryId": "ude:a1bd258632fd74cf",
+   "hanzi": "男朋友",
+   "english": "boyfriend",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "nan2peng2you5",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2ren2",
+   "entryId": "ude:88af0be8972bf169",
+   "hanzi": "男人",
+   "english": "a man",
+   "fullGloss": "a man; a male; men; CL:ge4",
+   "hskBand": 3,
+   "audio": "nan2ren2",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2sheng1",
+   "entryId": "ude:6495a2e8898a9466",
+   "hanzi": "男生",
+   "english": "schoolboy",
+   "fullGloss": "schoolboy; male student; boy; guy (young adult male)",
+   "hskBand": 3,
+   "audio": "nan2sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2ti2",
+   "entryId": "ude:11fc7115e110e951",
+   "hanzi": "难题",
+   "english": "difficult problem",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "nan2ti2",
+   "picture": ""
+  },
+  {
+   "readingKey": "nan2ting1",
+   "entryId": "ude:67d575850a9f4a33",
+   "hanzi": "难听",
+   "english": "unpleasant to hear",
+   "fullGloss": "unpleasant to hear; coarse; vulgar; offensive; shameful",
+   "hskBand": 3,
+   "audio": "nan2ting1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ni3hao3",
+   "entryId": "ude:c21bd42397538707",
+   "hanzi": "你好",
+   "english": "hello",
+   "fullGloss": "hello; hi",
+   "hskBand": 1,
+   "audio": "ni3hao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ni3men5",
+   "entryId": "ude:895ddb89c8e66ff4",
+   "hanzi": "你们",
+   "english": "you",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "ni3men5",
+   "picture": ""
+  },
+  {
+   "readingKey": "nian2ji2",
+   "entryId": "ude:33b190e1938e076f",
+   "hanzi": "年级",
+   "english": "grade",
+   "fullGloss": "grade; year (in school, college etc); CL:ge4",
+   "hskBand": 3,
+   "audio": "nian2ji2",
+   "picture": ""
+  },
+  {
+   "readingKey": "nian2qing1",
+   "entryId": "ude:5f9393ea5cd5b40f",
+   "hanzi": "年轻",
+   "english": "young",
+   "fullGloss": "young; youthful",
+   "hskBand": 3,
+   "audio": "nian2qing1",
+   "picture": ""
+  },
+  {
+   "readingKey": "niu2nai3",
+   "entryId": "ude:4ca6c7965403a1b2",
+   "hanzi": "牛奶",
+   "english": "milk",
+   "fullGloss": "cow's milk; CL:ping2,bei1",
+   "hskBand": 1,
+   "audio": "niu2nai3",
+   "picture": ""
+  },
+  {
+   "readingKey": "nv3er2",
+   "entryId": "ude:cf3fc40114738364",
+   "hanzi": "女儿",
+   "english": "daughter",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "nv3er2",
+   "picture": ""
+  },
+  {
+   "readingKey": "nv3peng2you5",
+   "entryId": "ude:f71121efe00a4196",
+   "hanzi": "女朋友",
+   "english": "girlfriend",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "nv3peng2you5",
+   "picture": ""
+  },
+  {
+   "readingKey": "nv3ren2",
+   "entryId": "ude:f7912aa58b3b4cd9",
+   "hanzi": "女人",
+   "english": "woman",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "nv3ren2",
+   "picture": ""
+  },
+  {
+   "readingKey": "nv3sheng1",
+   "entryId": "ude:9bd46708b52fc303",
+   "hanzi": "女生",
+   "english": "schoolgirl",
+   "fullGloss": "schoolgirl; female student; girl",
+   "hskBand": 3,
+   "audio": "nv3sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "nv3shi4",
+   "entryId": "ude:245fb3ce20fe0863",
+   "hanzi": "女士",
+   "english": "lady",
+   "fullGloss": "lady; madam; CL:ge4,wei4; Miss; Ms",
+   "hskBand": 1,
+   "audio": "nv3shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "pan2zi5",
+   "entryId": "ude:8e4d47f0c329d227",
+   "hanzi": "盘子",
+   "english": "tray",
+   "fullGloss": "tray; plate; dish; CL:ge4",
+   "hskBand": 3,
+   "audio": "pan2zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "pang2bian1",
+   "entryId": "ude:f9559475ef2eddc8",
+   "hanzi": "旁边",
+   "english": "side",
+   "fullGloss": "side; adjacent place",
+   "hskBand": 2,
+   "audio": "pang2bian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "pao3bu4",
+   "entryId": "ude:2028ecc2ea37edc8",
+   "hanzi": "跑步",
+   "english": "to run",
+   "fullGloss": "to run; to jog; (military) to march at the double",
+   "hskBand": 2,
+   "audio": "pao3bu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "peng2you5",
+   "entryId": "ude:90468a53472f7ded",
+   "hanzi": "朋友",
+   "english": "friend",
+   "fullGloss": "friend; CL:ge4,wei4",
+   "hskBand": 1,
+   "audio": "peng2you5",
+   "picture": ""
+  },
+  {
+   "readingKey": "pi2jiu3",
+   "entryId": "ude:913b8c660fa79d2e",
+   "hanzi": "啤酒",
+   "english": "beer",
+   "fullGloss": "beer (loanword); CL:bei1,ping2,guan4,tong3,gang1",
+   "hskBand": 3,
+   "audio": "pi2jiu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "pian2yi5",
+   "entryId": "ude:b1c806392e196578",
+   "hanzi": "便宜",
+   "english": "cheap",
+   "fullGloss": "cheap; inexpensive; a petty advantage; to let sb off lightly",
+   "hskBand": 1,
+   "audio": "pian2yi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "piao4liang5",
+   "entryId": "ude:dc9163b6cd50d6bf",
+   "hanzi": "漂亮",
+   "english": "pretty",
+   "fullGloss": "pretty; beautiful",
+   "hskBand": 1,
+   "audio": "piao4liang5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ping2guo3",
+   "entryId": "ude:c4ccc939a4a68abf",
+   "hanzi": "苹果",
+   "english": "apple",
+   "fullGloss": "Apple (American tech company); apple; CL:ge4,ke1; see Ping2 guo3 Shi4",
+   "hskBand": 1,
+   "audio": "ping2guo3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ping2shi2",
+   "entryId": "ude:03dd3c83222bd434",
+   "hanzi": "平时",
+   "english": "ordinarily",
+   "fullGloss": "ordinarily; in normal times; in peacetime; simple and unadorned; plain; (of land) level; even",
+   "hskBand": 3,
+   "audio": "ping2shi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ping2zi5",
+   "entryId": "ude:745699f26f96f710",
+   "hanzi": "瓶子",
+   "english": "bottle",
+   "fullGloss": "bottle; CL:ge4",
+   "hskBand": 3,
+   "audio": "ping2zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "qi1zi5",
+   "entryId": "ude:ad0593ade78e3057",
+   "hanzi": "妻子",
+   "english": "wife",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "qi1zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "qi2guai4",
+   "entryId": "ude:fd6bcfee96ab6b4d",
+   "hanzi": "奇怪",
+   "english": "strange",
+   "fullGloss": "strange; odd; to marvel; to be baffled",
+   "hskBand": 3,
+   "audio": "qi2guai4",
+   "picture": ""
+  },
+  {
+   "readingKey": "qi2shi2",
+   "entryId": "ude:8c1b3cb23f825263",
+   "hanzi": "其实",
+   "english": "actually",
+   "fullGloss": "actually; in fact; really",
+   "hskBand": 3,
+   "audio": "qi2shi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "qi2ta1",
+   "entryId": "ude:b3751631a29cc89c",
+   "hanzi": "其他",
+   "english": "other",
+   "fullGloss": "other; (sth or sb) else; the rest; (adjective) other",
+   "hskBand": 3,
+   "audio": "qi2ta1",
+   "picture": ""
+  },
+  {
+   "readingKey": "qi3fei1",
+   "entryId": "ude:caeb6464dd734cc8",
+   "hanzi": "起飞",
+   "english": "to take off",
+   "fullGloss": "(of an aircraft or rocket) to take off; to lift off; (fig.) (of an enterprise etc) to start to develop rapidly; wouldn't it be...?",
+   "hskBand": 3,
+   "audio": "qi3fei1",
+   "picture": ""
+  },
+  {
+   "readingKey": "qi4che1",
+   "entryId": "ude:bf119aa5a6780c1d",
+   "hanzi": "汽车",
+   "english": "car",
+   "fullGloss": "car; automobile; bus; CL:liang4",
+   "hskBand": 3,
+   "audio": "qi4che1",
+   "picture": ""
+  },
+  {
+   "readingKey": "qian1bi3",
+   "entryId": "ude:17b27a6e589f459c",
+   "hanzi": "铅笔",
+   "english": "pencil",
+   "fullGloss": "(lead) pencil; CL:zhi1,zhi1,gan3",
+   "hskBand": 3,
+   "audio": "qian1bi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "qian2mian4",
+   "entryId": "ude:1dd93c950e7c9e87",
+   "hanzi": "前面",
+   "english": "ahead",
+   "fullGloss": "ahead; in front; preceding; above; also pr. [qian2 mian5]",
+   "hskBand": 2,
+   "audio": "qian2mian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "qing1chu5",
+   "entryId": "ude:8d9d0e1e7361d76f",
+   "hanzi": "清楚",
+   "english": "clear",
+   "fullGloss": "clear; distinct; to understand thoroughly; to be clear about",
+   "hskBand": 3,
+   "audio": "qing1chu5",
+   "picture": ""
+  },
+  {
+   "readingKey": "qing3wen4",
+   "entryId": "ude:2eb80fb8734ff2a1",
+   "hanzi": "请问",
+   "english": "Excuse me",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "qing3wen4",
+   "picture": ""
+  },
+  {
+   "readingKey": "qiu1tian1",
+   "entryId": "ude:37b0123ff784a996",
+   "hanzi": "秋天",
+   "english": "autumn",
+   "fullGloss": "autumn; CL:ge4",
+   "hskBand": 3,
+   "audio": "qiu1tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "qiu2chang3",
+   "entryId": "ude:c3ffa294ea1567a0",
+   "hanzi": "球场",
+   "english": "stadium",
+   "fullGloss": "stadium; sports ground; court; pitch; field; golf course; CL:ge4,chu4",
+   "hskBand": 3,
+   "audio": "qiu2chang3",
+   "picture": ""
+  },
+  {
+   "readingKey": "qu4nian2",
+   "entryId": "ude:0663255cac73c1b5",
+   "hanzi": "去年",
+   "english": "last year",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "qu4nian2",
+   "picture": ""
+  },
+  {
+   "readingKey": "qun2zi5",
+   "entryId": "ude:042e10a8aa366959",
+   "hanzi": "裙子",
+   "english": "skirt",
+   "fullGloss": "skirt; CL:tiao2",
+   "hskBand": 3,
+   "audio": "qun2zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ran2hou4",
+   "entryId": "ude:f94774f265c9b681",
+   "hanzi": "然后",
+   "english": "then",
+   "fullGloss": "then; after that; afterwards",
+   "hskBand": 3,
+   "audio": "ran2hou4",
+   "picture": ""
+  },
+  {
+   "readingKey": "re4qing2",
+   "entryId": "ude:75ad0dfde32d043c",
+   "hanzi": "热情",
+   "english": "cordial",
+   "fullGloss": "cordial; enthusiastic; passion; passionate; passionately",
+   "hskBand": 3,
+   "audio": "re4qing2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ren4de5",
+   "entryId": "ude:8353cf00936f85b7",
+   "hanzi": "认得",
+   "english": "to recognize",
+   "fullGloss": "to recognize; to remember sth (or sb) on seeing it; to know",
+   "hskBand": 3,
+   "audio": "ren4de5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ren4shi5",
+   "entryId": "ude:f28bc8ef53d16558",
+   "hanzi": "认识",
+   "english": "to know",
+   "fullGloss": "to know; to recognize; to be familiar with; to get acquainted with sb; knowledge; understanding; awareness; cognition",
+   "hskBand": 1,
+   "audio": "ren4shi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "ren4wei2",
+   "entryId": "ude:3f85634500d3839f",
+   "hanzi": "认为",
+   "english": "to believe",
+   "fullGloss": "to believe; to think; to consider; to feel",
+   "hskBand": 3,
+   "audio": "ren4wei2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ren4zhen1",
+   "entryId": "ude:4b0584c8a5f06f1d",
+   "hanzi": "认真",
+   "english": "conscientious",
+   "fullGloss": "conscientious; earnest; serious; to take seriously; to take to heart; to thread a needle",
+   "hskBand": 3,
+   "audio": "ren4zhen1",
+   "picture": ""
+  },
+  {
+   "readingKey": "rong2yi4",
+   "entryId": "ude:901b07240c789b79",
+   "hanzi": "容易",
+   "english": "easy",
+   "fullGloss": "easy; straightforward; likely; liable to; apt to",
+   "hskBand": 3,
+   "audio": "rong2yi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ru2guo3",
+   "entryId": "ude:d6639954fa7beec5",
+   "hanzi": "如果",
+   "english": "if",
+   "fullGloss": "if; in case; in the event that",
+   "hskBand": 3,
+   "audio": "ru2guo3",
+   "picture": ""
+  },
+  {
+   "readingKey": "sha1fa1",
+   "entryId": "ude:b62c04cf06fdc626",
+   "hanzi": "沙发",
+   "english": "sofa",
+   "fullGloss": "(loanword) sofa (CL:tiao2,zhang1); (Internet slang) first reply to a forum post",
+   "hskBand": 3,
+   "audio": "sha1fa1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang1chang3",
+   "entryId": "ude:079355c34757876e",
+   "hanzi": "商场",
+   "english": "shopping mall",
+   "fullGloss": "shopping mall; shopping center; department store; emporium; CL:jia1; the business world",
+   "hskBand": 2,
+   "audio": "shang1chang3",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang1dian4",
+   "entryId": "ude:f8373b609cb24037",
+   "hanzi": "商店",
+   "english": "store",
+   "fullGloss": "store; shop; CL:jia1",
+   "hskBand": 1,
+   "audio": "shang1dian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang4lai2",
+   "entryId": "ude:48d7c8c4f214cd4f",
+   "hanzi": "上来",
+   "english": "to come up",
+   "fullGloss": "to come up; to approach; (verb complement indicating success)",
+   "hskBand": 2,
+   "audio": "shang4lai2",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang4mian4",
+   "entryId": "ude:6c130307f93b0682",
+   "hanzi": "上面",
+   "english": "on top of",
+   "fullGloss": "on top of; above-mentioned; also pr. [shang4 mian5]",
+   "hskBand": 2,
+   "audio": "shang4mian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang4qu4",
+   "entryId": "ude:e10a915cf09f258f",
+   "hanzi": "上去",
+   "english": "to go up",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "shang4qu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang4wang3",
+   "entryId": "ude:6a598fc1261eed75",
+   "hanzi": "上网",
+   "english": "to go online",
+   "fullGloss": "to go online; to connect to the Internet; (of a document etc) to be uploaded to the Internet; (tennis, volleyball etc) to move in close to the net",
+   "hskBand": 2,
+   "audio": "shang4wang3",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang4wu3",
+   "entryId": "ude:8fe7dc8b4bef37ab",
+   "hanzi": "上午",
+   "english": "morning",
+   "fullGloss": "morning; to promote a martial spirit; to revere military skills; warlike",
+   "hskBand": 1,
+   "audio": "shang4wu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "shang4yi1",
+   "entryId": "ude:98146a44310420ec",
+   "hanzi": "上衣",
+   "english": "jacket",
+   "fullGloss": "jacket; upper outer garment; CL:jian4",
+   "hskBand": 3,
+   "audio": "shang4yi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shen1bian1",
+   "entryId": "ude:c42cc873d1acc29f",
+   "hanzi": "身边",
+   "english": "at one's side",
+   "fullGloss": "at one's side; on hand",
+   "hskBand": 3,
+   "audio": "shen1bian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shen1gao1",
+   "entryId": "ude:2de5aa9981a391d9",
+   "hanzi": "身高",
+   "english": "height",
+   "fullGloss": "(a person's) height",
+   "hskBand": 3,
+   "audio": "shen1gao1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shen1ti3",
+   "entryId": "ude:0cd95044e431e55f",
+   "hanzi": "身体",
+   "english": "the body",
+   "fullGloss": "the body; one's health",
+   "hskBand": 2,
+   "audio": "shen1ti3",
+   "picture": ""
+  },
+  {
+   "readingKey": "shen2me5",
+   "entryId": "ude:563015bb728f1870",
+   "hanzi": "什么",
+   "english": "what?",
+   "fullGloss": "what?; something; anything",
+   "hskBand": 1,
+   "audio": "shen2me5",
+   "picture": ""
+  },
+  {
+   "readingKey": "sheng1bing4",
+   "entryId": "ude:473e5abb74a953c2",
+   "hanzi": "生病",
+   "english": "to fall ill",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "sheng1bing4",
+   "picture": ""
+  },
+  {
+   "readingKey": "sheng1huo2",
+   "entryId": "ude:66f60da9a103c302",
+   "hanzi": "生活",
+   "english": "to live",
+   "fullGloss": "to live; life; livelihood",
+   "hskBand": 3,
+   "audio": "sheng1huo2",
+   "picture": ""
+  },
+  {
+   "readingKey": "sheng1qi4",
+   "entryId": "ude:f4c95a1c8f1f8090",
+   "hanzi": "生气",
+   "english": "to get angry",
+   "fullGloss": "to get angry; to be furious; vitality; liveliness; voice; tone; information",
+   "hskBand": 3,
+   "audio": "sheng1qi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "sheng1ri4",
+   "entryId": "ude:bf1db17c58f966d2",
+   "hanzi": "生日",
+   "english": "birthday",
+   "fullGloss": "birthday; CL:ge4",
+   "hskBand": 2,
+   "audio": "sheng1ri4",
+   "picture": ""
+  },
+  {
+   "readingKey": "sheng1yin1",
+   "entryId": "ude:e49ef3533ba058a0",
+   "hanzi": "声音",
+   "english": "sound",
+   "fullGloss": "sound; voice",
+   "hskBand": 3,
+   "audio": "sheng1yin1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shi2hou5",
+   "entryId": "ude:443e03acee91cbdd",
+   "hanzi": "时候",
+   "english": "time",
+   "fullGloss": "time; length of time; moment; period",
+   "hskBand": 1,
+   "audio": "shi2hou5",
+   "picture": ""
+  },
+  {
+   "readingKey": "shi2jian1",
+   "entryId": "ude:58814c2d97fbb3bc",
+   "hanzi": "时间",
+   "english": "time",
+   "fullGloss": "(concept of) time; (duration of) time; (point in) time",
+   "hskBand": 1,
+   "audio": "shi2jian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shi4jie4",
+   "entryId": "ude:23a7dc50d26af60b",
+   "hanzi": "世界",
+   "english": "world",
+   "fullGloss": "world; event horizon; field of vision",
+   "hskBand": 3,
+   "audio": "shi4jie4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shi4qing5",
+   "entryId": "ude:1143ffa4fab29f02",
+   "hanzi": "事情",
+   "english": "affair",
+   "fullGloss": "affair; matter; thing; business; CL:jian4,zhuang1",
+   "hskBand": 2,
+   "audio": "shi4qing5",
+   "picture": ""
+  },
+  {
+   "readingKey": "shou1dao4",
+   "entryId": "ude:f9adb02db47a1b25",
+   "hanzi": "收到",
+   "english": "to receive",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "shou1dao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shou3biao3",
+   "entryId": "ude:7a9a911ed57c823f",
+   "hanzi": "手表",
+   "english": "wristwatch",
+   "fullGloss": "wristwatch; CL:kuai4,zhi1,ge4",
+   "hskBand": 2,
+   "audio": "shou3biao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "shou3ji1",
+   "entryId": "ude:f9b813b3a0fef1b2",
+   "hanzi": "手机",
+   "english": "mobile phone",
+   "fullGloss": "cell phone; mobile phone; CL:bu4,tai2",
+   "hskBand": 1,
+   "audio": "shou3ji1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shou4dao4",
+   "entryId": "ude:b3a35ba0ff515a37",
+   "hanzi": "受到",
+   "english": "to receive",
+   "fullGloss": "to receive (praise, an education, punishment etc); to be...ed (praised, educated, punished etc)",
+   "hskBand": 3,
+   "audio": "shou4dao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shu1bao1",
+   "entryId": "ude:e5103e78fdbfc002",
+   "hanzi": "书包",
+   "english": "schoolbag",
+   "fullGloss": "schoolbag; satchel; bookbag; CL:ge4,zhi1",
+   "hskBand": 2,
+   "audio": "shu1bao1",
+   "picture": ""
+  },
+  {
+   "readingKey": "shu1dian4",
+   "entryId": "ude:b664479ffe81699c",
+   "hanzi": "书店",
+   "english": "bookstore",
+   "fullGloss": "bookstore; CL:jia1; electricity transmission; to transmit electricity",
+   "hskBand": 1,
+   "audio": "shu1dian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shu1fu5",
+   "entryId": "ude:31851835752b2cbb",
+   "hanzi": "舒服",
+   "english": "comfortable",
+   "fullGloss": "comfortable; feeling well",
+   "hskBand": 2,
+   "audio": "shu1fu5",
+   "picture": ""
+  },
+  {
+   "readingKey": "shu1shu5",
+   "entryId": "ude:016be819b64122b9",
+   "hanzi": "叔叔",
+   "english": "father's younger brother",
+   "fullGloss": "father's younger brother; paternal uncle; form of address used by children for a male one generation older",
+   "hskBand": 3,
+   "audio": "shu1shu5",
+   "picture": ""
+  },
+  {
+   "readingKey": "shu4xue2",
+   "entryId": "ude:0dad803e18bf51f0",
+   "hanzi": "数学",
+   "english": "mathematics",
+   "fullGloss": "mathematics; acupuncture point",
+   "hskBand": 3,
+   "audio": "shu4xue2",
+   "picture": ""
+  },
+  {
+   "readingKey": "shui3guo3",
+   "entryId": "ude:169aad2ebac9c369",
+   "hanzi": "水果",
+   "english": "fruit",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "shui3guo3",
+   "picture": ""
+  },
+  {
+   "readingKey": "shui3ping2",
+   "entryId": "ude:e688ec6eeb9e320a",
+   "hanzi": "水平",
+   "english": "horizontal",
+   "fullGloss": "horizontal; level; a standard; a level (of ability, development etc)",
+   "hskBand": 3,
+   "audio": "shui3ping2",
+   "picture": ""
+  },
+  {
+   "readingKey": "shui4jiao4",
+   "entryId": "ude:0491dc5cd7fbf0ef",
+   "hanzi": "睡觉",
+   "english": "to sleep",
+   "fullGloss": "to go to bed; to sleep",
+   "hskBand": 1,
+   "audio": "shui4jiao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "shuo1hua4",
+   "entryId": "ude:2a162d89f70d73fc",
+   "hanzi": "说话",
+   "english": "to speak",
+   "fullGloss": "to speak; to say; to talk; to gossip; to tell stories; talk; word",
+   "hskBand": 1,
+   "audio": "shuo1hua4",
+   "picture": ""
+  },
+  {
+   "readingKey": "si1ji1",
+   "entryId": "ude:e1b1cf5b52aa6950",
+   "hanzi": "司机",
+   "english": "driver",
+   "fullGloss": "chauffeur; driver",
+   "hskBand": 3,
+   "audio": "si1ji1",
+   "picture": ""
+  },
+  {
+   "readingKey": "si4ji4",
+   "entryId": "ude:bcc41591a7ffbc33",
+   "hanzi": "四季",
+   "english": "four seasons",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "si4ji4",
+   "picture": ""
+  },
+  {
+   "readingKey": "sui1ran2",
+   "entryId": "ude:ac4fa5c3edefad15",
+   "hanzi": "虽然",
+   "english": "although",
+   "fullGloss": "although; even though (often used correlatively with ke3 shi4 or dan4 shi4 etc)",
+   "hskBand": 2,
+   "audio": "sui1ran2",
+   "picture": ""
+  },
+  {
+   "readingKey": "suo3yi3",
+   "entryId": "ude:82923bef64b8c58e",
+   "hanzi": "所以",
+   "english": "therefore",
+   "fullGloss": "therefore; as a result; so; the reason why",
+   "hskBand": 2,
+   "audio": "suo3yi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ta1men5",
+   "entryId": "ude:d627414cb63f7a86",
+   "hanzi": "他们",
+   "english": "they",
+   "fullGloss": "they; them; they; them (females)",
+   "hskBand": 1,
+   "audio": "ta1men5",
+   "picture": ""
+  },
+  {
+   "readingKey": "tai4yang5",
+   "entryId": "ude:d55824a2efa426e5",
+   "hanzi": "太阳",
+   "english": "sun",
+   "fullGloss": "sun; sunlight; sunshine; temple (on the side of the human head) (abbr. for tai4 yang2 xue2)",
+   "hskBand": 3,
+   "audio": "tai4yang5",
+   "picture": ""
+  },
+  {
+   "readingKey": "te4bie2",
+   "entryId": "ude:8147c84a4ddf5365",
+   "hanzi": "特别",
+   "english": "unusual",
+   "fullGloss": "unusual; special; very; especially; particularly; expressly; for a specific purpose; (often followed by shi4) in particular",
+   "hskBand": 3,
+   "audio": "te4bie2",
+   "picture": ""
+  },
+  {
+   "readingKey": "ti2gao1",
+   "entryId": "ude:1c2a88d42ddde393",
+   "hanzi": "提高",
+   "english": "to raise",
+   "fullGloss": "to raise; to increase; to improve",
+   "hskBand": 3,
+   "audio": "ti2gao1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ti3yu4",
+   "entryId": "ude:25b97c2347dd8c71",
+   "hanzi": "体育",
+   "english": "sports",
+   "fullGloss": "sports; physical education",
+   "hskBand": 3,
+   "audio": "ti3yu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ti3yu4guan3",
+   "entryId": "ude:203ccaa6512fb6b5",
+   "hanzi": "体育馆",
+   "english": "gym",
+   "fullGloss": "gym; gymnasium; stadium; CL:ge4",
+   "hskBand": 3,
+   "audio": "ti3yu4guan3",
+   "picture": ""
+  },
+  {
+   "readingKey": "tian1qi4",
+   "entryId": "ude:06ab2a8997387899",
+   "hanzi": "天气",
+   "english": "weather",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "tian1qi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "tiao4wu3",
+   "entryId": "ude:585aeb6623d45cf7",
+   "hanzi": "跳舞",
+   "english": "to dance",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "tiao4wu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ting1jian4",
+   "entryId": "ude:3fb530c1657cbbc5",
+   "hanzi": "听见",
+   "english": "to hear",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "ting1jian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ting1shuo1",
+   "entryId": "ude:2edbfa6a42e4052b",
+   "hanzi": "听说",
+   "english": "to hear",
+   "fullGloss": "to hear (sth said); one hears (that); hearsay; listening and speaking",
+   "hskBand": 3,
+   "audio": "ting1shuo1",
+   "picture": ""
+  },
+  {
+   "readingKey": "tong2shi4",
+   "entryId": "ude:36437a40b9a3d3ca",
+   "hanzi": "同事",
+   "english": "colleague",
+   "fullGloss": "colleague; co-worker",
+   "hskBand": 3,
+   "audio": "tong2shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "tong2yi4",
+   "entryId": "ude:227f84a858fa77a0",
+   "hanzi": "同意",
+   "english": "to agree",
+   "fullGloss": "to agree; to consent; to approve; synonymous",
+   "hskBand": 3,
+   "audio": "tong2yi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "tou2fa5",
+   "entryId": "ude:2a88b4f3f6e316df",
+   "hanzi": "头发",
+   "english": "hair",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "tou2fa5",
+   "picture": ""
+  },
+  {
+   "readingKey": "tu1ran2",
+   "entryId": "ude:59290f394256b84a",
+   "hanzi": "突然",
+   "english": "sudden",
+   "fullGloss": "sudden; abrupt; unexpected",
+   "hskBand": 3,
+   "audio": "tu1ran2",
+   "picture": ""
+  },
+  {
+   "readingKey": "tu2shu1guan3",
+   "entryId": "ude:6766e849223da637",
+   "hanzi": "图书馆",
+   "english": "library",
+   "fullGloss": "library; CL:jia1,ge4",
+   "hskBand": 3,
+   "audio": "tu2shu1guan3",
+   "picture": ""
+  },
+  {
+   "readingKey": "wai4bian5",
+   "entryId": "ude:eb654d83b3cf554f",
+   "hanzi": "外边",
+   "english": "outside",
+   "fullGloss": "outside; outer surface; abroad; place other than one's home",
+   "hskBand": 1,
+   "audio": "wai4bian5",
+   "picture": ""
+  },
+  {
+   "readingKey": "wai4guo2",
+   "entryId": "ude:d41e9b0f2f1e18bb",
+   "hanzi": "外国",
+   "english": "foreign country",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "wai4guo2",
+   "picture": ""
+  },
+  {
+   "readingKey": "wai4mian4",
+   "entryId": "ude:cce2cc2916ccd0ae",
+   "hanzi": "外面",
+   "english": "outside",
+   "fullGloss": "outside (also pr. [wai4 mian5] for this sense); surface; exterior; external appearance",
+   "hskBand": 2,
+   "audio": "wai4mian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "wai4yu3",
+   "entryId": "ude:3a2452609e335f42",
+   "hanzi": "外语",
+   "english": "foreign language",
+   "fullGloss": "foreign language; CL:men2",
+   "hskBand": 3,
+   "audio": "wai4yu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "wan2cheng2",
+   "entryId": "ude:9452d1c84deaa53d",
+   "hanzi": "完成",
+   "english": "to complete",
+   "fullGloss": "to complete; to accomplish",
+   "hskBand": 3,
+   "audio": "wan2cheng2",
+   "picture": ""
+  },
+  {
+   "readingKey": "wan3dian3",
+   "entryId": "ude:00cb9bc65d3291d3",
+   "hanzi": "晚点",
+   "english": "late",
+   "fullGloss": "(of trains etc) late; delayed; behind schedule; light dinner",
+   "hskBand": 3,
+   "audio": "wan3dian3",
+   "picture": ""
+  },
+  {
+   "readingKey": "wan3fan4",
+   "entryId": "ude:247363bb2c473dd2",
+   "hanzi": "晚饭",
+   "english": "evening meal",
+   "fullGloss": "evening meal; dinner; supper; CL:fen4,dun4,ci4,can1",
+   "hskBand": 1,
+   "audio": "wan3fan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "wan3hui4",
+   "entryId": "ude:ebc2d65f09a95f6d",
+   "hanzi": "晚会",
+   "english": "evening party",
+   "fullGloss": "evening party; CL:ge4",
+   "hskBand": 3,
+   "audio": "wan3hui4",
+   "picture": ""
+  },
+  {
+   "readingKey": "wan3shang5",
+   "entryId": "ude:73a400387251e910",
+   "hanzi": "晚上",
+   "english": "evening",
+   "fullGloss": "evening; night; CL:ge4; in the evening",
+   "hskBand": 1,
+   "audio": "wan3shang5",
+   "picture": ""
+  },
+  {
+   "readingKey": "wang3qiu2",
+   "entryId": "ude:f031eb189f63c985",
+   "hanzi": "网球",
+   "english": "tennis",
+   "fullGloss": "tennis; tennis ball; CL:ge4",
+   "hskBand": 3,
+   "audio": "wang3qiu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "wang3shang4",
+   "entryId": "ude:0d63d7d3ee176927",
+   "hanzi": "网上",
+   "english": "online",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "wang3shang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "wang3zhan4",
+   "entryId": "ude:4805615dc16cb165",
+   "hanzi": "网站",
+   "english": "website",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "wang3zhan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "wang4ji4",
+   "entryId": "ude:453849a8acf88371",
+   "hanzi": "忘记",
+   "english": "to forget",
+   "fullGloss": "to forget; busy season; peak period; see also dan4 ji4",
+   "hskBand": 3,
+   "audio": "wang4ji4",
+   "picture": ""
+  },
+  {
+   "readingKey": "wei4le5",
+   "entryId": "ude:976f7bcdcea66ecc",
+   "hanzi": "为了",
+   "english": "for",
+   "fullGloss": "for; for the purpose of; in order to",
+   "hskBand": 3,
+   "audio": "wei4le5",
+   "picture": ""
+  },
+  {
+   "readingKey": "wei4shen2me5",
+   "entryId": "ude:6ff412932306ac24",
+   "hanzi": "为什么",
+   "english": "why?",
+   "fullGloss": "why?; for what reason?",
+   "hskBand": 2,
+   "audio": "wei4shen2me5",
+   "picture": ""
+  },
+  {
+   "readingKey": "wei4sheng1jian1",
+   "entryId": "ude:68f114f92de617b1",
+   "hanzi": "卫生间",
+   "english": "bathroom",
+   "fullGloss": "bathroom; toilet; WC; CL:jian1",
+   "hskBand": 3,
+   "audio": "wei4sheng1jian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "wen2hua4",
+   "entryId": "ude:e1c0be17f6364c94",
+   "hanzi": "文化",
+   "english": "culture",
+   "fullGloss": "culture; civilization; cultural; CL:ge4,zhong3",
+   "hskBand": 3,
+   "audio": "wen2hua4",
+   "picture": ""
+  },
+  {
+   "readingKey": "wen4ti2",
+   "entryId": "ude:a633a3bf9874f193",
+   "hanzi": "问题",
+   "english": "question",
+   "fullGloss": "question; problem; issue; topic; CL:ge4",
+   "hskBand": 1,
+   "audio": "wen4ti2",
+   "picture": ""
+  },
+  {
+   "readingKey": "wo3men5",
+   "entryId": "ude:b85adaad9dcc35e5",
+   "hanzi": "我们",
+   "english": "we",
+   "fullGloss": "we; us; ourselves; our",
+   "hskBand": 1,
+   "audio": "wo3men5",
+   "picture": ""
+  },
+  {
+   "readingKey": "wu1zi5",
+   "entryId": "ude:97a56e7ac2484d89",
+   "hanzi": "屋子",
+   "english": "house",
+   "fullGloss": "house; room; CL:jian1",
+   "hskBand": 3,
+   "audio": "wu1zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "wu3fan4",
+   "entryId": "ude:65c3c1e5b037170d",
+   "hanzi": "午饭",
+   "english": "lunch",
+   "fullGloss": "lunch; CL:fen4,dun4,ci4,can1",
+   "hskBand": 1,
+   "audio": "wu3fan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi1bei3",
+   "entryId": "ude:6416cdd92a7f4745",
+   "hanzi": "西北",
+   "english": "Northwest China",
+   "fullGloss": "Northwest China (Shaanxi, Gansu, Qinghai, Ningxia, Xinjiang); northwest",
+   "hskBand": 3,
+   "audio": "xi1bei3",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi1fang1",
+   "entryId": "ude:06714b12d5a0fb81",
+   "hanzi": "西方",
+   "english": "the West",
+   "fullGloss": "the West; the Occident; Western countries",
+   "hskBand": 3,
+   "audio": "xi1fang1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi1gua1",
+   "entryId": "ude:7881ceb94ecaa07e",
+   "hanzi": "西瓜",
+   "english": "watermelon",
+   "fullGloss": "watermelon; CL:ke1",
+   "hskBand": 3,
+   "audio": "xi1gua1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi1nan2",
+   "entryId": "ude:62d93898ce67a029",
+   "hanzi": "西南",
+   "english": "southwest",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "xi1nan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi1wang4",
+   "entryId": "ude:af22d380f32be0b0",
+   "hanzi": "希望",
+   "english": "to hope",
+   "fullGloss": "to hope; a hope; a wish",
+   "hskBand": 2,
+   "audio": "xi1wang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi2guan4",
+   "entryId": "ude:48a383ca0c1be8b1",
+   "hanzi": "习惯",
+   "english": "habit",
+   "fullGloss": "habit; custom; usual practice; to be used to; CL:ge4",
+   "hskBand": 3,
+   "audio": "xi2guan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi3ai4",
+   "entryId": "ude:3f5db72613b6e4eb",
+   "hanzi": "喜爱",
+   "english": "to like",
+   "fullGloss": "to like; to love; to be fond of; favorite",
+   "hskBand": 3,
+   "audio": "xi3ai4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi3huan5",
+   "entryId": "ude:a18f1ba347ae0d29",
+   "hanzi": "喜欢",
+   "english": "to like",
+   "fullGloss": "to like; to be fond of",
+   "hskBand": 1,
+   "audio": "xi3huan5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi3shou3jian1",
+   "entryId": "ude:e525b173fa55a4a4",
+   "hanzi": "洗手间",
+   "english": "toilet",
+   "fullGloss": "toilet; lavatory; washroom",
+   "hskBand": 2,
+   "audio": "xi3shou3jian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi3yi1ji1",
+   "entryId": "ude:870d2085cd036da0",
+   "hanzi": "洗衣机",
+   "english": "washing machine",
+   "fullGloss": "washing machine; washer; CL:tai2",
+   "hskBand": 3,
+   "audio": "xi3yi1ji1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xi3zao3",
+   "entryId": "ude:be7c26ac5b43b513",
+   "hanzi": "洗澡",
+   "english": "to bathe",
+   "fullGloss": "to bathe; to take a shower",
+   "hskBand": 3,
+   "audio": "xi3zao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4ban1",
+   "entryId": "ude:dfcd60cf978d7d73",
+   "hanzi": "下班",
+   "english": "to finish work",
+   "fullGloss": "to finish work; to get off work; next service (train, bus etc)",
+   "hskBand": 1,
+   "audio": "xia4ban1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4ke4",
+   "entryId": "ude:5740739d7b656ac0",
+   "hanzi": "下课",
+   "english": "to finish class",
+   "fullGloss": "to finish class; to get out of class; (fig.) (esp. of a sports coach) to be dismissed; to be fired",
+   "hskBand": 1,
+   "audio": "xia4ke4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4lai5",
+   "entryId": "ude:d1f0d8c72777c880",
+   "hanzi": "下来",
+   "english": "to come down",
+   "fullGloss": "to come down; (completed action marker); (after verb of motion, indicates motion down and towards us, also fig.); (indicates continuation from the past towards us); to be harvested (of crops); to be over (of a period of time); to go among the masses (said of leaders)",
+   "hskBand": 2,
+   "audio": "xia4lai5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4mian4",
+   "entryId": "ude:80594bbd6ea8c85d",
+   "hanzi": "下面",
+   "english": "below",
+   "fullGloss": "below; under; next; the following; also pr. [xia4 mian5]; to boil noodles",
+   "hskBand": 2,
+   "audio": "xia4mian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4qu4",
+   "entryId": "ude:d7ae6417d6544bc3",
+   "hanzi": "下去",
+   "english": "to go down",
+   "fullGloss": "to go down; to descend; to go on; to continue; (of a servant) to withdraw",
+   "hskBand": 2,
+   "audio": "xia4qu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4tian1",
+   "entryId": "ude:8c1320567badec03",
+   "hanzi": "夏天",
+   "english": "summer",
+   "fullGloss": "summer; CL:ge4",
+   "hskBand": 3,
+   "audio": "xia4tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4wu3",
+   "entryId": "ude:971c11ee4c8ae344",
+   "hanzi": "下午",
+   "english": "afternoon",
+   "fullGloss": "afternoon; CL:ge4; p.m.",
+   "hskBand": 1,
+   "audio": "xia4wu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "xia4yu3",
+   "entryId": "ude:c0abdd14cb0274f5",
+   "hanzi": "下雨",
+   "english": "to rain",
+   "fullGloss": "to rain; see Da4 Yu3",
+   "hskBand": 1,
+   "audio": "xia4yu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "xian1sheng5",
+   "entryId": "ude:948b4063598e9add",
+   "hanzi": "先生",
+   "english": "teacher",
+   "fullGloss": "teacher; gentleman; sir; mister (Mr.); husband; (dialect) doctor; CL:wei4",
+   "hskBand": 1,
+   "audio": "xian1sheng5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xian4zai4",
+   "entryId": "ude:d2ddbefee0d72fce",
+   "hanzi": "现在",
+   "english": "now",
+   "fullGloss": "now; at present; currently",
+   "hskBand": 1,
+   "audio": "xian4zai4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiang1jiao1",
+   "entryId": "ude:ed1fb30a8cbce0be",
+   "hanzi": "香蕉",
+   "english": "banana",
+   "fullGloss": "banana; CL:gen1,ba3; (of roads, lines etc) to intersect; (of people) to associate with one another; to become friends; (HK) rural area on the outskirts of a town or city; rural-urban fringe",
+   "hskBand": 3,
+   "audio": "xiang1jiao1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiang1xin4",
+   "entryId": "ude:a4036c97000fd7f0",
+   "hanzi": "相信",
+   "english": "to believe",
+   "fullGloss": "to believe; to be convinced; to accept as true",
+   "hskBand": 3,
+   "audio": "xiang1xin4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiang1zi5",
+   "entryId": "ude:7a9f173bcebaf8d3",
+   "hanzi": "箱子",
+   "english": "suitcase",
+   "fullGloss": "suitcase; chest; box; case; trunk; CL:zhi1,ge4",
+   "hskBand": 3,
+   "audio": "xiang1zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiang4ji1",
+   "entryId": "ude:e2c481b6a7d021de",
+   "hanzi": "相机",
+   "english": "camera",
+   "fullGloss": "camera (abbr. for zhao4 xiang4 ji1); at the opportune moment; as the circumstances allow",
+   "hskBand": 3,
+   "audio": "xiang4ji1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao3peng2you3",
+   "entryId": "ude:e8c205c8c403ad77",
+   "hanzi": "小朋友",
+   "english": "child",
+   "fullGloss": "child; kid (used to refer to a child, or by an adult to address a child, or, in Taiwan, to refer to sb's own child)",
+   "hskBand": 1,
+   "audio": "xiao3peng2you3",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao3qu1",
+   "entryId": "ude:a11ef3fbf700d14b",
+   "hanzi": "小区",
+   "english": "housing estate",
+   "fullGloss": "housing estate; community; neighborhood; (telecommunications) cell",
+   "hskBand": 3,
+   "audio": "xiao3qu1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao3shi2",
+   "entryId": "ude:e85f89b67a3df8fe",
+   "hanzi": "小时",
+   "english": "hour",
+   "fullGloss": "hour; CL:ge4; snack; nibbles",
+   "hskBand": 1,
+   "audio": "xiao3shi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao3shi2hou5",
+   "entryId": "ude:89a6afde5445f9b5",
+   "hanzi": "小时候",
+   "english": "in one's childhood",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "xiao3shi2hou5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao3xin1",
+   "entryId": "ude:a304f2ddc40e8fe2",
+   "hanzi": "小心",
+   "english": "to be careful",
+   "fullGloss": "to be careful; to take care",
+   "hskBand": 3,
+   "audio": "xiao3xin1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao3xue2",
+   "entryId": "ude:f2ca0638c5274dec",
+   "hanzi": "小学",
+   "english": "elementary school",
+   "fullGloss": "elementary school; primary school",
+   "hskBand": 1,
+   "audio": "xiao3xue2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao3xue2sheng1",
+   "entryId": "ude:8cceb1cdf046a5bd",
+   "hanzi": "小学生",
+   "english": "primary school student",
+   "fullGloss": "primary school student; schoolchild; CL:ge4,ming2; (fig.) beginner",
+   "hskBand": 1,
+   "audio": "xiao3xue2sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao4yuan2",
+   "entryId": "ude:f639d31a4581398f",
+   "hanzi": "校园",
+   "english": "campus",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "xiao4yuan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiao4zhang3",
+   "entryId": "ude:48c99779090f8f75",
+   "hanzi": "校长",
+   "english": "president",
+   "fullGloss": "(college, university) president; headmaster; CL:ge4,wei4,ming2",
+   "hskBand": 3,
+   "audio": "xiao4zhang3",
+   "picture": ""
+  },
+  {
+   "readingKey": "xie4xie5",
+   "entryId": "ude:54fcab895c75ff4e",
+   "hanzi": "谢谢",
+   "english": "to thank",
+   "fullGloss": "to thank; thanks; thank you",
+   "hskBand": 1,
+   "audio": "xie4xie5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xin1nian2",
+   "entryId": "ude:407b72384c89f34a",
+   "hanzi": "新年",
+   "english": "New Year",
+   "fullGloss": "New Year; CL:ge4",
+   "hskBand": 3,
+   "audio": "xin1nian2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xin1wen2",
+   "entryId": "ude:079350dda02c0b12",
+   "hanzi": "新闻",
+   "english": "news",
+   "fullGloss": "news; CL:tiao2",
+   "hskBand": 3,
+   "audio": "xin1wen2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xin1xian1",
+   "entryId": "ude:cb07a52a6cb11cd0",
+   "hanzi": "新鲜",
+   "english": "fresh",
+   "fullGloss": "fresh (experience, food etc); freshness; novel; uncommon",
+   "hskBand": 3,
+   "audio": "xin1xian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xin4yong4ka3",
+   "entryId": "ude:fe8696c8a38a3cd6",
+   "hanzi": "信用卡",
+   "english": "credit card",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "xin4yong4ka3",
+   "picture": ""
+  },
+  {
+   "readingKey": "xing1qi1",
+   "entryId": "ude:c3448d8596a20599",
+   "hanzi": "星期",
+   "english": "week",
+   "fullGloss": "week; CL:ge4; day of the week; Sunday",
+   "hskBand": 1,
+   "audio": "xing1qi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xing1qi1ri4",
+   "entryId": "ude:4f78898a958c563a",
+   "hanzi": "星期日",
+   "english": "Sunday",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "xing1qi1ri4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xing1qi1tian1",
+   "entryId": "ude:600a9e8fdfdb9703",
+   "hanzi": "星期天",
+   "english": "Sunday",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "xing1qi1tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xing2li5",
+   "entryId": "ude:d9a97ff3b3f844d6",
+   "hanzi": "行李",
+   "english": "luggage",
+   "fullGloss": "luggage; CL:jian4",
+   "hskBand": 3,
+   "audio": "xing2li5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xing4qu4",
+   "entryId": "ude:6d2019c9d781bee5",
+   "hanzi": "兴趣",
+   "english": "interest",
+   "fullGloss": "interest (desire to know about sth); interest (thing in which one is interested); hobby",
+   "hskBand": 3,
+   "audio": "xing4qu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xiu1xi5",
+   "entryId": "ude:af4b0290d1e816b5",
+   "hanzi": "休息",
+   "english": "rest",
+   "fullGloss": "rest; to rest",
+   "hskBand": 1,
+   "audio": "xiu1xi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xu1yao4",
+   "entryId": "ude:8416643c2a72ae81",
+   "hanzi": "需要",
+   "english": "to need",
+   "fullGloss": "to need; to want; to demand; to require; needs; must; have to",
+   "hskBand": 3,
+   "audio": "xu1yao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "xuan3ze2",
+   "entryId": "ude:a7f7fcd17ada3345",
+   "hanzi": "选择",
+   "english": "to select",
+   "fullGloss": "to select; to pick; choice; option; alternative",
+   "hskBand": 3,
+   "audio": "xuan3ze2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xue2qi1",
+   "entryId": "ude:63307b4089e73a11",
+   "hanzi": "学期",
+   "english": "term",
+   "fullGloss": "term; semester; CL:ge4",
+   "hskBand": 3,
+   "audio": "xue2qi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "xue2sheng5",
+   "entryId": "ude:f7d0f198c10de2fd",
+   "hanzi": "学生",
+   "english": "student",
+   "fullGloss": "student; schoolchild",
+   "hskBand": 1,
+   "audio": "xue2sheng5",
+   "picture": ""
+  },
+  {
+   "readingKey": "xue2xi2",
+   "entryId": "ude:396a79e427cfb1be",
+   "hanzi": "学习",
+   "english": "to learn",
+   "fullGloss": "to learn; to study",
+   "hskBand": 1,
+   "audio": "xue2xi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "xue2xiao4",
+   "entryId": "ude:a7254c1370aa9d16",
+   "hanzi": "学校",
+   "english": "school",
+   "fullGloss": "school; CL:suo3",
+   "hskBand": 1,
+   "audio": "xue2xiao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ya2shua1",
+   "entryId": "ude:2766882318dbfb5d",
+   "hanzi": "牙刷",
+   "english": "toothbrush",
+   "fullGloss": "toothbrush; CL:ba3",
+   "hskBand": 3,
+   "audio": "ya2shua1",
+   "picture": ""
+  },
+  {
+   "readingKey": "yan2se4",
+   "entryId": "ude:a73f5a1f09067863",
+   "hanzi": "颜色",
+   "english": "color",
+   "fullGloss": "color; countenance; appearance; facial expression; pigment; dyestuff",
+   "hskBand": 2,
+   "audio": "yan2se4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yan3jing5",
+   "entryId": "ude:75db0b78073463c9",
+   "hanzi": "眼睛",
+   "english": "eye",
+   "fullGloss": "eye; CL:zhi1,shuang1",
+   "hskBand": 2,
+   "audio": "yan3jing5",
+   "picture": ""
+  },
+  {
+   "readingKey": "yao1qiu2",
+   "entryId": "ude:107015083fba3b39",
+   "hanzi": "要求",
+   "english": "to request",
+   "fullGloss": "to request; to require; requirement; to stake a claim; to ask; to demand; CL:dian3",
+   "hskBand": 3,
+   "audio": "yao1qiu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "yao4dian4",
+   "entryId": "ude:42b1718c43c8501c",
+   "hanzi": "药店",
+   "english": "pharmacy",
+   "fullGloss": "pharmacy; drugstore",
+   "hskBand": 2,
+   "audio": "yao4dian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "ye2ye5",
+   "entryId": "ude:631616f985c8037f",
+   "hanzi": "爷爷",
+   "english": "paternal grandfather",
+   "fullGloss": "(coll.) paternal grandfather; grandpa",
+   "hskBand": 2,
+   "audio": "ye2ye5",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1ban1",
+   "entryId": "ude:85a771402a832ef2",
+   "hanzi": "一般",
+   "english": "ordinary",
+   "fullGloss": "same; ordinary; so-so; common; general; generally; in general; lit. one spot (on the leopard); fig. one small item in a big scheme",
+   "hskBand": 3,
+   "audio": "yi1ban1",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1ban4",
+   "entryId": "ude:36d83f4cd3574245",
+   "hanzi": "一半",
+   "english": "half",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "yi1ban4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1bian1",
+   "entryId": "ude:5fde2e138c00c20e",
+   "hanzi": "一边",
+   "english": "one side",
+   "fullGloss": "one side; either side; on the one hand; on the other hand; doing while",
+   "hskBand": 3,
+   "audio": "yi1bian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1ding4",
+   "entryId": "ude:67e5e2e6e8d41989",
+   "hanzi": "一定",
+   "english": "surely",
+   "fullGloss": "surely; certainly; definitely; fixed; settled; a certain...; a given...",
+   "hskBand": 3,
+   "audio": "yi1ding4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1fu5",
+   "entryId": "ude:d4094c68d1a45868",
+   "hanzi": "衣服",
+   "english": "clothes",
+   "fullGloss": "clothes; CL:jian4,tao4",
+   "hskBand": 1,
+   "audio": "yi1fu5",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1gong4",
+   "entryId": "ude:56e4d2670799aaf2",
+   "hanzi": "一共",
+   "english": "in total",
+   "fullGloss": "in total; altogether",
+   "hskBand": 3,
+   "audio": "yi1gong4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1qi3",
+   "entryId": "ude:bc996d011c0b93b9",
+   "hanzi": "一起",
+   "english": "the same place",
+   "fullGloss": "(in) the same place; together; in company (with); altogether; in total; an instance of; a case of (murder, accident, dispute etc)",
+   "hskBand": 2,
+   "audio": "yi1qi3",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1sheng1",
+   "entryId": "ude:395cd313cbf81aeb",
+   "hanzi": "一生",
+   "english": "doctor",
+   "fullGloss": "doctor; medical practitioner; all one's life; throughout one's life; first tone in Mandarin (high, level tone)",
+   "hskBand": 1,
+   "audio": "yi1sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1xia4",
+   "entryId": "ude:e4c0c59ca126f91a",
+   "hanzi": "一下",
+   "english": "a bit",
+   "fullGloss": "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try); all at once; suddenly",
+   "hskBand": 1,
+   "audio": "yi1xia4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1xie1",
+   "entryId": "ude:6cbba979654f5802",
+   "hanzi": "一些",
+   "english": "some",
+   "fullGloss": "some; a few; a little; (following an adjective) slightly...er",
+   "hskBand": 1,
+   "audio": "yi1xie1",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1yang4",
+   "entryId": "ude:4d54ad749b9b3b57",
+   "hanzi": "一样",
+   "english": "same",
+   "fullGloss": "same; like; equal to; the same as; just like",
+   "hskBand": 3,
+   "audio": "yi1yang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi1yuan4",
+   "entryId": "ude:c4215f2e2b449aa5",
+   "hanzi": "医院",
+   "english": "hospital",
+   "fullGloss": "hospital; CL:suo3,jia1,zuo4",
+   "hskBand": 1,
+   "audio": "yi1yuan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi3hou4",
+   "entryId": "ude:e7005f3880df2629",
+   "hanzi": "以后",
+   "english": "after",
+   "fullGloss": "after; later; afterwards; following; later on; in the future; queen ant",
+   "hskBand": 3,
+   "audio": "yi3hou4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi3jing1",
+   "entryId": "ude:aec458fbd279a725",
+   "hanzi": "已经",
+   "english": "already",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "yi3jing1",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi3qian2",
+   "entryId": "ude:2f7d8416e4b891fe",
+   "hanzi": "以前",
+   "english": "before",
+   "fullGloss": "before; formerly; previous; ago",
+   "hskBand": 3,
+   "audio": "yi3qian2",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi3wai4",
+   "entryId": "ude:c987c7280c6e3e28",
+   "hanzi": "以外",
+   "english": "apart from",
+   "fullGloss": "apart from; other than; except for; external; outside of; on the other side of; beyond",
+   "hskBand": 3,
+   "audio": "yi3wai4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi3wei2",
+   "entryId": "ude:35e60913a3f1d0c8",
+   "hanzi": "以为",
+   "english": "to think",
+   "fullGloss": "to think; to believe (often with the implication that the belief is mistaken – unless referring to one's own current belief)",
+   "hskBand": 3,
+   "audio": "yi3wei2",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi3zi5",
+   "entryId": "ude:a031299815d35bda",
+   "hanzi": "椅子",
+   "english": "chair",
+   "fullGloss": "chair; CL:ba3,zhang1",
+   "hskBand": 1,
+   "audio": "yi3zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "yi4si5",
+   "entryId": "ude:212066bb996ffd73",
+   "hanzi": "意思",
+   "english": "idea",
+   "fullGloss": "idea; opinion; meaning; wish; desire; interest; fun; token of appreciation, affection etc; CL:ge4; to give as a small token; to do sth as a gesture of goodwill etc",
+   "hskBand": 2,
+   "audio": "yi4si5",
+   "picture": ""
+  },
+  {
+   "readingKey": "yin1wei4",
+   "entryId": "ude:67132c167edac290",
+   "hanzi": "因为",
+   "english": "because",
+   "fullGloss": "because; owing to; on account of; phoneme",
+   "hskBand": 2,
+   "audio": "yin1wei4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yin1yue4",
+   "entryId": "ude:3f579fa16f7fec79",
+   "hanzi": "音乐",
+   "english": "music",
+   "fullGloss": "music; CL:zhang1,qu3,duan4",
+   "hskBand": 3,
+   "audio": "yin1yue4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yin2hang2",
+   "entryId": "ude:ce4dd18bd35ef8a8",
+   "hanzi": "银行",
+   "english": "bank",
+   "fullGloss": "bank; CL:jia1,ge4",
+   "hskBand": 3,
+   "audio": "yin2hang2",
+   "picture": ""
+  },
+  {
+   "readingKey": "yin2hang2ka3",
+   "entryId": "ude:5f01ca504c8f3446",
+   "hanzi": "银行卡",
+   "english": "bank card",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "yin2hang2ka3",
+   "picture": ""
+  },
+  {
+   "readingKey": "ying1gai1",
+   "entryId": "ude:c217ba16d4f849f5",
+   "hanzi": "应该",
+   "english": "ought to",
+   "fullGloss": "ought to; should; must",
+   "hskBand": 3,
+   "audio": "ying1gai1",
+   "picture": ""
+  },
+  {
+   "readingKey": "ying3xiang3",
+   "entryId": "ude:949eca4cd7f81ad8",
+   "hanzi": "影响",
+   "english": "influence",
+   "fullGloss": "influence; effect; to influence; to affect (usually adversely); to disturb; CL:gu3",
+   "hskBand": 3,
+   "audio": "ying3xiang3",
+   "picture": ""
+  },
+  {
+   "readingKey": "you2jian4",
+   "entryId": "ude:7df5677c757d4a23",
+   "hanzi": "邮件",
+   "english": "mail",
+   "fullGloss": "mail; post; email",
+   "hskBand": 3,
+   "audio": "you2jian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "you2ke4",
+   "entryId": "ude:a72b34a4748845c6",
+   "hanzi": "游客",
+   "english": "traveler",
+   "fullGloss": "traveler; tourist; (online gaming) guest player",
+   "hskBand": 3,
+   "audio": "you2ke4",
+   "picture": ""
+  },
+  {
+   "readingKey": "you2xi4",
+   "entryId": "ude:1ba647bdc78fba46",
+   "hanzi": "游戏",
+   "english": "game",
+   "fullGloss": "game (CL:chang3); to play",
+   "hskBand": 3,
+   "audio": "you2xi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "you2xiang1",
+   "entryId": "ude:6d6ca21209951524",
+   "hanzi": "邮箱",
+   "english": "mailbox",
+   "fullGloss": "mailbox; post office box; email; email inbox; fuel tank",
+   "hskBand": 3,
+   "audio": "you2xiang1",
+   "picture": ""
+  },
+  {
+   "readingKey": "you2yong3",
+   "entryId": "ude:32db90562b2daea4",
+   "hanzi": "游泳",
+   "english": "to swim",
+   "fullGloss": "swimming; to swim",
+   "hskBand": 2,
+   "audio": "you2yong3",
+   "picture": ""
+  },
+  {
+   "readingKey": "you3de5",
+   "entryId": "ude:c4871fc6b8146a8c",
+   "hanzi": "有的",
+   "english": "some",
+   "fullGloss": "(there are) some (who are...); some (exist)",
+   "hskBand": 1,
+   "audio": "you3de5",
+   "picture": ""
+  },
+  {
+   "readingKey": "you3ming2",
+   "entryId": "ude:56f188fddd4122e2",
+   "hanzi": "有名",
+   "english": "famous",
+   "fullGloss": "famous; well-known",
+   "hskBand": 3,
+   "audio": "you3ming2",
+   "picture": ""
+  },
+  {
+   "readingKey": "you3shi2",
+   "entryId": "ude:449ffb171a973e32",
+   "hanzi": "有时",
+   "english": "sometimes",
+   "fullGloss": "sometimes; now and then; 5-7 pm (in the system of two-hour subdivisions used in former times)",
+   "hskBand": 2,
+   "audio": "you3shi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "you3xie1",
+   "entryId": "ude:4b8d66a98c2e8ed3",
+   "hanzi": "有些",
+   "english": "some",
+   "fullGloss": "some; somewhat; rather; a bit",
+   "hskBand": 1,
+   "audio": "you3xie1",
+   "picture": ""
+  },
+  {
+   "readingKey": "you3yi4si5",
+   "entryId": "ude:b494d7a048fba5f5",
+   "hanzi": "有意思",
+   "english": "interesting",
+   "fullGloss": "interesting; meaningful; enjoyable; fun",
+   "hskBand": 2,
+   "audio": "you3yi4si5",
+   "picture": ""
+  },
+  {
+   "readingKey": "you3yong4",
+   "entryId": "ude:4b41fc2578d14a0f",
+   "hanzi": "有用",
+   "english": "useful",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "you3yong4",
+   "picture": ""
+  },
+  {
+   "readingKey": "you4bian5",
+   "entryId": "ude:539d784377312a47",
+   "hanzi": "右边",
+   "english": "right side",
+   "fullGloss": "right side; right, to the right",
+   "hskBand": 2,
+   "audio": "you4bian5",
+   "picture": ""
+  },
+  {
+   "readingKey": "yu3mao2qiu2",
+   "entryId": "ude:701cb47b3805e4aa",
+   "hanzi": "羽毛球",
+   "english": "badminton",
+   "fullGloss": "badminton; shuttlecock",
+   "hskBand": 3,
+   "audio": "yu3mao2qiu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "yu3yan2",
+   "entryId": "ude:9ba33a03c4a0c71b",
+   "hanzi": "语言",
+   "english": "language",
+   "fullGloss": "language; CL:men2,zhong3",
+   "hskBand": 3,
+   "audio": "yu3yan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "yu3yi1",
+   "entryId": "ude:d420a8f7f5eafb4e",
+   "hanzi": "雨衣",
+   "english": "raincoat",
+   "fullGloss": "raincoat; CL:jian4",
+   "hskBand": 3,
+   "audio": "yu3yi1",
+   "picture": ""
+  },
+  {
+   "readingKey": "yu4dao4",
+   "entryId": "ude:2e2087ae0b3eb23f",
+   "hanzi": "遇到",
+   "english": "to meet",
+   "fullGloss": "to meet; to run into; to come across",
+   "hskBand": 3,
+   "audio": "yu4dao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yu4jian4",
+   "entryId": "ude:4302c92ef5026fde",
+   "hanzi": "遇见",
+   "english": "to meet",
+   "fullGloss": "to meet; to foresee; to predict; to forecast; to envision; foresight; intuition; vision",
+   "hskBand": 3,
+   "audio": "yu4jian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yuan4yi4",
+   "entryId": "ude:f44206614e201d6f",
+   "hanzi": "愿意",
+   "english": "to wish",
+   "fullGloss": "to wish; to want; ready; willing (to do sth); to resent; to regret; grudge",
+   "hskBand": 3,
+   "audio": "yuan4yi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yue4liang5",
+   "entryId": "ude:d4a98d5176e45805",
+   "hanzi": "月亮",
+   "english": "moon",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "yue4liang5",
+   "picture": ""
+  },
+  {
+   "readingKey": "yun4dong4",
+   "entryId": "ude:f6ec634296fb218a",
+   "hanzi": "运动",
+   "english": "to move",
+   "fullGloss": "to move; to exercise; sports; exercise; motion; movement; campaign; CL:chang3",
+   "hskBand": 2,
+   "audio": "yun4dong4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yun4dong4hui4",
+   "entryId": "ude:ec02f7516bd6f65b",
+   "hanzi": "运动会",
+   "english": "sports competition",
+   "fullGloss": "sports competition; CL:ge4",
+   "hskBand": 3,
+   "audio": "yun4dong4hui4",
+   "picture": ""
+  },
+  {
+   "readingKey": "yun4dong4yuan2",
+   "entryId": "ude:b900ee769f05f6ed",
+   "hanzi": "运动员",
+   "english": "athlete",
+   "fullGloss": "athlete; CL:ming2,ge4",
+   "hskBand": 3,
+   "audio": "yun4dong4yuan2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zai4jian4",
+   "entryId": "ude:c1f5856950148ca7",
+   "hanzi": "再见",
+   "english": "goodbye",
+   "fullGloss": "goodbye; see you again later; to reconstruct; to build another; under construction",
+   "hskBand": 1,
+   "audio": "zai4jian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zao3fan4",
+   "entryId": "ude:31b904a5065f578c",
+   "hanzi": "早饭",
+   "english": "breakfast",
+   "fullGloss": "breakfast; CL:fen4,dun4,ci4,can1",
+   "hskBand": 1,
+   "audio": "zao3fan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zao3shang5",
+   "entryId": "ude:70e8555865ac0bc0",
+   "hanzi": "早上",
+   "english": "early morning",
+   "fullGloss": "early morning; CL:ge4",
+   "hskBand": 1,
+   "audio": "zao3shang5",
+   "picture": ""
+  },
+  {
+   "readingKey": "zen3me5",
+   "entryId": "ude:37578974e9c0e2fe",
+   "hanzi": "怎么",
+   "english": "how?",
+   "fullGloss": "how?; what?; why?; variant of zen3 me5",
+   "hskBand": 1,
+   "audio": "zen3me5",
+   "picture": ""
+  },
+  {
+   "readingKey": "zen3me5yang4",
+   "entryId": "ude:0fb74ee199937ec0",
+   "hanzi": "怎么样",
+   "english": "how?",
+   "fullGloss": "how?; how about?; how was it?; how are things?",
+   "hskBand": 1,
+   "audio": "zen3me5yang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zen3yang4",
+   "entryId": "ude:8ef18425cb380e5c",
+   "hanzi": "怎样",
+   "english": "how",
+   "fullGloss": "how; what kind",
+   "hskBand": 3,
+   "audio": "zen3yang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhang4fu5",
+   "entryId": "ude:77d256bbc81d10b5",
+   "hanzi": "丈夫",
+   "english": "husband",
+   "fullGloss": "2",
+   "hskBand": 2,
+   "audio": "zhang4fu5",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhao2ji2",
+   "entryId": "ude:4cddc0dc7377ba8d",
+   "hanzi": "着急",
+   "english": "to worry",
+   "fullGloss": "to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhao1ji2]",
+   "hskBand": 3,
+   "audio": "zhao2ji2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhao4pian4",
+   "entryId": "ude:301e1290000ade10",
+   "hanzi": "照片",
+   "english": "photo",
+   "fullGloss": "photograph; CL:zhang1,fu2; (Internet slang) deceptive photo (pun on zhao4 pian4) (esp. one misleadingly presenting sth in a favorable light)",
+   "hskBand": 3,
+   "audio": "zhao4pian4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhe4bian1",
+   "entryId": "ude:a0f8741a3a0ab286",
+   "hanzi": "这边",
+   "english": "this side",
+   "fullGloss": "this side; here",
+   "hskBand": 1,
+   "audio": "zhe4bian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhe4ge5",
+   "entryId": "ude:e14037ca599ff88b",
+   "hanzi": "这个",
+   "english": "this",
+   "fullGloss": "(pronoun) this; (adjective) this",
+   "hskBand": 1,
+   "audio": "zhe4ge5",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhe4xie1",
+   "entryId": "ude:94738180619a60ba",
+   "hanzi": "这些",
+   "english": "these",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "zhe4xie1",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhe4yang4",
+   "entryId": "ude:4aedfbbc473e5162",
+   "hanzi": "这样",
+   "english": "this way",
+   "fullGloss": "this way; like this; so; (before a noun) this kind of; such",
+   "hskBand": 2,
+   "audio": "zhe4yang4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhi1dao4",
+   "entryId": "ude:5371ef9f57b7a7af",
+   "hanzi": "知道",
+   "english": "to know",
+   "fullGloss": "to know; to become aware of; also pr. [zhi1dao5]",
+   "hskBand": 1,
+   "audio": "zhi1dao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhi3neng2",
+   "entryId": "ude:c7caf9ab15199b4d",
+   "hanzi": "只能",
+   "english": "can only",
+   "fullGloss": "can only; obliged to do sth; to have no other choice",
+   "hskBand": 3,
+   "audio": "zhi3neng2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhi3shi4",
+   "entryId": "ude:a72293b696ef496d",
+   "hanzi": "只是",
+   "english": "merely",
+   "fullGloss": "merely; only; just; nothing but; simply; but; however; to point out; to indicate; to instruct; directives; instructions; CL:ge4; ideogram (one of the Six Methods | of forming Chinese characters); Chinese character indicating an idea, such as up and down; also known as self-explanatory character",
+   "hskBand": 3,
+   "audio": "zhi3shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhi3yao4",
+   "entryId": "ude:212d1af71f773714",
+   "hanzi": "只要",
+   "english": "so long as",
+   "fullGloss": "so long as; provided; if; kite",
+   "hskBand": 3,
+   "audio": "zhi3yao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1guo2",
+   "entryId": "ude:85f57b3d833663b8",
+   "hanzi": "中国",
+   "english": "China",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "zhong1guo2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1jian1",
+   "entryId": "ude:56b38fcf195d7cfd",
+   "hanzi": "中间",
+   "english": "the middle",
+   "fullGloss": "the middle; the inside; in the middle; within; between; among; during; in the meantime; core; nucleus; backbone",
+   "hskBand": 3,
+   "audio": "zhong1jian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1wen2",
+   "entryId": "ude:2f6b9e6c4ad10780",
+   "hanzi": "中文",
+   "english": "Chinese language",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "zhong1wen2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1wu3",
+   "entryId": "ude:f50c8208955fcd86",
+   "hanzi": "中午",
+   "english": "noon",
+   "fullGloss": "noon; midday; CL:ge4",
+   "hskBand": 1,
+   "audio": "zhong1wu3",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1xue2",
+   "entryId": "ude:959279546345396a",
+   "hanzi": "中学",
+   "english": "middle school",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "zhong1xue2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1xue2sheng1",
+   "entryId": "ude:c5cc272cc8fef69a",
+   "hanzi": "中学生",
+   "english": "middle-school student",
+   "fullGloss": "middle-school student; high school student",
+   "hskBand": 1,
+   "audio": "zhong1xue2sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1yu2",
+   "entryId": "ude:eeac2f592ee05c0f",
+   "hanzi": "忠于",
+   "english": "at last",
+   "fullGloss": "at last; in the end; finally; eventually; to be loyal to",
+   "hskBand": 3,
+   "audio": "zhong1yu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong4yao4",
+   "entryId": "ude:40d21f3d521e5c90",
+   "hanzi": "重要",
+   "english": "important",
+   "fullGloss": "important; significant; major",
+   "hskBand": 3,
+   "audio": "zhong4yao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhou1mo4",
+   "entryId": "ude:162f32db91a3defa",
+   "hanzi": "周末",
+   "english": "weekend",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "zhou1mo4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhu3yao4",
+   "entryId": "ude:a823ad0f9f4cef2e",
+   "hanzi": "主要",
+   "english": "main",
+   "fullGloss": "main; principal; major; primary",
+   "hskBand": 3,
+   "audio": "zhu3yao4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhun3bei4",
+   "entryId": "ude:54a2339557305ce5",
+   "hanzi": "准备",
+   "english": "preparation",
+   "fullGloss": "preparation; to prepare; to intend; to be about to; reserve (fund)",
+   "hskBand": 2,
+   "audio": "zhun3bei4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhuo1zi5",
+   "entryId": "ude:a9dd5094d70009e9",
+   "hanzi": "桌子",
+   "english": "table",
+   "fullGloss": "table; desk; CL:zhang1,tao4",
+   "hskBand": 1,
+   "audio": "zhuo1zi5",
+   "picture": ""
+  },
+  {
+   "readingKey": "zi4ji3",
+   "entryId": "ude:ecfe50f4f5219001",
+   "hanzi": "自己",
+   "english": "oneself",
+   "fullGloss": "oneself; (attributive) one's own; self-reliant",
+   "hskBand": 2,
+   "audio": "zi4ji3",
+   "picture": ""
+  },
+  {
+   "readingKey": "zi4xing2che1",
+   "entryId": "ude:da2ea7b98507c89a",
+   "hanzi": "自行车",
+   "english": "bicycle",
+   "fullGloss": "bicycle; bike; CL:liang4",
+   "hskBand": 3,
+   "audio": "zi4xing2che1",
+   "picture": ""
+  },
+  {
+   "readingKey": "zong3shi4",
+   "entryId": "ude:fbd2eccad301a4ea",
+   "hanzi": "总是",
+   "english": "always",
+   "fullGloss": "3",
+   "hskBand": 3,
+   "audio": "zong3shi4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zou3lu4",
+   "entryId": "ude:7ffd7786ee235aab",
+   "hanzi": "走路",
+   "english": "to walk",
+   "fullGloss": "to walk; to go on foot; to leave; to depart; (informal) to clear off; to beat it; (of sb who gets fired or resigns) to leave the job; to get out",
+   "hskBand": 2,
+   "audio": "zou3lu4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zu2qiu2",
+   "entryId": "ude:f42a110a2608c7ea",
+   "hanzi": "足球",
+   "english": "football",
+   "fullGloss": "soccer; football; a soccer ball; a football",
+   "hskBand": 2,
+   "audio": "zu2qiu2",
+   "picture": ""
+  },
+  {
+   "readingKey": "zui4hao3",
+   "entryId": "ude:3512d6aaa76b50d3",
+   "hanzi": "最好",
+   "english": "best",
+   "fullGloss": "best; had better...; it would be best to...",
+   "hskBand": 3,
+   "audio": "zui4hao3",
+   "picture": ""
+  },
+  {
+   "readingKey": "zui4hou4",
+   "entryId": "ude:6c4baac5c0fc1ac5",
+   "hanzi": "最后",
+   "english": "final",
+   "fullGloss": "final; last; ultimate; finally; in the end",
+   "hskBand": 3,
+   "audio": "zui4hou4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zui4jin4",
+   "entryId": "ude:be23800ea992340f",
+   "hanzi": "最近",
+   "english": "recently",
+   "fullGloss": "recently; soon; nearest",
+   "hskBand": 3,
+   "audio": "zui4jin4",
+   "picture": ""
+  },
+  {
+   "readingKey": "zuo2tian1",
+   "entryId": "ude:87e2a54266f7dce2",
+   "hanzi": "昨天",
+   "english": "yesterday",
+   "fullGloss": "1",
+   "hskBand": 1,
+   "audio": "zuo2tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "zuo3bian5",
+   "entryId": "ude:fb37cfcb48bef7c7",
+   "hanzi": "左边",
+   "english": "left",
+   "fullGloss": "left; the left side; to the left of",
+   "hskBand": 2,
+   "audio": "zuo3bian5",
+   "picture": ""
+  },
+  {
+   "readingKey": "zuo4ye4",
+   "entryId": "ude:cd4c0e8e8557e2b6",
+   "hanzi": "作业",
+   "english": "school assignment",
+   "fullGloss": "school assignment; homework; work; task; operation; CL:ge4; to operate",
+   "hskBand": 3,
+   "audio": "zuo4ye4",
+   "picture": ""
+  }
+ ],
+ "tonePairs": [
+  {
+   "keys": [
+    "na3ge5",
+    "na4ge5"
+   ]
+  },
+  {
+   "keys": [
+    "na3xie1",
+    "na4xie1"
+   ]
+  },
+  {
+   "keys": [
+    "shou1dao4",
+    "shou4dao4"
+   ]
+  },
+  {
+   "keys": [
+    "si1ji1",
+    "si4ji4"
+   ]
+  },
+  {
+   "keys": [
+    "yi1ban1",
+    "yi1ban4"
+   ]
+  },
+  {
+   "keys": [
+    "you2yong3",
+    "you3yong4"
+   ]
+  }
+ ]
+}
