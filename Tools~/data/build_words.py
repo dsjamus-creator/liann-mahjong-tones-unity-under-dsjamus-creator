@@ -1,10 +1,12 @@
 """Build Runtime/Resources/LiANNMahjongTones/words.json (+ audio + review CSV) from a pinyin-tiles-playtest checkout.
 
-Usage: python3 -I build_words.py <pinyin-tiles-playtest checkout> <package root>
+Usage: python3 -I build_words.py <pinyin-tiles-playtest checkout> <package root> [<lwl-backend>/data/unified-dictionary.ndjson]
 
 Keeps HSK 1-3 words that have a recorded MP3 in the Tiles pronunciation pack, a parseable reading key and
 a short English label (1-3 words after overrides). Same-hanzi words with two readings are dropped, because the
-tone answer would be ambiguous. Tone-pair groups = same toneless pinyin, different hanzi.
+tone answer would be ambiguous. Homophone mix-ups are dropped: keys in homophone-denylist.json, and, when the unified
+dictionary is given, any key whose HSK-band gloss sense does not belong to the headword's own dictionary entry
+(the gloss table is keyed by reading, so homophones share it). Tone-pair groups = same toneless pinyin, different hanzi.
 """
 import csv, glob, json, os, re, shutil, sys
 from collections import defaultdict
@@ -15,9 +17,27 @@ pub = os.path.join(src, "public")
 audio_index = json.load(open(glob.glob(os.path.join(pub, "word-audio", "audio-index.*.json"))[0], encoding="utf-8"))
 corpus = json.load(open(glob.glob(os.path.join(pub, "novice-assets", "corpus-*.json"))[0], encoding="utf-8"))
 glosses = corpus["glosses"]
+deny = {k for k in json.load(open(os.path.join(here, "homophone-denylist.json"), encoding="utf-8")) if not k.startswith("_")}
+dictionary = defaultdict(list)
+if len(sys.argv) > 3:
+    for line in open(sys.argv[3], encoding="utf-8"):
+        r = json.loads(line); dictionary[r["entryId"]].append(r)
 overrides = {k: v for k, v in json.load(open(os.path.join(here, "label-overrides.json"), encoding="utf-8")).items() if not k.startswith("_")}
 
 KEY = re.compile(r"^(?:[a-z]+[1-5])+$")
+
+def first_clause(s):
+    return re.sub(r"\([^)]*\)", "", s or "").split(";")[0].strip().lower()
+
+def homophone_mismatch(key, entry_id, band):
+    """True when the gloss senses for this HSK band are not senses of the headword's own dictionary entry."""
+    own = dictionary.get(entry_id)
+    g = glosses.get(key)
+    if not own or not g or len(g) < 4 or not g[3]: return False
+    band_senses = [s for s, b in g[3] if b == band]
+    if not band_senses: return False
+    own_text = " ; ".join(r["gloss"] for r in own).lower()
+    return not any(first_clause(s) and first_clause(s) in own_text for s in band_senses)
 
 def short_label(first):
     s = re.sub(r"\([^)]*\)", "", first or "")
@@ -33,6 +53,8 @@ for key, e in entries.items():
 kept, dropped = [], defaultdict(list)
 out_audio = os.path.join(pkg, "Runtime", "Resources", "LiANNMahjongTones", "Audio")
 os.makedirs(out_audio, exist_ok=True)
+for old in os.listdir(out_audio):   # start clean so dropped words leave no clip (or .meta) behind
+    os.remove(os.path.join(out_audio, old))
 for key in sorted(entries):
     e = entries[key]
     band = e.get("hskBand")
@@ -40,6 +62,8 @@ for key in sorted(entries):
         continue
     if not KEY.match(key) or len(re.findall(r"\d", key)) < 2:
         dropped["reading key"].append(key); continue
+    if key in deny or homophone_mismatch(key, e["entryId"], band):
+        dropped["homophone: HSK word is a different hanzi"].append(key); continue
     if len(by_hanzi[e["headword"]]) > 1:
         dropped["same hanzi, two readings"].append(key); continue
     mp3 = e.get("encodings", {}).get("mp3")

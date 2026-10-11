@@ -9,7 +9,7 @@
   <ItemGroup>
     <Compile Include="../../Runtime/Core/**/*.cs" />
     <Compile Include="../../Tests/Editor/**/*.cs" />
-    <Compile Remove="obj/**;bin/**" />
+    <Compile Remove="obj/**;bin/**;../../Tests/Editor/TweensTests.cs" />
     <None Include="../../Runtime/Resources/LiANNMahjongTones/words.json" Link="words.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('../../Runtime/Resources/LiANNMahjongTones/words.json')" />
     <None Include="../../Tests/Vectors/rules-test-vectors.json" Link="rules-test-vectors.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('../../Tests/Vectors/rules-test-vectors.json')" />
   </ItemGroup>

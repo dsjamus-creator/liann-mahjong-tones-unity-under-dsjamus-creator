@@ -21,5 +21,15 @@ namespace LiANN.MahjongTones.Tests
                 for (int seed = 0; seed < 50; seed++)
                     Assert.DoesNotThrow(() => new Game(Layout.Small24(), pool.Where(x => x.HskBand == band), PlayMode.Practice, $"real-{band}-{seed}"));
         }
+
+        [Test]
+        public void HomophoneDenylistIsExcluded()
+        {
+            var json = File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "words.json"));
+            var keys = JsonSerializer.Deserialize<WordList>(json, new JsonSerializerOptions { IncludeFields = true }).words.Select(w => w.readingKey).ToHashSet();
+            var deny = JsonDocument.Parse(File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "../../../../data/homophone-denylist.json")));
+            foreach (var p in deny.RootElement.EnumerateObject())
+                if (!p.Name.StartsWith("_")) Assert.IsFalse(keys.Contains(p.Name), p.Name + " must not ship: its hanzi and label belong to different words");
+        }
     }
 }

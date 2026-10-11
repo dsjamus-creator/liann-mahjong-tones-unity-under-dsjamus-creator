@@ -54,6 +54,12 @@ namespace LiANN.MahjongTones
             if (_uiFont == null) _uiFont = _hanziFont;
             _audio = gameObject.AddComponent<AudioSource>();
             _audio.playOnAwake = false;
+            // The documented setup is an empty scene with no camera, so there may be no listener and audio would be silent.
+#if UNITY_2023_1_OR_NEWER
+            if (FindAnyObjectByType<AudioListener>() == null) gameObject.AddComponent<AudioListener>();
+#else
+            if (FindObjectOfType<AudioListener>() == null) gameObject.AddComponent<AudioListener>();
+#endif
 
             if (panelSettings == null)
             {
@@ -148,7 +154,7 @@ namespace LiANN.MahjongTones
             b.style.alignItems = Align.Center;
             b.style.justifyContent = Justify.Center;
             Pad(b, 10, 18);
-            Radius(b, 999);
+            Radius(b, 24);   // about half the button height; oversized radii turn pills into ellipses
             Border(b, 2, primary ? Theme.Coral : Theme.BorderStrong);
             b.style.backgroundColor = primary ? Theme.Coral : Theme.Card;
             b.style.marginRight = 8; b.style.marginBottom = 8;
@@ -490,7 +496,8 @@ namespace LiANN.MahjongTones
             _root.Add(_picker);
             _picker.style.opacity = 0;
             card.style.scale = new Scale(new Vector3(0.9f, 0.9f, 1));
-            _tweens.Run(0.18f, t => { _picker.style.opacity = t; card.style.scale = new Scale(Vector3.one * Mathf.Lerp(0.9f, 1f, t)); }, null, Tweens.EaseOutBack);
+            var picker = _picker;   // the field is nulled if the picker closes before the fade ends
+            _tweens.Run(0.18f, t => { picker.style.opacity = t; card.style.scale = new Scale(Vector3.one * Mathf.Lerp(0.9f, 1f, t)); }, null, Tweens.EaseOutBack);
             _root.Focus();
         }
 
@@ -689,16 +696,20 @@ namespace LiANN.MahjongTones
                 var hz = Text(r.Word.Hanzi, 26, Theme.Ink, true);
                 hz.style.unityFontDefinition = FontDefinition.FromFont(_hanziFont);
                 hz.style.minWidth = 90;
+                hz.style.marginRight = 10;
                 row.Add(hz);
                 var py = Text(r.Word.Marked, 18, Theme.Ink, true);
                 py.style.unityFontDefinition = FontDefinition.FromFont(_hanziFont);
-                py.style.minWidth = 120;
+                py.style.minWidth = 150;
+                py.style.marginRight = 14;
                 row.Add(py);
                 var en = Text(r.Word.English, 17, Theme.Muted);
                 en.style.flexGrow = 1;
                 row.Add(en);
                 string flag = !r.Matched ? "not matched" : r.WrongToneAttempts > 0 ? "missed tone" : r.Hinted ? "hinted" : "perfect";
-                row.Add(Text(flag, 14, flag == "perfect" ? Theme.Good : Theme.Coral, true));
+                var flagLabel = Text(flag, 14, flag == "perfect" ? Theme.Good : Theme.Coral, true);
+                flagLabel.style.marginLeft = 10; flagLabel.style.marginRight = 12;
+                row.Add(flagLabel);
                 var word = r.Word;
                 var playBtn = Button("▶", () => Play(word));
                 ((Label)playBtn[0]).style.unityFontDefinition = FontDefinition.FromFont(_hanziFont);

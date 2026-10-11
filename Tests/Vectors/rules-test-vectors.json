@@ -9,101 +9,101 @@
       "seed": "vector-1",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4shi4",
-        "fan4dian4",
-        "xia4ban1",
-        "shen2me5",
-        "ni3hao3",
+        "sheng1bing4",
         "jia1ren2",
-        "ming2tian1",
-        "xia4ke4"
+        "you3de5",
+        "lao3shi1",
+        "jiao3zi5",
+        "dian4shi4",
+        "zhong1guo2",
+        "dian4nao3"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "fan4dian4",
+          "word": "jia1ren2",
           "kind": "A"
         },
         {
           "slot": 1,
-          "word": "xia4ban1",
+          "word": "you3de5",
           "kind": "B"
         },
         {
           "slot": 2,
-          "word": "ni3hao3",
-          "kind": "B"
-        },
-        {
-          "slot": 3,
-          "word": "xia4ban1",
+          "word": "jiao3zi5",
           "kind": "A"
         },
         {
+          "slot": 3,
+          "word": "dian4nao3",
+          "kind": "B"
+        },
+        {
           "slot": 4,
-          "word": "dian4shi4",
+          "word": "you3de5",
           "kind": "A"
         },
         {
           "slot": 5,
-          "word": "xia4ke4",
+          "word": "dian4shi4",
           "kind": "A"
         },
         {
           "slot": 6,
-          "word": "xia4ke4",
+          "word": "zhong1guo2",
           "kind": "B"
         },
         {
           "slot": 7,
-          "word": "ming2tian1",
+          "word": "dian4shi4",
           "kind": "B"
         },
         {
           "slot": 8,
-          "word": "fan4dian4",
-          "kind": "B"
-        },
-        {
-          "slot": 9,
-          "word": "shen2me5",
+          "word": "sheng1bing4",
           "kind": "A"
         },
         {
-          "slot": 10,
+          "slot": 9,
           "word": "jia1ren2",
+          "kind": "B"
+        },
+        {
+          "slot": 10,
+          "word": "dian4nao3",
           "kind": "A"
         },
         {
           "slot": 11,
-          "word": "jia1ren2",
-          "kind": "B"
+          "word": "zhong1guo2",
+          "kind": "A"
         },
         {
           "slot": 12,
-          "word": "ni3hao3",
-          "kind": "A"
-        },
-        {
-          "slot": 13,
-          "word": "ming2tian1",
-          "kind": "A"
-        },
-        {
-          "slot": 14,
-          "word": "shen2me5",
+          "word": "lao3shi1",
           "kind": "B"
         },
         {
+          "slot": 13,
+          "word": "jiao3zi5",
+          "kind": "B"
+        },
+        {
+          "slot": 14,
+          "word": "lao3shi1",
+          "kind": "A"
+        },
+        {
           "slot": 15,
-          "word": "dian4shi4",
+          "word": "sheng1bing4",
           "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4shi4",
-          "wordSlot": 4,
+          "word": "sheng1bing4",
+          "wordSlot": 8,
           "meaningSlot": 15,
           "wrongToneFirst": false,
           "score": 52,
@@ -112,9 +112,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "fan4dian4",
+          "word": "jia1ren2",
           "wordSlot": 0,
-          "meaningSlot": 8,
+          "meaningSlot": 9,
           "wrongToneFirst": false,
           "score": 105,
           "streak": 2,
@@ -122,8 +122,8 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ban1",
-          "wordSlot": 3,
+          "word": "you3de5",
+          "wordSlot": 4,
           "meaningSlot": 1,
           "wrongToneFirst": true,
           "score": 129,
@@ -132,9 +132,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
-          "wordSlot": 9,
-          "meaningSlot": 14,
+          "word": "lao3shi1",
+          "wordSlot": 14,
+          "meaningSlot": 12,
           "wrongToneFirst": false,
           "score": 169,
           "streak": 1,
@@ -142,9 +142,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ni3hao3",
-          "wordSlot": 12,
-          "meaningSlot": 2,
+          "word": "jiao3zi5",
+          "wordSlot": 2,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
           "score": 210,
           "streak": 2,
@@ -152,9 +152,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "jia1ren2",
-          "wordSlot": 10,
-          "meaningSlot": 11,
+          "word": "dian4shi4",
+          "wordSlot": 5,
+          "meaningSlot": 7,
           "wrongToneFirst": true,
           "score": 222,
           "streak": 0,
@@ -162,9 +162,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ming2tian1",
-          "wordSlot": 13,
-          "meaningSlot": 7,
+          "word": "zhong1guo2",
+          "wordSlot": 11,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
           "score": 250,
           "streak": 1,
@@ -172,9 +172,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
-          "wordSlot": 5,
-          "meaningSlot": 6,
+          "word": "dian4nao3",
+          "wordSlot": 10,
+          "meaningSlot": 3,
           "wrongToneFirst": false,
           "score": 279,
           "streak": 2,
@@ -190,102 +190,102 @@
       "seed": "vector-2",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "hao3kan4",
-        "shou3ji1",
-        "gong1zuo4",
-        "mei2shi4",
+        "shi2jian1",
+        "dian4ying3yuan4",
+        "nan2peng2you5",
+        "da4jia1",
+        "ni3hao3",
         "shen2me5",
-        "ni3men5",
-        "xie4xie5",
-        "xia4wu3"
+        "mei2you3",
+        "xian4zai4"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "mei2shi4",
+          "word": "shi2jian1",
           "kind": "B"
         },
         {
           "slot": 1,
-          "word": "ni3men5",
+          "word": "nan2peng2you5",
           "kind": "A"
         },
         {
           "slot": 2,
-          "word": "xie4xie5",
+          "word": "mei2you3",
           "kind": "A"
         },
         {
           "slot": 3,
-          "word": "gong1zuo4",
-          "kind": "A"
+          "word": "ni3hao3",
+          "kind": "B"
         },
         {
           "slot": 4,
-          "word": "xia4wu3",
+          "word": "da4jia1",
           "kind": "B"
         },
         {
           "slot": 5,
           "word": "shen2me5",
-          "kind": "B"
-        },
-        {
-          "slot": 6,
-          "word": "mei2shi4",
           "kind": "A"
         },
         {
-          "slot": 7,
-          "word": "hao3kan4",
+          "slot": 6,
+          "word": "xian4zai4",
           "kind": "B"
         },
         {
+          "slot": 7,
+          "word": "da4jia1",
+          "kind": "A"
+        },
+        {
           "slot": 8,
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "kind": "A"
         },
         {
           "slot": 9,
-          "word": "shou3ji1",
+          "word": "dian4ying3yuan4",
           "kind": "B"
         },
         {
           "slot": 10,
-          "word": "gong1zuo4",
+          "word": "mei2you3",
           "kind": "B"
         },
         {
           "slot": 11,
-          "word": "xia4wu3",
+          "word": "dian4ying3yuan4",
           "kind": "A"
         },
         {
           "slot": 12,
-          "word": "shou3ji1",
-          "kind": "A"
-        },
-        {
-          "slot": 13,
-          "word": "xie4xie5",
+          "word": "nan2peng2you5",
           "kind": "B"
         },
         {
+          "slot": 13,
+          "word": "xian4zai4",
+          "kind": "A"
+        },
+        {
           "slot": 14,
-          "word": "ni3men5",
+          "word": "shen2me5",
           "kind": "B"
         },
         {
           "slot": 15,
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "kind": "A"
         }
       ],
       "moves": [
         {
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "wordSlot": 8,
-          "meaningSlot": 7,
+          "meaningSlot": 0,
           "wrongToneFirst": false,
           "score": 52,
           "streak": 1,
@@ -293,77 +293,77 @@
           "autoReshuffle": false
         },
         {
-          "word": "shou3ji1",
-          "wordSlot": 12,
+          "word": "dian4ying3yuan4",
+          "wordSlot": 11,
           "meaningSlot": 9,
           "wrongToneFirst": false,
-          "score": 105,
+          "score": 115,
           "streak": 2,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "gong1zuo4",
-          "wordSlot": 3,
-          "meaningSlot": 10,
+          "word": "nan2peng2you5",
+          "wordSlot": 1,
+          "meaningSlot": 12,
           "wrongToneFirst": true,
-          "score": 129,
+          "score": 139,
           "streak": 0,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "mei2shi4",
-          "wordSlot": 6,
-          "meaningSlot": 0,
+          "word": "da4jia1",
+          "wordSlot": 7,
+          "meaningSlot": 4,
           "wrongToneFirst": false,
-          "score": 169,
+          "score": 179,
           "streak": 1,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "wordSlot": 15,
-          "meaningSlot": 5,
+          "meaningSlot": 3,
           "wrongToneFirst": false,
-          "score": 210,
+          "score": 220,
           "streak": 2,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "ni3men5",
-          "wordSlot": 1,
+          "word": "shen2me5",
+          "wordSlot": 5,
           "meaningSlot": 14,
           "wrongToneFirst": true,
-          "score": 222,
+          "score": 232,
           "streak": 0,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "xie4xie5",
+          "word": "mei2you3",
           "wordSlot": 2,
-          "meaningSlot": 13,
+          "meaningSlot": 10,
           "wrongToneFirst": false,
-          "score": 250,
+          "score": 260,
           "streak": 1,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
-          "wordSlot": 11,
-          "meaningSlot": 4,
+          "word": "xian4zai4",
+          "wordSlot": 13,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
-          "score": 279,
+          "score": 289,
           "streak": 2,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 279
+      "finalScore": 289
     },
     {
       "layout": "Starter",
@@ -371,102 +371,102 @@
       "seed": "daily:2026-10-12",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4nao3",
         "xia4wu3",
-        "zen3me5",
-        "shuo1hua4",
-        "xue2xiao4",
-        "zhuo1zi5",
-        "xia4ke4",
-        "jie3jie5"
+        "zen3me5yang4",
+        "zao3fan4",
+        "zhong1wu3",
+        "ta1men5",
+        "mian4bao1",
+        "xing1qi1tian1",
+        "na4xie1"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "xia4wu3",
+          "word": "zen3me5yang4",
           "kind": "A"
         },
         {
           "slot": 1,
-          "word": "xia4ke4",
-          "kind": "A"
+          "word": "xing1qi1tian1",
+          "kind": "B"
         },
         {
           "slot": 2,
-          "word": "xia4wu3",
+          "word": "ta1men5",
           "kind": "B"
         },
         {
           "slot": 3,
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "kind": "A"
         },
         {
           "slot": 4,
-          "word": "zhuo1zi5",
+          "word": "zen3me5yang4",
           "kind": "B"
         },
         {
           "slot": 5,
-          "word": "xue2xiao4",
-          "kind": "B"
+          "word": "zao3fan4",
+          "kind": "A"
         },
         {
           "slot": 6,
-          "word": "shuo1hua4",
-          "kind": "B"
+          "word": "ta1men5",
+          "kind": "A"
         },
         {
           "slot": 7,
-          "word": "zen3me5",
-          "kind": "B"
+          "word": "mian4bao1",
+          "kind": "A"
         },
         {
           "slot": 8,
-          "word": "xia4ke4",
-          "kind": "B"
+          "word": "zhong1wu3",
+          "kind": "A"
         },
         {
           "slot": 9,
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "kind": "A"
         },
         {
           "slot": 10,
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "kind": "B"
         },
         {
           "slot": 11,
-          "word": "zen3me5",
+          "word": "xing1qi1tian1",
           "kind": "A"
         },
         {
           "slot": 12,
-          "word": "shuo1hua4",
-          "kind": "A"
+          "word": "xia4wu3",
+          "kind": "B"
         },
         {
           "slot": 13,
-          "word": "zhuo1zi5",
-          "kind": "A"
+          "word": "zhong1wu3",
+          "kind": "B"
         },
         {
           "slot": 14,
-          "word": "xue2xiao4",
-          "kind": "A"
+          "word": "mian4bao1",
+          "kind": "B"
         },
         {
           "slot": 15,
-          "word": "dian4nao3",
+          "word": "zao3fan4",
           "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "wordSlot": 3,
-          "meaningSlot": 15,
+          "meaningSlot": 12,
           "wrongToneFirst": false,
           "score": 52,
           "streak": 1,
@@ -474,77 +474,77 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
+          "word": "zen3me5yang4",
           "wordSlot": 0,
-          "meaningSlot": 2,
+          "meaningSlot": 4,
           "wrongToneFirst": false,
-          "score": 105,
+          "score": 115,
           "streak": 2,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "zen3me5",
-          "wordSlot": 11,
-          "meaningSlot": 7,
+          "word": "zao3fan4",
+          "wordSlot": 5,
+          "meaningSlot": 15,
           "wrongToneFirst": true,
-          "score": 129,
+          "score": 139,
           "streak": 0,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "shuo1hua4",
-          "wordSlot": 12,
-          "meaningSlot": 6,
+          "word": "zhong1wu3",
+          "wordSlot": 8,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
-          "score": 169,
+          "score": 179,
           "streak": 1,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "xue2xiao4",
-          "wordSlot": 14,
-          "meaningSlot": 5,
+          "word": "ta1men5",
+          "wordSlot": 6,
+          "meaningSlot": 2,
           "wrongToneFirst": false,
-          "score": 210,
+          "score": 220,
           "streak": 2,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "zhuo1zi5",
-          "wordSlot": 13,
-          "meaningSlot": 4,
+          "word": "mian4bao1",
+          "wordSlot": 7,
+          "meaningSlot": 14,
           "wrongToneFirst": true,
-          "score": 222,
+          "score": 232,
           "streak": 0,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
-          "wordSlot": 1,
-          "meaningSlot": 8,
+          "word": "xing1qi1tian1",
+          "wordSlot": 11,
+          "meaningSlot": 1,
           "wrongToneFirst": false,
-          "score": 250,
+          "score": 270,
           "streak": 1,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "wordSlot": 9,
           "meaningSlot": 10,
           "wrongToneFirst": false,
-          "score": 279,
+          "score": 299,
           "streak": 2,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 279
+      "finalScore": 299
     },
     {
       "layout": "Starter",
@@ -552,101 +552,101 @@
       "seed": "vector-1",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4shi4",
-        "fan4dian4",
-        "xia4ban1",
-        "shen2me5",
-        "ni3hao3",
+        "sheng1bing4",
         "jia1ren2",
-        "ming2tian1",
-        "xia4ke4"
+        "you3de5",
+        "lao3shi1",
+        "jiao3zi5",
+        "dian4shi4",
+        "zhong1guo2",
+        "dian4nao3"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "fan4dian4",
+          "word": "jia1ren2",
           "kind": "A"
         },
         {
           "slot": 1,
-          "word": "xia4ban1",
+          "word": "you3de5",
           "kind": "B"
         },
         {
           "slot": 2,
-          "word": "ni3hao3",
-          "kind": "B"
-        },
-        {
-          "slot": 3,
-          "word": "xia4ban1",
+          "word": "jiao3zi5",
           "kind": "A"
         },
         {
+          "slot": 3,
+          "word": "dian4nao3",
+          "kind": "B"
+        },
+        {
           "slot": 4,
-          "word": "dian4shi4",
+          "word": "you3de5",
           "kind": "A"
         },
         {
           "slot": 5,
-          "word": "xia4ke4",
+          "word": "dian4shi4",
           "kind": "A"
         },
         {
           "slot": 6,
-          "word": "xia4ke4",
+          "word": "zhong1guo2",
           "kind": "B"
         },
         {
           "slot": 7,
-          "word": "ming2tian1",
+          "word": "dian4shi4",
           "kind": "B"
         },
         {
           "slot": 8,
-          "word": "fan4dian4",
-          "kind": "B"
-        },
-        {
-          "slot": 9,
-          "word": "shen2me5",
+          "word": "sheng1bing4",
           "kind": "A"
         },
         {
-          "slot": 10,
+          "slot": 9,
           "word": "jia1ren2",
+          "kind": "B"
+        },
+        {
+          "slot": 10,
+          "word": "dian4nao3",
           "kind": "A"
         },
         {
           "slot": 11,
-          "word": "jia1ren2",
-          "kind": "B"
+          "word": "zhong1guo2",
+          "kind": "A"
         },
         {
           "slot": 12,
-          "word": "ni3hao3",
-          "kind": "A"
-        },
-        {
-          "slot": 13,
-          "word": "ming2tian1",
-          "kind": "A"
-        },
-        {
-          "slot": 14,
-          "word": "shen2me5",
+          "word": "lao3shi1",
           "kind": "B"
         },
         {
+          "slot": 13,
+          "word": "jiao3zi5",
+          "kind": "B"
+        },
+        {
+          "slot": 14,
+          "word": "lao3shi1",
+          "kind": "A"
+        },
+        {
           "slot": 15,
-          "word": "dian4shi4",
+          "word": "sheng1bing4",
           "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4shi4",
-          "wordSlot": 4,
+          "word": "sheng1bing4",
+          "wordSlot": 8,
           "meaningSlot": 15,
           "wrongToneFirst": false,
           "score": 52,
@@ -655,9 +655,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "fan4dian4",
+          "word": "jia1ren2",
           "wordSlot": 0,
-          "meaningSlot": 8,
+          "meaningSlot": 9,
           "wrongToneFirst": false,
           "score": 105,
           "streak": 2,
@@ -665,8 +665,8 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ban1",
-          "wordSlot": 3,
+          "word": "you3de5",
+          "wordSlot": 4,
           "meaningSlot": 1,
           "wrongToneFirst": true,
           "score": 119,
@@ -675,9 +675,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
-          "wordSlot": 9,
-          "meaningSlot": 14,
+          "word": "lao3shi1",
+          "wordSlot": 14,
+          "meaningSlot": 12,
           "wrongToneFirst": false,
           "score": 159,
           "streak": 1,
@@ -685,9 +685,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ni3hao3",
-          "wordSlot": 12,
-          "meaningSlot": 2,
+          "word": "jiao3zi5",
+          "wordSlot": 2,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
           "score": 200,
           "streak": 2,
@@ -695,9 +695,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "jia1ren2",
-          "wordSlot": 10,
-          "meaningSlot": 11,
+          "word": "dian4shi4",
+          "wordSlot": 5,
+          "meaningSlot": 7,
           "wrongToneFirst": true,
           "score": 202,
           "streak": 0,
@@ -705,9 +705,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ming2tian1",
-          "wordSlot": 13,
-          "meaningSlot": 7,
+          "word": "zhong1guo2",
+          "wordSlot": 11,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
           "score": 230,
           "streak": 1,
@@ -715,9 +715,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
-          "wordSlot": 5,
-          "meaningSlot": 6,
+          "word": "dian4nao3",
+          "wordSlot": 10,
+          "meaningSlot": 3,
           "wrongToneFirst": false,
           "score": 259,
           "streak": 2,
@@ -733,102 +733,102 @@
       "seed": "vector-2",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "hao3kan4",
-        "shou3ji1",
-        "gong1zuo4",
-        "mei2shi4",
+        "shi2jian1",
+        "dian4ying3yuan4",
+        "nan2peng2you5",
+        "da4jia1",
+        "ni3hao3",
         "shen2me5",
-        "ni3men5",
-        "xie4xie5",
-        "xia4wu3"
+        "mei2you3",
+        "xian4zai4"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "mei2shi4",
+          "word": "shi2jian1",
           "kind": "B"
         },
         {
           "slot": 1,
-          "word": "ni3men5",
+          "word": "nan2peng2you5",
           "kind": "A"
         },
         {
           "slot": 2,
-          "word": "xie4xie5",
+          "word": "mei2you3",
           "kind": "A"
         },
         {
           "slot": 3,
-          "word": "gong1zuo4",
-          "kind": "A"
+          "word": "ni3hao3",
+          "kind": "B"
         },
         {
           "slot": 4,
-          "word": "xia4wu3",
+          "word": "da4jia1",
           "kind": "B"
         },
         {
           "slot": 5,
           "word": "shen2me5",
-          "kind": "B"
-        },
-        {
-          "slot": 6,
-          "word": "mei2shi4",
           "kind": "A"
         },
         {
-          "slot": 7,
-          "word": "hao3kan4",
+          "slot": 6,
+          "word": "xian4zai4",
           "kind": "B"
         },
         {
+          "slot": 7,
+          "word": "da4jia1",
+          "kind": "A"
+        },
+        {
           "slot": 8,
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "kind": "A"
         },
         {
           "slot": 9,
-          "word": "shou3ji1",
+          "word": "dian4ying3yuan4",
           "kind": "B"
         },
         {
           "slot": 10,
-          "word": "gong1zuo4",
+          "word": "mei2you3",
           "kind": "B"
         },
         {
           "slot": 11,
-          "word": "xia4wu3",
+          "word": "dian4ying3yuan4",
           "kind": "A"
         },
         {
           "slot": 12,
-          "word": "shou3ji1",
-          "kind": "A"
-        },
-        {
-          "slot": 13,
-          "word": "xie4xie5",
+          "word": "nan2peng2you5",
           "kind": "B"
         },
         {
+          "slot": 13,
+          "word": "xian4zai4",
+          "kind": "A"
+        },
+        {
           "slot": 14,
-          "word": "ni3men5",
+          "word": "shen2me5",
           "kind": "B"
         },
         {
           "slot": 15,
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "kind": "A"
         }
       ],
       "moves": [
         {
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "wordSlot": 8,
-          "meaningSlot": 7,
+          "meaningSlot": 0,
           "wrongToneFirst": false,
           "score": 52,
           "streak": 1,
@@ -836,77 +836,77 @@
           "autoReshuffle": false
         },
         {
-          "word": "shou3ji1",
-          "wordSlot": 12,
+          "word": "dian4ying3yuan4",
+          "wordSlot": 11,
           "meaningSlot": 9,
           "wrongToneFirst": false,
-          "score": 105,
+          "score": 115,
           "streak": 2,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "gong1zuo4",
-          "wordSlot": 3,
-          "meaningSlot": 10,
+          "word": "nan2peng2you5",
+          "wordSlot": 1,
+          "meaningSlot": 12,
           "wrongToneFirst": true,
-          "score": 119,
+          "score": 129,
           "streak": 0,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "mei2shi4",
-          "wordSlot": 6,
-          "meaningSlot": 0,
+          "word": "da4jia1",
+          "wordSlot": 7,
+          "meaningSlot": 4,
           "wrongToneFirst": false,
-          "score": 159,
+          "score": 169,
           "streak": 1,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "wordSlot": 15,
-          "meaningSlot": 5,
+          "meaningSlot": 3,
           "wrongToneFirst": false,
-          "score": 200,
+          "score": 210,
           "streak": 2,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "ni3men5",
-          "wordSlot": 1,
+          "word": "shen2me5",
+          "wordSlot": 5,
           "meaningSlot": 14,
           "wrongToneFirst": true,
-          "score": 202,
+          "score": 212,
           "streak": 0,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "xie4xie5",
+          "word": "mei2you3",
           "wordSlot": 2,
-          "meaningSlot": 13,
+          "meaningSlot": 10,
           "wrongToneFirst": false,
-          "score": 230,
+          "score": 240,
           "streak": 1,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
-          "wordSlot": 11,
-          "meaningSlot": 4,
+          "word": "xian4zai4",
+          "wordSlot": 13,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
-          "score": 259,
+          "score": 269,
           "streak": 2,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 259
+      "finalScore": 269
     },
     {
       "layout": "Starter",
@@ -914,102 +914,102 @@
       "seed": "daily:2026-10-12",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4nao3",
         "xia4wu3",
-        "zen3me5",
-        "shuo1hua4",
-        "xue2xiao4",
-        "zhuo1zi5",
-        "xia4ke4",
-        "jie3jie5"
+        "zen3me5yang4",
+        "zao3fan4",
+        "zhong1wu3",
+        "ta1men5",
+        "mian4bao1",
+        "xing1qi1tian1",
+        "na4xie1"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "xia4wu3",
+          "word": "zen3me5yang4",
           "kind": "A"
         },
         {
           "slot": 1,
-          "word": "xia4ke4",
-          "kind": "A"
+          "word": "xing1qi1tian1",
+          "kind": "B"
         },
         {
           "slot": 2,
-          "word": "xia4wu3",
+          "word": "ta1men5",
           "kind": "B"
         },
         {
           "slot": 3,
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "kind": "A"
         },
         {
           "slot": 4,
-          "word": "zhuo1zi5",
+          "word": "zen3me5yang4",
           "kind": "B"
         },
         {
           "slot": 5,
-          "word": "xue2xiao4",
-          "kind": "B"
+          "word": "zao3fan4",
+          "kind": "A"
         },
         {
           "slot": 6,
-          "word": "shuo1hua4",
-          "kind": "B"
+          "word": "ta1men5",
+          "kind": "A"
         },
         {
           "slot": 7,
-          "word": "zen3me5",
-          "kind": "B"
+          "word": "mian4bao1",
+          "kind": "A"
         },
         {
           "slot": 8,
-          "word": "xia4ke4",
-          "kind": "B"
+          "word": "zhong1wu3",
+          "kind": "A"
         },
         {
           "slot": 9,
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "kind": "A"
         },
         {
           "slot": 10,
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "kind": "B"
         },
         {
           "slot": 11,
-          "word": "zen3me5",
+          "word": "xing1qi1tian1",
           "kind": "A"
         },
         {
           "slot": 12,
-          "word": "shuo1hua4",
-          "kind": "A"
+          "word": "xia4wu3",
+          "kind": "B"
         },
         {
           "slot": 13,
-          "word": "zhuo1zi5",
-          "kind": "A"
+          "word": "zhong1wu3",
+          "kind": "B"
         },
         {
           "slot": 14,
-          "word": "xue2xiao4",
-          "kind": "A"
+          "word": "mian4bao1",
+          "kind": "B"
         },
         {
           "slot": 15,
-          "word": "dian4nao3",
+          "word": "zao3fan4",
           "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "wordSlot": 3,
-          "meaningSlot": 15,
+          "meaningSlot": 12,
           "wrongToneFirst": false,
           "score": 52,
           "streak": 1,
@@ -1017,77 +1017,77 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
+          "word": "zen3me5yang4",
           "wordSlot": 0,
-          "meaningSlot": 2,
+          "meaningSlot": 4,
           "wrongToneFirst": false,
-          "score": 105,
+          "score": 115,
           "streak": 2,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "zen3me5",
-          "wordSlot": 11,
-          "meaningSlot": 7,
+          "word": "zao3fan4",
+          "wordSlot": 5,
+          "meaningSlot": 15,
           "wrongToneFirst": true,
-          "score": 119,
+          "score": 129,
           "streak": 0,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "shuo1hua4",
-          "wordSlot": 12,
-          "meaningSlot": 6,
+          "word": "zhong1wu3",
+          "wordSlot": 8,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
-          "score": 159,
+          "score": 169,
           "streak": 1,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "xue2xiao4",
-          "wordSlot": 14,
-          "meaningSlot": 5,
+          "word": "ta1men5",
+          "wordSlot": 6,
+          "meaningSlot": 2,
           "wrongToneFirst": false,
-          "score": 200,
+          "score": 210,
           "streak": 2,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "zhuo1zi5",
-          "wordSlot": 13,
-          "meaningSlot": 4,
+          "word": "mian4bao1",
+          "wordSlot": 7,
+          "meaningSlot": 14,
           "wrongToneFirst": true,
-          "score": 202,
+          "score": 212,
           "streak": 0,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
-          "wordSlot": 1,
-          "meaningSlot": 8,
+          "word": "xing1qi1tian1",
+          "wordSlot": 11,
+          "meaningSlot": 1,
           "wrongToneFirst": false,
-          "score": 230,
+          "score": 250,
           "streak": 1,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "wordSlot": 9,
           "meaningSlot": 10,
           "wrongToneFirst": false,
-          "score": 259,
+          "score": 279,
           "streak": 2,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 259
+      "finalScore": 279
     },
     {
       "layout": "Small",
@@ -1095,104 +1095,104 @@
       "seed": "vector-1",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4shi4",
-        "fan4dian4",
-        "xia4ban1",
-        "shen2me5",
-        "ni3hao3",
+        "sheng1bing4",
         "jia1ren2",
-        "ming2tian1",
-        "xia4ke4",
+        "you3de5",
+        "lao3shi1",
         "jiao3zi5",
-        "xiu1xi5",
-        "shi2hou5",
-        "dian4nao3"
+        "dian4shi4",
+        "zhong1guo2",
+        "dian4nao3",
+        "xing1qi1tian1",
+        "ji1dan4",
+        "shui4jiao4",
+        "shen2me5"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "fan4dian4",
-          "kind": "A"
-        },
-        {
-          "slot": 1,
-          "word": "xia4ban1",
-          "kind": "A"
-        },
-        {
-          "slot": 2,
-          "word": "ni3hao3",
-          "kind": "B"
-        },
-        {
-          "slot": 3,
-          "word": "jiao3zi5",
-          "kind": "A"
-        },
-        {
-          "slot": 4,
-          "word": "xia4ke4",
-          "kind": "A"
-        },
-        {
-          "slot": 5,
-          "word": "xia4ban1",
-          "kind": "B"
-        },
-        {
-          "slot": 6,
           "word": "jia1ren2",
           "kind": "A"
         },
         {
+          "slot": 1,
+          "word": "jiao3zi5",
+          "kind": "A"
+        },
+        {
+          "slot": 2,
+          "word": "shen2me5",
+          "kind": "B"
+        },
+        {
+          "slot": 3,
+          "word": "shui4jiao4",
+          "kind": "A"
+        },
+        {
+          "slot": 4,
+          "word": "dian4nao3",
+          "kind": "A"
+        },
+        {
+          "slot": 5,
+          "word": "you3de5",
+          "kind": "B"
+        },
+        {
+          "slot": 6,
+          "word": "dian4nao3",
+          "kind": "B"
+        },
+        {
           "slot": 7,
-          "word": "shi2hou5",
+          "word": "xing1qi1tian1",
           "kind": "A"
         },
         {
           "slot": 8,
-          "word": "dian4nao3",
-          "kind": "A"
+          "word": "ji1dan4",
+          "kind": "B"
         },
         {
           "slot": 9,
-          "word": "dian4nao3",
-          "kind": "B"
+          "word": "shen2me5",
+          "kind": "A"
         },
         {
           "slot": 10,
-          "word": "xiu1xi5",
-          "kind": "B"
-        },
-        {
-          "slot": 11,
           "word": "dian4shi4",
           "kind": "A"
         },
         {
+          "slot": 11,
+          "word": "you3de5",
+          "kind": "A"
+        },
+        {
           "slot": 12,
-          "word": "xia4ke4",
+          "word": "dian4shi4",
           "kind": "B"
         },
         {
           "slot": 13,
-          "word": "jiao3zi5",
+          "word": "zhong1guo2",
           "kind": "B"
         },
         {
           "slot": 14,
-          "word": "xiu1xi5",
-          "kind": "A"
+          "word": "xing1qi1tian1",
+          "kind": "B"
         },
         {
           "slot": 15,
-          "word": "shi2hou5",
+          "word": "shui4jiao4",
           "kind": "B"
         },
         {
           "slot": 16,
-          "word": "ming2tian1",
-          "kind": "B"
+          "word": "ji1dan4",
+          "kind": "A"
         },
         {
           "slot": 17,
@@ -1201,39 +1201,39 @@
         },
         {
           "slot": 18,
-          "word": "fan4dian4",
-          "kind": "B"
+          "word": "sheng1bing4",
+          "kind": "A"
         },
         {
           "slot": 19,
-          "word": "shen2me5",
+          "word": "zhong1guo2",
           "kind": "A"
         },
         {
           "slot": 20,
-          "word": "ni3hao3",
-          "kind": "A"
-        },
-        {
-          "slot": 21,
-          "word": "ming2tian1",
-          "kind": "A"
-        },
-        {
-          "slot": 22,
-          "word": "shen2me5",
+          "word": "jiao3zi5",
           "kind": "B"
         },
         {
+          "slot": 21,
+          "word": "lao3shi1",
+          "kind": "B"
+        },
+        {
+          "slot": 22,
+          "word": "lao3shi1",
+          "kind": "A"
+        },
+        {
           "slot": 23,
-          "word": "dian4shi4",
+          "word": "sheng1bing4",
           "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4shi4",
-          "wordSlot": 11,
+          "word": "sheng1bing4",
+          "wordSlot": 18,
           "meaningSlot": 23,
           "wrongToneFirst": false,
           "score": 68,
@@ -1242,9 +1242,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "fan4dian4",
+          "word": "jia1ren2",
           "wordSlot": 0,
-          "meaningSlot": 18,
+          "meaningSlot": 17,
           "wrongToneFirst": false,
           "score": 137,
           "streak": 2,
@@ -1252,8 +1252,8 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ban1",
-          "wordSlot": 1,
+          "word": "you3de5",
+          "wordSlot": 11,
           "meaningSlot": 5,
           "wrongToneFirst": true,
           "score": 177,
@@ -1262,9 +1262,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
-          "wordSlot": 19,
-          "meaningSlot": 22,
+          "word": "lao3shi1",
+          "wordSlot": 22,
+          "meaningSlot": 21,
           "wrongToneFirst": false,
           "score": 233,
           "streak": 1,
@@ -1272,9 +1272,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ni3hao3",
-          "wordSlot": 20,
-          "meaningSlot": 2,
+          "word": "jiao3zi5",
+          "wordSlot": 1,
+          "meaningSlot": 20,
           "wrongToneFirst": false,
           "score": 290,
           "streak": 2,
@@ -1282,9 +1282,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "jia1ren2",
-          "wordSlot": 6,
-          "meaningSlot": 17,
+          "word": "dian4shi4",
+          "wordSlot": 10,
+          "meaningSlot": 12,
           "wrongToneFirst": true,
           "score": 318,
           "streak": 0,
@@ -1292,9 +1292,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ming2tian1",
-          "wordSlot": 21,
-          "meaningSlot": 16,
+          "word": "zhong1guo2",
+          "wordSlot": 19,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
           "score": 362,
           "streak": 1,
@@ -1302,9 +1302,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
+          "word": "dian4nao3",
           "wordSlot": 4,
-          "meaningSlot": 12,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
           "score": 407,
           "streak": 2,
@@ -1312,9 +1312,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "jiao3zi5",
-          "wordSlot": 3,
-          "meaningSlot": 13,
+          "word": "xing1qi1tian1",
+          "wordSlot": 7,
+          "meaningSlot": 14,
           "wrongToneFirst": true,
           "score": 423,
           "streak": 0,
@@ -1322,9 +1322,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "xiu1xi5",
-          "wordSlot": 14,
-          "meaningSlot": 10,
+          "word": "ji1dan4",
+          "wordSlot": 16,
+          "meaningSlot": 8,
           "wrongToneFirst": false,
           "score": 455,
           "streak": 1,
@@ -1332,8 +1332,8 @@
           "autoReshuffle": false
         },
         {
-          "word": "shi2hou5",
-          "wordSlot": 7,
+          "word": "shui4jiao4",
+          "wordSlot": 3,
           "meaningSlot": 15,
           "wrongToneFirst": false,
           "score": 488,
@@ -1342,9 +1342,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "dian4nao3",
-          "wordSlot": 8,
-          "meaningSlot": 9,
+          "word": "shen2me5",
+          "wordSlot": 9,
+          "meaningSlot": 2,
           "wrongToneFirst": true,
           "score": 492,
           "streak": 0,
@@ -1360,146 +1360,146 @@
       "seed": "vector-2",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "hao3kan4",
-        "shou3ji1",
-        "gong1zuo4",
-        "mei2shi4",
-        "shen2me5",
-        "ni3men5",
-        "xie4xie5",
-        "xia4wu3",
-        "wo3men5",
-        "bao1zi5",
+        "shi2jian1",
+        "dian4ying3yuan4",
+        "nan2peng2you5",
         "da4jia1",
-        "xia4yu3"
+        "ni3hao3",
+        "shen2me5",
+        "mei2you3",
+        "xian4zai4",
+        "bao1zi5",
+        "mei2guan1xi5",
+        "xi3huan5",
+        "bai2tian1"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "mei2shi4",
+          "word": "shi2jian1",
           "kind": "B"
         },
         {
           "slot": 1,
-          "word": "ni3men5",
+          "word": "mei2you3",
           "kind": "A"
         },
         {
           "slot": 2,
-          "word": "xie4xie5",
-          "kind": "A"
+          "word": "bao1zi5",
+          "kind": "B"
         },
         {
           "slot": 3,
-          "word": "xia4yu3",
+          "word": "bai2tian1",
           "kind": "B"
         },
         {
           "slot": 4,
-          "word": "bao1zi5",
-          "kind": "A"
+          "word": "ni3hao3",
+          "kind": "B"
         },
         {
           "slot": 5,
-          "word": "gong1zuo4",
+          "word": "nan2peng2you5",
           "kind": "A"
         },
         {
           "slot": 6,
-          "word": "xia4wu3",
+          "word": "xian4zai4",
           "kind": "B"
         },
         {
           "slot": 7,
-          "word": "wo3men5",
-          "kind": "B"
+          "word": "bao1zi5",
+          "kind": "A"
         },
         {
           "slot": 8,
-          "word": "xia4yu3",
+          "word": "bai2tian1",
           "kind": "A"
         },
         {
           "slot": 9,
-          "word": "da4jia1",
+          "word": "xi3huan5",
           "kind": "B"
         },
         {
           "slot": 10,
-          "word": "bao1zi5",
-          "kind": "B"
+          "word": "shen2me5",
+          "kind": "A"
         },
         {
           "slot": 11,
-          "word": "shen2me5",
-          "kind": "B"
-        },
-        {
-          "slot": 12,
-          "word": "hao3kan4",
-          "kind": "B"
-        },
-        {
-          "slot": 13,
-          "word": "mei2shi4",
-          "kind": "A"
-        },
-        {
-          "slot": 14,
-          "word": "xia4wu3",
-          "kind": "A"
-        },
-        {
-          "slot": 15,
-          "word": "wo3men5",
-          "kind": "A"
-        },
-        {
-          "slot": 16,
           "word": "da4jia1",
           "kind": "A"
         },
         {
+          "slot": 12,
+          "word": "da4jia1",
+          "kind": "B"
+        },
+        {
+          "slot": 13,
+          "word": "mei2guan1xi5",
+          "kind": "B"
+        },
+        {
+          "slot": 14,
+          "word": "xi3huan5",
+          "kind": "A"
+        },
+        {
+          "slot": 15,
+          "word": "mei2guan1xi5",
+          "kind": "A"
+        },
+        {
+          "slot": 16,
+          "word": "mei2you3",
+          "kind": "B"
+        },
+        {
           "slot": 17,
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "kind": "A"
         },
         {
           "slot": 18,
-          "word": "shou3ji1",
+          "word": "dian4ying3yuan4",
           "kind": "B"
         },
         {
           "slot": 19,
-          "word": "gong1zuo4",
-          "kind": "B"
-        },
-        {
-          "slot": 20,
-          "word": "xie4xie5",
-          "kind": "B"
-        },
-        {
-          "slot": 21,
-          "word": "shou3ji1",
+          "word": "xian4zai4",
           "kind": "A"
         },
         {
+          "slot": 20,
+          "word": "dian4ying3yuan4",
+          "kind": "A"
+        },
+        {
+          "slot": 21,
+          "word": "nan2peng2you5",
+          "kind": "B"
+        },
+        {
           "slot": 22,
-          "word": "ni3men5",
+          "word": "shen2me5",
           "kind": "B"
         },
         {
           "slot": 23,
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "kind": "A"
         }
       ],
       "moves": [
         {
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "wordSlot": 17,
-          "meaningSlot": 12,
+          "meaningSlot": 0,
           "wrongToneFirst": false,
           "score": 68,
           "streak": 1,
@@ -1507,117 +1507,117 @@
           "autoReshuffle": false
         },
         {
-          "word": "shou3ji1",
-          "wordSlot": 21,
+          "word": "dian4ying3yuan4",
+          "wordSlot": 20,
           "meaningSlot": 18,
           "wrongToneFirst": false,
-          "score": 137,
+          "score": 147,
           "streak": 2,
           "tilesLeft": 20,
           "autoReshuffle": false
         },
         {
-          "word": "gong1zuo4",
+          "word": "nan2peng2you5",
           "wordSlot": 5,
-          "meaningSlot": 19,
+          "meaningSlot": 21,
           "wrongToneFirst": true,
-          "score": 177,
+          "score": 187,
           "streak": 0,
           "tilesLeft": 18,
           "autoReshuffle": false
         },
         {
-          "word": "mei2shi4",
-          "wordSlot": 13,
-          "meaningSlot": 0,
+          "word": "da4jia1",
+          "wordSlot": 11,
+          "meaningSlot": 12,
           "wrongToneFirst": false,
-          "score": 233,
+          "score": 243,
           "streak": 1,
           "tilesLeft": 16,
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "wordSlot": 23,
-          "meaningSlot": 11,
+          "meaningSlot": 4,
           "wrongToneFirst": false,
-          "score": 290,
+          "score": 300,
           "streak": 2,
           "tilesLeft": 14,
           "autoReshuffle": false
         },
         {
-          "word": "ni3men5",
-          "wordSlot": 1,
+          "word": "shen2me5",
+          "wordSlot": 10,
           "meaningSlot": 22,
           "wrongToneFirst": true,
-          "score": 318,
+          "score": 328,
           "streak": 0,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "xie4xie5",
-          "wordSlot": 2,
-          "meaningSlot": 20,
+          "word": "mei2you3",
+          "wordSlot": 1,
+          "meaningSlot": 16,
           "wrongToneFirst": false,
-          "score": 362,
+          "score": 372,
           "streak": 1,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
-          "wordSlot": 14,
+          "word": "xian4zai4",
+          "wordSlot": 19,
           "meaningSlot": 6,
           "wrongToneFirst": false,
-          "score": 407,
+          "score": 417,
           "streak": 2,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "wo3men5",
-          "wordSlot": 15,
-          "meaningSlot": 7,
+          "word": "bao1zi5",
+          "wordSlot": 7,
+          "meaningSlot": 2,
           "wrongToneFirst": true,
-          "score": 423,
+          "score": 433,
           "streak": 0,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "bao1zi5",
-          "wordSlot": 4,
-          "meaningSlot": 10,
+          "word": "mei2guan1xi5",
+          "wordSlot": 15,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
-          "score": 455,
+          "score": 475,
           "streak": 1,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "da4jia1",
-          "wordSlot": 16,
+          "word": "xi3huan5",
+          "wordSlot": 14,
           "meaningSlot": 9,
           "wrongToneFirst": false,
-          "score": 488,
+          "score": 508,
           "streak": 2,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "xia4yu3",
+          "word": "bai2tian1",
           "wordSlot": 8,
           "meaningSlot": 3,
           "wrongToneFirst": true,
-          "score": 492,
+          "score": 512,
           "streak": 0,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 492
+      "finalScore": 512
     },
     {
       "layout": "Small",
@@ -1625,144 +1625,144 @@
       "seed": "daily:2026-10-12",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4nao3",
         "xia4wu3",
-        "zen3me5",
-        "shuo1hua4",
-        "xue2xiao4",
-        "zhuo1zi5",
-        "xia4ke4",
-        "jie3jie5",
-        "yi1xia4",
-        "nan2peng2you5",
-        "qu4nian2",
-        "chu1zu1che1"
+        "zen3me5yang4",
+        "zao3fan4",
+        "zhong1wu3",
+        "ta1men5",
+        "mian4bao1",
+        "xing1qi1tian1",
+        "na4xie1",
+        "gong1si1",
+        "jiao3zi5",
+        "jin1nian2",
+        "ge1ge5"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "xia4ke4",
+          "word": "zen3me5yang4",
           "kind": "A"
         },
         {
           "slot": 1,
-          "word": "chu1zu1che1",
-          "kind": "A"
+          "word": "xing1qi1tian1",
+          "kind": "B"
         },
         {
           "slot": 2,
-          "word": "qu4nian2",
+          "word": "jiao3zi5",
           "kind": "B"
         },
         {
           "slot": 3,
-          "word": "nan2peng2you5",
-          "kind": "B"
+          "word": "jin1nian2",
+          "kind": "A"
         },
         {
           "slot": 4,
-          "word": "xue2xiao4",
+          "word": "ge1ge5",
           "kind": "B"
         },
         {
           "slot": 5,
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "kind": "A"
         },
         {
           "slot": 6,
-          "word": "xia4wu3",
-          "kind": "A"
+          "word": "ta1men5",
+          "kind": "B"
         },
         {
           "slot": 7,
-          "word": "qu4nian2",
+          "word": "mian4bao1",
           "kind": "A"
         },
         {
           "slot": 8,
-          "word": "chu1zu1che1",
-          "kind": "B"
-        },
-        {
-          "slot": 9,
-          "word": "yi1xia4",
-          "kind": "B"
-        },
-        {
-          "slot": 10,
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "kind": "A"
         },
         {
+          "slot": 9,
+          "word": "ge1ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 10,
+          "word": "jin1nian2",
+          "kind": "B"
+        },
+        {
           "slot": 11,
-          "word": "xia4wu3",
+          "word": "zen3me5yang4",
           "kind": "B"
         },
         {
           "slot": 12,
-          "word": "shuo1hua4",
-          "kind": "B"
+          "word": "ta1men5",
+          "kind": "A"
         },
         {
           "slot": 13,
-          "word": "zhuo1zi5",
+          "word": "na4xie1",
           "kind": "B"
         },
         {
           "slot": 14,
-          "word": "xia4ke4",
+          "word": "gong1si1",
           "kind": "B"
         },
         {
           "slot": 15,
-          "word": "jie3jie5",
-          "kind": "B"
+          "word": "gong1si1",
+          "kind": "A"
         },
         {
           "slot": 16,
-          "word": "yi1xia4",
+          "word": "xing1qi1tian1",
           "kind": "A"
         },
         {
           "slot": 17,
-          "word": "zen3me5",
-          "kind": "B"
+          "word": "zao3fan4",
+          "kind": "A"
         },
         {
           "slot": 18,
-          "word": "nan2peng2you5",
+          "word": "zhong1wu3",
           "kind": "A"
         },
         {
           "slot": 19,
-          "word": "zhuo1zi5",
-          "kind": "A"
+          "word": "mian4bao1",
+          "kind": "B"
         },
         {
           "slot": 20,
-          "word": "zen3me5",
+          "word": "jiao3zi5",
           "kind": "A"
         },
         {
           "slot": 21,
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "kind": "B"
         },
         {
           "slot": 22,
-          "word": "shuo1hua4",
-          "kind": "A"
+          "word": "zhong1wu3",
+          "kind": "B"
         },
         {
           "slot": 23,
-          "word": "xue2xiao4",
-          "kind": "A"
+          "word": "zao3fan4",
+          "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "wordSlot": 5,
           "meaningSlot": 21,
           "wrongToneFirst": false,
@@ -1772,117 +1772,117 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
-          "wordSlot": 6,
+          "word": "zen3me5yang4",
+          "wordSlot": 0,
           "meaningSlot": 11,
           "wrongToneFirst": false,
-          "score": 137,
+          "score": 147,
           "streak": 2,
           "tilesLeft": 20,
           "autoReshuffle": false
         },
         {
-          "word": "zen3me5",
-          "wordSlot": 20,
-          "meaningSlot": 17,
+          "word": "zao3fan4",
+          "wordSlot": 17,
+          "meaningSlot": 23,
           "wrongToneFirst": true,
-          "score": 177,
+          "score": 187,
           "streak": 0,
           "tilesLeft": 18,
           "autoReshuffle": false
         },
         {
-          "word": "shuo1hua4",
-          "wordSlot": 22,
-          "meaningSlot": 12,
+          "word": "zhong1wu3",
+          "wordSlot": 18,
+          "meaningSlot": 22,
           "wrongToneFirst": false,
-          "score": 233,
+          "score": 243,
           "streak": 1,
           "tilesLeft": 16,
           "autoReshuffle": false
         },
         {
-          "word": "xue2xiao4",
-          "wordSlot": 23,
-          "meaningSlot": 4,
+          "word": "ta1men5",
+          "wordSlot": 12,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
-          "score": 290,
+          "score": 300,
           "streak": 2,
           "tilesLeft": 14,
           "autoReshuffle": false
         },
         {
-          "word": "zhuo1zi5",
-          "wordSlot": 19,
-          "meaningSlot": 13,
+          "word": "mian4bao1",
+          "wordSlot": 7,
+          "meaningSlot": 19,
           "wrongToneFirst": true,
-          "score": 318,
+          "score": 328,
           "streak": 0,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
-          "wordSlot": 0,
-          "meaningSlot": 14,
+          "word": "xing1qi1tian1",
+          "wordSlot": 16,
+          "meaningSlot": 1,
           "wrongToneFirst": false,
-          "score": 362,
+          "score": 382,
           "streak": 1,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "jie3jie5",
-          "wordSlot": 10,
-          "meaningSlot": 15,
+          "word": "na4xie1",
+          "wordSlot": 8,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
-          "score": 407,
+          "score": 427,
           "streak": 2,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "yi1xia4",
-          "wordSlot": 16,
-          "meaningSlot": 9,
+          "word": "gong1si1",
+          "wordSlot": 15,
+          "meaningSlot": 14,
           "wrongToneFirst": true,
-          "score": 423,
+          "score": 443,
           "streak": 0,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "nan2peng2you5",
-          "wordSlot": 18,
-          "meaningSlot": 3,
+          "word": "jiao3zi5",
+          "wordSlot": 20,
+          "meaningSlot": 2,
           "wrongToneFirst": false,
-          "score": 465,
+          "score": 475,
           "streak": 1,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "qu4nian2",
-          "wordSlot": 7,
-          "meaningSlot": 2,
+          "word": "jin1nian2",
+          "wordSlot": 3,
+          "meaningSlot": 10,
           "wrongToneFirst": false,
-          "score": 498,
+          "score": 508,
           "streak": 2,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "chu1zu1che1",
-          "wordSlot": 1,
-          "meaningSlot": 8,
+          "word": "ge1ge5",
+          "wordSlot": 9,
+          "meaningSlot": 4,
           "wrongToneFirst": true,
-          "score": 502,
+          "score": 512,
           "streak": 0,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 502
+      "finalScore": 512
     },
     {
       "layout": "Small",
@@ -1890,104 +1890,104 @@
       "seed": "vector-1",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4shi4",
-        "fan4dian4",
-        "xia4ban1",
-        "shen2me5",
-        "ni3hao3",
+        "sheng1bing4",
         "jia1ren2",
-        "ming2tian1",
-        "xia4ke4",
+        "you3de5",
+        "lao3shi1",
         "jiao3zi5",
-        "xiu1xi5",
-        "shi2hou5",
-        "dian4nao3"
+        "dian4shi4",
+        "zhong1guo2",
+        "dian4nao3",
+        "xing1qi1tian1",
+        "ji1dan4",
+        "shui4jiao4",
+        "shen2me5"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "fan4dian4",
-          "kind": "A"
-        },
-        {
-          "slot": 1,
-          "word": "xia4ban1",
-          "kind": "A"
-        },
-        {
-          "slot": 2,
-          "word": "ni3hao3",
-          "kind": "B"
-        },
-        {
-          "slot": 3,
-          "word": "jiao3zi5",
-          "kind": "A"
-        },
-        {
-          "slot": 4,
-          "word": "xia4ke4",
-          "kind": "A"
-        },
-        {
-          "slot": 5,
-          "word": "xia4ban1",
-          "kind": "B"
-        },
-        {
-          "slot": 6,
           "word": "jia1ren2",
           "kind": "A"
         },
         {
+          "slot": 1,
+          "word": "jiao3zi5",
+          "kind": "A"
+        },
+        {
+          "slot": 2,
+          "word": "shen2me5",
+          "kind": "B"
+        },
+        {
+          "slot": 3,
+          "word": "shui4jiao4",
+          "kind": "A"
+        },
+        {
+          "slot": 4,
+          "word": "dian4nao3",
+          "kind": "A"
+        },
+        {
+          "slot": 5,
+          "word": "you3de5",
+          "kind": "B"
+        },
+        {
+          "slot": 6,
+          "word": "dian4nao3",
+          "kind": "B"
+        },
+        {
           "slot": 7,
-          "word": "shi2hou5",
+          "word": "xing1qi1tian1",
           "kind": "A"
         },
         {
           "slot": 8,
-          "word": "dian4nao3",
-          "kind": "A"
+          "word": "ji1dan4",
+          "kind": "B"
         },
         {
           "slot": 9,
-          "word": "dian4nao3",
-          "kind": "B"
+          "word": "shen2me5",
+          "kind": "A"
         },
         {
           "slot": 10,
-          "word": "xiu1xi5",
-          "kind": "B"
-        },
-        {
-          "slot": 11,
           "word": "dian4shi4",
           "kind": "A"
         },
         {
+          "slot": 11,
+          "word": "you3de5",
+          "kind": "A"
+        },
+        {
           "slot": 12,
-          "word": "xia4ke4",
+          "word": "dian4shi4",
           "kind": "B"
         },
         {
           "slot": 13,
-          "word": "jiao3zi5",
+          "word": "zhong1guo2",
           "kind": "B"
         },
         {
           "slot": 14,
-          "word": "xiu1xi5",
-          "kind": "A"
+          "word": "xing1qi1tian1",
+          "kind": "B"
         },
         {
           "slot": 15,
-          "word": "shi2hou5",
+          "word": "shui4jiao4",
           "kind": "B"
         },
         {
           "slot": 16,
-          "word": "ming2tian1",
-          "kind": "B"
+          "word": "ji1dan4",
+          "kind": "A"
         },
         {
           "slot": 17,
@@ -1996,39 +1996,39 @@
         },
         {
           "slot": 18,
-          "word": "fan4dian4",
-          "kind": "B"
+          "word": "sheng1bing4",
+          "kind": "A"
         },
         {
           "slot": 19,
-          "word": "shen2me5",
+          "word": "zhong1guo2",
           "kind": "A"
         },
         {
           "slot": 20,
-          "word": "ni3hao3",
-          "kind": "A"
-        },
-        {
-          "slot": 21,
-          "word": "ming2tian1",
-          "kind": "A"
-        },
-        {
-          "slot": 22,
-          "word": "shen2me5",
+          "word": "jiao3zi5",
           "kind": "B"
         },
         {
+          "slot": 21,
+          "word": "lao3shi1",
+          "kind": "B"
+        },
+        {
+          "slot": 22,
+          "word": "lao3shi1",
+          "kind": "A"
+        },
+        {
           "slot": 23,
-          "word": "dian4shi4",
+          "word": "sheng1bing4",
           "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4shi4",
-          "wordSlot": 11,
+          "word": "sheng1bing4",
+          "wordSlot": 18,
           "meaningSlot": 23,
           "wrongToneFirst": false,
           "score": 68,
@@ -2037,9 +2037,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "fan4dian4",
+          "word": "jia1ren2",
           "wordSlot": 0,
-          "meaningSlot": 18,
+          "meaningSlot": 17,
           "wrongToneFirst": false,
           "score": 137,
           "streak": 2,
@@ -2047,8 +2047,8 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ban1",
-          "wordSlot": 1,
+          "word": "you3de5",
+          "wordSlot": 11,
           "meaningSlot": 5,
           "wrongToneFirst": true,
           "score": 167,
@@ -2057,9 +2057,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
-          "wordSlot": 19,
-          "meaningSlot": 22,
+          "word": "lao3shi1",
+          "wordSlot": 22,
+          "meaningSlot": 21,
           "wrongToneFirst": false,
           "score": 223,
           "streak": 1,
@@ -2067,9 +2067,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ni3hao3",
-          "wordSlot": 20,
-          "meaningSlot": 2,
+          "word": "jiao3zi5",
+          "wordSlot": 1,
+          "meaningSlot": 20,
           "wrongToneFirst": false,
           "score": 280,
           "streak": 2,
@@ -2077,9 +2077,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "jia1ren2",
-          "wordSlot": 6,
-          "meaningSlot": 17,
+          "word": "dian4shi4",
+          "wordSlot": 10,
+          "meaningSlot": 12,
           "wrongToneFirst": true,
           "score": 298,
           "streak": 0,
@@ -2087,9 +2087,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "ming2tian1",
-          "wordSlot": 21,
-          "meaningSlot": 16,
+          "word": "zhong1guo2",
+          "wordSlot": 19,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
           "score": 342,
           "streak": 1,
@@ -2097,9 +2097,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
+          "word": "dian4nao3",
           "wordSlot": 4,
-          "meaningSlot": 12,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
           "score": 387,
           "streak": 2,
@@ -2107,9 +2107,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "jiao3zi5",
-          "wordSlot": 3,
-          "meaningSlot": 13,
+          "word": "xing1qi1tian1",
+          "wordSlot": 7,
+          "meaningSlot": 14,
           "wrongToneFirst": true,
           "score": 393,
           "streak": 0,
@@ -2117,9 +2117,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "xiu1xi5",
-          "wordSlot": 14,
-          "meaningSlot": 10,
+          "word": "ji1dan4",
+          "wordSlot": 16,
+          "meaningSlot": 8,
           "wrongToneFirst": false,
           "score": 425,
           "streak": 1,
@@ -2127,8 +2127,8 @@
           "autoReshuffle": false
         },
         {
-          "word": "shi2hou5",
-          "wordSlot": 7,
+          "word": "shui4jiao4",
+          "wordSlot": 3,
           "meaningSlot": 15,
           "wrongToneFirst": false,
           "score": 458,
@@ -2137,9 +2137,9 @@
           "autoReshuffle": false
         },
         {
-          "word": "dian4nao3",
-          "wordSlot": 8,
-          "meaningSlot": 9,
+          "word": "shen2me5",
+          "wordSlot": 9,
+          "meaningSlot": 2,
           "wrongToneFirst": true,
           "score": 452,
           "streak": 0,
@@ -2155,146 +2155,146 @@
       "seed": "vector-2",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "hao3kan4",
-        "shou3ji1",
-        "gong1zuo4",
-        "mei2shi4",
-        "shen2me5",
-        "ni3men5",
-        "xie4xie5",
-        "xia4wu3",
-        "wo3men5",
-        "bao1zi5",
+        "shi2jian1",
+        "dian4ying3yuan4",
+        "nan2peng2you5",
         "da4jia1",
-        "xia4yu3"
+        "ni3hao3",
+        "shen2me5",
+        "mei2you3",
+        "xian4zai4",
+        "bao1zi5",
+        "mei2guan1xi5",
+        "xi3huan5",
+        "bai2tian1"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "mei2shi4",
+          "word": "shi2jian1",
           "kind": "B"
         },
         {
           "slot": 1,
-          "word": "ni3men5",
+          "word": "mei2you3",
           "kind": "A"
         },
         {
           "slot": 2,
-          "word": "xie4xie5",
-          "kind": "A"
+          "word": "bao1zi5",
+          "kind": "B"
         },
         {
           "slot": 3,
-          "word": "xia4yu3",
+          "word": "bai2tian1",
           "kind": "B"
         },
         {
           "slot": 4,
-          "word": "bao1zi5",
-          "kind": "A"
+          "word": "ni3hao3",
+          "kind": "B"
         },
         {
           "slot": 5,
-          "word": "gong1zuo4",
+          "word": "nan2peng2you5",
           "kind": "A"
         },
         {
           "slot": 6,
-          "word": "xia4wu3",
+          "word": "xian4zai4",
           "kind": "B"
         },
         {
           "slot": 7,
-          "word": "wo3men5",
-          "kind": "B"
+          "word": "bao1zi5",
+          "kind": "A"
         },
         {
           "slot": 8,
-          "word": "xia4yu3",
+          "word": "bai2tian1",
           "kind": "A"
         },
         {
           "slot": 9,
-          "word": "da4jia1",
+          "word": "xi3huan5",
           "kind": "B"
         },
         {
           "slot": 10,
-          "word": "bao1zi5",
-          "kind": "B"
+          "word": "shen2me5",
+          "kind": "A"
         },
         {
           "slot": 11,
-          "word": "shen2me5",
-          "kind": "B"
-        },
-        {
-          "slot": 12,
-          "word": "hao3kan4",
-          "kind": "B"
-        },
-        {
-          "slot": 13,
-          "word": "mei2shi4",
-          "kind": "A"
-        },
-        {
-          "slot": 14,
-          "word": "xia4wu3",
-          "kind": "A"
-        },
-        {
-          "slot": 15,
-          "word": "wo3men5",
-          "kind": "A"
-        },
-        {
-          "slot": 16,
           "word": "da4jia1",
           "kind": "A"
         },
         {
+          "slot": 12,
+          "word": "da4jia1",
+          "kind": "B"
+        },
+        {
+          "slot": 13,
+          "word": "mei2guan1xi5",
+          "kind": "B"
+        },
+        {
+          "slot": 14,
+          "word": "xi3huan5",
+          "kind": "A"
+        },
+        {
+          "slot": 15,
+          "word": "mei2guan1xi5",
+          "kind": "A"
+        },
+        {
+          "slot": 16,
+          "word": "mei2you3",
+          "kind": "B"
+        },
+        {
           "slot": 17,
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "kind": "A"
         },
         {
           "slot": 18,
-          "word": "shou3ji1",
+          "word": "dian4ying3yuan4",
           "kind": "B"
         },
         {
           "slot": 19,
-          "word": "gong1zuo4",
-          "kind": "B"
-        },
-        {
-          "slot": 20,
-          "word": "xie4xie5",
-          "kind": "B"
-        },
-        {
-          "slot": 21,
-          "word": "shou3ji1",
+          "word": "xian4zai4",
           "kind": "A"
         },
         {
+          "slot": 20,
+          "word": "dian4ying3yuan4",
+          "kind": "A"
+        },
+        {
+          "slot": 21,
+          "word": "nan2peng2you5",
+          "kind": "B"
+        },
+        {
           "slot": 22,
-          "word": "ni3men5",
+          "word": "shen2me5",
           "kind": "B"
         },
         {
           "slot": 23,
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "kind": "A"
         }
       ],
       "moves": [
         {
-          "word": "hao3kan4",
+          "word": "shi2jian1",
           "wordSlot": 17,
-          "meaningSlot": 12,
+          "meaningSlot": 0,
           "wrongToneFirst": false,
           "score": 68,
           "streak": 1,
@@ -2302,117 +2302,117 @@
           "autoReshuffle": false
         },
         {
-          "word": "shou3ji1",
-          "wordSlot": 21,
+          "word": "dian4ying3yuan4",
+          "wordSlot": 20,
           "meaningSlot": 18,
           "wrongToneFirst": false,
-          "score": 137,
+          "score": 147,
           "streak": 2,
           "tilesLeft": 20,
           "autoReshuffle": false
         },
         {
-          "word": "gong1zuo4",
+          "word": "nan2peng2you5",
           "wordSlot": 5,
-          "meaningSlot": 19,
+          "meaningSlot": 21,
           "wrongToneFirst": true,
-          "score": 167,
+          "score": 177,
           "streak": 0,
           "tilesLeft": 18,
           "autoReshuffle": false
         },
         {
-          "word": "mei2shi4",
-          "wordSlot": 13,
-          "meaningSlot": 0,
+          "word": "da4jia1",
+          "wordSlot": 11,
+          "meaningSlot": 12,
           "wrongToneFirst": false,
-          "score": 223,
+          "score": 233,
           "streak": 1,
           "tilesLeft": 16,
           "autoReshuffle": false
         },
         {
-          "word": "shen2me5",
+          "word": "ni3hao3",
           "wordSlot": 23,
-          "meaningSlot": 11,
+          "meaningSlot": 4,
           "wrongToneFirst": false,
-          "score": 280,
+          "score": 290,
           "streak": 2,
           "tilesLeft": 14,
           "autoReshuffle": false
         },
         {
-          "word": "ni3men5",
-          "wordSlot": 1,
+          "word": "shen2me5",
+          "wordSlot": 10,
           "meaningSlot": 22,
           "wrongToneFirst": true,
-          "score": 298,
+          "score": 308,
           "streak": 0,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "xie4xie5",
-          "wordSlot": 2,
-          "meaningSlot": 20,
+          "word": "mei2you3",
+          "wordSlot": 1,
+          "meaningSlot": 16,
           "wrongToneFirst": false,
-          "score": 342,
+          "score": 352,
           "streak": 1,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
-          "wordSlot": 14,
+          "word": "xian4zai4",
+          "wordSlot": 19,
           "meaningSlot": 6,
           "wrongToneFirst": false,
-          "score": 387,
+          "score": 397,
           "streak": 2,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "wo3men5",
-          "wordSlot": 15,
-          "meaningSlot": 7,
+          "word": "bao1zi5",
+          "wordSlot": 7,
+          "meaningSlot": 2,
           "wrongToneFirst": true,
-          "score": 393,
+          "score": 403,
           "streak": 0,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "bao1zi5",
-          "wordSlot": 4,
-          "meaningSlot": 10,
+          "word": "mei2guan1xi5",
+          "wordSlot": 15,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
-          "score": 425,
+          "score": 445,
           "streak": 1,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "da4jia1",
-          "wordSlot": 16,
+          "word": "xi3huan5",
+          "wordSlot": 14,
           "meaningSlot": 9,
           "wrongToneFirst": false,
-          "score": 458,
+          "score": 478,
           "streak": 2,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "xia4yu3",
+          "word": "bai2tian1",
           "wordSlot": 8,
           "meaningSlot": 3,
           "wrongToneFirst": true,
-          "score": 452,
+          "score": 472,
           "streak": 0,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 452
+      "finalScore": 472
     },
     {
       "layout": "Small",
@@ -2420,144 +2420,144 @@
       "seed": "daily:2026-10-12",
       "pool": "words.json, hskBand == 1",
       "words": [
-        "dian4nao3",
         "xia4wu3",
-        "zen3me5",
-        "shuo1hua4",
-        "xue2xiao4",
-        "zhuo1zi5",
-        "xia4ke4",
-        "jie3jie5",
-        "yi1xia4",
-        "nan2peng2you5",
-        "qu4nian2",
-        "chu1zu1che1"
+        "zen3me5yang4",
+        "zao3fan4",
+        "zhong1wu3",
+        "ta1men5",
+        "mian4bao1",
+        "xing1qi1tian1",
+        "na4xie1",
+        "gong1si1",
+        "jiao3zi5",
+        "jin1nian2",
+        "ge1ge5"
       ],
       "board": [
         {
           "slot": 0,
-          "word": "xia4ke4",
+          "word": "zen3me5yang4",
           "kind": "A"
         },
         {
           "slot": 1,
-          "word": "chu1zu1che1",
-          "kind": "A"
+          "word": "xing1qi1tian1",
+          "kind": "B"
         },
         {
           "slot": 2,
-          "word": "qu4nian2",
+          "word": "jiao3zi5",
           "kind": "B"
         },
         {
           "slot": 3,
-          "word": "nan2peng2you5",
-          "kind": "B"
+          "word": "jin1nian2",
+          "kind": "A"
         },
         {
           "slot": 4,
-          "word": "xue2xiao4",
+          "word": "ge1ge5",
           "kind": "B"
         },
         {
           "slot": 5,
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "kind": "A"
         },
         {
           "slot": 6,
-          "word": "xia4wu3",
-          "kind": "A"
+          "word": "ta1men5",
+          "kind": "B"
         },
         {
           "slot": 7,
-          "word": "qu4nian2",
+          "word": "mian4bao1",
           "kind": "A"
         },
         {
           "slot": 8,
-          "word": "chu1zu1che1",
-          "kind": "B"
-        },
-        {
-          "slot": 9,
-          "word": "yi1xia4",
-          "kind": "B"
-        },
-        {
-          "slot": 10,
-          "word": "jie3jie5",
+          "word": "na4xie1",
           "kind": "A"
         },
         {
+          "slot": 9,
+          "word": "ge1ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 10,
+          "word": "jin1nian2",
+          "kind": "B"
+        },
+        {
           "slot": 11,
-          "word": "xia4wu3",
+          "word": "zen3me5yang4",
           "kind": "B"
         },
         {
           "slot": 12,
-          "word": "shuo1hua4",
-          "kind": "B"
+          "word": "ta1men5",
+          "kind": "A"
         },
         {
           "slot": 13,
-          "word": "zhuo1zi5",
+          "word": "na4xie1",
           "kind": "B"
         },
         {
           "slot": 14,
-          "word": "xia4ke4",
+          "word": "gong1si1",
           "kind": "B"
         },
         {
           "slot": 15,
-          "word": "jie3jie5",
-          "kind": "B"
+          "word": "gong1si1",
+          "kind": "A"
         },
         {
           "slot": 16,
-          "word": "yi1xia4",
+          "word": "xing1qi1tian1",
           "kind": "A"
         },
         {
           "slot": 17,
-          "word": "zen3me5",
-          "kind": "B"
+          "word": "zao3fan4",
+          "kind": "A"
         },
         {
           "slot": 18,
-          "word": "nan2peng2you5",
+          "word": "zhong1wu3",
           "kind": "A"
         },
         {
           "slot": 19,
-          "word": "zhuo1zi5",
-          "kind": "A"
+          "word": "mian4bao1",
+          "kind": "B"
         },
         {
           "slot": 20,
-          "word": "zen3me5",
+          "word": "jiao3zi5",
           "kind": "A"
         },
         {
           "slot": 21,
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "kind": "B"
         },
         {
           "slot": 22,
-          "word": "shuo1hua4",
-          "kind": "A"
+          "word": "zhong1wu3",
+          "kind": "B"
         },
         {
           "slot": 23,
-          "word": "xue2xiao4",
-          "kind": "A"
+          "word": "zao3fan4",
+          "kind": "B"
         }
       ],
       "moves": [
         {
-          "word": "dian4nao3",
+          "word": "xia4wu3",
           "wordSlot": 5,
           "meaningSlot": 21,
           "wrongToneFirst": false,
@@ -2567,117 +2567,117 @@
           "autoReshuffle": false
         },
         {
-          "word": "xia4wu3",
-          "wordSlot": 6,
+          "word": "zen3me5yang4",
+          "wordSlot": 0,
           "meaningSlot": 11,
           "wrongToneFirst": false,
-          "score": 137,
+          "score": 147,
           "streak": 2,
           "tilesLeft": 20,
           "autoReshuffle": false
         },
         {
-          "word": "zen3me5",
-          "wordSlot": 20,
-          "meaningSlot": 17,
+          "word": "zao3fan4",
+          "wordSlot": 17,
+          "meaningSlot": 23,
           "wrongToneFirst": true,
-          "score": 167,
+          "score": 177,
           "streak": 0,
           "tilesLeft": 18,
           "autoReshuffle": false
         },
         {
-          "word": "shuo1hua4",
-          "wordSlot": 22,
-          "meaningSlot": 12,
+          "word": "zhong1wu3",
+          "wordSlot": 18,
+          "meaningSlot": 22,
           "wrongToneFirst": false,
-          "score": 223,
+          "score": 233,
           "streak": 1,
           "tilesLeft": 16,
           "autoReshuffle": false
         },
         {
-          "word": "xue2xiao4",
-          "wordSlot": 23,
-          "meaningSlot": 4,
+          "word": "ta1men5",
+          "wordSlot": 12,
+          "meaningSlot": 6,
           "wrongToneFirst": false,
-          "score": 280,
+          "score": 290,
           "streak": 2,
           "tilesLeft": 14,
           "autoReshuffle": false
         },
         {
-          "word": "zhuo1zi5",
-          "wordSlot": 19,
-          "meaningSlot": 13,
+          "word": "mian4bao1",
+          "wordSlot": 7,
+          "meaningSlot": 19,
           "wrongToneFirst": true,
-          "score": 298,
+          "score": 308,
           "streak": 0,
           "tilesLeft": 12,
           "autoReshuffle": false
         },
         {
-          "word": "xia4ke4",
-          "wordSlot": 0,
-          "meaningSlot": 14,
+          "word": "xing1qi1tian1",
+          "wordSlot": 16,
+          "meaningSlot": 1,
           "wrongToneFirst": false,
-          "score": 342,
+          "score": 362,
           "streak": 1,
           "tilesLeft": 10,
           "autoReshuffle": false
         },
         {
-          "word": "jie3jie5",
-          "wordSlot": 10,
-          "meaningSlot": 15,
+          "word": "na4xie1",
+          "wordSlot": 8,
+          "meaningSlot": 13,
           "wrongToneFirst": false,
-          "score": 387,
+          "score": 407,
           "streak": 2,
           "tilesLeft": 8,
           "autoReshuffle": false
         },
         {
-          "word": "yi1xia4",
-          "wordSlot": 16,
-          "meaningSlot": 9,
+          "word": "gong1si1",
+          "wordSlot": 15,
+          "meaningSlot": 14,
           "wrongToneFirst": true,
-          "score": 393,
+          "score": 413,
           "streak": 0,
           "tilesLeft": 6,
           "autoReshuffle": false
         },
         {
-          "word": "nan2peng2you5",
-          "wordSlot": 18,
-          "meaningSlot": 3,
+          "word": "jiao3zi5",
+          "wordSlot": 20,
+          "meaningSlot": 2,
           "wrongToneFirst": false,
-          "score": 435,
+          "score": 445,
           "streak": 1,
           "tilesLeft": 4,
           "autoReshuffle": false
         },
         {
-          "word": "qu4nian2",
-          "wordSlot": 7,
-          "meaningSlot": 2,
+          "word": "jin1nian2",
+          "wordSlot": 3,
+          "meaningSlot": 10,
           "wrongToneFirst": false,
-          "score": 468,
+          "score": 478,
           "streak": 2,
           "tilesLeft": 2,
           "autoReshuffle": false
         },
         {
-          "word": "chu1zu1che1",
-          "wordSlot": 1,
-          "meaningSlot": 8,
+          "word": "ge1ge5",
+          "wordSlot": 9,
+          "meaningSlot": 4,
           "wrongToneFirst": true,
-          "score": 462,
+          "score": 472,
           "streak": 0,
           "tilesLeft": 0,
           "autoReshuffle": false
         }
       ],
-      "finalScore": 462
+      "finalScore": 472
     }
   ]
 }

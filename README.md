@@ -23,6 +23,8 @@ Design source of truth: `PINYIN-MAHJONG-DESIGN-SPEC (2026-10-11).md` in
    (the repository is private: Git on DSJ-PC must be signed in to GitHub, e.g. Git Credential Manager).
    Until the first pull request is merged, install from its branch instead by adding
    `#claude/unity-package-v0.1` to the end of the URL.
+   To see the package's tests in the Test Runner, also add `"testables": ["com.liann.mahjongtones"]` to the
+   project's `Packages/manifest.json` (git packages' tests are hidden otherwise).
 3. **File → New Scene → Empty**, add an empty GameObject, **Add Component → LiANN → Mahjong Tones App**, save the scene, press Play.
 4. To update after a push: Package Manager → the package → **Update** (or remove and re-add the git URL).
 
@@ -37,12 +39,15 @@ Optional: drag a PanelSettings asset (with a theme) onto the component; otherwis
 ## Rebuilding data
 
 ```
-python3 -I Tools~/data/build_words.py <pinyin-tiles-playtest checkout> .   # words.json, MP3s, english-labels-review.csv
+python3 -I Tools~/data/build_words.py <pinyin-tiles-playtest checkout> . <lwl-backend>/data/unified-dictionary.ndjson
+                                                                            # words.json, MP3s, english-labels-review.csv
 python3 -I Tools~/fonts/get_fonts.py .                                      # font subsets (after words change)
 python3 -I Tools~/make_meta.py .                                            # .meta files for new assets
 ```
 
 English tile labels come from the dictionary's first sense plus `Tools~/data/label-overrides.json`.
+Homophone mix-ups (the pronunciation pack's headword is a homophone of the HSK word, e.g. 一生 for 医生) are dropped via
+`Tools~/data/homophone-denylist.json` and an automatic check against the unified dictionary.
 Proofread `Tools~/data/english-labels-review.csv` before release (spec §2).
 
 ## Not in this version

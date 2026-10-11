@@ -176,7 +176,7 @@
    "readingKey": "bi3ji4",
    "entryId": "ude:106ec893bb05f689",
    "hanzi": "笔记",
-   "english": "to take down",
+   "english": "notes",
    "fullGloss": "to take down (in writing); notes; a type of literature consisting mainly of short sketches; CL:ben3; handwriting",
    "hskBand": 3,
    "audio": "bi3ji4",
@@ -213,16 +213,6 @@
    "picture": ""
   },
   {
-   "readingKey": "bi4xu1",
-   "entryId": "ude:35d7fc2c465b1db3",
-   "hanzi": "必需",
-   "english": "to have to",
-   "fullGloss": "to have to; must; compulsory; necessarily; to need; to require; essential; indispensable",
-   "hskBand": 3,
-   "audio": "bi4xu1",
-   "picture": ""
-  },
-  {
    "readingKey": "bian4cheng2",
    "entryId": "ude:54d0a129349db1ba",
    "hanzi": "变成",
@@ -246,7 +236,7 @@
    "readingKey": "biao3yan3",
    "entryId": "ude:694c13d91a4da77b",
    "hanzi": "表演",
-   "english": "play",
+   "english": "performance",
    "fullGloss": "play; show; performance; exhibition; to perform; to act; to demonstrate; CL:chang3",
    "hskBand": 3,
    "audio": "biao3yan3",
@@ -316,7 +306,7 @@
    "readingKey": "bu4cuo4",
    "entryId": "ude:3c3dfc3d412f5dbe",
    "hanzi": "不错",
-   "english": "correct",
+   "english": "not bad",
    "fullGloss": "correct; right; not bad; pretty good",
    "hskBand": 2,
    "audio": "bu4cuo4",
@@ -593,16 +583,6 @@
    "picture": ""
   },
   {
-   "readingKey": "chu1zhong1",
-   "entryId": "ude:8645e2e7fae91266",
-   "hanzi": "初衷",
-   "english": "junior high school",
-   "fullGloss": "junior high school (abbr. for chu1 ji2 zhong1 xue2); original intention; to accompany a customer to their place",
-   "hskBand": 3,
-   "audio": "chu1zhong1",
-   "picture": ""
-  },
-  {
    "readingKey": "chu1zu1che1",
    "entryId": "ude:b554e426f6703f19",
    "hanzi": "出租车",
@@ -736,7 +716,7 @@
    "readingKey": "da4xue2",
    "entryId": "ude:afd657ef3bddf5fd",
    "hanzi": "大学",
-   "english": "the Great Learning",
+   "english": "university",
    "fullGloss": "the Great Learning, one of the Four Books Si4 shu1 in Confucianism; university; college; CL:suo3",
    "hskBand": 1,
    "audio": "da4xue2",
@@ -1453,16 +1433,6 @@
    "picture": ""
   },
   {
-   "readingKey": "gong1yuan2",
-   "entryId": "ude:ce32d18ca07f8d8e",
-   "hanzi": "公元",
-   "english": "park",
-   "fullGloss": "park (for public recreation); CL:zuo4; CE (Common Era); Christian Era; AD (Anno Domini)",
-   "hskBand": 3,
-   "audio": "gong1yuan2",
-   "picture": ""
-  },
-  {
    "readingKey": "gong1zuo4",
    "entryId": "ude:3c4a5a23ab9f1e24",
    "hanzi": "工作",
@@ -1823,16 +1793,6 @@
    "picture": ""
   },
   {
-   "readingKey": "hui4yi4",
-   "entryId": "ude:f63905b276ff3311",
-   "hanzi": "会意",
-   "english": "meeting",
-   "fullGloss": "meeting; conference; CL:chang3,jie4; combined ideogram (one of the Six Methods liu4 shu1 of forming Chinese characters); Chinese character that combines the meanings of existing elements; also known as joint ideogram or associative compound; to comprehend without being told explicitly; to cotton on; knowing (smile, glance etc)",
-   "hskBand": 3,
-   "audio": "hui4yi4",
-   "picture": ""
-  },
-  {
    "readingKey": "huo3che1",
    "entryId": "ude:0be44fdf1fbad298",
    "hanzi": "火车",
@@ -1916,7 +1876,7 @@
    "readingKey": "ji4jie2",
    "entryId": "ude:458cd79a070bb4e7",
    "hanzi": "季节",
-   "english": "time",
+   "english": "season",
    "fullGloss": "time; season; period; CL:ge4",
    "hskBand": 3,
    "audio": "ji4jie2",
@@ -1950,16 +1910,6 @@
    "fullGloss": "to persevere with; to persist in; to insist on",
    "hskBand": 3,
    "audio": "jian1chi2",
-   "picture": ""
-  },
-  {
-   "readingKey": "jian3cha2",
-   "entryId": "ude:fc7ce56d68034802",
-   "hanzi": "检察",
-   "english": "inspection",
-   "fullGloss": "inspection; to examine; to inspect; CL:ci4; (law) to prosecute; to investigate",
-   "hskBand": 3,
-   "audio": "jian3cha2",
    "picture": ""
   },
   {
@@ -2113,16 +2063,6 @@
    "picture": ""
   },
   {
-   "readingKey": "jin4lai2",
-   "entryId": "ude:93f06e0d003fbb85",
-   "hanzi": "近来",
-   "english": "to come in",
-   "fullGloss": "to come in; recently; lately",
-   "hskBand": 2,
-   "audio": "jin4lai2",
-   "picture": ""
-  },
-  {
    "readingKey": "jin4qu4",
    "entryId": "ude:9d786cb0f67ba4a6",
    "hanzi": "进去",
@@ -2166,7 +2106,7 @@
    "readingKey": "jiu3dian4",
    "entryId": "ude:e86894a6b9ed3f9b",
    "hanzi": "酒店",
-   "english": "wine shop",
+   "english": "hotel",
    "fullGloss": "wine shop; pub (public house); hotel; restaurant; (Tw) hostess club",
    "hskBand": 2,
    "audio": "jiu3dian4",
@@ -3056,7 +2996,7 @@
    "readingKey": "pan2zi5",
    "entryId": "ude:8e4d47f0c329d227",
    "hanzi": "盘子",
-   "english": "tray",
+   "english": "plate",
    "fullGloss": "tray; plate; dish; CL:ge4",
    "hskBand": 3,
    "audio": "pan2zi5",
@@ -3696,7 +3636,7 @@
    "readingKey": "shui3ping2",
    "entryId": "ude:e688ec6eeb9e320a",
    "hanzi": "水平",
-   "english": "horizontal",
+   "english": "level",
    "fullGloss": "horizontal; level; a standard; a level (of ability, development etc)",
    "hskBand": 3,
    "audio": "shui3ping2",
@@ -4316,7 +4256,7 @@
    "readingKey": "xian1sheng5",
    "entryId": "ude:948b4063598e9add",
    "hanzi": "先生",
-   "english": "teacher",
+   "english": "Mr.",
    "fullGloss": "teacher; gentleman; sir; mister (Mr.); husband; (dialect) doctor; CL:wei4",
    "hskBand": 1,
    "audio": "xian1sheng5",
@@ -4456,7 +4396,7 @@
    "readingKey": "xiao4zhang3",
    "entryId": "ude:48c99779090f8f75",
    "hanzi": "校长",
-   "english": "president",
+   "english": "head teacher",
    "fullGloss": "(college, university) president; headmaster; CL:ge4,wei4,ming2",
    "hskBand": 3,
    "audio": "xiao4zhang3",
@@ -4756,20 +4696,10 @@
    "readingKey": "yi1qi3",
    "entryId": "ude:bc996d011c0b93b9",
    "hanzi": "一起",
-   "english": "the same place",
+   "english": "together",
    "fullGloss": "(in) the same place; together; in company (with); altogether; in total; an instance of; a case of (murder, accident, dispute etc)",
    "hskBand": 2,
    "audio": "yi1qi3",
-   "picture": ""
-  },
-  {
-   "readingKey": "yi1sheng1",
-   "entryId": "ude:395cd313cbf81aeb",
-   "hanzi": "一生",
-   "english": "doctor",
-   "fullGloss": "doctor; medical practitioner; all one's life; throughout one's life; first tone in Mandarin (high, level tone)",
-   "hskBand": 1,
-   "audio": "yi1sheng1",
    "picture": ""
   },
   {
@@ -5136,7 +5066,7 @@
    "readingKey": "yun4dong4",
    "entryId": "ude:f6ec634296fb218a",
    "hanzi": "运动",
-   "english": "to move",
+   "english": "sport",
    "fullGloss": "to move; to exercise; sports; exercise; motion; movement; campaign; CL:chang3",
    "hskBand": 2,
    "audio": "yun4dong4",
@@ -5390,16 +5320,6 @@
    "fullGloss": "middle-school student; high school student",
    "hskBand": 1,
    "audio": "zhong1xue2sheng1",
-   "picture": ""
-  },
-  {
-   "readingKey": "zhong1yu2",
-   "entryId": "ude:eeac2f592ee05c0f",
-   "hanzi": "忠于",
-   "english": "at last",
-   "fullGloss": "at last; in the end; finally; eventually; to be loyal to",
-   "hskBand": 3,
-   "audio": "zhong1yu2",
    "picture": ""
   },
   {
