@@ -1,0 +1,5 @@
+*.mp3 binary
+*.ttf binary
+*.json text eol=lf
+*.cs text eol=lf
+*.meta text eol=lf
