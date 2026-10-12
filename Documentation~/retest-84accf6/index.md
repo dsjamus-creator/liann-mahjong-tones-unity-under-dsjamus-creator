@@ -29,3 +29,13 @@ Screenshots are cropped, redacted (email address and Windows user name) and have
 | 24-step5-datapath-after-launch.png | Legacy v1 file deleted on launch |
 | 25-step5-exe-code-entry.png | Player waiting for the email code |
 | 26-step5-datapath-after-code-request.png | `liann-tones.account.v2.dpapi` (binary) and SetLists file, no v1 file |
+
+## Follow-up at 3e83edb (Windows player rebuilt from 3e83edbcbbdc485898db1f3db40d12ba17daea7e)
+
+| File | Shows |
+|---|---|
+| 27-step5-3e83edb-code-screen.png | Code screen: "6-digit code" hint, focus border, Back sized to its text |
+| 28-step5-3e83edb-signed-in.png | Signed in on the Windows player (email hidden) |
+| 29-step5-3e83edb-signed-in-after-reopen.png | Still signed in after closing and reopening the player |
+| 30-step5-3e83edb-send-countdown.png | Send button disabled with countdown (Editor, cooldown set directly, no email sent) |
+| 31-step5-3e83edb-datapath-after-signout.png | Rendered text of the folder listing after Sign out: no .dpapi or .tmp, SetLists kept |
