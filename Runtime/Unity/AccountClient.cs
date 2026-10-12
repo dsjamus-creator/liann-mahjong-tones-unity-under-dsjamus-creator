@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,24 +39,35 @@ namespace LiANN.MahjongTones
         readonly Endpoints _ends;
         AuthConfig _auth;
         Saved _saved;
-        static string FilePath => Path.Combine(Application.persistentDataPath, "liann-tones.account.v1.json");
+        bool _legacyCacheRemoved;
 
         public AccountClient()
         {
             var cfg = Resources.Load<TextAsset>("LiANNMahjongTones/accounts");
             _ends = cfg ? JsonUtility.FromJson<Endpoints>(cfg.text) : new Endpoints();
-            try { _saved = File.Exists(FilePath) ? JsonUtility.FromJson<Saved>(File.ReadAllText(FilePath)) : null; } catch { _saved = null; }
+            // Never deserialize the old plaintext token file. Remove it before sign-in.
+            _legacyCacheRemoved = ProtectedAccountStore.RemoveLegacyPlaintext();
+            try { _saved = _legacyCacheRemoved ? JsonUtility.FromJson<Saved>(ProtectedAccountStore.Load()) : null; }
+            catch { _saved = null; }
             _saved ??= new Saved();
+            _saved.uploaded ??= new List<string>();
         }
 
-        void Persist()
+        bool Persist()
         {
-            try { File.WriteAllText(FilePath, JsonUtility.ToJson(_saved)); } catch (Exception e) { Debug.LogWarning("Account state not saved: " + e.Message); }
+            // Unsupported platforms and the Editor intentionally keep tokens in memory only.
+            return ProtectedAccountStore.Save(JsonUtility.ToJson(_saved));
         }
 
         /// <summary>Reads the public auth config. Safe to call again, for example after a connection error.</summary>
         public async Task Init()
         {
+            if (!_legacyCacheRemoved && !(_legacyCacheRemoved = ProtectedAccountStore.RemoveLegacyPlaintext()))
+            {
+                Status = State.Unavailable;
+                Message = "The old account cache could not be removed. Clear this app's data before signing in.";
+                return;
+            }
             if (string.IsNullOrEmpty(_ends.pinyinApiBase) || string.IsNullOrEmpty(_ends.alongsideApiBase)) { Status = State.Disabled; return; }
             Status = State.Loading;
             var (ok, code, text) = await Send("GET", Url(_ends.pinyinApiBase, "/v1/auth/config"), null, null);
@@ -71,6 +81,7 @@ namespace LiANN.MahjongTones
 
         public async Task<bool> SendCode(string email)
         {
+            if (_auth == null || !_legacyCacheRemoved) return false;
             email = (email ?? "").Trim();
             if (!email.Contains("@") || email.Length < 5) { Message = "Enter your email address."; return false; }
             string body = "{\"email\":" + SetListEvents.Q(email) + ",\"create_user\":true,\"data\":{}}";
@@ -90,9 +101,12 @@ namespace LiANN.MahjongTones
             string body = "{\"email\":" + SetListEvents.Q(_saved.pendingEmail) + ",\"token\":" + SetListEvents.Q(code) + ",\"type\":\"email\"}";
             var (ok, _, text) = await Send("POST", Url(_auth.supabaseUrl, "/auth/v1/verify"), body, null, true);
             if (!ok) { Message = "That code is wrong, expired or already used. Request a new one."; return false; }
-            Store(JsonUtility.FromJson<SessionDto>(text), _saved.pendingEmail);
-            _saved.pendingEmail = null; Persist();
-            Status = State.SignedIn; Message = "";
+            if (!Store(JsonUtility.FromJson<SessionDto>(text), _saved.pendingEmail))
+            { Message = "Sign-in could not be completed. Request a new code."; return false; }
+            _saved.pendingEmail = null;
+            bool stored = Persist();
+            Status = State.SignedIn;
+            Message = stored ? "" : "Signed in for this session only. Secure storage is unavailable.";
             return true;
         }
 
@@ -100,13 +114,16 @@ namespace LiANN.MahjongTones
         {
             if (!string.IsNullOrEmpty(_saved.accessToken) && _auth != null)
                 await Send("POST", Url(_auth.supabaseUrl, "/auth/v1/logout"), "{}", _saved.accessToken, true);
-            _saved = new Saved(); Persist();
-            Status = _auth != null && _auth.enabled ? State.SignedOut : State.Disabled; Message = "Signed out. Your SetLists stay on this device.";
+            _saved = new Saved();
+            bool cleared = ProtectedAccountStore.Delete();
+            Status = !cleared ? State.Unavailable : _auth != null && _auth.enabled ? State.SignedOut : State.Disabled;
+            Message = cleared ? "Signed out. Your SetLists stay on this device."
+                : "The protected session could not be cleared. Clear this app's data before sharing this device.";
         }
 
-        void Store(SessionDto s, string email)
+        bool Store(SessionDto s, string email)
         {
-            if (s == null || string.IsNullOrEmpty(s.access_token)) return;
+            if (s == null || string.IsNullOrEmpty(s.access_token)) return false;
             string newUser = s.user?.id;
             if (!string.IsNullOrEmpty(newUser) && newUser != _saved.userId) _saved.uploaded = new List<string>();   // markers belong to one account
             _saved.accessToken = s.access_token;
@@ -114,6 +131,7 @@ namespace LiANN.MahjongTones
             _saved.expiresAt = s.expires_at > 0 ? s.expires_at : DateTimeOffset.UtcNow.ToUnixTimeSeconds() + Math.Max(60, s.expires_in);
             _saved.userId = newUser ?? _saved.userId;
             _saved.email = s.user?.email ?? email ?? _saved.email;
+            return true;
         }
 
         async Task<bool> Refresh(bool force)
@@ -127,7 +145,8 @@ namespace LiANN.MahjongTones
                 if (code == 400 || code == 401) { _saved.accessToken = _saved.refreshToken = null; Persist(); Status = State.SignedOut; Message = "Please sign in again."; }
                 return false;
             }
-            Store(JsonUtility.FromJson<SessionDto>(text), _saved.email); Persist();
+            if (!Store(JsonUtility.FromJson<SessionDto>(text), _saved.email)) return false;
+            Persist();
             return true;
         }
 
@@ -186,3 +205,4 @@ namespace LiANN.MahjongTones
         }
     }
 }
+
