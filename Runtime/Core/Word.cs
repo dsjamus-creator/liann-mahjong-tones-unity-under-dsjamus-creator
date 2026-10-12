@@ -66,6 +66,8 @@ namespace LiANN.MahjongTones.Core
         public string ReadingKey => Record.readingKey;
         public string Hanzi => Record.hanzi;
         public string English => Record.english;
+        /// <summary>Lucide icon name for the meaning tile (spec D13), or empty when no icon fits the word.</summary>
+        public string Picture => Record.picture ?? "";
         public int HskBand => Record.hskBand;
 
         /// <summary>Toneless pinyin for Tile A, e.g. "yiban", "lüxing".</summary>

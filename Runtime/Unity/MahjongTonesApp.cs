@@ -38,6 +38,8 @@ namespace LiANN.MahjongTones
         string _layoutName = "Starter";
         Source _source = Source.Hsk1;
         bool _showPinyin = true, _eye;
+        // Pictures on meaning tiles (spec D13): off by default, because a picture can give the answer away.
+        bool _showPictures;   // loaded in Awake (PlayerPrefs is not allowed in field initializers)
 
         // runtime
         readonly Tweens _tweens = new Tweens();
@@ -59,6 +61,7 @@ namespace LiANN.MahjongTones
         {
             Theme.Dark = darkTheme;
             _tweens.ReducedMotion = reducedMotion;
+            _showPictures = PlayerPrefs.GetInt("lmt.pictures", 0) == 1;
             _hanziFont = Resources.Load<Font>("LiANNMahjongTones/Fonts/NotoSansSC-Bold");
             _uiFont = Resources.Load<Font>("LiANNMahjongTones/Fonts/Nunito-ExtraBold");
             if (_hanziFont == null || _uiFont == null) Debug.LogError("LiANN Mahjong Tones: fonts missing from Resources/LiANNMahjongTones/Fonts.");
@@ -245,6 +248,7 @@ namespace LiANN.MahjongTones
             card.Add(Chips("Board", boards.ToArray(), () => _layoutName, v => _layoutName = v));
             card.Add(Chips("Words", new[] { ("HSK 1", Source.Hsk1), ("HSK 2", Source.Hsk2), ("HSK 3", Source.Hsk3), ("Tone pairs", Source.TonePairs), ("Daily challenge", Source.Daily) }, () => _source, v => _source = v));
             card.Add(Chips("Word tiles show", new[] { ("Hanzi + pinyin", true), ("Hanzi only", false) }, () => _showPinyin, v => _showPinyin = v));
+            card.Add(Chips("Meaning tiles show", new[] { ("English", false), ("English + picture", true) }, () => _showPictures, v => { _showPictures = v; PlayerPrefs.SetInt("lmt.pictures", v ? 1 : 0); PlayerPrefs.Save(); }));
             card.Add(Chips("Theme", new[] { ("Light", false), ("Dark", true) }, () => Theme.Dark, v => { Theme.Dark = v; ShowStart(); }));
             s.Add(card);
 
@@ -457,7 +461,8 @@ namespace LiANN.MahjongTones
                 var tile = _game.Tiles[slot.Id];
                 if (!tile.OnBoard) continue;
                 var view = new TileView(slot.Id);
-                view.Show(_game.Words[tile.WordIndex], tile.Kind, _showPinyin, _hanziFont, _uiFont);
+                var word = _game.Words[tile.WordIndex];
+                view.Show(word, tile.Kind, _showPinyin, _hanziFont, _uiFont, _showPictures ? WordRepository.Picture(word) : null);
                 int id = slot.Id;
                 view.RegisterCallback<ClickEvent>(_ => OnTile(id));
                 _tiles[id] = view;
