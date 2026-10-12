@@ -2,15 +2,16 @@
 
 Game 3 of the LiANN Pinyin family, as a Unity package (`com.liann.mahjongtones`).
 Design source of truth: `PINYIN-MAHJONG-DESIGN-SPEC (2026-10-11).md` in
-`dsjamus-creator/learningwithliann-registry` (§0.2 rules, §4.1 generation, §6.1 scoring, decisions D6–D17).
+`dsjamus-creator/learningwithliann-registry` (§0.2 rules, §4.1 generation, §6.1 scoring, §13 SetLists, decisions D6–D17).
 
 ## What is in it
 
 | Path | What |
 |---|---|
-| `Runtime/Core/` | Unity-free game rules: layouts and the free-tile rule, seeded RNG (mulberry32 + FNV-1a), solvable board generator, tone checking, scoring, undo / hint / shuffle. Identical to the web edition. |
-| `Runtime/Unity/` | `MahjongTonesApp` — builds the whole UI in UI Toolkit from code: start screen, board, tone picker, results, stats. Porcelain tiles baked in code to match Pinyin Tiles (D8). |
-| `Runtime/Resources/LiANNMahjongTones/` | `words.json` (556 HSK 1–3 words with recorded audio), `Audio/*.mp3`, `Fonts/` (Noto Sans SC Bold subset, Nunito ExtraBold). |
+| `Runtime/Core/` | Unity-free game rules: four layouts (Starter 16, Small 24, Medium 36, Large 72) and the free-tile rule, seeded RNG (mulberry32 + FNV-1a), solvable board generator, tone checking, scoring, undo / hint / shuffle, and the AlongSide SetList event format. Identical to the web edition. |
+| `Runtime/Unity/` | `MahjongTonesApp` — builds the whole UI in UI Toolkit from code: start screen, board, tone picker, results, stats, account. Porcelain tiles baked in code to match Pinyin Tiles (D8). `AccountClient` — optional sign-in and SetList upload to AlongSide. |
+| `Runtime/Resources/LiANNMahjongTones/` | `words.json` (548 HSK 1–3 words with recorded audio, dictionary entry and sense ids), `accounts.json` (public service addresses), `Audio/*.mp3`, `Fonts/` (Noto Sans SC Bold subset, Nunito ExtraBold). |
+| `Editor/` | **LiANN → Mahjong Tones** menu: create the play scene; build Android (App Bundle), iOS (Xcode project) and Windows. |
 | `Tests/Editor/` | NUnit tests (run in Unity's Test Runner). |
 | `Tests/Vectors/rules-test-vectors.json` | Seeded boards + scripted play-throughs. The web edition must reproduce them exactly. |
 | `Tools~/` | Not imported by Unity: word-list builder, font subsetter, meta-file writer, and a .NET test project that runs the Core tests outside Unity. |
@@ -25,11 +26,37 @@ Design source of truth: `PINYIN-MAHJONG-DESIGN-SPEC (2026-10-11).md` in
    `#claude/unity-package-v0.1` to the end of the URL.
    To see the package's tests in the Test Runner, also add `"testables": ["com.liann.mahjongtones"]` to the
    project's `Packages/manifest.json` (git packages' tests are hidden otherwise).
-3. **File → New Scene → Empty**, add an empty GameObject, **Add Component → LiANN → Mahjong Tones App**, save the scene, press Play.
+3. **LiANN → Mahjong Tones → Create play scene**, then press Play. (Or by hand: an empty scene with a GameObject that has **LiANN → Mahjong Tones App**.)
 4. To update after a push: Package Manager → the package → **Update** (or remove and re-add the git URL).
 
 Optional: drag a PanelSettings asset (with a theme) onto the component; otherwise one is created at run time
 (Unity may log "No Theme Style Sheet" — harmless, the game styles everything itself).
+
+## Store builds
+
+Menu **LiANN → Mahjong Tones → Build Android / Build iOS / Build Windows** (output in `Builds/`), or from the command line:
+
+```
+Unity.exe -batchmode -quit -projectPath . -executeMethod LiANN.MahjongTones.EditorTools.MahjongTonesBuild.BuildAndroid
+```
+
+- App id `com.learningwithliann.mahjongtones` and version 0.2.0 are set in `Editor/MahjongTonesBuild.cs`; confirm the id
+  before the first store upload. Portrait and landscape are both allowed.
+- Signing stays on the build machine: set the Android upload keystore (Google Play App Signing) and the iOS team in
+  Player Settings. Never commit keystores or passwords.
+- iOS builds an Xcode project; archive and upload it from a Mac.
+
+## Account and SetLists (optional)
+
+Playing never needs an account. **Account** on the start screen signs in with the same email code as Pinyin Tiles
+(Supabase; URL and publishable key read from the Pinyin API's `/v1/auth/config`). When signed in, **Save to SetList**
+also uploads the words to AlongSide (`POST /learning/game-events`, sourceApp `liann-mahjong-tones`) with stable ids, so
+retries never duplicate. If AlongSide is unreachable, or doesn't accept this game yet, saves stay on the device and
+upload later from the Account screen. Service addresses are in `Runtime/Resources/LiANNMahjongTones/accounts.json`;
+empty values switch sign-in off.
+
+AlongSide must add `liann-mahjong-tones` to the game-events source allowlist (lwl-backend PR #102,
+`docs/PINYIN-GAME-SETLISTS.md`, "Extending to another game") before uploads are accepted.
 
 ## Tests
 
@@ -42,6 +69,7 @@ Optional: drag a PanelSettings asset (with a theme) onto the component; otherwis
 python3 -I Tools~/data/build_words.py <pinyin-tiles-playtest checkout> . <lwl-backend>/data/unified-dictionary.ndjson
                                                                             # words.json, MP3s, english-labels-review.csv
 python3 -I Tools~/fonts/get_fonts.py .                                      # font subsets (after words change)
+python3 -I Tools~/data/add_sense_ids.py . <lwl-backend>/data/unified-dictionary.ndjson   # senseId + gloss repair, in place
 python3 -I Tools~/make_meta.py .                                            # .meta files for new assets
 ```
 
@@ -52,8 +80,7 @@ Proofread `Tools~/data/english-labels-review.csv` before release (spec §2).
 
 ## Not in this version
 
-Pictures on meaning tiles (D13, off in the first build), sign-in and SetList upload to AlongSide
-(spec §13 — local SetLists are saved in the Pinyin Tiles word shape so upload needs no new format),
-Medium and larger layouts, sound/music settings.
+Pictures on meaning tiles (D13: moved to the hub's Kids section), Classic 144 layout, sound/music settings,
+hub profiles and plan checks (D19–D22; added when the hub's account service exists).
 
 See `THIRD-PARTY-NOTICES.md` for data, audio and font licences.
