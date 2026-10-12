@@ -45,6 +45,10 @@ Unity.exe -batchmode -quit -projectPath . -executeMethod LiANN.MahjongTones.Edit
 - Signing stays on the build machine: set the Android upload keystore (Google Play App Signing) and the iOS team in
   Player Settings. Never commit keystores or passwords.
 - iOS builds an Xcode project; archive and upload it from a Mac.
+- The build menus set **Company Name** "Learning with LiANN" and **Product Name** "LiANN Pinyin Mahjong Tones" in Player
+  Settings, so `Application.persistentDataPath` (SetLists, stats, the account store) moves to
+  `…/Learning with LiANN/LiANN Pinyin Mahjong Tones` in the Editor too. **Create play scene** adds
+  `Assets/LiANN/MahjongTones.unity` to Build Settings without removing the project's own scenes.
 
 ## Account and SetLists (optional)
 
@@ -53,7 +57,13 @@ Playing never needs an account. **Account** on the start screen signs in with th
 also uploads the words to AlongSide (`POST /learning/game-events`, sourceApp `liann-mahjong-tones`) with stable ids, so
 retries never duplicate. If AlongSide is unreachable, or doesn't accept this game yet, saves stay on the device and
 upload later from the Account screen. Service addresses are in `Runtime/Resources/LiANNMahjongTones/accounts.json`;
-empty values switch sign-in off.
+empty values switch sign-in off. **Test builds use the staging services** (`pinyin-tiles-api-staging`, `lwl-backend-staging`),
+so a tester's saves never reach production; switch `alongsideApiBase` to production only for a release build.
+
+"Send me a code" shows *Sending…* while the request runs and then waits 60 s before another code can be requested,
+because every request sends an email and counts towards Supabase's email limit. The encrypted account store is first
+written when a code is requested (it holds the pending email), so for tests "the store exists" does not by itself mean
+"signed in"; check the Account screen.
 
 The backend's draft PR #102 adds `liann-mahjong-tones` to the route and database constraints. That migration and route must be deployed before uploads are accepted.
 

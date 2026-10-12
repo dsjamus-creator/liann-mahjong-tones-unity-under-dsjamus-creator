@@ -30,8 +30,11 @@ namespace LiANN.MahjongTones.EditorTools
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             new GameObject("LiANN Mahjong Tones").AddComponent<MahjongTonesApp>();
             EditorSceneManager.SaveScene(scene, ScenePath);
-            EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
-            Debug.Log("LiANN Mahjong Tones: created " + ScenePath + " and added it to the build.");
+            // Add, don't replace: the project's own scenes stay in Build Settings (builds below pass ScenePath explicitly).
+            var scenes = new System.Collections.Generic.List<EditorBuildSettingsScene>(EditorBuildSettings.scenes);
+            if (!scenes.Exists(sc => sc.path == ScenePath)) scenes.Add(new EditorBuildSettingsScene(ScenePath, true));
+            EditorBuildSettings.scenes = scenes.ToArray();
+            Debug.Log("LiANN Mahjong Tones: created " + ScenePath + " and added it to Build Settings.");
         }
 
         [MenuItem("LiANN/Mahjong Tones/Build Android (App Bundle)", priority = 20)]

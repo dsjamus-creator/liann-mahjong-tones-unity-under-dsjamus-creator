@@ -61,10 +61,11 @@ namespace LiANN.MahjongTones.Tests
         [Test]
         public void VectorsMatchShippedFile()
         {
-            string text = JsonSerializer.Serialize(Build(), new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
+            // .NET 8 writes indented JSON with the platform newline (CRLF on Windows); the shipped file is LF (.gitattributes).
+            string text = JsonSerializer.Serialize(Build(), new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping }).Replace("\r\n", "\n");
             string target = Path.GetFullPath(Path.Combine(TestContext.CurrentContext.TestDirectory, "../../../../../Tests/Vectors/rules-test-vectors.json"));
             if (Environment.GetEnvironmentVariable("LIANN_WRITE_VECTORS") == "1") File.WriteAllText(target, text + "\n");
-            Assert.AreEqual(File.ReadAllText(target).TrimEnd(), text.TrimEnd());
+            Assert.AreEqual(File.ReadAllText(target).Replace("\r\n", "\n").TrimEnd(), text.TrimEnd());
         }
     }
 }

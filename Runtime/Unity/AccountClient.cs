@@ -79,17 +79,37 @@ namespace LiANN.MahjongTones
             Message = "";
         }
 
+        /// <summary>True while a code request is in flight; the account screen disables its button.</summary>
+        public bool SendingCode { get; private set; }
+        DateTime _nextCodeAllowed = DateTime.MinValue;
+        /// <summary>Seconds before another code may be requested (each request sends an email and counts towards
+        /// Supabase's email limit, so repeated clicks are refused for a minute).</summary>
+        public int ResendInSeconds => Math.Max(0, (int)Math.Ceiling((_nextCodeAllowed - DateTime.UtcNow).TotalSeconds));
+        const int CodeCooldownSeconds = 60;
+
         public async Task<bool> SendCode(string email)
         {
-            if (_auth == null || !_legacyCacheRemoved) return false;
+            if (_auth == null || !_legacyCacheRemoved || SendingCode) return false;
+            if (ResendInSeconds > 0) { Message = $"Check your inbox. You can ask for another code in {ResendInSeconds} s."; return false; }
             email = (email ?? "").Trim();
             if (!email.Contains("@") || email.Length < 5) { Message = "Enter your email address."; return false; }
             string body = "{\"email\":" + SetListEvents.Q(email) + ",\"create_user\":true,\"data\":{}}";
-            var (ok, _, _) = await Send("POST", Url(_auth.supabaseUrl, "/auth/v1/otp"), body, null, true);
-            if (!ok) { Message = "The email couldn't be sent. Check the address and try again in a moment."; return false; }
-            _saved.pendingEmail = email; Persist();
-            Status = State.CodeSent; Message = "We emailed you a code. Enter it below.";
-            return true;
+            SendingCode = true;
+            try
+            {
+                var (ok, code, _) = await Send("POST", Url(_auth.supabaseUrl, "/auth/v1/otp"), body, null, true);
+                if (!ok)
+                {
+                    Message = code == 429 ? "Too many codes were requested. Wait a few minutes, then try again."
+                        : "The email couldn't be sent. Check the address and try again in a moment.";
+                    return false;
+                }
+                _nextCodeAllowed = DateTime.UtcNow.AddSeconds(CodeCooldownSeconds);
+                _saved.pendingEmail = email; Persist();
+                Status = State.CodeSent; Message = "We emailed you a code. Enter it below.";
+                return true;
+            }
+            finally { SendingCode = false; }
         }
 
         public void ChangeEmail() { _saved.pendingEmail = null; Persist(); Status = State.SignedOut; Message = ""; }
@@ -176,7 +196,8 @@ namespace LiANN.MahjongTones
                 if (!ok)
                 {
                     Persist();
-                    if (code == 400 || code == 403 || code == 404) return "AlongSide isn't taking Mahjong Tones saves yet. They're kept on this device and will upload later.";
+                    // The route is missing or not accepting this source yet (backend PR #102 not deployed): keep the words.
+                    if (code == 400 || code == 403 || code == 404 || code == 405 || code == 501) return "AlongSide isn't taking Mahjong Tones saves yet. They're kept on this device and will upload later.";
                     return "AlongSide can't be reached. Your SetLists are kept and will upload later.";
                 }
                 var r = JsonUtility.FromJson<UploadResult>(text) ?? new UploadResult();
