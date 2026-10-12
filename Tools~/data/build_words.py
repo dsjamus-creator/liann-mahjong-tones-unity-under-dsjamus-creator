@@ -17,11 +17,25 @@ pub = os.path.join(src, "public")
 audio_index = json.load(open(glob.glob(os.path.join(pub, "word-audio", "audio-index.*.json"))[0], encoding="utf-8"))
 corpus = json.load(open(glob.glob(os.path.join(pub, "novice-assets", "corpus-*.json"))[0], encoding="utf-8"))
 glosses = corpus["glosses"]
+
+def dictionary_records(path):
+    """Yield dictionary senses from AlongSide's signed learner release (public/classroom/dictionary/
+    unified-dictionary.browser.json, packed rows) or from the older data/unified-dictionary.ndjson."""
+    if path.endswith(".json"):
+        d = json.load(open(path, encoding="utf-8"))
+        for row in d["records"]:
+            yield dict(zip(d["fields"], row))
+        return
+    for line in open(path, encoding="utf-8"):
+        if line.strip():
+            yield json.loads(line)
+
+
 deny = {k for k in json.load(open(os.path.join(here, "homophone-denylist.json"), encoding="utf-8")) if not k.startswith("_")}
 dictionary = defaultdict(list)
 if len(sys.argv) > 3:
-    for line in open(sys.argv[3], encoding="utf-8"):
-        r = json.loads(line); dictionary[r["entryId"]].append(r)
+    for r in dictionary_records(sys.argv[3]):
+        dictionary[r["entryId"]].append(r)
 overrides = {k: v for k, v in json.load(open(os.path.join(here, "label-overrides.json"), encoding="utf-8")).items() if not k.startswith("_")}
 
 KEY = re.compile(r"^(?:[a-z]+[1-5])+$")

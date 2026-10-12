@@ -234,6 +234,17 @@
    "picture": ""
   },
   {
+   "readingKey": "bi4xu1",
+   "entryId": "ude:eddec66f8d787062",
+   "senseId": "uds:40c2f246f3141d6e4bf1",
+   "hanzi": "必须",
+   "english": "to have to",
+   "fullGloss": "to have to; must; compulsory; necessarily; to need; to require; essential; indispensable",
+   "hskBand": 3,
+   "audio": "bi4xu1",
+   "picture": ""
+  },
+  {
    "readingKey": "bian4cheng2",
    "entryId": "ude:54d0a129349db1ba",
    "senseId": "uds:6fe7eb2ab8ac504145e1",
@@ -638,6 +649,17 @@
    "fullGloss": "to leave hospital; to be discharged from hospital",
    "hskBand": 3,
    "audio": "chu1yuan4",
+   "picture": ""
+  },
+  {
+   "readingKey": "chu1zhong1",
+   "entryId": "ude:7dbeae2778466f53",
+   "senseId": "uds:f309b1907b25b5c52214",
+   "hanzi": "初中",
+   "english": "junior high school",
+   "fullGloss": "junior high school (abbr. for chu1 ji2 zhong1 xue2); original intention; to accompany a customer to their place",
+   "hskBand": 3,
+   "audio": "chu1zhong1",
    "picture": ""
   },
   {
@@ -1576,6 +1598,17 @@
    "picture": ""
   },
   {
+   "readingKey": "gong1yuan2",
+   "entryId": "ude:8073bd5ee33928e8",
+   "senseId": "uds:2c9b2f7aec3602d0e344",
+   "hanzi": "公园",
+   "english": "park",
+   "fullGloss": "park (for public recreation); CL:zuo4; CE (Common Era); Christian Era; AD (Anno Domini)",
+   "hskBand": 3,
+   "audio": "gong1yuan2",
+   "picture": ""
+  },
+  {
    "readingKey": "gong1zuo4",
    "entryId": "ude:3c4a5a23ab9f1e24",
    "senseId": "uds:8abca0d2a8ff772f4f5a",
@@ -1972,6 +2005,17 @@
    "picture": ""
   },
   {
+   "readingKey": "hui4yi4",
+   "entryId": "ude:94c50ae5e9ed520b",
+   "senseId": "uds:4a3e98a13ad4924a8003",
+   "hanzi": "会议",
+   "english": "meeting",
+   "fullGloss": "meeting; conference; CL:chang3,jie4; combined ideogram (one of the Six Methods liu4 shu1 of forming Chinese characters); Chinese character that combines the meanings of existing elements; also known as joint ideogram or associative compound; to comprehend without being told explicitly; to cotton on; knowing (smile, glance etc)",
+   "hskBand": 3,
+   "audio": "hui4yi4",
+   "picture": ""
+  },
+  {
    "readingKey": "huo3che1",
    "entryId": "ude:0be44fdf1fbad298",
    "senseId": "uds:14852a322b9267d0c526",
@@ -2101,6 +2145,17 @@
    "fullGloss": "to persevere with; to persist in; to insist on",
    "hskBand": 3,
    "audio": "jian1chi2",
+   "picture": ""
+  },
+  {
+   "readingKey": "jian3cha2",
+   "entryId": "ude:193015a6a79ba6ba",
+   "senseId": "uds:46203e60fcc9af3f1d55",
+   "hanzi": "检查",
+   "english": "inspection",
+   "fullGloss": "inspection; to examine; to inspect; CL:ci4; (law) to prosecute; to investigate",
+   "hskBand": 3,
+   "audio": "jian3cha2",
    "picture": ""
   },
   {
@@ -2266,6 +2321,17 @@
    "fullGloss": "today; the present time; now",
    "hskBand": 1,
    "audio": "jin1tian1",
+   "picture": ""
+  },
+  {
+   "readingKey": "jin4lai2",
+   "entryId": "ude:14f916cd95392d91",
+   "senseId": "uds:4e3c0b61adf63896a86d",
+   "hanzi": "进来",
+   "english": "to come in",
+   "fullGloss": "to come in; recently; lately",
+   "hskBand": 2,
+   "audio": "jin4lai2",
    "picture": ""
   },
   {
@@ -5173,6 +5239,17 @@
    "picture": ""
   },
   {
+   "readingKey": "yi1sheng1",
+   "entryId": "ude:79fc577d401e16b2",
+   "senseId": "uds:92653f9607f57c3d12cf",
+   "hanzi": "医生",
+   "english": "doctor",
+   "fullGloss": "doctor; medical practitioner; all one's life; throughout one's life; first tone in Mandarin (high, level tone)",
+   "hskBand": 1,
+   "audio": "yi1sheng1",
+   "picture": ""
+  },
+  {
    "readingKey": "yi1xia4",
    "entryId": "ude:e4c0c59ca126f91a",
    "senseId": "uds:d89232e3c6f8e7d265d6",
@@ -5852,6 +5929,17 @@
    "fullGloss": "middle-school student; high school student",
    "hskBand": 1,
    "audio": "zhong1xue2sheng1",
+   "picture": ""
+  },
+  {
+   "readingKey": "zhong1yu2",
+   "entryId": "ude:ef48d98f7080ea43",
+   "senseId": "uds:b055dd191b9a06a85093",
+   "hanzi": "终于",
+   "english": "at last",
+   "fullGloss": "at last; in the end; finally; eventually; to be loyal to",
+   "hskBand": 3,
+   "audio": "zhong1yu2",
    "picture": ""
   },
   {

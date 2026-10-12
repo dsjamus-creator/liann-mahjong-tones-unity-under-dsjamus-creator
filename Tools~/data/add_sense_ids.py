@@ -2,17 +2,31 @@
 (an HSK band picked up by mistake) from the dictionary entry's senses (AlongSide's game-events upload needs entryId +
 senseId + headword; lwl-backend docs/PINYIN-GAME-SETLISTS.md). build_words.py does the same when given the dictionary.
 
-Usage: python3 -I add_sense_ids.py <package root> <lwl-backend>/data/unified-dictionary.ndjson
+Usage: python3 -I add_sense_ids.py <package root> <lwl-backend>/public/classroom/dictionary/unified-dictionary.browser.json
+(the signed learner release AlongSide resolves uploads against; the older data/unified-dictionary.ndjson also works)
 The sense chosen is the first (by sourceLine) whose translation or gloss contains the tile label; otherwise the
 entry's first sense. Fails if a word's entryId is not in the dictionary.
 """
 import json, os, re, sys
 from collections import defaultdict
 
+def dictionary_records(path):
+    """Yield dictionary senses from AlongSide's signed learner release (public/classroom/dictionary/
+    unified-dictionary.browser.json, packed rows) or from the older data/unified-dictionary.ndjson."""
+    if path.endswith(".json"):
+        d = json.load(open(path, encoding="utf-8"))
+        for row in d["records"]:
+            yield dict(zip(d["fields"], row))
+        return
+    for line in open(path, encoding="utf-8"):
+        if line.strip():
+            yield json.loads(line)
+
+
 pkg, dict_path = sys.argv[1], sys.argv[2]
 senses = defaultdict(list)
-for line in open(dict_path, encoding="utf-8"):
-    r = json.loads(line); senses[r["entryId"]].append(r)
+for r in dictionary_records(dict_path):
+    senses[r["entryId"]].append(r)
 
 def pick_sense(entry_id, label):
     own = sorted(senses.get(entry_id, []), key=lambda r: r.get("sourceLine") or 0)

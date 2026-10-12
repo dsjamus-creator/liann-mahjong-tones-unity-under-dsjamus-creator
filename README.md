@@ -10,7 +10,7 @@ Design source of truth: `PINYIN-MAHJONG-DESIGN-SPEC (2026-10-11).md` in
 |---|---|
 | `Runtime/Core/` | Unity-free game rules: four layouts (Starter 16, Small 24, Medium 36, Large 72) and the free-tile rule, seeded RNG (mulberry32 + FNV-1a), solvable board generator, tone checking, scoring, undo / hint / shuffle, and the AlongSide SetList event format. Identical to the web edition. |
 | `Runtime/Unity/` | `MahjongTonesApp` — builds the whole UI in UI Toolkit from code: start screen, board, tone picker, results, stats, account. Porcelain tiles baked in code to match Pinyin Tiles (D8). `AccountClient` — optional sign-in and SetList upload to AlongSide; `ProtectedAccountStore` and its Android/iOS plugins hold the session outside plaintext files. |
-| `Runtime/Resources/LiANNMahjongTones/` | `words.json` (548 HSK 1–3 words with recorded audio, dictionary entry and sense ids), `accounts.json` (public service addresses), `Audio/*.mp3`, `Fonts/` (Noto Sans SC Bold subset, Nunito ExtraBold). |
+| `Runtime/Resources/LiANNMahjongTones/` | `words.json` (556 HSK 1–3 words with recorded audio, dictionary entry and sense ids), `accounts.json` (public service addresses), `Audio/*.mp3`, `Fonts/` (Noto Sans SC Bold subset, Nunito ExtraBold). |
 | `Editor/` | **LiANN → Mahjong Tones** menu: create the play scene; build Android (App Bundle), iOS (Xcode project) and Windows. |
 | `Tests/Editor/` | NUnit tests (run in Unity's Test Runner). |
 | `Tests/Vectors/rules-test-vectors.json` | Seeded boards + scripted play-throughs. The web edition must reproduce them exactly. |
@@ -69,16 +69,22 @@ Before distribution, verify a sign-in, app restart, token refresh, upload, and s
 ## Rebuilding data
 
 ```
-python3 -I Tools~/data/build_words.py <pinyin-tiles-playtest checkout> . <lwl-backend>/data/unified-dictionary.ndjson
+python3 -I Tools~/data/build_words.py <pinyin-tiles-playtest checkout> . <dictionary>
                                                                             # words.json, MP3s, english-labels-review.csv
 python3 -I Tools~/fonts/get_fonts.py .                                      # font subsets (after words change)
-python3 -I Tools~/data/add_sense_ids.py . <lwl-backend>/data/unified-dictionary.ndjson   # senseId + gloss repair, in place
+python3 -I Tools~/data/add_sense_ids.py . <dictionary>                      # senseId + gloss repair, in place
+LIANN_WRITE_VECTORS=1 dotnet test Tools~/CoreTests                          # shared vectors (web edition must match)
 python3 -I Tools~/make_meta.py .                                            # .meta files for new assets
 ```
 
+`<dictionary>` is AlongSide's signed learner release, `<lwl-backend>/public/classroom/dictionary/unified-dictionary.browser.json`:
+the same release the server resolves uploads against, so every senseId is one AlongSide accepts. The older
+`data/unified-dictionary.ndjson` still works but lacks the corrected HSK headwords (医生, 公园 …).
+
 English tile labels come from the dictionary's first sense plus `Tools~/data/label-overrides.json`.
 Homophone mix-ups (the pronunciation pack's headword is a homophone of the HSK word, e.g. 一生 for 医生) are dropped via
-`Tools~/data/homophone-denylist.json` and an automatic check against the unified dictionary.
+`Tools~/data/homophone-denylist.json` and an automatic check against the dictionary. Since the reading set was corrected
+(pinyin-tiles-playtest PR #6) the denylist is empty and the 8 words it held ship with their HSK headword; a test guards them.
 Proofread `Tools~/data/english-labels-review.csv` before release (spec §2).
 
 ## Not in this version
