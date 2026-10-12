@@ -11,6 +11,7 @@ namespace LiANN.MahjongTones.Core
     {
         public string readingKey;   // e.g. "yi1ban1"; digits are the lexical tones, 5 = neutral, v = ü
         public string entryId;      // dictionary entry id, e.g. "ude:..."
+        public string senseId;      // dictionary sense id, e.g. "uds:..." (AlongSide game-events upload)
         public string hanzi;
         public string english;      // short tile label (proofread)
         public string fullGloss;

@@ -71,10 +71,39 @@ namespace LiANN.MahjongTones.Core
             return new Layout("Small", p);
         }
 
+        /// <summary>Medium 36: 6 × 4 base, 4 × 2 second layer, 2 × 2 third layer (spec §7, D9).</summary>
+        public static Layout Medium36()
+        {
+            var p = new List<(int, int, int)>();
+            for (int y = 0; y <= 6; y += 2) for (int x = 0; x <= 10; x += 2) p.Add((x, y, 0));
+            for (int y = 2; y <= 4; y += 2) for (int x = 2; x <= 8; x += 2) p.Add((x, y, 1));
+            for (int y = 2; y <= 4; y += 2) for (int x = 4; x <= 6; x += 2) p.Add((x, y, 2));
+            return new Layout("Medium", p);
+        }
+
+        /// <summary>
+        /// Large 72: 8 × 5 base with one end tile on each side of the middle row, 6 × 3 second layer,
+        /// 4 × 2 third layer offset by half a tile, 2 × 2 fourth layer (spec §7). Desktop and tablet.
+        /// </summary>
+        public static Layout Large72()
+        {
+            var p = new List<(int, int, int)>();
+            for (int y = 0; y <= 8; y += 2) for (int x = 2; x <= 16; x += 2) p.Add((x, y, 0));
+            p.Add((0, 4, 0)); p.Add((18, 4, 0));
+            for (int y = 2; y <= 6; y += 2) for (int x = 4; x <= 14; x += 2) p.Add((x, y, 1));
+            for (int y = 3; y <= 5; y += 2) for (int x = 6; x <= 12; x += 2) p.Add((x, y, 2));
+            for (int y = 3; y <= 5; y += 2) for (int x = 8; x <= 10; x += 2) p.Add((x, y, 3));
+            return new Layout("Large", p);
+        }
+
+        public static readonly string[] Names = { "Starter", "Small", "Medium", "Large" };
+
         public static Layout ByName(string name) => name switch
         {
             "Starter" => Starter16(),
             "Small" => Small24(),
+            "Medium" => Medium36(),
+            "Large" => Large72(),
             _ => throw new ArgumentException("Unknown layout " + name),
         };
     }

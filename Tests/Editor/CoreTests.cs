@@ -74,39 +74,64 @@ namespace LiANN.MahjongTones.Tests
             Assert.IsFalse(small.IsFree(19, full), "top-layer middle tile is blocked both sides");
         }
 
+        [Test]
+        public void LayoutShapes()
+        {
+            Assert.AreEqual(16, Layout.Starter16().Count);
+            Assert.AreEqual(24, Layout.Small24().Count);
+            Assert.AreEqual(36, Layout.Medium36().Count);
+            Assert.AreEqual(72, Layout.Large72().Count);
+            foreach (var name in Layout.Names)
+            {
+                var l = Layout.ByName(name);
+                Assert.AreEqual(0, l.Slots.Min(sl => sl.X), name + " starts at x 0");
+                Assert.AreEqual(0, l.Slots.Min(sl => sl.Y), name + " starts at y 0");
+                Assert.AreEqual(l.Count, l.Slots.Select(sl => (sl.X, sl.Y, sl.Z)).Distinct().Count(), name + " has no duplicate slots");
+                // every upper tile rests on tiles below it
+                foreach (var t in l.Slots.Where(sl => sl.Z > 0))
+                    Assert.IsTrue(l.Slots.Any(b => b.Z == t.Z - 1 && System.Math.Abs(b.X - t.X) < 2 && System.Math.Abs(b.Y - t.Y) < 2), $"{name} {t} is supported");
+            }
+            var large = Layout.Large72();
+            var full = Enumerable.Repeat(true, 72).ToArray();
+            Assert.IsTrue(large.IsFree(large.Slots.First(sl => sl.X == 0).Id, full), "Large end tile is free");
+            Assert.IsFalse(large.IsFree(large.Slots.First(sl => sl.X == 2 && sl.Y == 4 && sl.Z == 0).Id, full), "tile beside the end tile is blocked");
+            Assert.AreEqual(900, Scoring.CountdownSeconds("Large"));
+        }
+
         // ---------- generation ----------
 
         static bool Solvable(Layout layout, Game g)
         {
-            var failed = new HashSet<long>();
+            var failed = new HashSet<string>();
             var occupied = g.Tiles.Select(t => t.OnBoard).ToArray();
-            bool Solve(long mask)
+            string Key() => new string(occupied.Select(o => o ? '1' : '0').ToArray());
+            bool Solve()
             {
-                if (mask == 0) return true;
-                if (failed.Contains(mask)) return false;
+                if (!occupied.Any(o => o)) return true;
+                string key = Key();
+                if (failed.Contains(key)) return false;
                 var free = layout.FreeSlots(occupied);
                 var byWord = free.GroupBy(id => g.Tiles[id].WordIndex).Where(x => x.Count() == 2);
                 foreach (var pair in byWord)
                 {
                     var ids = pair.ToArray();
                     occupied[ids[0]] = occupied[ids[1]] = false;
-                    bool ok = Solve(mask & ~(1L << ids[0]) & ~(1L << ids[1]));
+                    bool ok = Solve();
                     occupied[ids[0]] = occupied[ids[1]] = true;
                     if (ok) return true;
                 }
-                failed.Add(mask);
+                failed.Add(key);
                 return false;
             }
-            long start = 0;
-            for (int i = 0; i < occupied.Length; i++) if (occupied[i]) start |= 1L << i;
-            return Solve(start);
+            return Solve();
         }
 
         [Test]
-        public void EveryBoardIsSolvable([Values("Starter", "Small")] string layoutName)
+        public void EveryBoardIsSolvable([Values("Starter", "Small", "Medium", "Large")] string layoutName)
         {
-            var pool = Pool(30);
-            for (int seed = 0; seed < 1000; seed++)
+            var pool = Pool(layoutName == "Large" ? 60 : 30);
+            int boards = layoutName == "Large" ? 300 : 1000;
+            for (int seed = 0; seed < boards; seed++)
             {
                 var layout = Layout.ByName(layoutName);
                 var g = new Game(layout, pool, PlayMode.Practice, "seed-" + seed);

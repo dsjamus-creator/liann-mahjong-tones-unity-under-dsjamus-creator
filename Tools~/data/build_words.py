@@ -77,7 +77,8 @@ for key in sorted(entries):
     shutil.copyfile(path, os.path.join(out_audio, key + ".mp3"))
     kept.append({
         "readingKey": key, "entryId": e["entryId"], "hanzi": e["headword"], "english": label,
-        "fullGloss": (g[1] if g and len(g) > 1 else (g[0] if g else "")), "hskBand": int(band),
+        # some gloss rows carry the HSK band in slot 1 instead of the full gloss; fall back to slot 0 then
+        "fullGloss": (g[1] if g and len(g) > 1 and not str(g[1]).strip().isdigit() else (g[0] if g else "")), "hskBand": int(band),
         "audio": key, "picture": "",
         "_labelSource": "override" if key in overrides else "dictionary-first-sense",
     })

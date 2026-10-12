@@ -5,6 +5,7 @@
   {
    "readingKey": "a1yi2",
    "entryId": "ude:a3e5234306c432d6",
+   "senseId": "uds:b591ea16b70db1e884be",
    "hanzi": "阿姨",
    "english": "maternal aunt",
    "fullGloss": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:ge4",
@@ -15,6 +16,7 @@
   {
    "readingKey": "ai4ren5",
    "entryId": "ude:bbc7aae6eb887376",
+   "senseId": "uds:430c68b1a9dc14b39dc0",
    "hanzi": "爱人",
    "english": "spouse",
    "fullGloss": "spouse (PRC); lover (non-PRC); CL:ge4",
@@ -25,6 +27,7 @@
   {
    "readingKey": "an1jing4",
    "entryId": "ude:27130125c815382f",
+   "senseId": "uds:07edd1966de673225deb",
    "hanzi": "安静",
    "english": "quiet",
    "fullGloss": "quiet; peaceful; calm",
@@ -35,6 +38,7 @@
   {
    "readingKey": "an1quan2",
    "entryId": "ude:89652e3e73bb157f",
+   "senseId": "uds:1dd36288191fb9c237ce",
    "hanzi": "安全",
    "english": "safe",
    "fullGloss": "safe; secure; safety; security",
@@ -45,6 +49,7 @@
   {
    "readingKey": "ba4ba5",
    "entryId": "ude:70793c6c3099d060",
+   "senseId": "uds:461cc9addd356f339744",
    "hanzi": "爸爸",
    "english": "father",
    "fullGloss": "(coll.) father; dad; CL:wei4",
@@ -55,6 +60,7 @@
   {
    "readingKey": "bai2se4",
    "entryId": "ude:3c7f2d228ee18572",
+   "senseId": "uds:e22d1728991a077769ea",
    "hanzi": "白色",
    "english": "white",
    "fullGloss": "white; fig. reactionary; anti-communist",
@@ -65,6 +71,7 @@
   {
    "readingKey": "bai2tian1",
    "entryId": "ude:deb244d2e9e2a0f3",
+   "senseId": "uds:c4ddc9f62aee57519a0c",
    "hanzi": "白天",
    "english": "daytime",
    "fullGloss": "daytime; during the day; day; CL:ge4",
@@ -75,6 +82,7 @@
   {
    "readingKey": "ban1ji2",
    "entryId": "ude:0bec88f078045ba6",
+   "senseId": "uds:a008dc8e54c5ed4ef916",
    "hanzi": "班级",
    "english": "class",
    "fullGloss": "class (group of students); grade (in school); Bangui, capital of Central African Republic",
@@ -85,6 +93,7 @@
   {
    "readingKey": "ban1jia1",
    "entryId": "ude:bf85636a409eca19",
+   "senseId": "uds:2b407af96e7f9b9954d5",
    "hanzi": "搬家",
    "english": "to move house",
    "fullGloss": "to move house; to relocate; to remove (sth)",
@@ -95,6 +104,7 @@
   {
    "readingKey": "ban4gong1shi4",
    "entryId": "ude:9b7634dc67b72d3e",
+   "senseId": "uds:ea5833cae82a564dba40",
    "hanzi": "办公室",
    "english": "office",
    "fullGloss": "office; business premises",
@@ -105,6 +115,7 @@
   {
    "readingKey": "bang1mang2",
    "entryId": "ude:e3e93453e345d9dd",
+   "senseId": "uds:5b577baf09dc0590b82a",
    "hanzi": "帮忙",
    "english": "to help",
    "fullGloss": "to help; to lend a hand; to do a favor; to do a good turn",
@@ -115,6 +126,7 @@
   {
    "readingKey": "bang1zhu4",
    "entryId": "ude:00c363fa41d39940",
+   "senseId": "uds:53f8caeb6bcb34f699c3",
    "hanzi": "帮助",
    "english": "assistance",
    "fullGloss": "assistance; aid; to help; to assist",
@@ -125,6 +137,7 @@
   {
    "readingKey": "bao1zi5",
    "entryId": "ude:506e567832646c22",
+   "senseId": "uds:b3c5a206083bf9188a01",
    "hanzi": "包子",
    "english": "baozi",
    "fullGloss": "baozi; bao (steamed stuffed bun)",
@@ -135,6 +148,7 @@
   {
    "readingKey": "bao4zhi3",
    "entryId": "ude:8867ec0e8d313890",
+   "senseId": "uds:531d6cf120e383b37b85",
    "hanzi": "报纸",
    "english": "newspaper",
    "fullGloss": "newspaper; newsprint; CL:fen4,qi1,zhang1",
@@ -145,6 +159,7 @@
   {
    "readingKey": "bei1zi5",
    "entryId": "ude:2b0665f33a8b2c4a",
+   "senseId": "uds:d30f1a07c1720170d046",
    "hanzi": "杯子",
    "english": "cup",
    "fullGloss": "cup; glass; CL:ge4,zhi1",
@@ -155,6 +170,7 @@
   {
    "readingKey": "bei3fang1",
    "entryId": "ude:6a5c721eec56ea41",
+   "senseId": "uds:c97e370fa70a0a5b64e9",
    "hanzi": "北方",
    "english": "north",
    "fullGloss": "north; the northern part a country; China north of the Yellow River",
@@ -165,6 +181,7 @@
   {
    "readingKey": "ben3zi5",
    "entryId": "ude:a1347c0409f8d189",
+   "senseId": "uds:9e1a09bbb8c19aa58efb",
    "hanzi": "本子",
    "english": "exercise book",
    "fullGloss": "book; notebook; CL:ben3; edition",
@@ -175,6 +192,7 @@
   {
    "readingKey": "bi3ji4",
    "entryId": "ude:106ec893bb05f689",
+   "senseId": "uds:bd385418dd17cc780f7e",
    "hanzi": "笔记",
    "english": "notes",
    "fullGloss": "to take down (in writing); notes; a type of literature consisting mainly of short sketches; CL:ben3; handwriting",
@@ -185,6 +203,7 @@
   {
    "readingKey": "bi3ji4ben3",
    "entryId": "ude:1b3231298a310b14",
+   "senseId": "uds:c328e15859af00bc611c",
    "hanzi": "笔记本",
    "english": "notebook",
    "fullGloss": "notebook (stationery) (CL:ben3); (computing) laptop; notebook (abbr. for bi3 ji4 ben3 dian4 nao3)",
@@ -195,6 +214,7 @@
   {
    "readingKey": "bi3jiao4",
    "entryId": "ude:931be1254ff05fc9",
+   "senseId": "uds:9ed64d6cf4d775e310ab",
    "hanzi": "比较",
    "english": "to compare",
    "fullGloss": "to compare; to contrast; comparatively; relatively; quite; comparison",
@@ -205,6 +225,7 @@
   {
    "readingKey": "bi3sai4",
    "entryId": "ude:88073820ef0c2090",
+   "senseId": "uds:bbe4f5be9516e879f31c",
    "hanzi": "比赛",
    "english": "competition",
    "fullGloss": "competition (sports etc); match; CL:chang3,ci4; to compete",
@@ -215,6 +236,7 @@
   {
    "readingKey": "bian4cheng2",
    "entryId": "ude:54d0a129349db1ba",
+   "senseId": "uds:6fe7eb2ab8ac504145e1",
    "hanzi": "变成",
    "english": "to change into",
    "fullGloss": "to change into; to turn into; to become",
@@ -225,6 +247,7 @@
   {
    "readingKey": "bian4hua4",
    "entryId": "ude:e5b1a9d39c7045e6",
+   "senseId": "uds:674638f549672d01c8fc",
    "hanzi": "变化",
    "english": "change",
    "fullGloss": "(intransitive) to change; to vary; change; variation",
@@ -235,6 +258,7 @@
   {
    "readingKey": "biao3yan3",
    "entryId": "ude:694c13d91a4da77b",
+   "senseId": "uds:64f6392c9c75456e8cb5",
    "hanzi": "表演",
    "english": "performance",
    "fullGloss": "play; show; performance; exhibition; to perform; to act; to demonstrate; CL:chang3",
@@ -245,6 +269,7 @@
   {
    "readingKey": "bie2de5",
    "entryId": "ude:37c44364315fdccc",
+   "senseId": "uds:6fee09aaba6774ad1269",
    "hanzi": "别的",
    "english": "else",
    "fullGloss": "else; other",
@@ -255,6 +280,7 @@
   {
    "readingKey": "bie2ren5",
    "entryId": "ude:017dd1c325d13233",
+   "senseId": "uds:2d1e96cfc6b016cbde99",
    "hanzi": "别人",
    "english": "other people",
    "fullGloss": "other people; others; other person",
@@ -265,6 +291,7 @@
   {
    "readingKey": "bin1guan3",
    "entryId": "ude:558e8844da225723",
+   "senseId": "uds:eb294b1cdd00ac037a59",
    "hanzi": "宾馆",
    "english": "guesthouse",
    "fullGloss": "guesthouse; lodge; hotel; CL:ge4,jia1",
@@ -275,9 +302,10 @@
   {
    "readingKey": "bing1ji1ling2",
    "entryId": "ude:337a0fee387c4bbc",
+   "senseId": "uds:0e964e7667f5ac2dc24b",
    "hanzi": "冰激凌",
    "english": "ice cream",
-   "fullGloss": "3",
+   "fullGloss": "ice cream",
    "hskBand": 3,
    "audio": "bing1ji1ling2",
    "picture": ""
@@ -285,6 +313,7 @@
   {
    "readingKey": "bing1xiang1",
    "entryId": "ude:020d149371d2fe92",
+   "senseId": "uds:5abf10cbf9556129c963",
    "hanzi": "冰箱",
    "english": "refrigerator",
    "fullGloss": "refrigerator; (old) icebox",
@@ -295,6 +324,7 @@
   {
    "readingKey": "bing4ren2",
    "entryId": "ude:893c784b7707d605",
+   "senseId": "uds:1e6b81bb7de18ca3b645",
    "hanzi": "病人",
    "english": "sick person",
    "fullGloss": "sick person; patient; invalid; CL:ge4",
@@ -305,6 +335,7 @@
   {
    "readingKey": "bu4cuo4",
    "entryId": "ude:3c3dfc3d412f5dbe",
+   "senseId": "uds:b3d54639e7d4e33571e6",
    "hanzi": "不错",
    "english": "not bad",
    "fullGloss": "correct; right; not bad; pretty good",
@@ -315,6 +346,7 @@
   {
    "readingKey": "bu4hao3yi4si5",
    "entryId": "ude:7eac955e7b9369d7",
+   "senseId": "uds:25a3ec296b1fe5369757",
    "hanzi": "不好意思",
    "english": "to feel embarrassed",
    "fullGloss": "to feel embarrassed; to find it embarrassing; to be sorry (for inconveniencing sb)",
@@ -325,6 +357,7 @@
   {
    "readingKey": "bu4jiu3",
    "entryId": "ude:7bff6e5519664d2a",
+   "senseId": "uds:2f9e4a00f6b340dc1deb",
    "hanzi": "不久",
    "english": "not long",
    "fullGloss": "not long (after); before too long; soon; soon after",
@@ -335,6 +368,7 @@
   {
    "readingKey": "bu4ke4qi5",
    "entryId": "ude:edfe273528be3ef7",
+   "senseId": "uds:d95ffcac6655454231e8",
    "hanzi": "不客气",
    "english": "you're welcome",
    "fullGloss": "you're welcome; don't mention it; impolite; rude; blunt",
@@ -345,6 +379,7 @@
   {
    "readingKey": "bu4tong2",
    "entryId": "ude:218dc0e7f9a11712",
+   "senseId": "uds:914a24eb12d794fff71b",
    "hanzi": "不同",
    "english": "different",
    "fullGloss": "different; distinct; not the same; not alike",
@@ -355,6 +390,7 @@
   {
    "readingKey": "bu4xing2",
    "entryId": "ude:3fce5ff4c281d394",
+   "senseId": "uds:fb3f11e354ab3937877e",
    "hanzi": "不行",
    "english": "won't do",
    "fullGloss": "won't do; be out of the question; be no good; not work; not be capable; to go on foot; to walk",
@@ -365,6 +401,7 @@
   {
    "readingKey": "bu4yao4",
    "entryId": "ude:cdd27f887be0eb24",
+   "senseId": "uds:7dd902bd9e1960fc8e6c",
    "hanzi": "不要",
    "english": "don't!",
    "fullGloss": "don't!; must not",
@@ -375,9 +412,10 @@
   {
    "readingKey": "bu4yong4",
    "entryId": "ude:bd90dc1142a60dfe",
+   "senseId": "uds:032caef171721bba46e5",
    "hanzi": "不用",
    "english": "need not",
-   "fullGloss": "3",
+   "fullGloss": "need not",
    "hskBand": 3,
    "audio": "bu4yong4",
    "picture": ""
@@ -385,6 +423,7 @@
   {
    "readingKey": "cai4dan1",
    "entryId": "ude:45afc637d91347f9",
+   "senseId": "uds:fa288497334b1ecb3bcd",
    "hanzi": "菜单",
    "english": "menu",
    "fullGloss": "menu; CL:fen4,zhang1",
@@ -395,6 +434,7 @@
   {
    "readingKey": "can1jia1",
    "entryId": "ude:e8c4b6b829abea13",
+   "senseId": "uds:3522b7a45f043966e280",
    "hanzi": "参加",
    "english": "to participate",
    "fullGloss": "to participate; to take part; to join",
@@ -405,6 +445,7 @@
   {
    "readingKey": "cao3di4",
    "entryId": "ude:0e50107924300834",
+   "senseId": "uds:611b8318cfb9d83b4f17",
    "hanzi": "草地",
    "english": "lawn",
    "fullGloss": "lawn; meadow; sod; turf; CL:pian4",
@@ -415,8 +456,9 @@
   {
    "readingKey": "cha4bu5duo1",
    "entryId": "ude:a1f11ac51dc9ffbf",
+   "senseId": "uds:4b9050f40eb090ff012b",
    "hanzi": "差不多",
-   "english": "almost",
+   "english": "about the same",
    "fullGloss": "almost; nearly; more or less; about the same; good enough; not bad",
    "hskBand": 3,
    "audio": "cha4bu5duo1",
@@ -425,6 +467,7 @@
   {
    "readingKey": "chang2chang2",
    "entryId": "ude:e7dfbb9e1040584f",
+   "senseId": "uds:c786e286fa15f8acdd6c",
    "hanzi": "常常",
    "english": "frequently",
    "fullGloss": "frequently; often",
@@ -435,6 +478,7 @@
   {
    "readingKey": "chang2jian4",
    "entryId": "ude:ebeeeafba0315212",
+   "senseId": "uds:0da525dd093ae09ad18e",
    "hanzi": "常见",
    "english": "commonly seen",
    "fullGloss": "commonly seen; common; to see sth frequently",
@@ -445,9 +489,10 @@
   {
    "readingKey": "chang2yong4",
    "entryId": "ude:a13564c966ebb2d1",
+   "senseId": "uds:9fbfe241ccfcc9fd2e75",
    "hanzi": "常用",
    "english": "in common usage",
-   "fullGloss": "3",
+   "fullGloss": "in common usage",
    "hskBand": 3,
    "audio": "chang2yong4",
    "picture": ""
@@ -455,6 +500,7 @@
   {
    "readingKey": "chao1shi4",
    "entryId": "ude:b2b1b3edfdf18714",
+   "senseId": "uds:0833f0e29798e1585172",
    "hanzi": "超市",
    "english": "supermarket",
    "fullGloss": "supermarket (abbr. for chao1 ji2 shi4 chang3); CL:jia1",
@@ -465,6 +511,7 @@
   {
    "readingKey": "che1zhan4",
    "entryId": "ude:4b3ad5701ec92171",
+   "senseId": "uds:d89643b2a25c0fe7f53b",
    "hanzi": "车站",
    "english": "rail station",
    "fullGloss": "rail station; bus stop; CL:chu4,ge4",
@@ -475,6 +522,7 @@
   {
    "readingKey": "chen4shan1",
    "entryId": "ude:76ab01a402c76660",
+   "senseId": "uds:7c521e307ff47dcf6092",
    "hanzi": "衬衫",
    "english": "shirt",
    "fullGloss": "shirt; blouse; CL:jian4",
@@ -485,6 +533,7 @@
   {
    "readingKey": "cheng2ji4",
    "entryId": "ude:4b0bb914eda85b25",
+   "senseId": "uds:dc57047b3dc4d9d32518",
    "hanzi": "成绩",
    "english": "achievement",
    "fullGloss": "achievement; performance records; grades; CL:xiang4,ge4; adoption (e.g. of a nephew as a son); to inherit; Agent Orange (herbicide)",
@@ -495,6 +544,7 @@
   {
    "readingKey": "cheng2shi4",
    "entryId": "ude:a4d5f29189ad309a",
+   "senseId": "uds:b96efbef6b73320f4926",
    "hanzi": "城市",
    "english": "city",
    "fullGloss": "city; town; CL:zuo4; to seize the opportunity; to strike while the iron is hot; to accomplish the objective; to succeed; form; pattern; formula; (Tw) (computing) program",
@@ -505,6 +555,7 @@
   {
    "readingKey": "chi2dao4",
    "entryId": "ude:28f2f3dd8a4d3c5a",
+   "senseId": "uds:33ed4aa6691a801e83de",
    "hanzi": "迟到",
    "english": "to arrive late",
    "fullGloss": "to arrive late; (old) highway for the emperor; highway",
@@ -515,6 +566,7 @@
   {
    "readingKey": "chu1fa1",
    "entryId": "ude:a20d759653f6e8ed",
+   "senseId": "uds:e771ff86a397112208b0",
    "hanzi": "出发",
    "english": "to set off",
    "fullGloss": "to set off; to start (on a journey)",
@@ -525,6 +577,7 @@
   {
    "readingKey": "chu1guo2",
    "entryId": "ude:26235848da25f81a",
+   "senseId": "uds:8c7d441b1f82d27579a0",
    "hanzi": "出国",
    "english": "to go abroad",
    "fullGloss": "to go abroad; to leave the country",
@@ -535,6 +588,7 @@
   {
    "readingKey": "chu1lai2",
    "entryId": "ude:e94befb022a74fa1",
+   "senseId": "uds:e9a483bd5f3aea1923c8",
    "hanzi": "出来",
    "english": "to come out",
    "fullGloss": "to come out; to appear; to arise",
@@ -545,8 +599,9 @@
   {
    "readingKey": "chu1men2",
    "entryId": "ude:390aea1c71c084c3",
+   "senseId": "uds:abe90e4f431e21644df1",
    "hanzi": "出门",
-   "english": "to go out",
+   "english": "to leave home",
    "fullGloss": "to go out; to leave home; to go on a journey; away from home; (of a woman) to get married",
    "hskBand": 2,
    "audio": "chu1men2",
@@ -555,9 +610,10 @@
   {
    "readingKey": "chu1qu4",
    "entryId": "ude:daa1b5661019119e",
+   "senseId": "uds:79e09de36de4f23176de",
    "hanzi": "出去",
    "english": "to go out",
-   "fullGloss": "2",
+   "fullGloss": "to go out",
    "hskBand": 2,
    "audio": "chu1qu4",
    "picture": ""
@@ -565,6 +621,7 @@
   {
    "readingKey": "chu1sheng1",
    "entryId": "ude:37d95ba6261be0b0",
+   "senseId": "uds:b6b8b08c6a8ca2e224a8",
    "hanzi": "出生",
    "english": "to be born",
    "fullGloss": "to be born; to make a sound; to speak; to cry out; rising (sun, moon etc); newborn; nascent; primary (biology); the initial consonant (or doubled consonant) of a Korean syllable",
@@ -575,6 +632,7 @@
   {
    "readingKey": "chu1yuan4",
    "entryId": "ude:94836b799a153de9",
+   "senseId": "uds:d5168d200fef2ab2d737",
    "hanzi": "出院",
    "english": "to leave hospital",
    "fullGloss": "to leave hospital; to be discharged from hospital",
@@ -585,6 +643,7 @@
   {
    "readingKey": "chu1zu1che1",
    "entryId": "ude:b554e426f6703f19",
+   "senseId": "uds:5b1bb926f81ea006a018",
    "hanzi": "出租车",
    "english": "taxi",
    "fullGloss": "taxi; (Tw) rental car",
@@ -595,6 +654,7 @@
   {
    "readingKey": "chu2le5",
    "entryId": "ude:0feff83affd43c79",
+   "senseId": "uds:384937d62f925e5bec53",
    "hanzi": "除了",
    "english": "apart from",
    "fullGloss": "apart from; besides; in addition to (used to exclude, as in,|,[chu2 le5 ta1, shei2 ye3 mei2 lai2] \"apart from him, nobody came\", or to include, as in,|,[chu2 le5 Ying1 yu3, ta1 ye3 hui4 Fa3 yu3] \"in addition to English, he also knows French\"); (used to introduce one of two habitual alternatives in the pattern chu2 le5 + A + jiu4 shi4 + B, \"either A or B\")",
@@ -605,6 +665,7 @@
   {
    "readingKey": "chun1tian1",
    "entryId": "ude:df5c1b8ff5fadfa2",
+   "senseId": "uds:55ade2e70cccd17a1ff7",
    "hanzi": "春天",
    "english": "spring",
    "fullGloss": "spring (season); CL:ge4",
@@ -615,6 +676,7 @@
   {
    "readingKey": "ci2dian3",
    "entryId": "ude:f7834a0232478f21",
+   "senseId": "uds:f653ac31ebb21687d4a2",
    "hanzi": "词典",
    "english": "dictionary",
    "fullGloss": "dictionary; CL:ben3,bu4; variant of ci2 dian3",
@@ -625,6 +687,7 @@
   {
    "readingKey": "cong1ming5",
    "entryId": "ude:14b7f212753efbf6",
+   "senseId": "uds:ea9bed673faf10a0b7ad",
    "hanzi": "聪明",
    "english": "intelligent",
    "fullGloss": "intelligent; clever; bright; acute (of sight and hearing)",
@@ -635,6 +698,7 @@
   {
    "readingKey": "cong2xiao3",
    "entryId": "ude:bbf2e9602d8fa3ac",
+   "senseId": "uds:69fa36c6268c665c4735",
    "hanzi": "从小",
    "english": "from childhood",
    "fullGloss": "from childhood; from a young age",
@@ -645,6 +709,7 @@
   {
    "readingKey": "da3kai1",
    "entryId": "ude:607f1f1145242933",
+   "senseId": "uds:89f520ce317072130686",
    "hanzi": "打开",
    "english": "to open",
    "fullGloss": "to open; to show (a ticket); to turn on; to switch on",
@@ -655,6 +720,7 @@
   {
    "readingKey": "da3sao3",
    "entryId": "ude:b10bf1e224bf42e3",
+   "senseId": "uds:c32c5f221609cd684e78",
    "hanzi": "打扫",
    "english": "to clean",
    "fullGloss": "to clean; to sweep",
@@ -665,6 +731,7 @@
   {
    "readingKey": "da3suan4",
    "entryId": "ude:5cfed93dca3ae260",
+   "senseId": "uds:2540a7f414989d5d7286",
    "hanzi": "打算",
    "english": "to plan",
    "fullGloss": "to plan; to intend; to calculate; plan; intention; calculation; CL:ge4",
@@ -675,6 +742,7 @@
   {
    "readingKey": "da4gai4",
    "entryId": "ude:0b1a5efad9f98167",
+   "senseId": "uds:88a176b354e1a16e970b",
    "hanzi": "大概",
    "english": "roughly",
    "fullGloss": "roughly; probably; rough; approximate; about; general idea",
@@ -685,6 +753,7 @@
   {
    "readingKey": "da4jia1",
    "entryId": "ude:6f0ec8a43534a7ca",
+   "senseId": "uds:ecf8e4a2e3fe5022ada0",
    "hanzi": "大家",
    "english": "everyone",
    "fullGloss": "everyone; influential family; great expert; (before a two-syllable verb) considerably; greatly (exaggerate); vehemently (oppose); severely (punish); extensively (refurbish); effusively (praise)",
@@ -695,6 +764,7 @@
   {
    "readingKey": "da4xiao3",
    "entryId": "ude:aa425448c6aa006e",
+   "senseId": "uds:ec198626014b8d54f2e8",
    "hanzi": "大小",
    "english": "size",
    "fullGloss": "large and small; size; adults and children; consideration of seniority; at any rate",
@@ -705,9 +775,10 @@
   {
    "readingKey": "da4xiong2mao1",
    "entryId": "ude:1cd0a9d1e4b79534",
+   "senseId": "uds:3f9c2e30dcf27c5e0a30",
    "hanzi": "大熊猫",
    "english": "giant panda",
-   "fullGloss": "3",
+   "fullGloss": "giant panda (Ailuropoda melanoleuca)",
    "hskBand": 3,
    "audio": "da4xiong2mao1",
    "picture": ""
@@ -715,6 +786,7 @@
   {
    "readingKey": "da4xue2",
    "entryId": "ude:afd657ef3bddf5fd",
+   "senseId": "uds:cae52144a940b1248f7d",
    "hanzi": "大学",
    "english": "university",
    "fullGloss": "the Great Learning, one of the Four Books Si4 shu1 in Confucianism; university; college; CL:suo3",
@@ -725,6 +797,7 @@
   {
    "readingKey": "da4xue2sheng1",
    "entryId": "ude:064e24b4bef6d239",
+   "senseId": "uds:7a21bd64d44d76e2e351",
    "hanzi": "大学生",
    "english": "university student",
    "fullGloss": "university student; college student",
@@ -735,6 +808,7 @@
   {
    "readingKey": "da4yi1",
    "entryId": "ude:3d31213caecdd9f4",
+   "senseId": "uds:443c5f7cc5c5345ea0d3",
    "hanzi": "大衣",
    "english": "overcoat",
    "fullGloss": "overcoat; topcoat; cloak; CL:jian4; first year of university",
@@ -745,6 +819,7 @@
   {
    "readingKey": "dan1xin1",
    "entryId": "ude:b33ec4e4c70de2ad",
+   "senseId": "uds:b4cd7a2d23beefeb9524",
    "hanzi": "担心",
    "english": "anxious",
    "fullGloss": "anxious; worried; uneasy; to worry; to be anxious; loyal heart; loyalty; to devote one's entire mind; variant of dan1 xin1",
@@ -755,6 +830,7 @@
   {
    "readingKey": "dan4gao1",
    "entryId": "ude:7533017f950f6408",
+   "senseId": "uds:1e515991fb35bc13b424",
    "hanzi": "蛋糕",
    "english": "cake",
    "fullGloss": "cake; CL:kuai4,ge4",
@@ -765,6 +841,7 @@
   {
    "readingKey": "dan4shi4",
    "entryId": "ude:857c040d1fc5688a",
+   "senseId": "uds:8d272359cf9cf4e53252",
    "hanzi": "但是",
    "english": "but",
    "fullGloss": "but; however",
@@ -775,6 +852,7 @@
   {
    "readingKey": "dang1ran2",
    "entryId": "ude:d119bad2ca4f5a6f",
+   "senseId": "uds:2f9550ed514c4d591d09",
    "hanzi": "当然",
    "english": "of course",
    "fullGloss": "only natural; as it should be; certainly; of course; without doubt",
@@ -785,9 +863,10 @@
   {
    "readingKey": "dao4chu4",
    "entryId": "ude:43ed2aa83e9ac591",
+   "senseId": "uds:c541dadf20e9ed749820",
    "hanzi": "到处",
    "english": "everywhere",
-   "fullGloss": "3",
+   "fullGloss": "everywhere",
    "hskBand": 3,
    "audio": "dao4chu4",
    "picture": ""
@@ -795,6 +874,7 @@
   {
    "readingKey": "de2dao4",
    "entryId": "ude:a1c5b771c627c0a9",
+   "senseId": "uds:7e5055c58dc5db5b1610",
    "hanzi": "得到",
    "english": "to get",
    "fullGloss": "to get; to obtain; to receive; to achieve the Dao; to become an immortal",
@@ -805,9 +885,10 @@
   {
    "readingKey": "de5hua4",
    "entryId": "ude:a3a10cb7088c22d4",
+   "senseId": "uds:2e7bf817c8ba0b3bea70",
    "hanzi": "的话",
    "english": "if",
-   "fullGloss": "3",
+   "fullGloss": "if (coming after a conditional clause)",
    "hskBand": 3,
    "audio": "de5hua4",
    "picture": ""
@@ -815,6 +896,7 @@
   {
    "readingKey": "di4dian3",
    "entryId": "ude:b3e77755731b0d13",
+   "senseId": "uds:49a2e5f4e4774d6fc5a3",
    "hanzi": "地点",
    "english": "place",
    "fullGloss": "place; site; location; venue; CL:ge4",
@@ -825,6 +907,7 @@
   {
    "readingKey": "di4tie3",
    "entryId": "ude:74b6915fbb86b038",
+   "senseId": "uds:156ed5713cc3e4cac123",
    "hanzi": "地铁",
    "english": "underground railway",
    "fullGloss": "underground railway; subway; subway train",
@@ -835,6 +918,7 @@
   {
    "readingKey": "di4tu2",
    "entryId": "ude:3f3ec22059188767",
+   "senseId": "uds:b64291a0a79bd55340c6",
    "hanzi": "地图",
    "english": "map",
    "fullGloss": "map; CL:zhang1,ben3",
@@ -845,6 +929,7 @@
   {
    "readingKey": "dian4hua4",
    "entryId": "ude:d927f35fcf1a356b",
+   "senseId": "uds:51a57a31cc865127b743",
    "hanzi": "电话",
    "english": "telephone",
    "fullGloss": "telephone; CL:bu4; phone call; CL:tong1; phone number",
@@ -855,6 +940,7 @@
   {
    "readingKey": "dian4nao3",
    "entryId": "ude:405c8800f26abbc2",
+   "senseId": "uds:e438a3cd8d5926487bd7",
    "hanzi": "电脑",
    "english": "computer",
    "fullGloss": "computer; CL:tai2",
@@ -865,6 +951,7 @@
   {
    "readingKey": "dian4shi4",
    "entryId": "ude:b002ff78f5a3e32f",
+   "senseId": "uds:36457cc69a734c2d134b",
    "hanzi": "电视",
    "english": "television",
    "fullGloss": "television; TV; CL:tai2,bu4; court examination, the top grade imperial exam",
@@ -875,6 +962,7 @@
   {
    "readingKey": "dian4ti1",
    "entryId": "ude:4435b66352beb652",
+   "senseId": "uds:7d0caa2cd7b840973130",
    "hanzi": "电梯",
    "english": "elevator",
    "fullGloss": "elevator; escalator; CL:tai2,bu4",
@@ -885,6 +973,7 @@
   {
    "readingKey": "dian4ying3",
    "entryId": "ude:92d3cacc3aafabea",
+   "senseId": "uds:0d93c12cc0d814c7bc0e",
    "hanzi": "电影",
    "english": "movie",
    "fullGloss": "movie; film; CL:bu4",
@@ -895,6 +984,7 @@
   {
    "readingKey": "dian4ying3yuan4",
    "entryId": "ude:5a779216386387ad",
+   "senseId": "uds:d67659adbd5e17c52737",
    "hanzi": "电影院",
    "english": "cinema",
    "fullGloss": "cinema; movie theater; CL:jia1,zuo4",
@@ -905,6 +995,7 @@
   {
    "readingKey": "dian4zi3shu1",
    "entryId": "ude:077a8c0cbae5c9e6",
+   "senseId": "uds:de418eeb083d236812a0",
    "hanzi": "电子书",
    "english": "electronic book",
    "fullGloss": "electronic book; e-book; e-book reader",
@@ -915,6 +1006,7 @@
   {
    "readingKey": "dong1bei3",
    "entryId": "ude:7b8ccd53b129c360",
+   "senseId": "uds:11fef2fd275377ea2527",
    "hanzi": "东北",
    "english": "Northeast China",
    "fullGloss": "Northeast China; Manchuria; northeast",
@@ -925,6 +1017,7 @@
   {
    "readingKey": "dong1fang1",
    "entryId": "ude:8d0dfa9c57cf1469",
+   "senseId": "uds:b50da8d19b9c180054fd",
    "hanzi": "东方",
    "english": "the East",
    "fullGloss": "the East; the Orient; two-character surname Dongfang; east",
@@ -935,9 +1028,10 @@
   {
    "readingKey": "dong1nan2",
    "entryId": "ude:d2c8f80d907e26a5",
+   "senseId": "uds:efe77ba33e0b7c1d625e",
    "hanzi": "东南",
    "english": "southeast",
-   "fullGloss": "3",
+   "fullGloss": "southeast",
    "hskBand": 3,
    "audio": "dong1nan2",
    "picture": ""
@@ -945,9 +1039,10 @@
   {
    "readingKey": "dong1tian1",
    "entryId": "ude:a1147f6f8be9c39a",
+   "senseId": "uds:69dedee6a226f3ad40ab",
    "hanzi": "冬天",
    "english": "winter",
-   "fullGloss": "3",
+   "fullGloss": "winter",
    "hskBand": 3,
    "audio": "dong1tian1",
    "picture": ""
@@ -955,6 +1050,7 @@
   {
    "readingKey": "dong1xi5",
    "entryId": "ude:153a1554dbd21710",
+   "senseId": "uds:0f042d0549885bff7ba3",
    "hanzi": "东西",
    "english": "thing",
    "fullGloss": "thing; stuff; person; CL:ge4,jian4",
@@ -965,6 +1061,7 @@
   {
    "readingKey": "dong3de5",
    "entryId": "ude:0588351dd67a2265",
+   "senseId": "uds:240c5ec57c4cd1914bf1",
    "hanzi": "懂得",
    "english": "to understand",
    "fullGloss": "to understand; to know; to comprehend",
@@ -975,9 +1072,10 @@
   {
    "readingKey": "dong4wu4",
    "entryId": "ude:05063ecd7c53f332",
+   "senseId": "uds:0ba15d932eb74542362c",
    "hanzi": "动物",
    "english": "animal",
-   "fullGloss": "3",
+   "fullGloss": "animal",
    "hskBand": 3,
    "audio": "dong4wu4",
    "picture": ""
@@ -985,9 +1083,10 @@
   {
    "readingKey": "dong4wu4yuan2",
    "entryId": "ude:16a23d7b3c91442e",
+   "senseId": "uds:c549f2daef8bba6d4772",
    "hanzi": "动物园",
    "english": "zoo",
-   "fullGloss": "3",
+   "fullGloss": "zoo",
    "hskBand": 3,
    "audio": "dong4wu4yuan2",
    "picture": ""
@@ -995,6 +1094,7 @@
   {
    "readingKey": "duan3ku4",
    "entryId": "ude:ec0928ba96c51f4f",
+   "senseId": "uds:d0b16a7b2efc54259ad8",
    "hanzi": "短裤",
    "english": "short pants",
    "fullGloss": "short pants; shorts",
@@ -1005,6 +1105,7 @@
   {
    "readingKey": "duan4lian4",
    "entryId": "ude:9d46765c7b414603",
+   "senseId": "uds:f1297a18f9ad7f9ce876",
    "hanzi": "锻炼",
    "english": "to exercise",
    "fullGloss": "to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills; to train oneself",
@@ -1015,6 +1116,7 @@
   {
    "readingKey": "dui4bu5qi3",
    "entryId": "ude:681c0408c0462c5b",
+   "senseId": "uds:8bff867157fbb0374532",
    "hanzi": "对不起",
    "english": "I'm sorry",
    "fullGloss": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
@@ -1025,6 +1127,7 @@
   {
    "readingKey": "duo1shao5",
    "entryId": "ude:2a0155b3ec93f648",
+   "senseId": "uds:e61fa6cded0c09e878ce",
    "hanzi": "多少",
    "english": "how much?",
    "fullGloss": "how much?; how many?; (phone number, student ID etc) what number?",
@@ -1035,6 +1138,7 @@
   {
    "readingKey": "er2qie3",
    "entryId": "ude:fc1d20943757828b",
+   "senseId": "uds:679512dce22318dd55e5",
    "hanzi": "而且",
    "english": "but also",
    "fullGloss": "(not only...) but also; moreover; in addition; furthermore",
@@ -1045,9 +1149,10 @@
   {
    "readingKey": "er2zi5",
    "entryId": "ude:a70cabe5c0555eb2",
+   "senseId": "uds:f1ca8859104a1350b825",
    "hanzi": "儿子",
    "english": "son",
-   "fullGloss": "1",
+   "fullGloss": "son",
    "hskBand": 1,
    "audio": "er2zi5",
    "picture": ""
@@ -1055,6 +1160,7 @@
   {
    "readingKey": "er3duo5",
    "entryId": "ude:3206727b81daf0e1",
+   "senseId": "uds:bef3427b1129f853d51b",
    "hanzi": "耳朵",
    "english": "ear",
    "fullGloss": "ear; CL:zhi1,ge4,dui4; handle (on a cup)",
@@ -1065,6 +1171,7 @@
   {
    "readingKey": "er3ji1",
    "entryId": "ude:cb8ad433dd5d3743",
+   "senseId": "uds:dab8f442eb30176f2978",
    "hanzi": "耳机",
    "english": "headphones",
    "fullGloss": "headphones; earphones; telephone receiver",
@@ -1075,6 +1182,7 @@
   {
    "readingKey": "fa1sheng1",
    "entryId": "ude:27df48d35be28a87",
+   "senseId": "uds:0c6223395a97092572bf",
    "hanzi": "发生",
    "english": "to happen",
    "fullGloss": "to happen; to occur; to take place; to break out; to produce a sound; to vocalize; to give voice; to articulate views or demands",
@@ -1085,6 +1193,7 @@
   {
    "readingKey": "fa1xian4",
    "entryId": "ude:82213feb22b76e30",
+   "senseId": "uds:43413b953c29aa82be26",
    "hanzi": "发现",
    "english": "to notice",
    "fullGloss": "to notice; to become aware of; to discover; to find; to detect; a discovery",
@@ -1095,6 +1204,7 @@
   {
    "readingKey": "fa1zhan3",
    "entryId": "ude:0f3d726f82f7e046",
+   "senseId": "uds:e5af33c090286ee337fd",
    "hanzi": "发展",
    "english": "development",
    "fullGloss": "development; growth; to develop; to grow; to expand",
@@ -1105,8 +1215,9 @@
   {
    "readingKey": "fan4dian4",
    "entryId": "ude:0d1a0afb62492262",
+   "senseId": "uds:d68b2819fff23f56b1cc",
    "hanzi": "饭店",
-   "english": "restaurant",
+   "english": "hotel, restaurant",
    "fullGloss": "restaurant; hotel; CL:jia1",
    "hskBand": 1,
    "audio": "fan4dian4",
@@ -1115,6 +1226,7 @@
   {
    "readingKey": "fan4guan3",
    "entryId": "ude:92124fe8a047d3da",
+   "senseId": "uds:a1d62a1bc1429e96cef4",
    "hanzi": "饭馆",
    "english": "restaurant",
    "fullGloss": "restaurant; CL:jia1",
@@ -1125,6 +1237,7 @@
   {
    "readingKey": "fang1bian4",
    "entryId": "ude:4a0430c6c221476c",
+   "senseId": "uds:777abc3ba178b88de329",
    "hanzi": "方便",
    "english": "convenient",
    "fullGloss": "convenient; suitable; to facilitate; to make things easy; having money to spare; (euphemism) to relieve oneself",
@@ -1135,9 +1248,10 @@
   {
    "readingKey": "fang1bian4mian4",
    "entryId": "ude:cd6498a1a8b76b98",
+   "senseId": "uds:b815203fc31b5bbb4b10",
    "hanzi": "方便面",
    "english": "instant noodles",
-   "fullGloss": "3",
+   "fullGloss": "instant noodles",
    "hskBand": 3,
    "audio": "fang1bian4mian4",
    "picture": ""
@@ -1145,6 +1259,7 @@
   {
    "readingKey": "fang1fa3",
    "entryId": "ude:9a4d695944030e64",
+   "senseId": "uds:574c453d7022027fc428",
    "hanzi": "方法",
    "english": "method",
    "fullGloss": "method; way; technique; procedure",
@@ -1155,6 +1270,7 @@
   {
    "readingKey": "fang1xiang4",
    "entryId": "ude:ef921d9525d7f32c",
+   "senseId": "uds:b484532f83c33da44b8b",
    "hanzi": "方向",
    "english": "direction",
    "fullGloss": "direction; orientation",
@@ -1165,6 +1281,7 @@
   {
    "readingKey": "fang2jian1",
    "entryId": "ude:39cf1f754434a124",
+   "senseId": "uds:0fd4d0fee65a96230d31",
    "hanzi": "房间",
    "english": "room",
    "fullGloss": "room; CL:jian1",
@@ -1175,6 +1292,7 @@
   {
    "readingKey": "fang2zi5",
    "entryId": "ude:f97986e11d31363d",
+   "senseId": "uds:b740a518f451e723b793",
    "hanzi": "房子",
    "english": "house",
    "fullGloss": "house; building (single- or two-story); apartment; room; CL:dong4,zhuang4,zuo4,tao4,jian1",
@@ -1185,6 +1303,7 @@
   {
    "readingKey": "fang4xin1",
    "entryId": "ude:e0f7ee91a36ee696",
+   "senseId": "uds:8515870be59d0c5cefad",
    "hanzi": "放心",
    "english": "to feel relieved",
    "fullGloss": "to feel relieved; to feel reassured; to be at ease",
@@ -1195,6 +1314,7 @@
   {
    "readingKey": "fei1chang2",
    "entryId": "ude:e58d40ef43e702ae",
+   "senseId": "uds:40fee9c1e25a45d32118",
    "hanzi": "非常",
    "english": "very",
    "fullGloss": "very; really; unusual; extraordinary",
@@ -1205,6 +1325,7 @@
   {
    "readingKey": "fei1ji1",
    "entryId": "ude:a2fe679f26418581",
+   "senseId": "uds:d985a3303f67f19c698c",
    "hanzi": "飞机",
    "english": "plane",
    "fullGloss": "airplane; CL:jia4",
@@ -1215,6 +1336,7 @@
   {
    "readingKey": "fen1kai1",
    "entryId": "ude:29da450566386840",
+   "senseId": "uds:15c8a5bfa0775b8ecdbb",
    "hanzi": "分开",
    "english": "to separate",
    "fullGloss": "to separate; to part",
@@ -1225,9 +1347,10 @@
   {
    "readingKey": "fen1zhong1",
    "entryId": "ude:5982baf22cbfc036",
+   "senseId": "uds:5b96e8492a5706f9d243",
    "hanzi": "分钟",
    "english": "minute",
-   "fullGloss": "1",
+   "fullGloss": "minute",
    "hskBand": 1,
    "audio": "fen1zhong1",
    "picture": ""
@@ -1235,6 +1358,7 @@
   {
    "readingKey": "fu1qi1",
    "entryId": "ude:ba0cc8e7154dee76",
+   "senseId": "uds:94eb710ea98430a6b4da",
    "hanzi": "夫妻",
    "english": "husband and wife",
    "fullGloss": "husband and wife; married couple",
@@ -1245,6 +1369,7 @@
   {
    "readingKey": "fu2wu4",
    "entryId": "ude:2f5c409f3459379c",
+   "senseId": "uds:cf2689323bdcc4bedfab",
    "hanzi": "服务",
    "english": "to serve",
    "fullGloss": "to serve; service; CL:xiang4",
@@ -1255,6 +1380,7 @@
   {
    "readingKey": "fu4jin4",
    "entryId": "ude:aae9d1d1e2444a8c",
+   "senseId": "uds:1225dfe363be3fd7c827",
    "hanzi": "附近",
    "english": "nearby",
    "fullGloss": "nearby; neighboring; (in the) vicinity (of); neighborhood",
@@ -1265,6 +1391,7 @@
   {
    "readingKey": "fu4xi2",
    "entryId": "ude:5adb886734126233",
+   "senseId": "uds:08ce544d5815d76813b8",
    "hanzi": "复习",
    "english": "to review",
    "fullGloss": "to review; revision; CL:ci4; variant of fu4 xi2",
@@ -1275,6 +1402,7 @@
   {
    "readingKey": "gan1jing4",
    "entryId": "ude:8d8828d1f0b4bcb8",
+   "senseId": "uds:2ec03540533c796170f4",
    "hanzi": "干净",
    "english": "clean",
    "fullGloss": "clean; neat",
@@ -1285,6 +1413,7 @@
   {
    "readingKey": "gan3dao4",
    "entryId": "ude:e21f579bd3c09b34",
+   "senseId": "uds:96a9dcbcc142260c3b5d",
    "hanzi": "感到",
    "english": "to feel",
    "fullGloss": "to feel; to sense; to perceive; to hurry (to some place)",
@@ -1295,6 +1424,7 @@
   {
    "readingKey": "gan3mao4",
    "entryId": "ude:b3bd0493c734b2ae",
+   "senseId": "uds:9bc41b1a5f662c39290d",
    "hanzi": "感冒",
    "english": "to catch cold",
    "fullGloss": "to catch cold; (common) cold; CL:chang2,ci4; (coll.) to be interested in (often used in the negative); (Tw) to detest; can't stand",
@@ -1305,9 +1435,10 @@
   {
    "readingKey": "gan3xing4qu4",
    "entryId": "ude:b46aa3e9d9876338",
+   "senseId": "uds:653b9e212f2ea4f08fb8",
    "hanzi": "感兴趣",
    "english": "to be interested",
-   "fullGloss": "3",
+   "fullGloss": "to be interested (in sth)",
    "hskBand": 3,
    "audio": "gan3xing4qu4",
    "picture": ""
@@ -1315,6 +1446,7 @@
   {
    "readingKey": "gang1cai2",
    "entryId": "ude:be149bfe2ee3c98d",
+   "senseId": "uds:15ebda55fc584e913670",
    "hanzi": "刚才",
    "english": "just now",
    "fullGloss": "just now; a moment ago; just now (variant of gang1 cai2); steel (as raw material); steel sheets, bars, tubes, ingots, wire etc",
@@ -1325,6 +1457,7 @@
   {
    "readingKey": "gang1gang5",
    "entryId": "ude:0e7cf990c1476844",
+   "senseId": "uds:f1d3610e693569a35992",
    "hanzi": "刚刚",
    "english": "just recently",
    "fullGloss": "just recently; just a moment ago",
@@ -1335,9 +1468,10 @@
   {
    "readingKey": "gao1tie3",
    "entryId": "ude:4a38fabafd3a68fe",
+   "senseId": "uds:13ce361dcbd1ef616702",
    "hanzi": "高铁",
    "english": "high speed rail",
-   "fullGloss": "3",
+   "fullGloss": "high speed rail",
    "hskBand": 3,
    "audio": "gao1tie3",
    "picture": ""
@@ -1345,6 +1479,7 @@
   {
    "readingKey": "gao1xing4",
    "entryId": "ude:a5c615bca983c7e1",
+   "senseId": "uds:1fce3690b8ee70494330",
    "hanzi": "高兴",
    "english": "happy",
    "fullGloss": "happy; glad; willing (to do sth); in a cheerful mood",
@@ -1355,9 +1490,10 @@
   {
    "readingKey": "gao1zhong1",
    "entryId": "ude:87f6c855b16553f1",
+   "senseId": "uds:0fb46c70508091ea3f53",
    "hanzi": "高中",
    "english": "senior high school",
-   "fullGloss": "2",
+   "fullGloss": "senior high school (abbr. for gao1 ji2 zhong1 xue2)",
    "hskBand": 2,
    "audio": "gao1zhong1",
    "picture": ""
@@ -1365,6 +1501,7 @@
   {
    "readingKey": "gao4su5",
    "entryId": "ude:e33d1be368b0838d",
+   "senseId": "uds:bba7afd79d4c8fbe0564",
    "hanzi": "告诉",
    "english": "to tell",
    "fullGloss": "to tell; to inform; to let know",
@@ -1375,6 +1512,7 @@
   {
    "readingKey": "ge1ge5",
    "entryId": "ude:d01058db5c67759e",
+   "senseId": "uds:83c3ca5618a2c1d8d18a",
    "hanzi": "哥哥",
    "english": "older brother",
    "fullGloss": "older brother; CL:ge4,wei4",
@@ -1385,6 +1523,7 @@
   {
    "readingKey": "ge4zi5",
    "entryId": "ude:0843e0d95d50141c",
+   "senseId": "uds:91ac37fb3730e4a6d308",
    "hanzi": "个子",
    "english": "stature",
    "fullGloss": "stature; height; size (of a person or object); (agriculture) bundle of cereal stalks tied together",
@@ -1395,6 +1534,7 @@
   {
    "readingKey": "gen1ju4",
    "entryId": "ude:dd49463426e64b8f",
+   "senseId": "uds:960b0614d157236ae0f4",
    "hanzi": "根据",
    "english": "according to",
    "fullGloss": "according to; based on; basis; foundation; CL:ge4",
@@ -1405,6 +1545,7 @@
   {
    "readingKey": "gong1jiao1che1",
    "entryId": "ude:b58ccf7324a9d897",
+   "senseId": "uds:835eb0615ae7bf876dc7",
    "hanzi": "公交车",
    "english": "bus",
    "fullGloss": "public transport vehicle; town bus; CL:liang4",
@@ -1415,9 +1556,10 @@
   {
    "readingKey": "gong1jin1",
    "entryId": "ude:6ae0e1b766e4679f",
+   "senseId": "uds:022938b82f57123a0419",
    "hanzi": "公斤",
    "english": "kilogram",
-   "fullGloss": "3",
+   "fullGloss": "kilogram (kg)",
    "hskBand": 3,
    "audio": "gong1jin1",
    "picture": ""
@@ -1425,6 +1567,7 @@
   {
    "readingKey": "gong1si1",
    "entryId": "ude:8e22bc19dc4c3aab",
+   "senseId": "uds:cf03ce74e2833ef4e9af",
    "hanzi": "公司",
    "english": "company",
    "fullGloss": "company; firm; corporation; CL:jia1; public and private (interests, initiative etc)",
@@ -1435,6 +1578,7 @@
   {
    "readingKey": "gong1zuo4",
    "entryId": "ude:3c4a5a23ab9f1e24",
+   "senseId": "uds:8abca0d2a8ff772f4f5a",
    "hanzi": "工作",
    "english": "to work",
    "fullGloss": "to work; (of a machine) to operate; job; work; task; CL:ge4,fen4,xiang4",
@@ -1445,6 +1589,7 @@
   {
    "readingKey": "gong1zuo4ri4",
    "entryId": "ude:e5acf55fe08eb38a",
+   "senseId": "uds:c60940b5148173b15d45",
    "hanzi": "工作日",
    "english": "workday",
    "fullGloss": "workday; working day; weekday",
@@ -1455,6 +1600,7 @@
   {
    "readingKey": "gu4shi5",
    "entryId": "ude:8265e877bedf147f",
+   "senseId": "uds:c506162aa46caa8462e8",
    "hanzi": "故事",
    "english": "story",
    "fullGloss": "narrative; story; tale",
@@ -1465,6 +1611,7 @@
   {
    "readingKey": "guan1ji1",
    "entryId": "ude:a3174bfc7318bf24",
+   "senseId": "uds:9bdb8e1aeeccfa49afe6",
    "hanzi": "关机",
    "english": "to turn off",
    "fullGloss": "to turn off (a machine or device); to finish shooting a film",
@@ -1475,6 +1622,7 @@
   {
    "readingKey": "guan1yu2",
    "entryId": "ude:ddc00e2915df7f9c",
+   "senseId": "uds:07d46f1b9157e0f4d7a7",
    "hanzi": "关于",
    "english": "pertaining to",
    "fullGloss": "pertaining to; concerning; with regard to; about; a matter of",
@@ -1485,6 +1633,7 @@
   {
    "readingKey": "guo2jia1",
    "entryId": "ude:62430c425ca46f83",
+   "senseId": "uds:03839a95428b24cc8fe9",
    "hanzi": "国家",
    "english": "country",
    "fullGloss": "country; nation; state",
@@ -1495,6 +1644,7 @@
   {
    "readingKey": "guo4lai2",
    "entryId": "ude:c1715766b458ca88",
+   "senseId": "uds:5ca12bee910903a78650",
    "hanzi": "过来",
    "english": "to come over",
    "fullGloss": "to come over; to manage; to handle; to be able to take care of",
@@ -1505,6 +1655,7 @@
   {
    "readingKey": "guo4qu4",
    "entryId": "ude:0d022eeee2e98a48",
+   "senseId": "uds:5d4be0de47bfefd65376",
    "hanzi": "过去",
    "english": "past",
    "fullGloss": "(in the) past; former; previous; to go over; to pass by",
@@ -1515,6 +1666,7 @@
   {
    "readingKey": "hai2shi5",
    "entryId": "ude:8ebfdda30b2fb831",
+   "senseId": "uds:a859a2f9431faab7eddd",
    "hanzi": "还是",
    "english": "still",
    "fullGloss": "still (as before); had better; unexpectedly; or",
@@ -1525,9 +1677,10 @@
   {
    "readingKey": "hai2zi5",
    "entryId": "ude:072b34ce97130236",
+   "senseId": "uds:ecf48ba91fc5080dd581",
    "hanzi": "孩子",
    "english": "child",
-   "fullGloss": "1",
+   "fullGloss": "child",
    "hskBand": 1,
    "audio": "hai2zi5",
    "picture": ""
@@ -1535,6 +1688,7 @@
   {
    "readingKey": "hai4pa4",
    "entryId": "ude:54a367be20c8bb54",
+   "senseId": "uds:e1110b221e10112c7dc3",
    "hanzi": "害怕",
    "english": "to be afraid",
    "fullGloss": "to be afraid; to be scared; to be afraid; to be frightened",
@@ -1545,9 +1699,10 @@
   {
    "readingKey": "han4yu3",
    "entryId": "ude:e2cd22aa1e0fc0ac",
+   "senseId": "uds:e631faf0f5b620619299",
    "hanzi": "汉语",
    "english": "Chinese language",
-   "fullGloss": "1",
+   "fullGloss": "Chinese language",
    "hskBand": 1,
    "audio": "han4yu3",
    "picture": ""
@@ -1555,9 +1710,10 @@
   {
    "readingKey": "han4zi4",
    "entryId": "ude:889b8961ba7d2e12",
+   "senseId": "uds:0ebcc05976a57b89a47d",
    "hanzi": "汉字",
    "english": "Chinese character",
-   "fullGloss": "1",
+   "fullGloss": "Chinese character(s)",
    "hskBand": 1,
    "audio": "han4zi4",
    "picture": ""
@@ -1565,6 +1721,7 @@
   {
    "readingKey": "hao3chi1",
    "entryId": "ude:7049a8e36b6b4484",
+   "senseId": "uds:b4e5a60ee0779aa8fdf6",
    "hanzi": "好吃",
    "english": "tasty",
    "fullGloss": "tasty; delicious",
@@ -1575,6 +1732,7 @@
   {
    "readingKey": "hao3duo1",
    "entryId": "ude:e4370bdb2deb90b5",
+   "senseId": "uds:d52f0968e2a82f61ca12",
    "hanzi": "好多",
    "english": "many",
    "fullGloss": "many; quite a lot; much better",
@@ -1585,6 +1743,7 @@
   {
    "readingKey": "hao3kan4",
    "entryId": "ude:d43a9b5c7f74f572",
+   "senseId": "uds:97d83f9ddb4a78e60486",
    "hanzi": "好看",
    "english": "good-looking",
    "fullGloss": "good-looking; nice-looking; (of a movie, book, TV show etc) good; in an embarrassing situation",
@@ -1595,9 +1754,10 @@
   {
    "readingKey": "hao3ting1",
    "entryId": "ude:312ed0759a5fb1af",
+   "senseId": "uds:59fc6f0a0948f438cc92",
    "hanzi": "好听",
    "english": "pleasant to hear",
-   "fullGloss": "1",
+   "fullGloss": "pleasant to hear",
    "hskBand": 1,
    "audio": "hao3ting1",
    "picture": ""
@@ -1605,6 +1765,7 @@
   {
    "readingKey": "hao3xiang4",
    "entryId": "ude:728e0829bcc75323",
+   "senseId": "uds:2f19b948b2f9a12b738a",
    "hanzi": "好像",
    "english": "as if",
    "fullGloss": "as if; to seem like; to seem; to be like (variant of hao3 xiang4)",
@@ -1615,6 +1776,7 @@
   {
    "readingKey": "hao4ma3",
    "entryId": "ude:a40bffcbdf3eb896",
+   "senseId": "uds:af7fe26f07daf66b7e8a",
    "hanzi": "号码",
    "english": "number",
    "fullGloss": "number; CL:dui1,ge4",
@@ -1625,6 +1787,7 @@
   {
    "readingKey": "he2shi4",
    "entryId": "ude:7a74b8c88bc35267",
+   "senseId": "uds:fb4b689b3be641b927de",
    "hanzi": "合适",
    "english": "suitable",
    "fullGloss": "suitable; fitting; appropriate; conforming to a pattern; up to standard; variant of he2 shi4; nuclear potential; nuclear test",
@@ -1635,6 +1798,7 @@
   {
    "readingKey": "hei1ban3",
    "entryId": "ude:9f84b721d635071c",
+   "senseId": "uds:108c31fc0caf539ba46f",
    "hanzi": "黑板",
    "english": "blackboard",
    "fullGloss": "blackboard; CL:kuai4,ge4",
@@ -1645,9 +1809,10 @@
   {
    "readingKey": "hei1se4",
    "entryId": "ude:645ba05b87fc465e",
+   "senseId": "uds:36616165085b7aa3c2c1",
    "hanzi": "黑色",
    "english": "black",
-   "fullGloss": "2",
+   "fullGloss": "black",
    "hskBand": 2,
    "audio": "hei1se4",
    "picture": ""
@@ -1655,6 +1820,7 @@
   {
    "readingKey": "hong2cha2",
    "entryId": "ude:4c6009a3c4a16434",
+   "senseId": "uds:e49e04e6434676a5d171",
    "hanzi": "红茶",
    "english": "black tea",
    "fullGloss": "black tea; CL:bei1,hu2",
@@ -1665,6 +1831,7 @@
   {
    "readingKey": "hong2lv4deng1",
    "entryId": "ude:a89924d2c2180444",
+   "senseId": "uds:38c71fac0cd6aa4fe159",
    "hanzi": "红绿灯",
    "english": "traffic light",
    "fullGloss": "traffic light; traffic signal",
@@ -1675,6 +1842,7 @@
   {
    "readingKey": "hong2se4",
    "entryId": "ude:c04f3beb5f1554bf",
+   "senseId": "uds:a74c2aba2ab52fd5e32f",
    "hanzi": "红色",
    "english": "red",
    "fullGloss": "red (color); revolutionary",
@@ -1685,6 +1853,7 @@
   {
    "readingKey": "hou4lai2",
    "entryId": "ude:7e20e0a80ff2b49d",
+   "senseId": "uds:621b269ae5fdf4c88788",
    "hanzi": "后来",
    "english": "afterwards",
    "fullGloss": "afterwards; later; newly arrived",
@@ -1695,6 +1864,7 @@
   {
    "readingKey": "hou4mian5",
    "entryId": "ude:74da2c9f141bdae3",
+   "senseId": "uds:04ee112e9ebe934bd4f6",
    "hanzi": "后面",
    "english": "the back",
    "fullGloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
@@ -1705,6 +1875,7 @@
   {
    "readingKey": "hu4zhao4",
    "entryId": "ude:df87fba24c9e2e16",
+   "senseId": "uds:092fac2b47a29d51d23b",
    "hanzi": "护照",
    "english": "passport",
    "fullGloss": "passport; CL:ben3,ge4",
@@ -1715,6 +1886,7 @@
   {
    "readingKey": "hua1yuan2",
    "entryId": "ude:62b9dc17b7fd3db3",
+   "senseId": "uds:e87578308d797ef8eb26",
    "hanzi": "花园",
    "english": "garden",
    "fullGloss": "garden (for flowers, ornamental plants etc); (landscaped) park; yard with decorative plants; CL:zuo4; see Hua1 yuan2 Xian4",
@@ -1725,6 +1897,7 @@
   {
    "readingKey": "hua4jia1",
    "entryId": "ude:175a40035498bc67",
+   "senseId": "uds:7dea9c9d6933549361d5",
    "hanzi": "画家",
    "english": "painter",
    "fullGloss": "painter; CL:ge4",
@@ -1735,6 +1908,7 @@
   {
    "readingKey": "huan1ying2",
    "entryId": "ude:d8ed8b5e66fc2b44",
+   "senseId": "uds:95c1bf4837a56efabe9a",
    "hanzi": "欢迎",
    "english": "to welcome",
    "fullGloss": "to welcome; welcome",
@@ -1745,6 +1919,7 @@
   {
    "readingKey": "huan2jing4",
    "entryId": "ude:67fc3efdf30702bc",
+   "senseId": "uds:6bebd038e5d3580f24b2",
    "hanzi": "环境",
    "english": "environment",
    "fullGloss": "environment; circumstances; surroundings; CL:ge4; ambient",
@@ -1755,9 +1930,10 @@
   {
    "readingKey": "huang2se4",
    "entryId": "ude:bce649e0b3535071",
+   "senseId": "uds:3e9731c6caaf64b7dec3",
    "hanzi": "黄色",
    "english": "yellow",
-   "fullGloss": "3",
+   "fullGloss": "yellow",
    "hskBand": 3,
    "audio": "huang2se4",
    "picture": ""
@@ -1765,6 +1941,7 @@
   {
    "readingKey": "hui2da2",
    "entryId": "ude:aa345ac352ec06e3",
+   "senseId": "uds:a7c385c987dd16e058b4",
    "hanzi": "回答",
    "english": "to reply",
    "fullGloss": "to reply; to answer; reply; answer",
@@ -1775,8 +1952,9 @@
   {
    "readingKey": "hui2lai5",
    "entryId": "ude:dccb29b6e3cc2486",
+   "senseId": "uds:f1202c0b2d81c3d404bb",
    "hanzi": "回来",
-   "english": "to return",
+   "english": "to come back",
    "fullGloss": "to return; to come back",
    "hskBand": 2,
    "audio": "hui2lai5",
@@ -1785,8 +1963,9 @@
   {
    "readingKey": "hui2qu5",
    "entryId": "ude:5869b5afa7081524",
+   "senseId": "uds:8186327727c6492fd369",
    "hanzi": "回去",
-   "english": "to return",
+   "english": "to go back",
    "fullGloss": "to return; to go back",
    "hskBand": 2,
    "audio": "hui2qu5",
@@ -1795,6 +1974,7 @@
   {
    "readingKey": "huo3che1",
    "entryId": "ude:0be44fdf1fbad298",
+   "senseId": "uds:14852a322b9267d0c526",
    "hanzi": "火车",
    "english": "train",
    "fullGloss": "train; CL:lie4,jie2,ban1,tang4",
@@ -1805,6 +1985,7 @@
   {
    "readingKey": "huo4zhe3",
    "entryId": "ude:1ed5208552cff76b",
+   "senseId": "uds:aa06a1fee40bb20a1fb2",
    "hanzi": "或者",
    "english": "or",
    "fullGloss": "or; possibly; maybe; perhaps",
@@ -1815,6 +1996,7 @@
   {
    "readingKey": "ji1chang3",
    "entryId": "ude:9b3098445c7e9846",
+   "senseId": "uds:197af5bba17b8b236f78",
    "hanzi": "机场",
    "english": "airport",
    "fullGloss": "airport; airfield; (slang) service provider for Shadowsocks or similar software for circumventing Internet censorship; CL:jia1,chu4",
@@ -1825,6 +2007,7 @@
   {
    "readingKey": "ji1dan4",
    "entryId": "ude:aaf047e3670c3c40",
+   "senseId": "uds:ab37c9975615e1f79fb3",
    "hanzi": "鸡蛋",
    "english": "egg",
    "fullGloss": "(chicken) egg; hen's egg; CL:ge4,da2",
@@ -1835,6 +2018,7 @@
   {
    "readingKey": "ji1hu1",
    "entryId": "ude:d985b86a0050c232",
+   "senseId": "uds:947c4b453a9be1ffc67d",
    "hanzi": "几乎",
    "english": "almost",
    "fullGloss": "almost; nearly; practically",
@@ -1845,6 +2029,7 @@
   {
    "readingKey": "ji1hui4",
    "entryId": "ude:17d9010764d056a3",
+   "senseId": "uds:74addb6b9d2d82ce45f7",
    "hanzi": "机会",
    "english": "opportunity",
    "fullGloss": "opportunity; chance; occasion; CL:ge4",
@@ -1855,6 +2040,7 @@
   {
    "readingKey": "ji1piao4",
    "entryId": "ude:0d77d7b0230ea93c",
+   "senseId": "uds:61bf1ad3c39cc03f4dca",
    "hanzi": "机票",
    "english": "plane ticket",
    "fullGloss": "plane ticket; airline ticket; CL:zhang1",
@@ -1865,9 +2051,10 @@
   {
    "readingKey": "ji4de5",
    "entryId": "ude:2cb2f07cf017df29",
+   "senseId": "uds:bf94b6036f74064096b6",
    "hanzi": "记得",
    "english": "to remember",
-   "fullGloss": "2",
+   "fullGloss": "to remember",
    "hskBand": 2,
    "audio": "ji4de5",
    "picture": ""
@@ -1875,6 +2062,7 @@
   {
    "readingKey": "ji4jie2",
    "entryId": "ude:458cd79a070bb4e7",
+   "senseId": "uds:84e03510a6c5a3efff1c",
    "hanzi": "季节",
    "english": "season",
    "fullGloss": "time; season; period; CL:ge4",
@@ -1885,6 +2073,7 @@
   {
    "readingKey": "jia1ren2",
    "entryId": "ude:f115d529840f261d",
+   "senseId": "uds:e0e5ea27e2f6b3751a63",
    "hanzi": "家人",
    "english": "family member",
    "fullGloss": "family member; (old) servant; beautiful woman; Yoshihito, personal name of the Taishō Da4 zheng4 emperor of Japan (1879-1926), reigned 1912-1926",
@@ -1895,9 +2084,10 @@
   {
    "readingKey": "jia4qi1",
    "entryId": "ude:7ccee2c9ced30cbd",
+   "senseId": "uds:7201a0b57fbe1cc2113c",
    "hanzi": "假期",
    "english": "vacation",
-   "fullGloss": "3",
+   "fullGloss": "vacation",
    "hskBand": 3,
    "audio": "jia4qi1",
    "picture": ""
@@ -1905,6 +2095,7 @@
   {
    "readingKey": "jian1chi2",
    "entryId": "ude:67ba36b727a83777",
+   "senseId": "uds:b9ad10a967183c03b2e9",
    "hanzi": "坚持",
    "english": "to persevere with",
    "fullGloss": "to persevere with; to persist in; to insist on",
@@ -1915,6 +2106,7 @@
   {
    "readingKey": "jian3dan1",
    "entryId": "ude:bf641ad300db8a22",
+   "senseId": "uds:dd50a7390ff9b921a89e",
    "hanzi": "简单",
    "english": "simple",
    "fullGloss": "simple; not complicated",
@@ -1925,6 +2117,7 @@
   {
    "readingKey": "jian4kang1",
    "entryId": "ude:c889fdf8b01a0053",
+   "senseId": "uds:50d3eac49537da7edae5",
    "hanzi": "健康",
    "english": "health",
    "fullGloss": "health; healthy; old name for Nanjing, esp. during Southern dynasties",
@@ -1935,8 +2128,9 @@
   {
    "readingKey": "jian4mian4",
    "entryId": "ude:c7d54961e290fac2",
+   "senseId": "uds:460e15fc899a6de4d0d8",
    "hanzi": "见面",
-   "english": "to meet",
+   "english": "to meet up",
    "fullGloss": "to meet; to see each other; CL:ci4",
    "hskBand": 3,
    "audio": "jian4mian4",
@@ -1945,6 +2139,7 @@
   {
    "readingKey": "jiao3zi5",
    "entryId": "ude:bb2e476c899ebe16",
+   "senseId": "uds:0d6855f0644a036ccd16",
    "hanzi": "饺子",
    "english": "dumpling",
    "fullGloss": "dumpling; pot-sticker; CL:ge4,zhi1; one Jiao coin (Mao, one-tenth of yuan)",
@@ -1955,6 +2150,7 @@
   {
    "readingKey": "jiao4shi4",
    "entryId": "ude:7afb0d19e117b5cb",
+   "senseId": "uds:5a055be95e213b9c5f96",
    "hanzi": "教室",
    "english": "classroom",
    "fullGloss": "classroom; CL:jian1; churchman; clergy; to collate and annotate; (on book titles) collated and annotated",
@@ -1965,6 +2161,7 @@
   {
    "readingKey": "jie2hun1",
    "entryId": "ude:3ac635f0f1236449",
+   "senseId": "uds:71cb26b0aa17b8828987",
    "hanzi": "结婚",
    "english": "to marry",
    "fullGloss": "to marry; to get married",
@@ -1975,6 +2172,7 @@
   {
    "readingKey": "jie2mu4",
    "entryId": "ude:96ab6297039dcbd0",
+   "senseId": "uds:6aaf522b26f74ffe28dc",
    "hanzi": "节目",
    "english": "program",
    "fullGloss": "(TV or radio) program; show; item; act; segment; number (on the program of a concert, variety show or cultural event); a planned activity (in one's schedule); CL:chang3,xiang4,tai2,tao4,dang4; final scene (of a play); denouement",
@@ -1985,6 +2183,7 @@
   {
    "readingKey": "jie2ri4",
    "entryId": "ude:2a192ead2eeb3bb7",
+   "senseId": "uds:8fe6122a7555d2dd6225",
    "hanzi": "节日",
    "english": "holiday",
    "fullGloss": "holiday; festival; CL:ge4",
@@ -1995,6 +2194,7 @@
   {
    "readingKey": "jie2shu4",
    "entryId": "ude:87b9fc89cf38021a",
+   "senseId": "uds:763e7cdb4219ed74dd67",
    "hanzi": "结束",
    "english": "to end",
    "fullGloss": "to end; to finish; to conclude; predestined fate (Buddhism)",
@@ -2005,6 +2205,7 @@
   {
    "readingKey": "jie3jie5",
    "entryId": "ude:144f8310607713ce",
+   "senseId": "uds:d2b6c7561187f25a2753",
    "hanzi": "姐姐",
    "english": "older sister",
    "fullGloss": "older sister; CL:ge4",
@@ -2015,6 +2216,7 @@
   {
    "readingKey": "jie3jue2",
    "entryId": "ude:d7d89a5afdf7e17e",
+   "senseId": "uds:df424c16749ace8888b3",
    "hanzi": "解决",
    "english": "to solve",
    "fullGloss": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
@@ -2025,6 +2227,7 @@
   {
    "readingKey": "jie3mei4",
    "entryId": "ude:e17f072fd210e404",
+   "senseId": "uds:5a33c18179d098ccb311",
    "hanzi": "姐妹",
    "english": "sisters",
    "fullGloss": "sisters; siblings; sister (school, city etc)",
@@ -2035,6 +2238,7 @@
   {
    "readingKey": "jie4shao4",
    "entryId": "ude:e0b86d2b1d7c77f2",
+   "senseId": "uds:f345474bef35dc44a916",
    "hanzi": "介绍",
    "english": "to introduce",
    "fullGloss": "to introduce (sb to sb); to give a presentation; to present (sb for a job etc); introduction",
@@ -2045,9 +2249,10 @@
   {
    "readingKey": "jin1nian2",
    "entryId": "ude:e3ff52df96663c82",
+   "senseId": "uds:29b1fdb46c4d9c4097ef",
    "hanzi": "今年",
    "english": "this year",
-   "fullGloss": "1",
+   "fullGloss": "this year",
    "hskBand": 1,
    "audio": "jin1nian2",
    "picture": ""
@@ -2055,6 +2260,7 @@
   {
    "readingKey": "jin1tian1",
    "entryId": "ude:8222dbe46ae5b186",
+   "senseId": "uds:ea305dcff985c103e77f",
    "hanzi": "今天",
    "english": "today",
    "fullGloss": "today; the present time; now",
@@ -2065,9 +2271,10 @@
   {
    "readingKey": "jin4qu4",
    "entryId": "ude:9d786cb0f67ba4a6",
+   "senseId": "uds:7726592abb233dd62372",
    "hanzi": "进去",
    "english": "to go in",
-   "fullGloss": "2",
+   "fullGloss": "to go in",
    "hskBand": 2,
    "audio": "jin4qu4",
    "picture": ""
@@ -2075,6 +2282,7 @@
   {
    "readingKey": "jing1chang2",
    "entryId": "ude:1c7ba7c1be0dda82",
+   "senseId": "uds:49236748f3a52a9d1743",
    "hanzi": "经常",
    "english": "frequently",
    "fullGloss": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
@@ -2085,6 +2293,7 @@
   {
    "readingKey": "jing1guo4",
    "entryId": "ude:aa613616bb98887b",
+   "senseId": "uds:ceee92c16e6a06f9f11d",
    "hanzi": "经过",
    "english": "to pass",
    "fullGloss": "to pass; to go through; process; course; CL:ge4",
@@ -2095,6 +2304,7 @@
   {
    "readingKey": "jing1li3",
    "entryId": "ude:70ba17d8b86912f8",
+   "senseId": "uds:0f2ca1d75f6c7bfd1b85",
    "hanzi": "经理",
    "english": "manager",
    "fullGloss": "manager; director; CL:ge4,wei4,ming2",
@@ -2105,6 +2315,7 @@
   {
    "readingKey": "jiu3dian4",
    "entryId": "ude:e86894a6b9ed3f9b",
+   "senseId": "uds:5d589c3e54b0275a05b5",
    "hanzi": "酒店",
    "english": "hotel",
    "fullGloss": "wine shop; pub (public house); hotel; restaurant; (Tw) hostess club",
@@ -2115,6 +2326,7 @@
   {
    "readingKey": "ju4zi5",
    "entryId": "ude:cee83c0319636a4a",
+   "senseId": "uds:e5fb8f61dee6b54817d3",
    "hanzi": "句子",
    "english": "sentence",
    "fullGloss": "sentence; CL:ge4; a saw; CL:ba3",
@@ -2125,6 +2337,7 @@
   {
    "readingKey": "jue2de5",
    "entryId": "ude:3330234f7e6eeb94",
+   "senseId": "uds:292b56ef479f0818be31",
    "hanzi": "觉得",
    "english": "to feel",
    "fullGloss": "to think that...; to feel that...; to feel (uncomfortable etc)",
@@ -2135,6 +2348,7 @@
   {
    "readingKey": "jue2ding4",
    "entryId": "ude:a2e22fa8b00f2f38",
+   "senseId": "uds:69e9fdc73bf5d3f6fea3",
    "hanzi": "决定",
    "english": "to decide",
    "fullGloss": "to decide; to determine; to make up one's mind; decision (CL:ge4,xiang4)",
@@ -2145,6 +2359,7 @@
   {
    "readingKey": "ka1fei1",
    "entryId": "ude:a9558f505f6e17e5",
+   "senseId": "uds:8077c4d53fcb02b029bc",
    "hanzi": "咖啡",
    "english": "coffee",
    "fullGloss": "(loanword) coffee; CL:bei1",
@@ -2155,6 +2370,7 @@
   {
    "readingKey": "kai1hua1",
    "entryId": "ude:1e23055193c760d4",
+   "senseId": "uds:4eff79f00d6c1888cbac",
    "hanzi": "开花",
    "english": "to bloom",
    "fullGloss": "to bloom; to blossom; to flower; (fig.) to burst; to split open; (fig.) to burst with joy; (fig.) to spring up everywhere; to flourish",
@@ -2165,6 +2381,7 @@
   {
    "readingKey": "kai1shi3",
    "entryId": "ude:b6dac5a9f652132c",
+   "senseId": "uds:0b6c080074fb1cc80616",
    "hanzi": "开始",
    "english": "to begin",
    "fullGloss": "to begin; to start; beginning; start",
@@ -2175,6 +2392,7 @@
   {
    "readingKey": "kai1xin1",
    "entryId": "ude:d517bbda0b149c2f",
+   "senseId": "uds:0644528ce251b478f31c",
    "hanzi": "开心",
    "english": "glad",
    "fullGloss": "to feel happy; to rejoice; to have a great time; to make fun of sb",
@@ -2185,6 +2403,7 @@
   {
    "readingKey": "kai1xue2",
    "entryId": "ude:236139fc0df612ab",
+   "senseId": "uds:086a2455426657ad64c4",
    "hanzi": "开学",
    "english": "to start school",
    "fullGloss": "(of a student) to start school; (of a semester) to begin; (old) to found a school; the start of a new term",
@@ -2195,6 +2414,7 @@
   {
    "readingKey": "kan4jian4",
    "entryId": "ude:fb5a752f2a95a2b7",
+   "senseId": "uds:e09ee22ff2be87bebc0d",
    "hanzi": "看见",
    "english": "to see",
    "fullGloss": "to see; to catch sight of",
@@ -2205,6 +2425,7 @@
   {
    "readingKey": "kan4lai5",
    "entryId": "ude:5d71e66d23f45a3a",
+   "senseId": "uds:d7fa6faf8460bad68827",
    "hanzi": "看来",
    "english": "apparently",
    "fullGloss": "apparently; it seems that",
@@ -2215,6 +2436,7 @@
   {
    "readingKey": "ke3ai4",
    "entryId": "ude:32395081038e59b9",
+   "senseId": "uds:ff85a26e3ead57e1ac69",
    "hanzi": "可爱",
    "english": "adorable",
    "fullGloss": "adorable; cute; lovely",
@@ -2225,6 +2447,7 @@
   {
    "readingKey": "ke3neng2",
    "entryId": "ude:42ee0b6677cda2c0",
+   "senseId": "uds:6d90420732d49c1fb691",
    "hanzi": "可能",
    "english": "might",
    "fullGloss": "might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:ge4",
@@ -2235,6 +2458,7 @@
   {
    "readingKey": "ke3shi4",
    "entryId": "ude:c5b558e99e564ff4",
+   "senseId": "uds:147e9ab920a949b0ebf1",
    "hanzi": "可是",
    "english": "but",
    "fullGloss": "but; however; (used for emphasis) indeed; reliable",
@@ -2245,6 +2469,7 @@
   {
    "readingKey": "ke3yi3",
    "entryId": "ude:2aa4d54a78c9be82",
+   "senseId": "uds:96de3b8dbc1858a6c93c",
    "hanzi": "可以",
    "english": "can",
    "fullGloss": "can; may; possible; able to; not bad; pretty good",
@@ -2255,6 +2480,7 @@
   {
    "readingKey": "ke4ben3",
    "entryId": "ude:9bc0fb479e6614d8",
+   "senseId": "uds:c18f04677d834d46902b",
    "hanzi": "课本",
    "english": "textbook",
    "fullGloss": "textbook; CL:ben3; block printed edition",
@@ -2265,6 +2491,7 @@
   {
    "readingKey": "ke4ren2",
    "entryId": "ude:d6f4142ebc1b8804",
+   "senseId": "uds:738d0b63b3395c78f7c5",
    "hanzi": "客人",
    "english": "visitor",
    "fullGloss": "visitor; guest; customer; client; CL:wei4",
@@ -2275,6 +2502,7 @@
   {
    "readingKey": "ke4wen2",
    "entryId": "ude:ddb7a45247f02619",
+   "senseId": "uds:3c000621947c05de2071",
    "hanzi": "课文",
    "english": "text",
    "fullGloss": "text; CL:pian1; Kevin (name)",
@@ -2285,6 +2513,7 @@
   {
    "readingKey": "kong1tiao2",
    "entryId": "ude:016c11a4b7d19c37",
+   "senseId": "uds:9aa549593999ae5ee951",
    "hanzi": "空调",
    "english": "air conditioning",
    "fullGloss": "air conditioning; air conditioner (including units that have a heating mode); CL:tai2",
@@ -2295,6 +2524,7 @@
   {
    "readingKey": "ku4zi5",
    "entryId": "ude:5d14f73a50bb31b5",
+   "senseId": "uds:e2075f31cdbd6ab71d80",
    "hanzi": "裤子",
    "english": "trousers",
    "fullGloss": "trousers; pants; CL:tiao2",
@@ -2305,6 +2535,7 @@
   {
    "readingKey": "kuai4le4",
    "entryId": "ude:d930992f297ed680",
+   "senseId": "uds:85789431efbb79a11c8f",
    "hanzi": "快乐",
    "english": "joyful",
    "fullGloss": "happy; joyful",
@@ -2315,6 +2546,7 @@
   {
    "readingKey": "kuai4zi5",
    "entryId": "ude:b4534a34cc856737",
+   "senseId": "uds:47eed74b0e59cf2590ea",
    "hanzi": "筷子",
    "english": "chopsticks",
    "fullGloss": "chopsticks; CL:dui4,gen1,ba3,shuang1",
@@ -2325,6 +2557,7 @@
   {
    "readingKey": "kuang4quan2shui3",
    "entryId": "ude:907c04ff2a1612fa",
+   "senseId": "uds:5f772be5bbc072855400",
    "hanzi": "矿泉水",
    "english": "mineral water",
    "fullGloss": "mineral water; CL:ping2,bei1",
@@ -2335,6 +2568,7 @@
   {
    "readingKey": "lai2zi4",
    "entryId": "ude:e4af3b230dabcd7f",
+   "senseId": "uds:470a4cea99b135f63ff8",
    "hanzi": "来自",
    "english": "to come from",
    "fullGloss": "to come from (a place); From: (in email header)",
@@ -2345,6 +2579,7 @@
   {
    "readingKey": "lan2qiu2",
    "entryId": "ude:c0b13f7748004bd8",
+   "senseId": "uds:7289d515b96d54e2be51",
    "hanzi": "篮球",
    "english": "basketball",
    "fullGloss": "basketball; CL:ge4,zhi1",
@@ -2355,9 +2590,10 @@
   {
    "readingKey": "lao3shi1",
    "entryId": "ude:5a54f2c87bab66d6",
+   "senseId": "uds:196ae8e7bdb3c7e0bebd",
    "hanzi": "老师",
    "english": "teacher",
-   "fullGloss": "1",
+   "fullGloss": "teacher",
    "hskBand": 1,
    "audio": "lao3shi1",
    "picture": ""
@@ -2365,6 +2601,7 @@
   {
    "readingKey": "li2kai1",
    "entryId": "ude:5ca8bd9bf8a4ef27",
+   "senseId": "uds:29f8319e4a83d736a9e6",
    "hanzi": "离开",
    "english": "to depart",
    "fullGloss": "to depart; to leave",
@@ -2375,6 +2612,7 @@
   {
    "readingKey": "li3wu4",
    "entryId": "ude:2de29b9efe522782",
+   "senseId": "uds:0183640eb1744735d059",
    "hanzi": "礼物",
    "english": "gift",
    "fullGloss": "gift; present; CL:jian4,fen4",
@@ -2385,6 +2623,7 @@
   {
    "readingKey": "li4shi3",
    "entryId": "ude:5002d61e0d9efd7b",
+   "senseId": "uds:44d2d1fc2fc183a342c4",
    "hanzi": "历史",
    "english": "history",
    "fullGloss": "history; CL:men2,duan4",
@@ -2395,6 +2634,7 @@
   {
    "readingKey": "lian4xi2",
    "entryId": "ude:1ebca6d16450929c",
+   "senseId": "uds:c4f8e3f56ffbd99ec9ed",
    "hanzi": "练习",
    "english": "to practice",
    "fullGloss": "to practice; exercise; drill; practice; CL:ge4",
@@ -2405,6 +2645,7 @@
   {
    "readingKey": "liang2kuai5",
    "entryId": "ude:29c986b7aa488cb1",
+   "senseId": "uds:cc8315a5c2375310d13a",
    "hanzi": "凉快",
    "english": "pleasantly cool",
    "fullGloss": "pleasantly cool (weather etc); to cool oneself; to cool off; (Tw) (slang) (of clothing) scanty; revealing; (coll.) to stay out of it; to butt out",
@@ -2415,8 +2656,9 @@
   {
    "readingKey": "liao3jie3",
    "entryId": "ude:79b297294e742b60",
+   "senseId": "uds:435da8f44b7e47b99faa",
    "hanzi": "了解",
-   "english": "to understand",
+   "english": "to know about",
    "fullGloss": "to understand; to know about; to learn about; to find out; variant of liao3 jie3",
    "hskBand": 3,
    "audio": "liao3jie3",
@@ -2425,9 +2667,10 @@
   {
    "readingKey": "lin2ju1",
    "entryId": "ude:b68a77ee42b08b80",
+   "senseId": "uds:2036e0f956cf8c57f8b7",
    "hanzi": "邻居",
    "english": "neighbor",
-   "fullGloss": "3",
+   "fullGloss": "neighbor",
    "hskBand": 3,
    "audio": "lin2ju1",
    "picture": ""
@@ -2435,9 +2678,10 @@
   {
    "readingKey": "liu2xue2",
    "entryId": "ude:f08a76d4d927fee7",
+   "senseId": "uds:66e50f3ffe41ff7ed838",
    "hanzi": "留学",
    "english": "to study abroad",
-   "fullGloss": "3",
+   "fullGloss": "to study abroad",
    "hskBand": 3,
    "audio": "liu2xue2",
    "picture": ""
@@ -2445,6 +2689,7 @@
   {
    "readingKey": "liu2xue2sheng1",
    "entryId": "ude:7cf3ac9604678026",
+   "senseId": "uds:4bd6906cb358ae47e7ed",
    "hanzi": "留学生",
    "english": "student studying abroad",
    "fullGloss": "student studying abroad; returned student; foreign student; international student",
@@ -2455,6 +2700,7 @@
   {
    "readingKey": "lou2ti1",
    "entryId": "ude:f8f45b02c1fba6ea",
+   "senseId": "uds:c499a084ad004e56a01e",
    "hanzi": "楼梯",
    "english": "stair",
    "fullGloss": "stair; staircase; CL:ge4",
@@ -2465,6 +2711,7 @@
   {
    "readingKey": "lu4bian1",
    "entryId": "ude:90cd98092d21322a",
+   "senseId": "uds:bb9ebee0547674625447",
    "hanzi": "路边",
    "english": "curb",
    "fullGloss": "curb; roadside; wayside",
@@ -2475,6 +2722,7 @@
   {
    "readingKey": "lu4kou3",
    "entryId": "ude:1c12d9e02744c895",
+   "senseId": "uds:d0ad88d4b899fa760f34",
    "hanzi": "路口",
    "english": "crossing",
    "fullGloss": "crossing; intersection (of roads); see Lu4 kou3 Qu1",
@@ -2485,6 +2733,7 @@
   {
    "readingKey": "lu4shang5",
    "entryId": "ude:d01133a2df8da404",
+   "senseId": "uds:5f28c323ba28f5ccdf6d",
    "hanzi": "路上",
    "english": "on the road",
    "fullGloss": "on the road; on the way; en route",
@@ -2495,6 +2744,7 @@
   {
    "readingKey": "lv3you2",
    "entryId": "ude:34362e7f0d746ac7",
+   "senseId": "uds:47ed63df0f7088bb8e79",
    "hanzi": "旅游",
    "english": "trip",
    "fullGloss": "trip; journey; tourism; travel; tour; to travel",
@@ -2505,6 +2755,7 @@
   {
    "readingKey": "lv4cha2",
    "entryId": "ude:9caab0b48edf0f88",
+   "senseId": "uds:803f05a843a2ff798e89",
    "hanzi": "绿茶",
    "english": "green tea",
    "fullGloss": "green tea; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative; a girl who has these qualities",
@@ -2515,9 +2766,10 @@
   {
    "readingKey": "lv4se4",
    "entryId": "ude:6084abcefac47c20",
+   "senseId": "uds:472db86d3345442746ba",
    "hanzi": "绿色",
    "english": "green",
-   "fullGloss": "2",
+   "fullGloss": "green",
    "hskBand": 2,
    "audio": "lv4se4",
    "picture": ""
@@ -2525,6 +2777,7 @@
   {
    "readingKey": "ma1ma5",
    "entryId": "ude:d3de4e29554ab3a6",
+   "senseId": "uds:685836f8f19216238ab5",
    "hanzi": "妈妈",
    "english": "mum",
    "fullGloss": "mama; mommy; mother; CL:ge4,wei4",
@@ -2535,6 +2788,7 @@
   {
    "readingKey": "ma3lu4",
    "entryId": "ude:86d9c307cd6f10dd",
+   "senseId": "uds:01553b6647c15023eb22",
    "hanzi": "马路",
    "english": "street",
    "fullGloss": "street; road; CL:tiao2; millipede; red deer; fool; idiot (from Japanese \"baka\")",
@@ -2545,6 +2799,7 @@
   {
    "readingKey": "ma3shang4",
    "entryId": "ude:9e782aecebcbd9f2",
+   "senseId": "uds:4e0b27379715d13f1bca",
    "hanzi": "马上",
    "english": "at once",
    "fullGloss": "at once; right away; immediately; on horseback (i.e. by military force)",
@@ -2555,6 +2810,7 @@
   {
    "readingKey": "man3yi4",
    "entryId": "ude:97ff7024d02dd841",
+   "senseId": "uds:b68293f2faf1e5941836",
    "hanzi": "满意",
    "english": "satisfied",
    "fullGloss": "satisfied; pleased; to one's satisfaction; to be full to overflowing; to be brimming over with",
@@ -2565,9 +2821,10 @@
   {
    "readingKey": "mei2guan1xi5",
    "entryId": "ude:da65694950ffaa6c",
+   "senseId": "uds:05c2c2c9b8fb32a009e9",
    "hanzi": "没关系",
    "english": "it doesn't matter",
-   "fullGloss": "1",
+   "fullGloss": "it doesn't matter",
    "hskBand": 1,
    "audio": "mei2guan1xi5",
    "picture": ""
@@ -2575,6 +2832,7 @@
   {
    "readingKey": "mei2shi4",
    "entryId": "ude:7fb558a84115e006",
+   "senseId": "uds:06c487ddd91dc543a1b5",
    "hanzi": "没事",
    "english": "it's not important",
    "fullGloss": "it's not important; it's nothing; never mind; to have nothing to do; to be free; to be all right (out of danger or trouble); Charles Messier (1730-1817), French astronomer who catalogued nebulas and galaxies",
@@ -2585,6 +2843,7 @@
   {
    "readingKey": "mei2yi4si5",
    "entryId": "ude:5aa5e02a38487aac",
+   "senseId": "uds:a6a64e59d5707e02aa02",
    "hanzi": "没意思",
    "english": "boring",
    "fullGloss": "boring; of no interest",
@@ -2595,6 +2854,7 @@
   {
    "readingKey": "mei2you3",
    "entryId": "ude:5ea7e9d6e4fb7c18",
+   "senseId": "uds:1237e81a284fa9f4900e",
    "hanzi": "没有",
    "english": "haven't",
    "fullGloss": "haven't; hasn't; doesn't exist; to not have; to not be",
@@ -2605,6 +2865,7 @@
   {
    "readingKey": "men2kou3",
    "entryId": "ude:cd36bde8bd858d22",
+   "senseId": "uds:3e8cbd3d85917fd2383c",
    "hanzi": "门口",
    "english": "doorway",
    "fullGloss": "doorway; gate; CL:ge4",
@@ -2615,9 +2876,10 @@
   {
    "readingKey": "men2piao4",
    "entryId": "ude:dcadb137101fda22",
+   "senseId": "uds:0abae8c5fd12e57942f5",
    "hanzi": "门票",
    "english": "ticket",
-   "fullGloss": "2",
+   "fullGloss": "ticket (for theater, cinema etc)",
    "hskBand": 2,
    "audio": "men2piao4",
    "picture": ""
@@ -2625,6 +2887,7 @@
   {
    "readingKey": "mi3fan4",
    "entryId": "ude:d6869e21d244381d",
+   "senseId": "uds:d194c249b171a1243d66",
    "hanzi": "米饭",
    "english": "rice",
    "fullGloss": "(cooked) rice",
@@ -2635,6 +2898,7 @@
   {
    "readingKey": "mian4bao1",
    "entryId": "ude:2cdc0f31473bf4a1",
+   "senseId": "uds:6e94e04859fa4318db14",
    "hanzi": "面包",
    "english": "bread",
    "fullGloss": "bread; CL:pian4,kuai4",
@@ -2645,6 +2909,7 @@
   {
    "readingKey": "mian4qian2",
    "entryId": "ude:fb5d248151e9a331",
+   "senseId": "uds:ff2e9727071cbb3b059c",
    "hanzi": "面前",
    "english": "in front of",
    "fullGloss": "in front of; facing; (in the) presence (of)",
@@ -2655,6 +2920,7 @@
   {
    "readingKey": "ming2bai5",
    "entryId": "ude:ddcec2fd37335466",
+   "senseId": "uds:ce05f19ccd6e538fb7db",
    "hanzi": "明白",
    "english": "clear",
    "fullGloss": "clear; obvious; unequivocal; sensible; reasonable; to understand; to realize",
@@ -2665,9 +2931,10 @@
   {
    "readingKey": "ming2dan1",
    "entryId": "ude:3d505f2f8c1d91ea",
+   "senseId": "uds:1eb3c972ceaa59c418a4",
    "hanzi": "名单",
    "english": "list of names",
-   "fullGloss": "3",
+   "fullGloss": "list of names",
    "hskBand": 3,
    "audio": "ming2dan1",
    "picture": ""
@@ -2675,9 +2942,10 @@
   {
    "readingKey": "ming2nian2",
    "entryId": "ude:753bff018178fbe9",
+   "senseId": "uds:8cbd67223680647dec75",
    "hanzi": "明年",
    "english": "next year",
-   "fullGloss": "1",
+   "fullGloss": "next year",
    "hskBand": 1,
    "audio": "ming2nian2",
    "picture": ""
@@ -2685,6 +2953,7 @@
   {
    "readingKey": "ming2ren2",
    "entryId": "ude:6fcdc5f20de3c595",
+   "senseId": "uds:e62255a22722ab6b7f9d",
    "hanzi": "名人",
    "english": "celebrity",
    "fullGloss": "personage; celebrity; Akihito, personal name of the Heisei Ping2 cheng2 emperor of Japan (1933-), reigned 1989-2019",
@@ -2695,9 +2964,10 @@
   {
    "readingKey": "ming2tian1",
    "entryId": "ude:68f6f0e623f99249",
+   "senseId": "uds:7abbdc3b771cd7f8725d",
    "hanzi": "明天",
    "english": "tomorrow",
-   "fullGloss": "1",
+   "fullGloss": "tomorrow",
    "hskBand": 1,
    "audio": "ming2tian1",
    "picture": ""
@@ -2705,6 +2975,7 @@
   {
    "readingKey": "ming2zi5",
    "entryId": "ude:9603167fc6bdaf54",
+   "senseId": "uds:37adfa03f6ed1be3bdb2",
    "hanzi": "名字",
    "english": "name",
    "fullGloss": "name (of a person or thing); see song1 ming2",
@@ -2715,6 +2986,7 @@
   {
    "readingKey": "na3ge5",
    "entryId": "ude:ed980ab6226dac8e",
+   "senseId": "uds:a37f878c0939e894832b",
    "hanzi": "哪个",
    "english": "which",
    "fullGloss": "which; who",
@@ -2725,6 +2997,7 @@
   {
    "readingKey": "na3li3",
    "entryId": "ude:227d3fade2cb538e",
+   "senseId": "uds:05f6386d90d302943411",
    "hanzi": "哪里",
    "english": "where?",
    "fullGloss": "where?; somewhere; anywhere; wherever; nowhere (negative answer to question); humble expression denying compliment; also written",
@@ -2735,6 +3008,7 @@
   {
    "readingKey": "na3xie1",
    "entryId": "ude:bec4e8f3fbd227d9",
+   "senseId": "uds:ccde869a96de5fbc6b4a",
    "hanzi": "哪些",
    "english": "which ones?",
    "fullGloss": "which ones?; who?; what?",
@@ -2745,6 +3019,7 @@
   {
    "readingKey": "na4bian5",
    "entryId": "ude:2e249a6386bc6e17",
+   "senseId": "uds:71897e867c16f5428318",
    "hanzi": "那边",
    "english": "over there",
    "fullGloss": "over there; yonder",
@@ -2755,6 +3030,7 @@
   {
    "readingKey": "na4ge5",
    "entryId": "ude:396e615430ded8f7",
+   "senseId": "uds:99d208f23f91ae1874df",
    "hanzi": "那个",
    "english": "that one",
    "fullGloss": "that one; that thing; that (as opposed to this); (used before a verb or adjective for emphasis); (used to humorously or indirectly refer to sth embarrassing, funny etc, or when one can't think of the right word); (used in speech as a filler, similar to \"umm\", \"you know\" etc); (euph.) menstruation; sex; also pr. [nei4 ge5]",
@@ -2765,6 +3041,7 @@
   {
    "readingKey": "na4me5",
    "entryId": "ude:890f4d1ff458774e",
+   "senseId": "uds:72ec1acaeb1919fd1104",
    "hanzi": "那么",
    "english": "like that",
    "fullGloss": "like that; in that way; to that extent; (before a number)... or so; about...; then; in that case; variant of na4 me5",
@@ -2775,9 +3052,10 @@
   {
    "readingKey": "na4xie1",
    "entryId": "ude:6f93bbeb3d6e7ceb",
+   "senseId": "uds:d1d004beb4a2c6d873ff",
    "hanzi": "那些",
    "english": "those",
-   "fullGloss": "1",
+   "fullGloss": "those",
    "hskBand": 1,
    "audio": "na4xie1",
    "picture": ""
@@ -2785,6 +3063,7 @@
   {
    "readingKey": "na4yang4",
    "entryId": "ude:06b436885d9ab4a4",
+   "senseId": "uds:29e0db19b9c556b569e5",
    "hanzi": "那样",
    "english": "that kind",
    "fullGloss": "that kind; that sort",
@@ -2795,9 +3074,10 @@
   {
    "readingKey": "nai3cha2",
    "entryId": "ude:295bcb48497308ba",
+   "senseId": "uds:e64a51c50108ff1fab23",
    "hanzi": "奶茶",
    "english": "milk tea",
-   "fullGloss": "2",
+   "fullGloss": "milk tea",
    "hskBand": 2,
    "audio": "nai3cha2",
    "picture": ""
@@ -2805,6 +3085,7 @@
   {
    "readingKey": "nai3nai5",
    "entryId": "ude:1a3c6d13dcd68dc2",
+   "senseId": "uds:7cccdac9cc5d768acc17",
    "hanzi": "奶奶",
    "english": "grandma",
    "fullGloss": "(informal) grandma (paternal grandmother); (respectful) mistress of the house; CL:wei4; (coll.) boobies; breasts",
@@ -2815,6 +3096,7 @@
   {
    "readingKey": "nan2fang1",
    "entryId": "ude:8df2f42558402aaf",
+   "senseId": "uds:9f892a5e30310926a596",
    "hanzi": "南方",
    "english": "south",
    "fullGloss": "south; southern direction; (in China) southern regions, often referring to areas south of the Yangtze River; (of a marriage) the bridegroom's side; the husband's side",
@@ -2825,6 +3107,7 @@
   {
    "readingKey": "nan2guo4",
    "entryId": "ude:49241062dae8bb9b",
+   "senseId": "uds:fcab48c5ffc9a5de3819",
    "hanzi": "难过",
    "english": "to feel sad",
    "fullGloss": "to feel sad; to feel unwell; (of life) to be difficult",
@@ -2835,6 +3118,7 @@
   {
    "readingKey": "nan2kan4",
    "entryId": "ude:10a95baf9c851844",
+   "senseId": "uds:d7fe0920f2db3c751203",
    "hanzi": "难看",
    "english": "ugly",
    "fullGloss": "ugly; unsightly",
@@ -2845,9 +3129,10 @@
   {
    "readingKey": "nan2peng2you5",
    "entryId": "ude:a1bd258632fd74cf",
+   "senseId": "uds:103b5ad89d0976a967d3",
    "hanzi": "男朋友",
    "english": "boyfriend",
-   "fullGloss": "1",
+   "fullGloss": "boyfriend",
    "hskBand": 1,
    "audio": "nan2peng2you5",
    "picture": ""
@@ -2855,6 +3140,7 @@
   {
    "readingKey": "nan2ren2",
    "entryId": "ude:88af0be8972bf169",
+   "senseId": "uds:6d804ee78a2fc3e242cf",
    "hanzi": "男人",
    "english": "a man",
    "fullGloss": "a man; a male; men; CL:ge4",
@@ -2865,6 +3151,7 @@
   {
    "readingKey": "nan2sheng1",
    "entryId": "ude:6495a2e8898a9466",
+   "senseId": "uds:c9830ebff12f3e70db49",
    "hanzi": "男生",
    "english": "schoolboy",
    "fullGloss": "schoolboy; male student; boy; guy (young adult male)",
@@ -2875,9 +3162,10 @@
   {
    "readingKey": "nan2ti2",
    "entryId": "ude:11fc7115e110e951",
+   "senseId": "uds:f70db3de9862584c2565",
    "hanzi": "难题",
    "english": "difficult problem",
-   "fullGloss": "3",
+   "fullGloss": "difficult problem",
    "hskBand": 3,
    "audio": "nan2ti2",
    "picture": ""
@@ -2885,6 +3173,7 @@
   {
    "readingKey": "nan2ting1",
    "entryId": "ude:67d575850a9f4a33",
+   "senseId": "uds:b0d61d75a062896a5730",
    "hanzi": "难听",
    "english": "unpleasant to hear",
    "fullGloss": "unpleasant to hear; coarse; vulgar; offensive; shameful",
@@ -2895,6 +3184,7 @@
   {
    "readingKey": "ni3hao3",
    "entryId": "ude:c21bd42397538707",
+   "senseId": "uds:5091c78b34a1d70f7489",
    "hanzi": "你好",
    "english": "hello",
    "fullGloss": "hello; hi",
@@ -2905,9 +3195,10 @@
   {
    "readingKey": "ni3men5",
    "entryId": "ude:895ddb89c8e66ff4",
+   "senseId": "uds:4e2358baee7da4a99003",
    "hanzi": "你们",
    "english": "you",
-   "fullGloss": "1",
+   "fullGloss": "you (plural)",
    "hskBand": 1,
    "audio": "ni3men5",
    "picture": ""
@@ -2915,6 +3206,7 @@
   {
    "readingKey": "nian2ji2",
    "entryId": "ude:33b190e1938e076f",
+   "senseId": "uds:883f1e5e1b6da7a4b805",
    "hanzi": "年级",
    "english": "grade",
    "fullGloss": "grade; year (in school, college etc); CL:ge4",
@@ -2925,6 +3217,7 @@
   {
    "readingKey": "nian2qing1",
    "entryId": "ude:5f9393ea5cd5b40f",
+   "senseId": "uds:1adc0aed2fabab6072df",
    "hanzi": "年轻",
    "english": "young",
    "fullGloss": "young; youthful",
@@ -2935,6 +3228,7 @@
   {
    "readingKey": "niu2nai3",
    "entryId": "ude:4ca6c7965403a1b2",
+   "senseId": "uds:fa252a2090648e867f37",
    "hanzi": "牛奶",
    "english": "milk",
    "fullGloss": "cow's milk; CL:ping2,bei1",
@@ -2945,9 +3239,10 @@
   {
    "readingKey": "nv3er2",
    "entryId": "ude:cf3fc40114738364",
+   "senseId": "uds:bbcd8e8775e28e652328",
    "hanzi": "女儿",
    "english": "daughter",
-   "fullGloss": "1",
+   "fullGloss": "daughter",
    "hskBand": 1,
    "audio": "nv3er2",
    "picture": ""
@@ -2955,9 +3250,10 @@
   {
    "readingKey": "nv3peng2you5",
    "entryId": "ude:f71121efe00a4196",
+   "senseId": "uds:46f34e6742ebaf7f8f9a",
    "hanzi": "女朋友",
    "english": "girlfriend",
-   "fullGloss": "1",
+   "fullGloss": "girlfriend",
    "hskBand": 1,
    "audio": "nv3peng2you5",
    "picture": ""
@@ -2965,9 +3261,10 @@
   {
    "readingKey": "nv3ren2",
    "entryId": "ude:f7912aa58b3b4cd9",
+   "senseId": "uds:1894f31e9c259ff2f52b",
    "hanzi": "女人",
    "english": "woman",
-   "fullGloss": "3",
+   "fullGloss": "woman",
    "hskBand": 3,
    "audio": "nv3ren2",
    "picture": ""
@@ -2975,6 +3272,7 @@
   {
    "readingKey": "nv3sheng1",
    "entryId": "ude:9bd46708b52fc303",
+   "senseId": "uds:a8e9ee389605cb449d70",
    "hanzi": "女生",
    "english": "schoolgirl",
    "fullGloss": "schoolgirl; female student; girl",
@@ -2985,6 +3283,7 @@
   {
    "readingKey": "nv3shi4",
    "entryId": "ude:245fb3ce20fe0863",
+   "senseId": "uds:0fcd83459e2a3f76e443",
    "hanzi": "女士",
    "english": "lady",
    "fullGloss": "lady; madam; CL:ge4,wei4; Miss; Ms",
@@ -2995,6 +3294,7 @@
   {
    "readingKey": "pan2zi5",
    "entryId": "ude:8e4d47f0c329d227",
+   "senseId": "uds:6983160af935c94a53e0",
    "hanzi": "盘子",
    "english": "plate",
    "fullGloss": "tray; plate; dish; CL:ge4",
@@ -3005,6 +3305,7 @@
   {
    "readingKey": "pang2bian1",
    "entryId": "ude:f9559475ef2eddc8",
+   "senseId": "uds:136d694d40e658cbbc0f",
    "hanzi": "旁边",
    "english": "side",
    "fullGloss": "side; adjacent place",
@@ -3015,6 +3316,7 @@
   {
    "readingKey": "pao3bu4",
    "entryId": "ude:2028ecc2ea37edc8",
+   "senseId": "uds:e7f13439301e01727720",
    "hanzi": "跑步",
    "english": "to run",
    "fullGloss": "to run; to jog; (military) to march at the double",
@@ -3025,6 +3327,7 @@
   {
    "readingKey": "peng2you5",
    "entryId": "ude:90468a53472f7ded",
+   "senseId": "uds:69691f9d522c91247507",
    "hanzi": "朋友",
    "english": "friend",
    "fullGloss": "friend; CL:ge4,wei4",
@@ -3035,6 +3338,7 @@
   {
    "readingKey": "pi2jiu3",
    "entryId": "ude:913b8c660fa79d2e",
+   "senseId": "uds:bc88abcd89c523013d1b",
    "hanzi": "啤酒",
    "english": "beer",
    "fullGloss": "beer (loanword); CL:bei1,ping2,guan4,tong3,gang1",
@@ -3045,6 +3349,7 @@
   {
    "readingKey": "pian2yi5",
    "entryId": "ude:b1c806392e196578",
+   "senseId": "uds:9825f92c2de406e83f29",
    "hanzi": "便宜",
    "english": "cheap",
    "fullGloss": "cheap; inexpensive; a petty advantage; to let sb off lightly",
@@ -3055,6 +3360,7 @@
   {
    "readingKey": "piao4liang5",
    "entryId": "ude:dc9163b6cd50d6bf",
+   "senseId": "uds:34d884cf59fa51c489ce",
    "hanzi": "漂亮",
    "english": "pretty",
    "fullGloss": "pretty; beautiful",
@@ -3065,6 +3371,7 @@
   {
    "readingKey": "ping2guo3",
    "entryId": "ude:c4ccc939a4a68abf",
+   "senseId": "uds:e341aae18686c6093f9d",
    "hanzi": "苹果",
    "english": "apple",
    "fullGloss": "Apple (American tech company); apple; CL:ge4,ke1; see Ping2 guo3 Shi4",
@@ -3075,6 +3382,7 @@
   {
    "readingKey": "ping2shi2",
    "entryId": "ude:03dd3c83222bd434",
+   "senseId": "uds:8e06e986a51d48d63fac",
    "hanzi": "平时",
    "english": "ordinarily",
    "fullGloss": "ordinarily; in normal times; in peacetime; simple and unadorned; plain; (of land) level; even",
@@ -3085,6 +3393,7 @@
   {
    "readingKey": "ping2zi5",
    "entryId": "ude:745699f26f96f710",
+   "senseId": "uds:9aad1b1a2c2f2b05dcf2",
    "hanzi": "瓶子",
    "english": "bottle",
    "fullGloss": "bottle; CL:ge4",
@@ -3095,9 +3404,10 @@
   {
    "readingKey": "qi1zi5",
    "entryId": "ude:ad0593ade78e3057",
+   "senseId": "uds:c4fd4ad75c5cefadc2eb",
    "hanzi": "妻子",
    "english": "wife",
-   "fullGloss": "2",
+   "fullGloss": "wife",
    "hskBand": 2,
    "audio": "qi1zi5",
    "picture": ""
@@ -3105,6 +3415,7 @@
   {
    "readingKey": "qi2guai4",
    "entryId": "ude:fd6bcfee96ab6b4d",
+   "senseId": "uds:c76fc84dc99185717515",
    "hanzi": "奇怪",
    "english": "strange",
    "fullGloss": "strange; odd; to marvel; to be baffled",
@@ -3115,6 +3426,7 @@
   {
    "readingKey": "qi2shi2",
    "entryId": "ude:8c1b3cb23f825263",
+   "senseId": "uds:e98d9ff09b20aebacc6f",
    "hanzi": "其实",
    "english": "actually",
    "fullGloss": "actually; in fact; really",
@@ -3125,6 +3437,7 @@
   {
    "readingKey": "qi2ta1",
    "entryId": "ude:b3751631a29cc89c",
+   "senseId": "uds:1db808a19d2bc1b59363",
    "hanzi": "其他",
    "english": "other",
    "fullGloss": "other; (sth or sb) else; the rest; (adjective) other",
@@ -3135,6 +3448,7 @@
   {
    "readingKey": "qi3fei1",
    "entryId": "ude:caeb6464dd734cc8",
+   "senseId": "uds:e8c64a4255cad31fd542",
    "hanzi": "起飞",
    "english": "to take off",
    "fullGloss": "(of an aircraft or rocket) to take off; to lift off; (fig.) (of an enterprise etc) to start to develop rapidly; wouldn't it be...?",
@@ -3145,6 +3459,7 @@
   {
    "readingKey": "qi4che1",
    "entryId": "ude:bf119aa5a6780c1d",
+   "senseId": "uds:e7a786d16d4cc0e23f48",
    "hanzi": "汽车",
    "english": "car",
    "fullGloss": "car; automobile; bus; CL:liang4",
@@ -3155,6 +3470,7 @@
   {
    "readingKey": "qian1bi3",
    "entryId": "ude:17b27a6e589f459c",
+   "senseId": "uds:22adbf07baa18ab926ad",
    "hanzi": "铅笔",
    "english": "pencil",
    "fullGloss": "(lead) pencil; CL:zhi1,zhi1,gan3",
@@ -3165,6 +3481,7 @@
   {
    "readingKey": "qian2mian4",
    "entryId": "ude:1dd93c950e7c9e87",
+   "senseId": "uds:93e943b6c97f4495b312",
    "hanzi": "前面",
    "english": "ahead",
    "fullGloss": "ahead; in front; preceding; above; also pr. [qian2 mian5]",
@@ -3175,6 +3492,7 @@
   {
    "readingKey": "qing1chu5",
    "entryId": "ude:8d9d0e1e7361d76f",
+   "senseId": "uds:803466793dd03d1dadd6",
    "hanzi": "清楚",
    "english": "clear",
    "fullGloss": "clear; distinct; to understand thoroughly; to be clear about",
@@ -3185,9 +3503,10 @@
   {
    "readingKey": "qing3wen4",
    "entryId": "ude:2eb80fb8734ff2a1",
+   "senseId": "uds:fb76d4e3abb8daa10659",
    "hanzi": "请问",
    "english": "Excuse me",
-   "fullGloss": "1",
+   "fullGloss": "Excuse me, may I ask...?",
    "hskBand": 1,
    "audio": "qing3wen4",
    "picture": ""
@@ -3195,6 +3514,7 @@
   {
    "readingKey": "qiu1tian1",
    "entryId": "ude:37b0123ff784a996",
+   "senseId": "uds:adad05ad2d1b27cc55be",
    "hanzi": "秋天",
    "english": "autumn",
    "fullGloss": "autumn; CL:ge4",
@@ -3205,6 +3525,7 @@
   {
    "readingKey": "qiu2chang3",
    "entryId": "ude:c3ffa294ea1567a0",
+   "senseId": "uds:ec5f6f343219b5d188e9",
    "hanzi": "球场",
    "english": "stadium",
    "fullGloss": "stadium; sports ground; court; pitch; field; golf course; CL:ge4,chu4",
@@ -3215,9 +3536,10 @@
   {
    "readingKey": "qu4nian2",
    "entryId": "ude:0663255cac73c1b5",
+   "senseId": "uds:17d0854e31c03d0efdff",
    "hanzi": "去年",
    "english": "last year",
-   "fullGloss": "1",
+   "fullGloss": "last year",
    "hskBand": 1,
    "audio": "qu4nian2",
    "picture": ""
@@ -3225,6 +3547,7 @@
   {
    "readingKey": "qun2zi5",
    "entryId": "ude:042e10a8aa366959",
+   "senseId": "uds:815e5b39ed3bf4928fa2",
    "hanzi": "裙子",
    "english": "skirt",
    "fullGloss": "skirt; CL:tiao2",
@@ -3235,6 +3558,7 @@
   {
    "readingKey": "ran2hou4",
    "entryId": "ude:f94774f265c9b681",
+   "senseId": "uds:b9d0a9586553955e0a92",
    "hanzi": "然后",
    "english": "then",
    "fullGloss": "then; after that; afterwards",
@@ -3245,6 +3569,7 @@
   {
    "readingKey": "re4qing2",
    "entryId": "ude:75ad0dfde32d043c",
+   "senseId": "uds:b160f92dd3205a6f51f3",
    "hanzi": "热情",
    "english": "warm",
    "fullGloss": "cordial; enthusiastic; passion; passionate; passionately",
@@ -3255,6 +3580,7 @@
   {
    "readingKey": "ren4de5",
    "entryId": "ude:8353cf00936f85b7",
+   "senseId": "uds:745ae33a9a31c46bdfc2",
    "hanzi": "认得",
    "english": "to recognize",
    "fullGloss": "to recognize; to remember sth (or sb) on seeing it; to know",
@@ -3265,8 +3591,9 @@
   {
    "readingKey": "ren4shi5",
    "entryId": "ude:f28bc8ef53d16558",
+   "senseId": "uds:670522b3a221a8891035",
    "hanzi": "认识",
-   "english": "to know",
+   "english": "to know someone",
    "fullGloss": "to know; to recognize; to be familiar with; to get acquainted with sb; knowledge; understanding; awareness; cognition",
    "hskBand": 1,
    "audio": "ren4shi5",
@@ -3275,8 +3602,9 @@
   {
    "readingKey": "ren4wei2",
    "entryId": "ude:3f85634500d3839f",
+   "senseId": "uds:98bc7ccace9ebc1d7054",
    "hanzi": "认为",
-   "english": "to believe",
+   "english": "to think",
    "fullGloss": "to believe; to think; to consider; to feel",
    "hskBand": 3,
    "audio": "ren4wei2",
@@ -3285,6 +3613,7 @@
   {
    "readingKey": "ren4zhen1",
    "entryId": "ude:4b0584c8a5f06f1d",
+   "senseId": "uds:ce3b02298c6dbdbba621",
    "hanzi": "认真",
    "english": "conscientious",
    "fullGloss": "conscientious; earnest; serious; to take seriously; to take to heart; to thread a needle",
@@ -3295,6 +3624,7 @@
   {
    "readingKey": "rong2yi4",
    "entryId": "ude:901b07240c789b79",
+   "senseId": "uds:6bbb0be9e1a6c91dbba7",
    "hanzi": "容易",
    "english": "easy",
    "fullGloss": "easy; straightforward; likely; liable to; apt to",
@@ -3305,6 +3635,7 @@
   {
    "readingKey": "ru2guo3",
    "entryId": "ude:d6639954fa7beec5",
+   "senseId": "uds:a3fc134ca6af3a2b8927",
    "hanzi": "如果",
    "english": "if",
    "fullGloss": "if; in case; in the event that",
@@ -3315,6 +3646,7 @@
   {
    "readingKey": "sha1fa1",
    "entryId": "ude:b62c04cf06fdc626",
+   "senseId": "uds:70e549616f67dcc168c8",
    "hanzi": "沙发",
    "english": "sofa",
    "fullGloss": "(loanword) sofa (CL:tiao2,zhang1); (Internet slang) first reply to a forum post",
@@ -3325,6 +3657,7 @@
   {
    "readingKey": "shang1chang3",
    "entryId": "ude:079355c34757876e",
+   "senseId": "uds:71b687ea0f105cc86c6c",
    "hanzi": "商场",
    "english": "shopping mall",
    "fullGloss": "shopping mall; shopping center; department store; emporium; CL:jia1; the business world",
@@ -3335,6 +3668,7 @@
   {
    "readingKey": "shang1dian4",
    "entryId": "ude:f8373b609cb24037",
+   "senseId": "uds:348671b320a5f7a76744",
    "hanzi": "商店",
    "english": "store",
    "fullGloss": "store; shop; CL:jia1",
@@ -3345,6 +3679,7 @@
   {
    "readingKey": "shang4lai2",
    "entryId": "ude:48d7c8c4f214cd4f",
+   "senseId": "uds:b573989d43c0bead01fb",
    "hanzi": "上来",
    "english": "to come up",
    "fullGloss": "to come up; to approach; (verb complement indicating success)",
@@ -3355,6 +3690,7 @@
   {
    "readingKey": "shang4mian4",
    "entryId": "ude:6c130307f93b0682",
+   "senseId": "uds:7f0d430add98ce57a0a7",
    "hanzi": "上面",
    "english": "on top of",
    "fullGloss": "on top of; above-mentioned; also pr. [shang4 mian5]",
@@ -3365,9 +3701,10 @@
   {
    "readingKey": "shang4qu4",
    "entryId": "ude:e10a915cf09f258f",
+   "senseId": "uds:bdafc63d53df30c93eeb",
    "hanzi": "上去",
    "english": "to go up",
-   "fullGloss": "2",
+   "fullGloss": "to go up",
    "hskBand": 2,
    "audio": "shang4qu4",
    "picture": ""
@@ -3375,6 +3712,7 @@
   {
    "readingKey": "shang4wang3",
    "entryId": "ude:6a598fc1261eed75",
+   "senseId": "uds:9f46b7653ffb83ced61f",
    "hanzi": "上网",
    "english": "to go online",
    "fullGloss": "to go online; to connect to the Internet; (of a document etc) to be uploaded to the Internet; (tennis, volleyball etc) to move in close to the net",
@@ -3385,6 +3723,7 @@
   {
    "readingKey": "shang4wu3",
    "entryId": "ude:8fe7dc8b4bef37ab",
+   "senseId": "uds:7863363920aaf542b76f",
    "hanzi": "上午",
    "english": "morning",
    "fullGloss": "morning; to promote a martial spirit; to revere military skills; warlike",
@@ -3395,6 +3734,7 @@
   {
    "readingKey": "shang4yi1",
    "entryId": "ude:98146a44310420ec",
+   "senseId": "uds:18a8b50c2f02d6421173",
    "hanzi": "上衣",
    "english": "jacket",
    "fullGloss": "jacket; upper outer garment; CL:jian4",
@@ -3405,6 +3745,7 @@
   {
    "readingKey": "shen1bian1",
    "entryId": "ude:c42cc873d1acc29f",
+   "senseId": "uds:06e56b6015297f7bf463",
    "hanzi": "身边",
    "english": "at one's side",
    "fullGloss": "at one's side; on hand",
@@ -3415,6 +3756,7 @@
   {
    "readingKey": "shen1gao1",
    "entryId": "ude:2de5aa9981a391d9",
+   "senseId": "uds:713776f96215e4699d0c",
    "hanzi": "身高",
    "english": "height",
    "fullGloss": "(a person's) height",
@@ -3425,6 +3767,7 @@
   {
    "readingKey": "shen1ti3",
    "entryId": "ude:0cd95044e431e55f",
+   "senseId": "uds:01d91d117bcdd1b9198d",
    "hanzi": "身体",
    "english": "the body",
    "fullGloss": "the body; one's health",
@@ -3435,6 +3778,7 @@
   {
    "readingKey": "shen2me5",
    "entryId": "ude:563015bb728f1870",
+   "senseId": "uds:42212487a4883017b0bf",
    "hanzi": "什么",
    "english": "what?",
    "fullGloss": "what?; something; anything",
@@ -3445,9 +3789,10 @@
   {
    "readingKey": "sheng1bing4",
    "entryId": "ude:473e5abb74a953c2",
+   "senseId": "uds:ee2e622ff95a8e41b2ce",
    "hanzi": "生病",
    "english": "to fall ill",
-   "fullGloss": "1",
+   "fullGloss": "to fall ill",
    "hskBand": 1,
    "audio": "sheng1bing4",
    "picture": ""
@@ -3455,6 +3800,7 @@
   {
    "readingKey": "sheng1huo2",
    "entryId": "ude:66f60da9a103c302",
+   "senseId": "uds:fe6d5d29a2c925d0ab25",
    "hanzi": "生活",
    "english": "to live",
    "fullGloss": "to live; life; livelihood",
@@ -3465,6 +3811,7 @@
   {
    "readingKey": "sheng1qi4",
    "entryId": "ude:f4c95a1c8f1f8090",
+   "senseId": "uds:68adfaceee89e26837a3",
    "hanzi": "生气",
    "english": "to get angry",
    "fullGloss": "to get angry; to be furious; vitality; liveliness; voice; tone; information",
@@ -3475,6 +3822,7 @@
   {
    "readingKey": "sheng1ri4",
    "entryId": "ude:bf1db17c58f966d2",
+   "senseId": "uds:81a5a938a01a13b41187",
    "hanzi": "生日",
    "english": "birthday",
    "fullGloss": "birthday; CL:ge4",
@@ -3485,6 +3833,7 @@
   {
    "readingKey": "sheng1yin1",
    "entryId": "ude:e49ef3533ba058a0",
+   "senseId": "uds:b776effc3dbd56637e70",
    "hanzi": "声音",
    "english": "sound",
    "fullGloss": "sound; voice",
@@ -3495,8 +3844,9 @@
   {
    "readingKey": "shi2hou5",
    "entryId": "ude:443e03acee91cbdd",
+   "senseId": "uds:76ba34b859a99baef5e3",
    "hanzi": "时候",
-   "english": "time",
+   "english": "moment",
    "fullGloss": "time; length of time; moment; period",
    "hskBand": 1,
    "audio": "shi2hou5",
@@ -3505,6 +3855,7 @@
   {
    "readingKey": "shi2jian1",
    "entryId": "ude:58814c2d97fbb3bc",
+   "senseId": "uds:fa74d4be6a14de5a7a27",
    "hanzi": "时间",
    "english": "time",
    "fullGloss": "(concept of) time; (duration of) time; (point in) time",
@@ -3515,6 +3866,7 @@
   {
    "readingKey": "shi4jie4",
    "entryId": "ude:23a7dc50d26af60b",
+   "senseId": "uds:ca25f5b89463b3b946b0",
    "hanzi": "世界",
    "english": "world",
    "fullGloss": "world; event horizon; field of vision",
@@ -3525,6 +3877,7 @@
   {
    "readingKey": "shi4qing5",
    "entryId": "ude:1143ffa4fab29f02",
+   "senseId": "uds:84f4b44cf011bdc734b8",
    "hanzi": "事情",
    "english": "affair",
    "fullGloss": "affair; matter; thing; business; CL:jian4,zhuang1",
@@ -3535,9 +3888,10 @@
   {
    "readingKey": "shou1dao4",
    "entryId": "ude:f9adb02db47a1b25",
+   "senseId": "uds:f43b86cc71fbb27d3ab7",
    "hanzi": "收到",
    "english": "to receive",
-   "fullGloss": "3",
+   "fullGloss": "to receive",
    "hskBand": 3,
    "audio": "shou1dao4",
    "picture": ""
@@ -3545,6 +3899,7 @@
   {
    "readingKey": "shou3biao3",
    "entryId": "ude:7a9a911ed57c823f",
+   "senseId": "uds:5de6c66df9284f408411",
    "hanzi": "手表",
    "english": "wristwatch",
    "fullGloss": "wristwatch; CL:kuai4,zhi1,ge4",
@@ -3555,6 +3910,7 @@
   {
    "readingKey": "shou3ji1",
    "entryId": "ude:f9b813b3a0fef1b2",
+   "senseId": "uds:09c26b735658db8fd68b",
    "hanzi": "手机",
    "english": "mobile phone",
    "fullGloss": "cell phone; mobile phone; CL:bu4,tai2",
@@ -3565,6 +3921,7 @@
   {
    "readingKey": "shou4dao4",
    "entryId": "ude:b3a35ba0ff515a37",
+   "senseId": "uds:76d9a3250e66d38b8cec",
    "hanzi": "受到",
    "english": "to undergo",
    "fullGloss": "to receive (praise, an education, punishment etc); to be...ed (praised, educated, punished etc)",
@@ -3575,6 +3932,7 @@
   {
    "readingKey": "shu1bao1",
    "entryId": "ude:e5103e78fdbfc002",
+   "senseId": "uds:cee99e95936a4fbcdf7a",
    "hanzi": "书包",
    "english": "schoolbag",
    "fullGloss": "schoolbag; satchel; bookbag; CL:ge4,zhi1",
@@ -3585,6 +3943,7 @@
   {
    "readingKey": "shu1dian4",
    "entryId": "ude:b664479ffe81699c",
+   "senseId": "uds:83d7789c37f3b7186800",
    "hanzi": "书店",
    "english": "bookstore",
    "fullGloss": "bookstore; CL:jia1; electricity transmission; to transmit electricity",
@@ -3595,6 +3954,7 @@
   {
    "readingKey": "shu1fu5",
    "entryId": "ude:31851835752b2cbb",
+   "senseId": "uds:9226adc110324905f60e",
    "hanzi": "舒服",
    "english": "comfortable",
    "fullGloss": "comfortable; feeling well",
@@ -3605,6 +3965,7 @@
   {
    "readingKey": "shu1shu5",
    "entryId": "ude:016be819b64122b9",
+   "senseId": "uds:b47e81c1ab5ed82c95a5",
    "hanzi": "叔叔",
    "english": "father's younger brother",
    "fullGloss": "father's younger brother; paternal uncle; form of address used by children for a male one generation older",
@@ -3615,6 +3976,7 @@
   {
    "readingKey": "shu4xue2",
    "entryId": "ude:0dad803e18bf51f0",
+   "senseId": "uds:a7f0d45e1830b8feb84b",
    "hanzi": "数学",
    "english": "mathematics",
    "fullGloss": "mathematics; acupuncture point",
@@ -3625,9 +3987,10 @@
   {
    "readingKey": "shui3guo3",
    "entryId": "ude:169aad2ebac9c369",
+   "senseId": "uds:4feb9e9ad8e94bde4056",
    "hanzi": "水果",
    "english": "fruit",
-   "fullGloss": "1",
+   "fullGloss": "fruit",
    "hskBand": 1,
    "audio": "shui3guo3",
    "picture": ""
@@ -3635,6 +3998,7 @@
   {
    "readingKey": "shui3ping2",
    "entryId": "ude:e688ec6eeb9e320a",
+   "senseId": "uds:35c637647051b272231a",
    "hanzi": "水平",
    "english": "level",
    "fullGloss": "horizontal; level; a standard; a level (of ability, development etc)",
@@ -3645,6 +4009,7 @@
   {
    "readingKey": "shui4jiao4",
    "entryId": "ude:0491dc5cd7fbf0ef",
+   "senseId": "uds:0fe3058b44e0f4b98eb3",
    "hanzi": "睡觉",
    "english": "to sleep",
    "fullGloss": "to go to bed; to sleep",
@@ -3655,6 +4020,7 @@
   {
    "readingKey": "shuo1hua4",
    "entryId": "ude:2a162d89f70d73fc",
+   "senseId": "uds:d71a29ada0cc8b1b5704",
    "hanzi": "说话",
    "english": "to speak",
    "fullGloss": "to speak; to say; to talk; to gossip; to tell stories; talk; word",
@@ -3665,6 +4031,7 @@
   {
    "readingKey": "si1ji1",
    "entryId": "ude:e1b1cf5b52aa6950",
+   "senseId": "uds:b5777ef90efd4988ca46",
    "hanzi": "司机",
    "english": "driver",
    "fullGloss": "chauffeur; driver",
@@ -3675,9 +4042,10 @@
   {
    "readingKey": "si4ji4",
    "entryId": "ude:bcc41591a7ffbc33",
+   "senseId": "uds:4c23611ea8f11c04f63d",
    "hanzi": "四季",
    "english": "four seasons",
-   "fullGloss": "3",
+   "fullGloss": "four seasons, namely: spring chun1, summer xia4, autumn qiu1 and winter dong1",
    "hskBand": 3,
    "audio": "si4ji4",
    "picture": ""
@@ -3685,6 +4053,7 @@
   {
    "readingKey": "sui1ran2",
    "entryId": "ude:ac4fa5c3edefad15",
+   "senseId": "uds:789375a91ecbcdd45fa9",
    "hanzi": "虽然",
    "english": "although",
    "fullGloss": "although; even though (often used correlatively with ke3 shi4 or dan4 shi4 etc)",
@@ -3695,6 +4064,7 @@
   {
    "readingKey": "suo3yi3",
    "entryId": "ude:82923bef64b8c58e",
+   "senseId": "uds:8c0266e75f6354024726",
    "hanzi": "所以",
    "english": "therefore",
    "fullGloss": "therefore; as a result; so; the reason why",
@@ -3705,6 +4075,7 @@
   {
    "readingKey": "ta1men5",
    "entryId": "ude:d627414cb63f7a86",
+   "senseId": "uds:e073fd2cfae0736a4839",
    "hanzi": "他们",
    "english": "they",
    "fullGloss": "they; them; they; them (females)",
@@ -3715,6 +4086,7 @@
   {
    "readingKey": "tai4yang5",
    "entryId": "ude:d55824a2efa426e5",
+   "senseId": "uds:f6ccb21edae1f77ac78c",
    "hanzi": "太阳",
    "english": "sun",
    "fullGloss": "sun; sunlight; sunshine; temple (on the side of the human head) (abbr. for tai4 yang2 xue2)",
@@ -3725,6 +4097,7 @@
   {
    "readingKey": "te4bie2",
    "entryId": "ude:8147c84a4ddf5365",
+   "senseId": "uds:7d3db2def37fa2609032",
    "hanzi": "特别",
    "english": "especially",
    "fullGloss": "unusual; special; very; especially; particularly; expressly; for a specific purpose; (often followed by shi4) in particular",
@@ -3735,6 +4108,7 @@
   {
    "readingKey": "ti2gao1",
    "entryId": "ude:1c2a88d42ddde393",
+   "senseId": "uds:2402e5f289753143de68",
    "hanzi": "提高",
    "english": "to raise",
    "fullGloss": "to raise; to increase; to improve",
@@ -3745,6 +4119,7 @@
   {
    "readingKey": "ti3yu4",
    "entryId": "ude:25b97c2347dd8c71",
+   "senseId": "uds:6e6bfc64f8ab54de8cbf",
    "hanzi": "体育",
    "english": "PE",
    "fullGloss": "sports; physical education",
@@ -3755,6 +4130,7 @@
   {
    "readingKey": "ti3yu4guan3",
    "entryId": "ude:203ccaa6512fb6b5",
+   "senseId": "uds:577d616a55459bc9e3b2",
    "hanzi": "体育馆",
    "english": "gym",
    "fullGloss": "gym; gymnasium; stadium; CL:ge4",
@@ -3765,9 +4141,10 @@
   {
    "readingKey": "tian1qi4",
    "entryId": "ude:06ab2a8997387899",
+   "senseId": "uds:43755cc014246a389352",
    "hanzi": "天气",
    "english": "weather",
-   "fullGloss": "1",
+   "fullGloss": "weather",
    "hskBand": 1,
    "audio": "tian1qi4",
    "picture": ""
@@ -3775,9 +4152,10 @@
   {
    "readingKey": "tiao4wu3",
    "entryId": "ude:585aeb6623d45cf7",
+   "senseId": "uds:6ce01c4bce69844d8926",
    "hanzi": "跳舞",
    "english": "to dance",
-   "fullGloss": "2",
+   "fullGloss": "to dance",
    "hskBand": 2,
    "audio": "tiao4wu3",
    "picture": ""
@@ -3785,9 +4163,10 @@
   {
    "readingKey": "ting1jian4",
    "entryId": "ude:3fb530c1657cbbc5",
+   "senseId": "uds:436a50c7331b57e623ca",
    "hanzi": "听见",
    "english": "to hear",
-   "fullGloss": "1",
+   "fullGloss": "to hear",
    "hskBand": 1,
    "audio": "ting1jian4",
    "picture": ""
@@ -3795,8 +4174,9 @@
   {
    "readingKey": "ting1shuo1",
    "entryId": "ude:2edbfa6a42e4052b",
+   "senseId": "uds:36334b0814b8e60f1950",
    "hanzi": "听说",
-   "english": "to hear",
+   "english": "to hear about",
    "fullGloss": "to hear (sth said); one hears (that); hearsay; listening and speaking",
    "hskBand": 3,
    "audio": "ting1shuo1",
@@ -3805,6 +4185,7 @@
   {
    "readingKey": "tong2shi4",
    "entryId": "ude:36437a40b9a3d3ca",
+   "senseId": "uds:0604867fe524dac4f53a",
    "hanzi": "同事",
    "english": "colleague",
    "fullGloss": "colleague; co-worker",
@@ -3815,6 +4196,7 @@
   {
    "readingKey": "tong2yi4",
    "entryId": "ude:227f84a858fa77a0",
+   "senseId": "uds:b2081275fbb8a0f3d219",
    "hanzi": "同意",
    "english": "to agree",
    "fullGloss": "to agree; to consent; to approve; synonymous",
@@ -3825,9 +4207,10 @@
   {
    "readingKey": "tou2fa5",
    "entryId": "ude:2a88b4f3f6e316df",
+   "senseId": "uds:f2b919ca057efb774534",
    "hanzi": "头发",
    "english": "hair",
-   "fullGloss": "3",
+   "fullGloss": "hair (on the head)",
    "hskBand": 3,
    "audio": "tou2fa5",
    "picture": ""
@@ -3835,6 +4218,7 @@
   {
    "readingKey": "tu1ran2",
    "entryId": "ude:59290f394256b84a",
+   "senseId": "uds:34b4eaa7dc1371feaea1",
    "hanzi": "突然",
    "english": "sudden",
    "fullGloss": "sudden; abrupt; unexpected",
@@ -3845,6 +4229,7 @@
   {
    "readingKey": "tu2shu1guan3",
    "entryId": "ude:6766e849223da637",
+   "senseId": "uds:e056a4c5ddb045a7860d",
    "hanzi": "图书馆",
    "english": "library",
    "fullGloss": "library; CL:jia1,ge4",
@@ -3855,6 +4240,7 @@
   {
    "readingKey": "wai4bian5",
    "entryId": "ude:eb654d83b3cf554f",
+   "senseId": "uds:b89f73ef792994d2c071",
    "hanzi": "外边",
    "english": "outside",
    "fullGloss": "outside; outer surface; abroad; place other than one's home",
@@ -3865,9 +4251,10 @@
   {
    "readingKey": "wai4guo2",
    "entryId": "ude:d41e9b0f2f1e18bb",
+   "senseId": "uds:14b5f0da8c3fc2477491",
    "hanzi": "外国",
    "english": "foreign country",
-   "fullGloss": "2",
+   "fullGloss": "foreign country",
    "hskBand": 2,
    "audio": "wai4guo2",
    "picture": ""
@@ -3875,6 +4262,7 @@
   {
    "readingKey": "wai4mian4",
    "entryId": "ude:cce2cc2916ccd0ae",
+   "senseId": "uds:197962e4ef45f6998728",
    "hanzi": "外面",
    "english": "outside",
    "fullGloss": "outside (also pr. [wai4 mian5] for this sense); surface; exterior; external appearance",
@@ -3885,6 +4273,7 @@
   {
    "readingKey": "wai4yu3",
    "entryId": "ude:3a2452609e335f42",
+   "senseId": "uds:c7956fd77a106bafa334",
    "hanzi": "外语",
    "english": "foreign language",
    "fullGloss": "foreign language; CL:men2",
@@ -3895,6 +4284,7 @@
   {
    "readingKey": "wan2cheng2",
    "entryId": "ude:9452d1c84deaa53d",
+   "senseId": "uds:7f61df997ad6238ffb4f",
    "hanzi": "完成",
    "english": "to complete",
    "fullGloss": "to complete; to accomplish",
@@ -3905,6 +4295,7 @@
   {
    "readingKey": "wan3dian3",
    "entryId": "ude:00cb9bc65d3291d3",
+   "senseId": "uds:ef38756fb461bb27656c",
    "hanzi": "晚点",
    "english": "late",
    "fullGloss": "(of trains etc) late; delayed; behind schedule; light dinner",
@@ -3915,6 +4306,7 @@
   {
    "readingKey": "wan3fan4",
    "entryId": "ude:247363bb2c473dd2",
+   "senseId": "uds:b502f1007d49dfd1975a",
    "hanzi": "晚饭",
    "english": "evening meal",
    "fullGloss": "evening meal; dinner; supper; CL:fen4,dun4,ci4,can1",
@@ -3925,6 +4317,7 @@
   {
    "readingKey": "wan3hui4",
    "entryId": "ude:ebc2d65f09a95f6d",
+   "senseId": "uds:0affd204cb1b3267112b",
    "hanzi": "晚会",
    "english": "evening party",
    "fullGloss": "evening party; CL:ge4",
@@ -3935,6 +4328,7 @@
   {
    "readingKey": "wan3shang5",
    "entryId": "ude:73a400387251e910",
+   "senseId": "uds:8aef2584b2ca5ca7fee0",
    "hanzi": "晚上",
    "english": "evening",
    "fullGloss": "evening; night; CL:ge4; in the evening",
@@ -3945,6 +4339,7 @@
   {
    "readingKey": "wang3qiu2",
    "entryId": "ude:f031eb189f63c985",
+   "senseId": "uds:34fb2b2811632016ddad",
    "hanzi": "网球",
    "english": "tennis",
    "fullGloss": "tennis; tennis ball; CL:ge4",
@@ -3955,9 +4350,10 @@
   {
    "readingKey": "wang3shang4",
    "entryId": "ude:0d63d7d3ee176927",
+   "senseId": "uds:6f2dbd8c4bc027b0e911",
    "hanzi": "网上",
    "english": "online",
-   "fullGloss": "2",
+   "fullGloss": "online",
    "hskBand": 2,
    "audio": "wang3shang4",
    "picture": ""
@@ -3965,9 +4361,10 @@
   {
    "readingKey": "wang3zhan4",
    "entryId": "ude:4805615dc16cb165",
+   "senseId": "uds:ad00b36eeb41c9967ccc",
    "hanzi": "网站",
    "english": "website",
-   "fullGloss": "3",
+   "fullGloss": "website",
    "hskBand": 3,
    "audio": "wang3zhan4",
    "picture": ""
@@ -3975,6 +4372,7 @@
   {
    "readingKey": "wang4ji4",
    "entryId": "ude:453849a8acf88371",
+   "senseId": "uds:80b9e1858a12ab0dd3a9",
    "hanzi": "忘记",
    "english": "to forget",
    "fullGloss": "to forget; busy season; peak period; see also dan4 ji4",
@@ -3985,6 +4383,7 @@
   {
    "readingKey": "wei4le5",
    "entryId": "ude:976f7bcdcea66ecc",
+   "senseId": "uds:f7348f7160dacd47a12b",
    "hanzi": "为了",
    "english": "for",
    "fullGloss": "for; for the purpose of; in order to",
@@ -3995,6 +4394,7 @@
   {
    "readingKey": "wei4shen2me5",
    "entryId": "ude:6ff412932306ac24",
+   "senseId": "uds:80bfff67bf04d6c5fa34",
    "hanzi": "为什么",
    "english": "why?",
    "fullGloss": "why?; for what reason?",
@@ -4005,6 +4405,7 @@
   {
    "readingKey": "wei4sheng1jian1",
    "entryId": "ude:68f114f92de617b1",
+   "senseId": "uds:ed6a5d493ec7d7eb310f",
    "hanzi": "卫生间",
    "english": "bathroom",
    "fullGloss": "bathroom; toilet; WC; CL:jian1",
@@ -4015,6 +4416,7 @@
   {
    "readingKey": "wen2hua4",
    "entryId": "ude:e1c0be17f6364c94",
+   "senseId": "uds:92b3bd048c179c6c209c",
    "hanzi": "文化",
    "english": "culture",
    "fullGloss": "culture; civilization; cultural; CL:ge4,zhong3",
@@ -4025,6 +4427,7 @@
   {
    "readingKey": "wen4ti2",
    "entryId": "ude:a633a3bf9874f193",
+   "senseId": "uds:400a173605885ce21c8b",
    "hanzi": "问题",
    "english": "question",
    "fullGloss": "question; problem; issue; topic; CL:ge4",
@@ -4035,6 +4438,7 @@
   {
    "readingKey": "wo3men5",
    "entryId": "ude:b85adaad9dcc35e5",
+   "senseId": "uds:8a41f4b16998e4589776",
    "hanzi": "我们",
    "english": "we",
    "fullGloss": "we; us; ourselves; our",
@@ -4045,8 +4449,9 @@
   {
    "readingKey": "wu1zi5",
    "entryId": "ude:97a56e7ac2484d89",
+   "senseId": "uds:5b166f4239eea4263a79",
    "hanzi": "屋子",
-   "english": "house",
+   "english": "room",
    "fullGloss": "house; room; CL:jian1",
    "hskBand": 3,
    "audio": "wu1zi5",
@@ -4055,6 +4460,7 @@
   {
    "readingKey": "wu3fan4",
    "entryId": "ude:65c3c1e5b037170d",
+   "senseId": "uds:82b1b297049e1a10edbd",
    "hanzi": "午饭",
    "english": "lunch",
    "fullGloss": "lunch; CL:fen4,dun4,ci4,can1",
@@ -4065,6 +4471,7 @@
   {
    "readingKey": "xi1bei3",
    "entryId": "ude:6416cdd92a7f4745",
+   "senseId": "uds:3161ea6f5ef2344336b3",
    "hanzi": "西北",
    "english": "Northwest China",
    "fullGloss": "Northwest China (Shaanxi, Gansu, Qinghai, Ningxia, Xinjiang); northwest",
@@ -4075,6 +4482,7 @@
   {
    "readingKey": "xi1fang1",
    "entryId": "ude:06714b12d5a0fb81",
+   "senseId": "uds:fe97d6e5925be5952096",
    "hanzi": "西方",
    "english": "the West",
    "fullGloss": "the West; the Occident; Western countries",
@@ -4085,6 +4493,7 @@
   {
    "readingKey": "xi1gua1",
    "entryId": "ude:7881ceb94ecaa07e",
+   "senseId": "uds:c33850dedecdf0718a08",
    "hanzi": "西瓜",
    "english": "watermelon",
    "fullGloss": "watermelon; CL:ke1",
@@ -4095,9 +4504,10 @@
   {
    "readingKey": "xi1nan2",
    "entryId": "ude:62d93898ce67a029",
+   "senseId": "uds:91fcae4aff82ccba5d62",
    "hanzi": "西南",
    "english": "southwest",
-   "fullGloss": "3",
+   "fullGloss": "southwest",
    "hskBand": 3,
    "audio": "xi1nan2",
    "picture": ""
@@ -4105,6 +4515,7 @@
   {
    "readingKey": "xi1wang4",
    "entryId": "ude:af22d380f32be0b0",
+   "senseId": "uds:36591b75dde0bdac2f38",
    "hanzi": "希望",
    "english": "to hope",
    "fullGloss": "to hope; a hope; a wish",
@@ -4115,6 +4526,7 @@
   {
    "readingKey": "xi2guan4",
    "entryId": "ude:48a383ca0c1be8b1",
+   "senseId": "uds:8aeb6e0e280510aad08a",
    "hanzi": "习惯",
    "english": "habit",
    "fullGloss": "habit; custom; usual practice; to be used to; CL:ge4",
@@ -4125,8 +4537,9 @@
   {
    "readingKey": "xi3ai4",
    "entryId": "ude:3f5db72613b6e4eb",
+   "senseId": "uds:08f08fc520652d93a286",
    "hanzi": "喜爱",
-   "english": "to like",
+   "english": "to love",
    "fullGloss": "to like; to love; to be fond of; favorite",
    "hskBand": 3,
    "audio": "xi3ai4",
@@ -4135,6 +4548,7 @@
   {
    "readingKey": "xi3huan5",
    "entryId": "ude:a18f1ba347ae0d29",
+   "senseId": "uds:8e0c99ff68594e8cedf4",
    "hanzi": "喜欢",
    "english": "to like",
    "fullGloss": "to like; to be fond of",
@@ -4145,6 +4559,7 @@
   {
    "readingKey": "xi3shou3jian1",
    "entryId": "ude:e525b173fa55a4a4",
+   "senseId": "uds:7fb3e940b5f4949ac42c",
    "hanzi": "洗手间",
    "english": "toilet",
    "fullGloss": "toilet; lavatory; washroom",
@@ -4155,6 +4570,7 @@
   {
    "readingKey": "xi3yi1ji1",
    "entryId": "ude:870d2085cd036da0",
+   "senseId": "uds:6f1bbdfc6d8ee51cc62c",
    "hanzi": "洗衣机",
    "english": "washing machine",
    "fullGloss": "washing machine; washer; CL:tai2",
@@ -4165,6 +4581,7 @@
   {
    "readingKey": "xi3zao3",
    "entryId": "ude:be7c26ac5b43b513",
+   "senseId": "uds:e7c190c929cb7b36a28c",
    "hanzi": "洗澡",
    "english": "to bathe",
    "fullGloss": "to bathe; to take a shower",
@@ -4175,6 +4592,7 @@
   {
    "readingKey": "xia4ban1",
    "entryId": "ude:dfcd60cf978d7d73",
+   "senseId": "uds:f0739df5e4f16154e80c",
    "hanzi": "下班",
    "english": "to finish work",
    "fullGloss": "to finish work; to get off work; next service (train, bus etc)",
@@ -4185,6 +4603,7 @@
   {
    "readingKey": "xia4ke4",
    "entryId": "ude:5740739d7b656ac0",
+   "senseId": "uds:9c07d713f5888371a1df",
    "hanzi": "下课",
    "english": "to finish class",
    "fullGloss": "to finish class; to get out of class; (fig.) (esp. of a sports coach) to be dismissed; to be fired",
@@ -4195,6 +4614,7 @@
   {
    "readingKey": "xia4lai5",
    "entryId": "ude:d1f0d8c72777c880",
+   "senseId": "uds:451c4ec0ae77c0c7ff55",
    "hanzi": "下来",
    "english": "to come down",
    "fullGloss": "to come down; (completed action marker); (after verb of motion, indicates motion down and towards us, also fig.); (indicates continuation from the past towards us); to be harvested (of crops); to be over (of a period of time); to go among the masses (said of leaders)",
@@ -4205,6 +4625,7 @@
   {
    "readingKey": "xia4mian4",
    "entryId": "ude:80594bbd6ea8c85d",
+   "senseId": "uds:8288048e070f334f52e1",
    "hanzi": "下面",
    "english": "below",
    "fullGloss": "below; under; next; the following; also pr. [xia4 mian5]; to boil noodles",
@@ -4215,6 +4636,7 @@
   {
    "readingKey": "xia4qu4",
    "entryId": "ude:d7ae6417d6544bc3",
+   "senseId": "uds:f1cb666ea56fdecacea6",
    "hanzi": "下去",
    "english": "to go down",
    "fullGloss": "to go down; to descend; to go on; to continue; (of a servant) to withdraw",
@@ -4225,6 +4647,7 @@
   {
    "readingKey": "xia4tian1",
    "entryId": "ude:8c1320567badec03",
+   "senseId": "uds:f47d3083a993fb9f0d61",
    "hanzi": "夏天",
    "english": "summer",
    "fullGloss": "summer; CL:ge4",
@@ -4235,6 +4658,7 @@
   {
    "readingKey": "xia4wu3",
    "entryId": "ude:971c11ee4c8ae344",
+   "senseId": "uds:6b0b42b0d34b58913d5c",
    "hanzi": "下午",
    "english": "afternoon",
    "fullGloss": "afternoon; CL:ge4; p.m.",
@@ -4245,6 +4669,7 @@
   {
    "readingKey": "xia4yu3",
    "entryId": "ude:c0abdd14cb0274f5",
+   "senseId": "uds:ed1dedc3b4e23bf733bc",
    "hanzi": "下雨",
    "english": "to rain",
    "fullGloss": "to rain; see Da4 Yu3",
@@ -4255,6 +4680,7 @@
   {
    "readingKey": "xian1sheng5",
    "entryId": "ude:948b4063598e9add",
+   "senseId": "uds:b301afeb9fb57c18e976",
    "hanzi": "先生",
    "english": "Mr.",
    "fullGloss": "teacher; gentleman; sir; mister (Mr.); husband; (dialect) doctor; CL:wei4",
@@ -4265,6 +4691,7 @@
   {
    "readingKey": "xian4zai4",
    "entryId": "ude:d2ddbefee0d72fce",
+   "senseId": "uds:42f4af873bf2c5e4c740",
    "hanzi": "现在",
    "english": "now",
    "fullGloss": "now; at present; currently",
@@ -4275,6 +4702,7 @@
   {
    "readingKey": "xiang1jiao1",
    "entryId": "ude:ed1fb30a8cbce0be",
+   "senseId": "uds:61f0ad6488af9535cda8",
    "hanzi": "香蕉",
    "english": "banana",
    "fullGloss": "banana; CL:gen1,ba3; (of roads, lines etc) to intersect; (of people) to associate with one another; to become friends; (HK) rural area on the outskirts of a town or city; rural-urban fringe",
@@ -4285,6 +4713,7 @@
   {
    "readingKey": "xiang1xin4",
    "entryId": "ude:a4036c97000fd7f0",
+   "senseId": "uds:29ab3bcb999b75dfd6b8",
    "hanzi": "相信",
    "english": "to believe",
    "fullGloss": "to believe; to be convinced; to accept as true",
@@ -4295,6 +4724,7 @@
   {
    "readingKey": "xiang1zi5",
    "entryId": "ude:7a9f173bcebaf8d3",
+   "senseId": "uds:114833330dc022948396",
    "hanzi": "箱子",
    "english": "suitcase",
    "fullGloss": "suitcase; chest; box; case; trunk; CL:zhi1,ge4",
@@ -4305,6 +4735,7 @@
   {
    "readingKey": "xiang4ji1",
    "entryId": "ude:e2c481b6a7d021de",
+   "senseId": "uds:100d0affb2040cec1084",
    "hanzi": "相机",
    "english": "camera",
    "fullGloss": "camera (abbr. for zhao4 xiang4 ji1); at the opportune moment; as the circumstances allow",
@@ -4315,8 +4746,9 @@
   {
    "readingKey": "xiao3peng2you3",
    "entryId": "ude:e8c205c8c403ad77",
+   "senseId": "uds:f48c9e7eed8b16b44e45",
    "hanzi": "小朋友",
-   "english": "child",
+   "english": "kid",
    "fullGloss": "child; kid (used to refer to a child, or by an adult to address a child, or, in Taiwan, to refer to sb's own child)",
    "hskBand": 1,
    "audio": "xiao3peng2you3",
@@ -4325,6 +4757,7 @@
   {
    "readingKey": "xiao3qu1",
    "entryId": "ude:a11ef3fbf700d14b",
+   "senseId": "uds:f5a4f530080aebc87f09",
    "hanzi": "小区",
    "english": "housing estate",
    "fullGloss": "housing estate; community; neighborhood; (telecommunications) cell",
@@ -4335,6 +4768,7 @@
   {
    "readingKey": "xiao3shi2",
    "entryId": "ude:e85f89b67a3df8fe",
+   "senseId": "uds:e93ef66c78cc31b62653",
    "hanzi": "小时",
    "english": "hour",
    "fullGloss": "hour; CL:ge4; snack; nibbles",
@@ -4345,9 +4779,10 @@
   {
    "readingKey": "xiao3shi2hou5",
    "entryId": "ude:89a6afde5445f9b5",
+   "senseId": "uds:28bd0408f7a2afc4817b",
    "hanzi": "小时候",
    "english": "in one's childhood",
-   "fullGloss": "2",
+   "fullGloss": "in one's childhood",
    "hskBand": 2,
    "audio": "xiao3shi2hou5",
    "picture": ""
@@ -4355,6 +4790,7 @@
   {
    "readingKey": "xiao3xin1",
    "entryId": "ude:a304f2ddc40e8fe2",
+   "senseId": "uds:ed390208713cb143d709",
    "hanzi": "小心",
    "english": "to be careful",
    "fullGloss": "to be careful; to take care",
@@ -4365,6 +4801,7 @@
   {
    "readingKey": "xiao3xue2",
    "entryId": "ude:f2ca0638c5274dec",
+   "senseId": "uds:30660061cc62ec1d5f30",
    "hanzi": "小学",
    "english": "elementary school",
    "fullGloss": "elementary school; primary school",
@@ -4375,6 +4812,7 @@
   {
    "readingKey": "xiao3xue2sheng1",
    "entryId": "ude:8cceb1cdf046a5bd",
+   "senseId": "uds:6eeed17f015b3ed886d6",
    "hanzi": "小学生",
    "english": "primary school student",
    "fullGloss": "primary school student; schoolchild; CL:ge4,ming2; (fig.) beginner",
@@ -4385,9 +4823,10 @@
   {
    "readingKey": "xiao4yuan2",
    "entryId": "ude:f639d31a4581398f",
+   "senseId": "uds:d1a7d5b2bd336324be02",
    "hanzi": "校园",
    "english": "campus",
-   "fullGloss": "3",
+   "fullGloss": "campus",
    "hskBand": 3,
    "audio": "xiao4yuan2",
    "picture": ""
@@ -4395,6 +4834,7 @@
   {
    "readingKey": "xiao4zhang3",
    "entryId": "ude:48c99779090f8f75",
+   "senseId": "uds:63e8834f94f8332a90c7",
    "hanzi": "校长",
    "english": "head teacher",
    "fullGloss": "(college, university) president; headmaster; CL:ge4,wei4,ming2",
@@ -4405,6 +4845,7 @@
   {
    "readingKey": "xie4xie5",
    "entryId": "ude:54fcab895c75ff4e",
+   "senseId": "uds:fae81c67c7997bfdc0dc",
    "hanzi": "谢谢",
    "english": "to thank",
    "fullGloss": "to thank; thanks; thank you",
@@ -4415,6 +4856,7 @@
   {
    "readingKey": "xin1nian2",
    "entryId": "ude:407b72384c89f34a",
+   "senseId": "uds:008a6ee64a8b9b394cc6",
    "hanzi": "新年",
    "english": "New Year",
    "fullGloss": "New Year; CL:ge4",
@@ -4425,6 +4867,7 @@
   {
    "readingKey": "xin1wen2",
    "entryId": "ude:079350dda02c0b12",
+   "senseId": "uds:438538cff43569ea1d34",
    "hanzi": "新闻",
    "english": "news",
    "fullGloss": "news; CL:tiao2",
@@ -4435,6 +4878,7 @@
   {
    "readingKey": "xin1xian1",
    "entryId": "ude:cb07a52a6cb11cd0",
+   "senseId": "uds:3e2452c6739c25169d97",
    "hanzi": "新鲜",
    "english": "fresh",
    "fullGloss": "fresh (experience, food etc); freshness; novel; uncommon",
@@ -4445,9 +4889,10 @@
   {
    "readingKey": "xin4yong4ka3",
    "entryId": "ude:fe8696c8a38a3cd6",
+   "senseId": "uds:fb66a3a5d487436652dd",
    "hanzi": "信用卡",
    "english": "credit card",
-   "fullGloss": "3",
+   "fullGloss": "credit card",
    "hskBand": 3,
    "audio": "xin4yong4ka3",
    "picture": ""
@@ -4455,6 +4900,7 @@
   {
    "readingKey": "xing1qi1",
    "entryId": "ude:c3448d8596a20599",
+   "senseId": "uds:d5f8e3aa96d70c4a736c",
    "hanzi": "星期",
    "english": "week",
    "fullGloss": "week; CL:ge4; day of the week; Sunday",
@@ -4465,9 +4911,10 @@
   {
    "readingKey": "xing1qi1ri4",
    "entryId": "ude:4f78898a958c563a",
+   "senseId": "uds:a9fd72f9d0bff89954a3",
    "hanzi": "星期日",
    "english": "Sunday",
-   "fullGloss": "1",
+   "fullGloss": "Sunday",
    "hskBand": 1,
    "audio": "xing1qi1ri4",
    "picture": ""
@@ -4475,9 +4922,10 @@
   {
    "readingKey": "xing1qi1tian1",
    "entryId": "ude:600a9e8fdfdb9703",
+   "senseId": "uds:1374a948eaa1a3b9b74d",
    "hanzi": "星期天",
    "english": "Sunday",
-   "fullGloss": "1",
+   "fullGloss": "Sunday",
    "hskBand": 1,
    "audio": "xing1qi1tian1",
    "picture": ""
@@ -4485,6 +4933,7 @@
   {
    "readingKey": "xing2li5",
    "entryId": "ude:d9a97ff3b3f844d6",
+   "senseId": "uds:1bfb531ecef5e99ed7e1",
    "hanzi": "行李",
    "english": "luggage",
    "fullGloss": "luggage; CL:jian4",
@@ -4495,6 +4944,7 @@
   {
    "readingKey": "xing4qu4",
    "entryId": "ude:6d2019c9d781bee5",
+   "senseId": "uds:9f17a6fa56977e7d2f27",
    "hanzi": "兴趣",
    "english": "interest",
    "fullGloss": "interest (desire to know about sth); interest (thing in which one is interested); hobby",
@@ -4505,6 +4955,7 @@
   {
    "readingKey": "xiu1xi5",
    "entryId": "ude:af4b0290d1e816b5",
+   "senseId": "uds:ba3895b1109452cb67f3",
    "hanzi": "休息",
    "english": "rest",
    "fullGloss": "rest; to rest",
@@ -4515,6 +4966,7 @@
   {
    "readingKey": "xu1yao4",
    "entryId": "ude:8416643c2a72ae81",
+   "senseId": "uds:ae2d7a8aaa165950578d",
    "hanzi": "需要",
    "english": "to need",
    "fullGloss": "to need; to want; to demand; to require; needs; must; have to",
@@ -4525,6 +4977,7 @@
   {
    "readingKey": "xuan3ze2",
    "entryId": "ude:a7f7fcd17ada3345",
+   "senseId": "uds:c29b0849a02886ee3542",
    "hanzi": "选择",
    "english": "to select",
    "fullGloss": "to select; to pick; choice; option; alternative",
@@ -4535,6 +4988,7 @@
   {
    "readingKey": "xue2qi1",
    "entryId": "ude:63307b4089e73a11",
+   "senseId": "uds:aa1faec0bfc677c19d47",
    "hanzi": "学期",
    "english": "term",
    "fullGloss": "term; semester; CL:ge4",
@@ -4545,6 +4999,7 @@
   {
    "readingKey": "xue2sheng5",
    "entryId": "ude:f7d0f198c10de2fd",
+   "senseId": "uds:09c934f4658908a6bd8d",
    "hanzi": "学生",
    "english": "student",
    "fullGloss": "student; schoolchild",
@@ -4555,6 +5010,7 @@
   {
    "readingKey": "xue2xi2",
    "entryId": "ude:396a79e427cfb1be",
+   "senseId": "uds:2048af771faa01c4fc5c",
    "hanzi": "学习",
    "english": "to learn",
    "fullGloss": "to learn; to study",
@@ -4565,6 +5021,7 @@
   {
    "readingKey": "xue2xiao4",
    "entryId": "ude:a7254c1370aa9d16",
+   "senseId": "uds:214308842dbe4463eb9e",
    "hanzi": "学校",
    "english": "school",
    "fullGloss": "school; CL:suo3",
@@ -4575,6 +5032,7 @@
   {
    "readingKey": "ya2shua1",
    "entryId": "ude:2766882318dbfb5d",
+   "senseId": "uds:40e6f0c904422c89207c",
    "hanzi": "牙刷",
    "english": "toothbrush",
    "fullGloss": "toothbrush; CL:ba3",
@@ -4585,6 +5043,7 @@
   {
    "readingKey": "yan2se4",
    "entryId": "ude:a73f5a1f09067863",
+   "senseId": "uds:e74ff4d4a65c93c5fa34",
    "hanzi": "颜色",
    "english": "color",
    "fullGloss": "color; countenance; appearance; facial expression; pigment; dyestuff",
@@ -4595,6 +5054,7 @@
   {
    "readingKey": "yan3jing5",
    "entryId": "ude:75db0b78073463c9",
+   "senseId": "uds:4027478c0304b95dae56",
    "hanzi": "眼睛",
    "english": "eye",
    "fullGloss": "eye; CL:zhi1,shuang1",
@@ -4605,6 +5065,7 @@
   {
    "readingKey": "yao1qiu2",
    "entryId": "ude:107015083fba3b39",
+   "senseId": "uds:ad0f2c68cf8e3bd84f8e",
    "hanzi": "要求",
    "english": "to request",
    "fullGloss": "to request; to require; requirement; to stake a claim; to ask; to demand; CL:dian3",
@@ -4615,6 +5076,7 @@
   {
    "readingKey": "yao4dian4",
    "entryId": "ude:42b1718c43c8501c",
+   "senseId": "uds:56f255a727810c06938e",
    "hanzi": "药店",
    "english": "pharmacy",
    "fullGloss": "pharmacy; drugstore",
@@ -4625,6 +5087,7 @@
   {
    "readingKey": "ye2ye5",
    "entryId": "ude:631616f985c8037f",
+   "senseId": "uds:3b614d64b3a6e6a1f6fa",
    "hanzi": "爷爷",
    "english": "paternal grandfather",
    "fullGloss": "(coll.) paternal grandfather; grandpa",
@@ -4635,6 +5098,7 @@
   {
    "readingKey": "yi1ban1",
    "entryId": "ude:85a771402a832ef2",
+   "senseId": "uds:8cf3efd6a3ae36f712af",
    "hanzi": "一般",
    "english": "ordinary",
    "fullGloss": "same; ordinary; so-so; common; general; generally; in general; lit. one spot (on the leopard); fig. one small item in a big scheme",
@@ -4645,9 +5109,10 @@
   {
    "readingKey": "yi1ban4",
    "entryId": "ude:36d83f4cd3574245",
+   "senseId": "uds:7af702d31b4b17cbb75a",
    "hanzi": "一半",
    "english": "half",
-   "fullGloss": "1",
+   "fullGloss": "half",
    "hskBand": 1,
    "audio": "yi1ban4",
    "picture": ""
@@ -4655,6 +5120,7 @@
   {
    "readingKey": "yi1bian1",
    "entryId": "ude:5fde2e138c00c20e",
+   "senseId": "uds:51cc74439f6ede5e1d5d",
    "hanzi": "一边",
    "english": "one side",
    "fullGloss": "one side; either side; on the one hand; on the other hand; doing while",
@@ -4665,6 +5131,7 @@
   {
    "readingKey": "yi1ding4",
    "entryId": "ude:67e5e2e6e8d41989",
+   "senseId": "uds:4eafe81b26a6eb835239",
    "hanzi": "一定",
    "english": "surely",
    "fullGloss": "surely; certainly; definitely; fixed; settled; a certain...; a given...",
@@ -4675,6 +5142,7 @@
   {
    "readingKey": "yi1fu5",
    "entryId": "ude:d4094c68d1a45868",
+   "senseId": "uds:067e22334b908280cfd5",
    "hanzi": "衣服",
    "english": "clothes",
    "fullGloss": "clothes; CL:jian4,tao4",
@@ -4685,6 +5153,7 @@
   {
    "readingKey": "yi1gong4",
    "entryId": "ude:56e4d2670799aaf2",
+   "senseId": "uds:fd4e0acb02023bfc86cb",
    "hanzi": "一共",
    "english": "in total",
    "fullGloss": "in total; altogether",
@@ -4695,6 +5164,7 @@
   {
    "readingKey": "yi1qi3",
    "entryId": "ude:bc996d011c0b93b9",
+   "senseId": "uds:fa95f375517477248ee2",
    "hanzi": "一起",
    "english": "together",
    "fullGloss": "(in) the same place; together; in company (with); altogether; in total; an instance of; a case of (murder, accident, dispute etc)",
@@ -4705,6 +5175,7 @@
   {
    "readingKey": "yi1xia4",
    "entryId": "ude:e4c0c59ca126f91a",
+   "senseId": "uds:d89232e3c6f8e7d265d6",
    "hanzi": "一下",
    "english": "a bit",
    "fullGloss": "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try); all at once; suddenly",
@@ -4715,6 +5186,7 @@
   {
    "readingKey": "yi1xie1",
    "entryId": "ude:6cbba979654f5802",
+   "senseId": "uds:b9cb26a43bb03e6e7d3c",
    "hanzi": "一些",
    "english": "some",
    "fullGloss": "some; a few; a little; (following an adjective) slightly...er",
@@ -4725,6 +5197,7 @@
   {
    "readingKey": "yi1yang4",
    "entryId": "ude:4d54ad749b9b3b57",
+   "senseId": "uds:347e2d1e933b1b33fe97",
    "hanzi": "一样",
    "english": "same",
    "fullGloss": "same; like; equal to; the same as; just like",
@@ -4735,6 +5208,7 @@
   {
    "readingKey": "yi1yuan4",
    "entryId": "ude:c4215f2e2b449aa5",
+   "senseId": "uds:7ae7fe69b4b6159fe1d9",
    "hanzi": "医院",
    "english": "hospital",
    "fullGloss": "hospital; CL:suo3,jia1,zuo4",
@@ -4745,6 +5219,7 @@
   {
    "readingKey": "yi3hou4",
    "entryId": "ude:e7005f3880df2629",
+   "senseId": "uds:aa2303955ad14c91e536",
    "hanzi": "以后",
    "english": "after",
    "fullGloss": "after; later; afterwards; following; later on; in the future; queen ant",
@@ -4755,9 +5230,10 @@
   {
    "readingKey": "yi3jing1",
    "entryId": "ude:aec458fbd279a725",
+   "senseId": "uds:583431a037ea2eb23f35",
    "hanzi": "已经",
    "english": "already",
-   "fullGloss": "2",
+   "fullGloss": "already",
    "hskBand": 2,
    "audio": "yi3jing1",
    "picture": ""
@@ -4765,6 +5241,7 @@
   {
    "readingKey": "yi3qian2",
    "entryId": "ude:2f7d8416e4b891fe",
+   "senseId": "uds:78a6875f8012b5ea67e6",
    "hanzi": "以前",
    "english": "before",
    "fullGloss": "before; formerly; previous; ago",
@@ -4775,6 +5252,7 @@
   {
    "readingKey": "yi3wai4",
    "entryId": "ude:c987c7280c6e3e28",
+   "senseId": "uds:e2ccba8bcbc68b9335f9",
    "hanzi": "以外",
    "english": "apart from",
    "fullGloss": "apart from; other than; except for; external; outside of; on the other side of; beyond",
@@ -4785,6 +5263,7 @@
   {
    "readingKey": "yi3wei2",
    "entryId": "ude:35e60913a3f1d0c8",
+   "senseId": "uds:c16173398948716b38b8",
    "hanzi": "以为",
    "english": "to wrongly think",
    "fullGloss": "to think; to believe (often with the implication that the belief is mistaken – unless referring to one's own current belief)",
@@ -4795,6 +5274,7 @@
   {
    "readingKey": "yi3zi5",
    "entryId": "ude:a031299815d35bda",
+   "senseId": "uds:f187fbd5d96212f794f6",
    "hanzi": "椅子",
    "english": "chair",
    "fullGloss": "chair; CL:ba3,zhang1",
@@ -4805,6 +5285,7 @@
   {
    "readingKey": "yi4si5",
    "entryId": "ude:212066bb996ffd73",
+   "senseId": "uds:34f206419cb99058534c",
    "hanzi": "意思",
    "english": "meaning",
    "fullGloss": "idea; opinion; meaning; wish; desire; interest; fun; token of appreciation, affection etc; CL:ge4; to give as a small token; to do sth as a gesture of goodwill etc",
@@ -4815,6 +5296,7 @@
   {
    "readingKey": "yin1wei4",
    "entryId": "ude:67132c167edac290",
+   "senseId": "uds:130023c3eef2c356dc3f",
    "hanzi": "因为",
    "english": "because",
    "fullGloss": "because; owing to; on account of; phoneme",
@@ -4825,6 +5307,7 @@
   {
    "readingKey": "yin1yue4",
    "entryId": "ude:3f579fa16f7fec79",
+   "senseId": "uds:51cb616197a44d17f3ad",
    "hanzi": "音乐",
    "english": "music",
    "fullGloss": "music; CL:zhang1,qu3,duan4",
@@ -4835,6 +5318,7 @@
   {
    "readingKey": "yin2hang2",
    "entryId": "ude:ce4dd18bd35ef8a8",
+   "senseId": "uds:0534b3076ede0fae3499",
    "hanzi": "银行",
    "english": "bank",
    "fullGloss": "bank; CL:jia1,ge4",
@@ -4845,9 +5329,10 @@
   {
    "readingKey": "yin2hang2ka3",
    "entryId": "ude:5f01ca504c8f3446",
+   "senseId": "uds:fd6cd0f24a101b744c9d",
    "hanzi": "银行卡",
    "english": "bank card",
-   "fullGloss": "3",
+   "fullGloss": "bank card",
    "hskBand": 3,
    "audio": "yin2hang2ka3",
    "picture": ""
@@ -4855,6 +5340,7 @@
   {
    "readingKey": "ying1gai1",
    "entryId": "ude:c217ba16d4f849f5",
+   "senseId": "uds:dd32f33464b055d74dea",
    "hanzi": "应该",
    "english": "ought to",
    "fullGloss": "ought to; should; must",
@@ -4865,6 +5351,7 @@
   {
    "readingKey": "ying3xiang3",
    "entryId": "ude:949eca4cd7f81ad8",
+   "senseId": "uds:c7037ec00aebc88a961c",
    "hanzi": "影响",
    "english": "influence",
    "fullGloss": "influence; effect; to influence; to affect (usually adversely); to disturb; CL:gu3",
@@ -4875,6 +5362,7 @@
   {
    "readingKey": "you2jian4",
    "entryId": "ude:7df5677c757d4a23",
+   "senseId": "uds:7e4426cec3aee2a87892",
    "hanzi": "邮件",
    "english": "mail",
    "fullGloss": "mail; post; email",
@@ -4885,6 +5373,7 @@
   {
    "readingKey": "you2ke4",
    "entryId": "ude:a72b34a4748845c6",
+   "senseId": "uds:f4e520b52b41a18a9870",
    "hanzi": "游客",
    "english": "traveler",
    "fullGloss": "traveler; tourist; (online gaming) guest player",
@@ -4895,6 +5384,7 @@
   {
    "readingKey": "you2xi4",
    "entryId": "ude:1ba647bdc78fba46",
+   "senseId": "uds:6e22bfd4e4e8ed2916e8",
    "hanzi": "游戏",
    "english": "game",
    "fullGloss": "game (CL:chang3); to play",
@@ -4905,6 +5395,7 @@
   {
    "readingKey": "you2xiang1",
    "entryId": "ude:6d6ca21209951524",
+   "senseId": "uds:d2b67546bee5037cf9ba",
    "hanzi": "邮箱",
    "english": "mailbox",
    "fullGloss": "mailbox; post office box; email; email inbox; fuel tank",
@@ -4915,6 +5406,7 @@
   {
    "readingKey": "you2yong3",
    "entryId": "ude:32db90562b2daea4",
+   "senseId": "uds:b884f3fa274819a3ab25",
    "hanzi": "游泳",
    "english": "to swim",
    "fullGloss": "swimming; to swim",
@@ -4925,6 +5417,7 @@
   {
    "readingKey": "you3de5",
    "entryId": "ude:c4871fc6b8146a8c",
+   "senseId": "uds:8002d7f464ca9ef939a4",
    "hanzi": "有的",
    "english": "some",
    "fullGloss": "(there are) some (who are...); some (exist)",
@@ -4935,6 +5428,7 @@
   {
    "readingKey": "you3ming2",
    "entryId": "ude:56f188fddd4122e2",
+   "senseId": "uds:518e578f40e3eb3da73e",
    "hanzi": "有名",
    "english": "famous",
    "fullGloss": "famous; well-known",
@@ -4945,6 +5439,7 @@
   {
    "readingKey": "you3shi2",
    "entryId": "ude:449ffb171a973e32",
+   "senseId": "uds:33fef5e46111b058591f",
    "hanzi": "有时",
    "english": "sometimes",
    "fullGloss": "sometimes; now and then; 5-7 pm (in the system of two-hour subdivisions used in former times)",
@@ -4955,6 +5450,7 @@
   {
    "readingKey": "you3xie1",
    "entryId": "ude:4b8d66a98c2e8ed3",
+   "senseId": "uds:39abb5a7e0977b2377ba",
    "hanzi": "有些",
    "english": "some",
    "fullGloss": "some; somewhat; rather; a bit",
@@ -4965,6 +5461,7 @@
   {
    "readingKey": "you3yi4si5",
    "entryId": "ude:b494d7a048fba5f5",
+   "senseId": "uds:6edf024fca926725d722",
    "hanzi": "有意思",
    "english": "interesting",
    "fullGloss": "interesting; meaningful; enjoyable; fun",
@@ -4975,9 +5472,10 @@
   {
    "readingKey": "you3yong4",
    "entryId": "ude:4b41fc2578d14a0f",
+   "senseId": "uds:1e7f931888e2a97fb286",
    "hanzi": "有用",
    "english": "useful",
-   "fullGloss": "3",
+   "fullGloss": "useful",
    "hskBand": 3,
    "audio": "you3yong4",
    "picture": ""
@@ -4985,6 +5483,7 @@
   {
    "readingKey": "you4bian5",
    "entryId": "ude:539d784377312a47",
+   "senseId": "uds:244394709ea6939cb091",
    "hanzi": "右边",
    "english": "right side",
    "fullGloss": "right side; right, to the right",
@@ -4995,6 +5494,7 @@
   {
    "readingKey": "yu3mao2qiu2",
    "entryId": "ude:701cb47b3805e4aa",
+   "senseId": "uds:bfa20aeaf675d38b65f8",
    "hanzi": "羽毛球",
    "english": "badminton",
    "fullGloss": "badminton; shuttlecock",
@@ -5005,6 +5505,7 @@
   {
    "readingKey": "yu3yan2",
    "entryId": "ude:9ba33a03c4a0c71b",
+   "senseId": "uds:8a0b00f2752541dd2c0a",
    "hanzi": "语言",
    "english": "language",
    "fullGloss": "language; CL:men2,zhong3",
@@ -5015,6 +5516,7 @@
   {
    "readingKey": "yu3yi1",
    "entryId": "ude:d420a8f7f5eafb4e",
+   "senseId": "uds:7a17c3d51be966e80efb",
    "hanzi": "雨衣",
    "english": "raincoat",
    "fullGloss": "raincoat; CL:jian4",
@@ -5025,8 +5527,9 @@
   {
    "readingKey": "yu4dao4",
    "entryId": "ude:2e2087ae0b3eb23f",
+   "senseId": "uds:85f406ac08ed0d030f19",
    "hanzi": "遇到",
-   "english": "to meet",
+   "english": "to come across",
    "fullGloss": "to meet; to run into; to come across",
    "hskBand": 3,
    "audio": "yu4dao4",
@@ -5035,8 +5538,9 @@
   {
    "readingKey": "yu4jian4",
    "entryId": "ude:4302c92ef5026fde",
+   "senseId": "uds:892d4d5df907903dac2d",
    "hanzi": "遇见",
-   "english": "to meet",
+   "english": "to run into",
    "fullGloss": "to meet; to foresee; to predict; to forecast; to envision; foresight; intuition; vision",
    "hskBand": 3,
    "audio": "yu4jian4",
@@ -5045,6 +5549,7 @@
   {
    "readingKey": "yuan4yi4",
    "entryId": "ude:f44206614e201d6f",
+   "senseId": "uds:e4a71c1b78b8a64209a9",
    "hanzi": "愿意",
    "english": "to wish",
    "fullGloss": "to wish; to want; ready; willing (to do sth); to resent; to regret; grudge",
@@ -5055,9 +5560,10 @@
   {
    "readingKey": "yue4liang5",
    "entryId": "ude:d4a98d5176e45805",
+   "senseId": "uds:57cff827b1a4a8b59b0c",
    "hanzi": "月亮",
    "english": "moon",
-   "fullGloss": "3",
+   "fullGloss": "the moon",
    "hskBand": 3,
    "audio": "yue4liang5",
    "picture": ""
@@ -5065,6 +5571,7 @@
   {
    "readingKey": "yun4dong4",
    "entryId": "ude:f6ec634296fb218a",
+   "senseId": "uds:96854f6ea416f67c731e",
    "hanzi": "运动",
    "english": "sport",
    "fullGloss": "to move; to exercise; sports; exercise; motion; movement; campaign; CL:chang3",
@@ -5075,6 +5582,7 @@
   {
    "readingKey": "yun4dong4hui4",
    "entryId": "ude:ec02f7516bd6f65b",
+   "senseId": "uds:cadf47154db8063869dc",
    "hanzi": "运动会",
    "english": "sports competition",
    "fullGloss": "sports competition; CL:ge4",
@@ -5085,6 +5593,7 @@
   {
    "readingKey": "yun4dong4yuan2",
    "entryId": "ude:b900ee769f05f6ed",
+   "senseId": "uds:6ae3ecf7e6bdb397961b",
    "hanzi": "运动员",
    "english": "athlete",
    "fullGloss": "athlete; CL:ming2,ge4",
@@ -5095,6 +5604,7 @@
   {
    "readingKey": "zai4jian4",
    "entryId": "ude:c1f5856950148ca7",
+   "senseId": "uds:c9dd4d9e6ea91961733e",
    "hanzi": "再见",
    "english": "goodbye",
    "fullGloss": "goodbye; see you again later; to reconstruct; to build another; under construction",
@@ -5105,6 +5615,7 @@
   {
    "readingKey": "zao3fan4",
    "entryId": "ude:31b904a5065f578c",
+   "senseId": "uds:5279dd7e564455001732",
    "hanzi": "早饭",
    "english": "breakfast",
    "fullGloss": "breakfast; CL:fen4,dun4,ci4,can1",
@@ -5115,6 +5626,7 @@
   {
    "readingKey": "zao3shang5",
    "entryId": "ude:70e8555865ac0bc0",
+   "senseId": "uds:4441d6f64740a0c82dff",
    "hanzi": "早上",
    "english": "early morning",
    "fullGloss": "early morning; CL:ge4",
@@ -5125,6 +5637,7 @@
   {
    "readingKey": "zen3me5",
    "entryId": "ude:37578974e9c0e2fe",
+   "senseId": "uds:5e7ac9f8606599ff3e63",
    "hanzi": "怎么",
    "english": "how?",
    "fullGloss": "how?; what?; why?; variant of zen3 me5",
@@ -5135,6 +5648,7 @@
   {
    "readingKey": "zen3me5yang4",
    "entryId": "ude:0fb74ee199937ec0",
+   "senseId": "uds:7d7589747a0359633fcc",
    "hanzi": "怎么样",
    "english": "how about",
    "fullGloss": "how?; how about?; how was it?; how are things?",
@@ -5145,6 +5659,7 @@
   {
    "readingKey": "zen3yang4",
    "entryId": "ude:8ef18425cb380e5c",
+   "senseId": "uds:37373d69a51c37b9e222",
    "hanzi": "怎样",
    "english": "in what way",
    "fullGloss": "how; what kind",
@@ -5155,9 +5670,10 @@
   {
    "readingKey": "zhang4fu5",
    "entryId": "ude:77d256bbc81d10b5",
+   "senseId": "uds:2fcc4c5c3783cc10d234",
    "hanzi": "丈夫",
    "english": "husband",
-   "fullGloss": "2",
+   "fullGloss": "husband",
    "hskBand": 2,
    "audio": "zhang4fu5",
    "picture": ""
@@ -5165,6 +5681,7 @@
   {
    "readingKey": "zhao2ji2",
    "entryId": "ude:4cddc0dc7377ba8d",
+   "senseId": "uds:f165d4416f0bede4ca17",
    "hanzi": "着急",
    "english": "to worry",
    "fullGloss": "to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhao1ji2]",
@@ -5175,6 +5692,7 @@
   {
    "readingKey": "zhao4pian4",
    "entryId": "ude:301e1290000ade10",
+   "senseId": "uds:326419b49bd4165559db",
    "hanzi": "照片",
    "english": "photo",
    "fullGloss": "photograph; CL:zhang1,fu2; (Internet slang) deceptive photo (pun on zhao4 pian4) (esp. one misleadingly presenting sth in a favorable light)",
@@ -5185,6 +5703,7 @@
   {
    "readingKey": "zhe4bian1",
    "entryId": "ude:a0f8741a3a0ab286",
+   "senseId": "uds:2d7ded2005561c986ee6",
    "hanzi": "这边",
    "english": "this side",
    "fullGloss": "this side; here",
@@ -5195,6 +5714,7 @@
   {
    "readingKey": "zhe4ge5",
    "entryId": "ude:e14037ca599ff88b",
+   "senseId": "uds:69980d2179cf8e47f2f2",
    "hanzi": "这个",
    "english": "this",
    "fullGloss": "(pronoun) this; (adjective) this",
@@ -5205,9 +5725,10 @@
   {
    "readingKey": "zhe4xie1",
    "entryId": "ude:94738180619a60ba",
+   "senseId": "uds:9370a4bbb8d659ab8206",
    "hanzi": "这些",
    "english": "these",
-   "fullGloss": "1",
+   "fullGloss": "these",
    "hskBand": 1,
    "audio": "zhe4xie1",
    "picture": ""
@@ -5215,6 +5736,7 @@
   {
    "readingKey": "zhe4yang4",
    "entryId": "ude:4aedfbbc473e5162",
+   "senseId": "uds:d424484f10b3434ebc5f",
    "hanzi": "这样",
    "english": "this way",
    "fullGloss": "this way; like this; so; (before a noun) this kind of; such",
@@ -5225,6 +5747,7 @@
   {
    "readingKey": "zhi1dao4",
    "entryId": "ude:5371ef9f57b7a7af",
+   "senseId": "uds:184ce0b10ee1326f8708",
    "hanzi": "知道",
    "english": "to know",
    "fullGloss": "to know; to become aware of; also pr. [zhi1dao5]",
@@ -5235,6 +5758,7 @@
   {
    "readingKey": "zhi3neng2",
    "entryId": "ude:c7caf9ab15199b4d",
+   "senseId": "uds:a13a7a5574ce7c5ba587",
    "hanzi": "只能",
    "english": "can only",
    "fullGloss": "can only; obliged to do sth; to have no other choice",
@@ -5245,6 +5769,7 @@
   {
    "readingKey": "zhi3shi4",
    "entryId": "ude:a72293b696ef496d",
+   "senseId": "uds:f5578d9f6c966b25cbb8",
    "hanzi": "只是",
    "english": "merely",
    "fullGloss": "merely; only; just; nothing but; simply; but; however; to point out; to indicate; to instruct; directives; instructions; CL:ge4; ideogram (one of the Six Methods | of forming Chinese characters); Chinese character indicating an idea, such as up and down; also known as self-explanatory character",
@@ -5255,6 +5780,7 @@
   {
    "readingKey": "zhi3yao4",
    "entryId": "ude:212d1af71f773714",
+   "senseId": "uds:10bd3bf69753a03db38b",
    "hanzi": "只要",
    "english": "so long as",
    "fullGloss": "so long as; provided; if; kite",
@@ -5265,9 +5791,10 @@
   {
    "readingKey": "zhong1guo2",
    "entryId": "ude:85f57b3d833663b8",
+   "senseId": "uds:a09298ca6786e863e719",
    "hanzi": "中国",
    "english": "China",
-   "fullGloss": "1",
+   "fullGloss": "China",
    "hskBand": 1,
    "audio": "zhong1guo2",
    "picture": ""
@@ -5275,6 +5802,7 @@
   {
    "readingKey": "zhong1jian1",
    "entryId": "ude:56b38fcf195d7cfd",
+   "senseId": "uds:71902fca48539e28386e",
    "hanzi": "中间",
    "english": "the middle",
    "fullGloss": "the middle; the inside; in the middle; within; between; among; during; in the meantime; core; nucleus; backbone",
@@ -5285,9 +5813,10 @@
   {
    "readingKey": "zhong1wen2",
    "entryId": "ude:2f6b9e6c4ad10780",
+   "senseId": "uds:d729ce2a0f1c549fa71d",
    "hanzi": "中文",
    "english": "Chinese language",
-   "fullGloss": "1",
+   "fullGloss": "Chinese language",
    "hskBand": 1,
    "audio": "zhong1wen2",
    "picture": ""
@@ -5295,6 +5824,7 @@
   {
    "readingKey": "zhong1wu3",
    "entryId": "ude:f50c8208955fcd86",
+   "senseId": "uds:fe1ac0b4f7843345c9c9",
    "hanzi": "中午",
    "english": "noon",
    "fullGloss": "noon; midday; CL:ge4",
@@ -5305,9 +5835,10 @@
   {
    "readingKey": "zhong1xue2",
    "entryId": "ude:959279546345396a",
+   "senseId": "uds:1886b3f4cc56fee4d81c",
    "hanzi": "中学",
    "english": "middle school",
-   "fullGloss": "1",
+   "fullGloss": "middle school",
    "hskBand": 1,
    "audio": "zhong1xue2",
    "picture": ""
@@ -5315,6 +5846,7 @@
   {
    "readingKey": "zhong1xue2sheng1",
    "entryId": "ude:c5cc272cc8fef69a",
+   "senseId": "uds:6148dc25270b3094d084",
    "hanzi": "中学生",
    "english": "middle-school student",
    "fullGloss": "middle-school student; high school student",
@@ -5325,6 +5857,7 @@
   {
    "readingKey": "zhong4yao4",
    "entryId": "ude:40d21f3d521e5c90",
+   "senseId": "uds:0aabbf222770a7a86127",
    "hanzi": "重要",
    "english": "important",
    "fullGloss": "important; significant; major",
@@ -5335,9 +5868,10 @@
   {
    "readingKey": "zhou1mo4",
    "entryId": "ude:162f32db91a3defa",
+   "senseId": "uds:cf37a2f1f1f8e2c02ff2",
    "hanzi": "周末",
    "english": "weekend",
-   "fullGloss": "3",
+   "fullGloss": "weekend",
    "hskBand": 3,
    "audio": "zhou1mo4",
    "picture": ""
@@ -5345,6 +5879,7 @@
   {
    "readingKey": "zhu3yao4",
    "entryId": "ude:a823ad0f9f4cef2e",
+   "senseId": "uds:2e93cb5e1428c362e987",
    "hanzi": "主要",
    "english": "main",
    "fullGloss": "main; principal; major; primary",
@@ -5355,6 +5890,7 @@
   {
    "readingKey": "zhun3bei4",
    "entryId": "ude:54a2339557305ce5",
+   "senseId": "uds:8d68497080d798a47c11",
    "hanzi": "准备",
    "english": "preparation",
    "fullGloss": "preparation; to prepare; to intend; to be about to; reserve (fund)",
@@ -5365,6 +5901,7 @@
   {
    "readingKey": "zhuo1zi5",
    "entryId": "ude:a9dd5094d70009e9",
+   "senseId": "uds:79c141e99ce74f79930f",
    "hanzi": "桌子",
    "english": "table",
    "fullGloss": "table; desk; CL:zhang1,tao4",
@@ -5375,6 +5912,7 @@
   {
    "readingKey": "zi4ji3",
    "entryId": "ude:ecfe50f4f5219001",
+   "senseId": "uds:5df0ca6c6b671b06ab14",
    "hanzi": "自己",
    "english": "oneself",
    "fullGloss": "oneself; (attributive) one's own; self-reliant",
@@ -5385,6 +5923,7 @@
   {
    "readingKey": "zi4xing2che1",
    "entryId": "ude:da2ea7b98507c89a",
+   "senseId": "uds:fabaae4fbc0abb33e3f6",
    "hanzi": "自行车",
    "english": "bicycle",
    "fullGloss": "bicycle; bike; CL:liang4",
@@ -5395,9 +5934,10 @@
   {
    "readingKey": "zong3shi4",
    "entryId": "ude:fbd2eccad301a4ea",
+   "senseId": "uds:12ea120a63160c6b4eb5",
    "hanzi": "总是",
    "english": "always",
-   "fullGloss": "3",
+   "fullGloss": "always",
    "hskBand": 3,
    "audio": "zong3shi4",
    "picture": ""
@@ -5405,6 +5945,7 @@
   {
    "readingKey": "zou3lu4",
    "entryId": "ude:7ffd7786ee235aab",
+   "senseId": "uds:3c6d275eb5e28c4ab0dd",
    "hanzi": "走路",
    "english": "to walk",
    "fullGloss": "to walk; to go on foot; to leave; to depart; (informal) to clear off; to beat it; (of sb who gets fired or resigns) to leave the job; to get out",
@@ -5415,6 +5956,7 @@
   {
    "readingKey": "zu2qiu2",
    "entryId": "ude:f42a110a2608c7ea",
+   "senseId": "uds:0db598dda5097ad6be6a",
    "hanzi": "足球",
    "english": "football",
    "fullGloss": "soccer; football; a soccer ball; a football",
@@ -5425,6 +5967,7 @@
   {
    "readingKey": "zui4hao3",
    "entryId": "ude:3512d6aaa76b50d3",
+   "senseId": "uds:aa90341ae32e6227817b",
    "hanzi": "最好",
    "english": "best",
    "fullGloss": "best; had better...; it would be best to...",
@@ -5435,6 +5978,7 @@
   {
    "readingKey": "zui4hou4",
    "entryId": "ude:6c4baac5c0fc1ac5",
+   "senseId": "uds:607ead27d257b3c1ed84",
    "hanzi": "最后",
    "english": "final",
    "fullGloss": "final; last; ultimate; finally; in the end",
@@ -5445,6 +5989,7 @@
   {
    "readingKey": "zui4jin4",
    "entryId": "ude:be23800ea992340f",
+   "senseId": "uds:be580674c57a8b3c83c5",
    "hanzi": "最近",
    "english": "recently",
    "fullGloss": "recently; soon; nearest",
@@ -5455,9 +6000,10 @@
   {
    "readingKey": "zuo2tian1",
    "entryId": "ude:87e2a54266f7dce2",
+   "senseId": "uds:f13b4468c02dbaeb6888",
    "hanzi": "昨天",
    "english": "yesterday",
-   "fullGloss": "1",
+   "fullGloss": "yesterday",
    "hskBand": 1,
    "audio": "zuo2tian1",
    "picture": ""
@@ -5465,6 +6011,7 @@
   {
    "readingKey": "zuo3bian5",
    "entryId": "ude:fb37cfcb48bef7c7",
+   "senseId": "uds:369df1dc720ccb780a17",
    "hanzi": "左边",
    "english": "left",
    "fullGloss": "left; the left side; to the left of",
@@ -5475,6 +6022,7 @@
   {
    "readingKey": "zuo4ye4",
    "entryId": "ude:cd4c0e8e8557e2b6",
+   "senseId": "uds:b927737c5001f646ac8f",
    "hanzi": "作业",
    "english": "school assignment",
    "fullGloss": "school assignment; homework; work; task; operation; CL:ge4; to operate",

@@ -25,6 +25,16 @@ namespace LiANN.MahjongTones
 
         // settings
         PlayMode _mode = PlayMode.Practice;
+        /// <summary>At least 600 density-independent pixels on the short side (tablet or desktop).</summary>
+        static bool WideScreen
+        {
+            get
+            {
+                if (Application.isEditor || !Application.isMobilePlatform) return true;
+                float dpi = Screen.dpi > 0 ? Screen.dpi : 160f;
+                return Mathf.Min(Screen.width, Screen.height) / (dpi / 160f) >= 600f;
+            }
+        }
         string _layoutName = "Starter";
         Source _source = Source.Hsk1;
         bool _showPinyin = true, _eye;
@@ -226,7 +236,10 @@ namespace LiANN.MahjongTones
             var card = Card();
             card.style.marginTop = 20;
             card.Add(Chips("Mode", new[] { ("Practice", PlayMode.Practice), ("Challenge", PlayMode.Challenge), ("Zen", PlayMode.Zen) }, () => _mode, v => _mode = v));
-            card.Add(Chips("Board", new[] { ("Starter · 16", "Starter"), ("Small · 24", "Small") }, () => _layoutName, v => _layoutName = v));
+            var boards = new List<(string, string)> { ("Starter · 16", "Starter"), ("Small · 24", "Small"), ("Medium · 36", "Medium") };
+            if (WideScreen) boards.Add(("Large · 72", "Large"));     // Large is for desktop and tablet (spec §7)
+            else if (_layoutName == "Large") _layoutName = "Medium";
+            card.Add(Chips("Board", boards.ToArray(), () => _layoutName, v => _layoutName = v));
             card.Add(Chips("Words", new[] { ("HSK 1", Source.Hsk1), ("HSK 2", Source.Hsk2), ("HSK 3", Source.Hsk3), ("Tone pairs", Source.TonePairs), ("Daily challenge", Source.Daily) }, () => _source, v => _source = v));
             card.Add(Chips("Word tiles show", new[] { ("Hanzi + pinyin", true), ("Hanzi only", false) }, () => _showPinyin, v => _showPinyin = v));
             card.Add(Chips("Theme", new[] { ("Light", false), ("Dark", true) }, () => Theme.Dark, v => { Theme.Dark = v; ShowStart(); }));
@@ -262,7 +275,7 @@ namespace LiANN.MahjongTones
         {
             var s = NewScreen();
             s.Add(Text("Stats", 32, Theme.Ink, true));
-            foreach (var layout in new[] { "Starter", "Small" })
+            foreach (var layout in Layout.Names)
             {
                 var card = Card();
                 card.Add(Text(layout, 20, Theme.Ink, true));
@@ -274,7 +287,7 @@ namespace LiANN.MahjongTones
             s.Add(Text($"Daily streak: {PlayerPrefs.GetInt("lmt.daily.streak")}", 17, Theme.Muted));
             var row = new VisualElement { style = { flexDirection = FlexDirection.Row, marginTop = 12 } };
             row.Add(Button("Back", ShowStart, true));
-            row.Add(Button("Reset stats", () => { foreach (var k in new[] { "games", "wins", "bestScore", "bestTime" }) { PlayerPrefs.DeleteKey("lmt.Starter." + k); PlayerPrefs.DeleteKey("lmt.Small." + k); } ShowStats(); }));
+            row.Add(Button("Reset stats", () => { foreach (var k in new[] { "games", "wins", "bestScore", "bestTime" }) foreach (var l in Layout.Names) PlayerPrefs.DeleteKey($"lmt.{l}.{k}"); ShowStats(); }));
             s.Add(row);
         }
 

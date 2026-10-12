@@ -18,6 +18,12 @@ namespace LiANN.MahjongTones.Core
 
         public static int StreakBonus(int streak) => Math.Min(StreakCap, StreakStep * Math.Max(0, streak - 1));
 
-        public static int CountdownSeconds(string layoutName) => layoutName == "Small" ? 300 : 180;
+        public static int CountdownSeconds(string layoutName) => layoutName switch
+        {
+            "Small" => 300,
+            "Medium" => 480,
+            "Large" => 900,
+            _ => 180,
+        };
     }
 }

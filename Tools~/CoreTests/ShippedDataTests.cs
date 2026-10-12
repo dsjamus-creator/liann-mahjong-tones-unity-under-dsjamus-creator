@@ -15,11 +15,12 @@ namespace LiANN.MahjongTones.Tests
             var json = File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "words.json"));
             var list = JsonSerializer.Deserialize<WordList>(json, new JsonSerializerOptions { IncludeFields = true });
             Assert.Greater(list.words.Length, 500);
+            Assert.IsTrue(list.words.All(r => r.entryId.StartsWith("ude:") && r.senseId != null && r.senseId.StartsWith("uds:")), "every word has its dictionary entry and sense ids");
             var pool = list.words.Select(r => new Word(r)).ToList();
             Assert.IsTrue(pool.All(w => w.Syllables.Length >= 2 && !string.IsNullOrWhiteSpace(w.English)));
             foreach (int band in new[] { 1, 2, 3 })
                 for (int seed = 0; seed < 50; seed++)
-                    Assert.DoesNotThrow(() => new Game(Layout.Small24(), pool.Where(x => x.HskBand == band), PlayMode.Practice, $"real-{band}-{seed}"));
+                    foreach (var name in Layout.Names) Assert.DoesNotThrow(() => new Game(Layout.ByName(name), pool.Where(x => x.HskBand == band), PlayMode.Practice, $"real-{name}-{band}-{seed}"), $"{name} band {band} seed {seed}");
         }
 
         [Test]

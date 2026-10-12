@@ -22,7 +22,7 @@ namespace LiANN.MahjongTones.Tests
             var cases = new List<object>();
             var groups = list.tonePairs.Select(t => (IList<string>)t.keys).ToList();
             var runs = new List<(string layout, PlayMode mode, string seed, bool tonePairs)>();
-            foreach (var layoutName in new[] { "Starter", "Small" })
+            foreach (var layoutName in Layout.Names)
             {
                 foreach (var mode in new[] { PlayMode.Practice, PlayMode.Challenge })
                 foreach (var seed in new[] { "vector-1", "vector-2", "daily:2026-10-12" })
