@@ -9,7 +9,7 @@ Design source of truth: `PINYIN-MAHJONG-DESIGN-SPEC (2026-10-11).md` in
 | Path | What |
 |---|---|
 | `Runtime/Core/` | Unity-free game rules: four layouts (Starter 16, Small 24, Medium 36, Large 72) and the free-tile rule, seeded RNG (mulberry32 + FNV-1a), solvable board generator, tone checking, scoring, undo / hint / shuffle, and the AlongSide SetList event format. Identical to the web edition. |
-| `Runtime/Unity/` | `MahjongTonesApp` — builds the whole UI in UI Toolkit from code: start screen, board, tone picker, results, stats, account. Porcelain tiles baked in code to match Pinyin Tiles (D8). `AccountClient` — optional sign-in and SetList upload to AlongSide. |
+| `Runtime/Unity/` | `MahjongTonesApp` — builds the whole UI in UI Toolkit from code: start screen, board, tone picker, results, stats, account. Porcelain tiles baked in code to match Pinyin Tiles (D8). `AccountClient` — optional sign-in and SetList upload to AlongSide; `ProtectedAccountStore` and its Android/iOS plugins hold the session outside plaintext files. |
 | `Runtime/Resources/LiANNMahjongTones/` | `words.json` (548 HSK 1–3 words with recorded audio, dictionary entry and sense ids), `accounts.json` (public service addresses), `Audio/*.mp3`, `Fonts/` (Noto Sans SC Bold subset, Nunito ExtraBold). |
 | `Editor/` | **LiANN → Mahjong Tones** menu: create the play scene; build Android (App Bundle), iOS (Xcode project) and Windows. |
 | `Tests/Editor/` | NUnit tests (run in Unity's Test Runner). |
@@ -55,8 +55,11 @@ retries never duplicate. If AlongSide is unreachable, or doesn't accept this gam
 upload later from the Account screen. Service addresses are in `Runtime/Resources/LiANNMahjongTones/accounts.json`;
 empty values switch sign-in off.
 
-AlongSide must add `liann-mahjong-tones` to the game-events source allowlist (lwl-backend PR #102,
-`docs/PINYIN-GAME-SETLISTS.md`, "Extending to another game") before uploads are accepted.
+The backend's draft PR #102 adds `liann-mahjong-tones` to the route and database constraints. That migration and route must be deployed before uploads are accepted.
+
+Session access and refresh tokens are stored in Android Keystore-backed AES-GCM preferences, the iOS Keychain, or Windows user-scoped DPAPI, according to the build target. The Unity Editor and unsupported platforms keep them in memory only; sign-in then lasts until the app closes. On first launch after this update, the old plaintext `liann-tones.account.v1.json` is deleted without loading its tokens. The player signs in again. If that file cannot be removed, account sign-in is disabled until app data is cleared. SetLists use their separate local store and are not deleted.
+
+Before distribution, verify a sign-in, app restart, token refresh, upload, and sign-out on Android, iOS and Windows. Check that no `liann-tones.account.v1.json` remains and that the platform store is cleared by sign-out. Existing test builds that wrote the old JSON file should have their sessions revoked or app data cleared before the device is shared.
 
 ## Tests
 
@@ -84,3 +87,4 @@ Pictures on meaning tiles (D13: moved to the hub's Kids section), Classic 144 la
 hub profiles and plan checks (D19–D22; added when the hub's account service exists).
 
 See `THIRD-PARTY-NOTICES.md` for data, audio and font licences.
+
