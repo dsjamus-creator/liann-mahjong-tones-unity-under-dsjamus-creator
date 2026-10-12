@@ -25,11 +25,13 @@ namespace LiANN.MahjongTones
 
         // settings
         PlayMode _mode = PlayMode.Practice;
-        /// <summary>At least 600 density-independent pixels on the short side (tablet or desktop).</summary>
+        /// <summary>Large (72 tiles, 10 columns) needs a landscape screen: in portrait its labels drop to about 9 px.
+        /// On phones and tablets the short side must also be at least 600 density-independent pixels.</summary>
         static bool WideScreen
         {
             get
             {
+                if (Screen.width <= Screen.height) return false;
                 if (Application.isEditor || !Application.isMobilePlatform) return true;
                 float dpi = Screen.dpi > 0 ? Screen.dpi : 160f;
                 return Mathf.Min(Screen.width, Screen.height) / (dpi / 160f) >= 600f;
@@ -68,7 +70,8 @@ namespace LiANN.MahjongTones
             if (_hanziFont == null || _uiFont == null) Debug.LogError("LiANN Mahjong Tones: fonts missing from Resources/LiANNMahjongTones/Fonts.");
             if (_uiFont == null) _uiFont = _hanziFont;
             _account = new AccountClient();
-            _ = _account.Init();
+            // No network call at launch for players who never sign in (the Account screen calls Init when opened).
+            if (_account.HasSession) _ = _account.Init();
             _audio = gameObject.AddComponent<AudioSource>();
             _audio.playOnAwake = false;
             // The documented setup is an empty scene with no camera, so there may be no listener and audio would be silent.
@@ -244,7 +247,7 @@ namespace LiANN.MahjongTones
             card.style.marginTop = 20;
             card.Add(Chips("Mode", new[] { ("Practice", PlayMode.Practice), ("Challenge", PlayMode.Challenge), ("Zen", PlayMode.Zen) }, () => _mode, v => _mode = v));
             var boards = new List<(string, string)> { ("Starter · 16", "Starter"), ("Small · 24", "Small"), ("Medium · 36", "Medium") };
-            if (WideScreen) boards.Add(("Large · 72", "Large"));     // Large is for desktop and tablet (spec §7)
+            if (WideScreen) boards.Add(("Large · 72", "Large"));     // Large is for landscape desktop and tablet (spec §7)
             else if (_layoutName == "Large") _layoutName = "Medium";
             card.Add(Chips("Board", boards.ToArray(), () => _layoutName, v => _layoutName = v));
             card.Add(Chips("Words", new[] { ("HSK 1", Source.Hsk1), ("HSK 2", Source.Hsk2), ("HSK 3", Source.Hsk3), ("Tone pairs", Source.TonePairs), ("Daily challenge", Source.Daily) }, () => _source, v => _source = v));

@@ -46,6 +46,7 @@ namespace LiANN.MahjongTones.EditorTools
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
             PlayerSettings.Android.bundleVersionCode = VersionCode();
             EditorUserBuildSettings.buildAppBundle = true;
+            EnsureProguardKeepRule();
             if (string.IsNullOrEmpty(PlayerSettings.Android.keystoreName))
                 Debug.LogWarning("LiANN Mahjong Tones: no Android keystore set; the bundle is debug-signed and can't be uploaded to Google Play.");
             Build(BuildTarget.Android, "Builds/Android/LiANN-Mahjong-Tones-" + Version + ".aab");
@@ -66,6 +67,22 @@ namespace LiANN.MahjongTones.EditorTools
             ApplyCommonSettings();
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Standalone, AppId);
             Build(BuildTarget.StandaloneWindows64, "Builds/Windows/LiANN Mahjong Tones.exe");
+        }
+
+        const string ProguardFile = "Assets/Plugins/Android/proguard-user.txt";
+        const string KeepRule = "-keep class com.learningwithliann.mahjongtones.SecureSessionStore { public static *; }";
+
+        /// <summary>SecureSessionStore is called only by name through AndroidJavaClass, so R8 (Minify in release builds)
+        /// could strip or rename it and sign-in would fall back to memory only. A package can't ship a proguard file,
+        /// so the Android build adds the keep rule to the project's proguard-user.txt (used when Minify is on).</summary>
+        static void EnsureProguardKeepRule()
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(ProguardFile));
+            string text = File.Exists(ProguardFile) ? File.ReadAllText(ProguardFile) : "";
+            if (text.Contains(KeepRule)) return;
+            File.WriteAllText(ProguardFile, text + (text.Length > 0 && !text.EndsWith("\n") ? "\n" : "") + "# LiANN Mahjong Tones: secure session store (called by name)\n" + KeepRule + "\n");
+            AssetDatabase.ImportAsset(ProguardFile);
+            Debug.Log("LiANN Mahjong Tones: added the SecureSessionStore keep rule to " + ProguardFile + ". Turn on Player Settings > Publishing > Custom Proguard File for it to apply.");
         }
 
         static void ApplyCommonSettings()

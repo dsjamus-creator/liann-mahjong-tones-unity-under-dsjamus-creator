@@ -19,7 +19,7 @@ namespace LiANN.MahjongTones
     {
         public enum State { Loading, Disabled, Unavailable, SignedOut, CodeSent, SignedIn }
 
-        [Serializable] class Endpoints { public string pinyinApiBase, alongsideApiBase; }
+        [Serializable] class Endpoints { public string pinyinApiBase, alongsideApiBase, supabaseHost; }
         [Serializable] class AuthConfig { public bool enabled; public string supabaseUrl, publishableKey; }
         [Serializable] class AuthConfigResponse { public AuthConfig authentication; }
         [Serializable] class UserDto { public string id, email; }
@@ -33,6 +33,9 @@ namespace LiANN.MahjongTones
         }
 
         public State Status { get; private set; } = State.Loading;
+        /// <summary>A sign-in is in progress or complete on this device. Only then does the app contact the services at
+        /// launch; otherwise nothing is fetched until the player opens the Account screen.</summary>
+        public bool HasSession => !string.IsNullOrEmpty(_saved.refreshToken) || !string.IsNullOrEmpty(_saved.pendingEmail);
         public string Email => _saved.email;
         public string Message { get; private set; } = "";
 
@@ -75,6 +78,9 @@ namespace LiANN.MahjongTones
             _auth = JsonUtility.FromJson<AuthConfigResponse>(text)?.authentication;
             if (_auth == null || !_auth.enabled || string.IsNullOrEmpty(_auth.supabaseUrl) || string.IsNullOrEmpty(_auth.publishableKey))
             { Status = State.Disabled; Message = "Sign-in is switched off at the moment."; return; }
+            // The email, code and refresh token go to this address, so a remote config may not redirect them elsewhere.
+            if (!TrustedAuthUrl.IsAllowed(_auth.supabaseUrl, _ends.supabaseHost))
+            { _auth = null; Status = State.Unavailable; Message = "Sign-in is unavailable: the sign-in service sent an unexpected address."; return; }
             Status = !string.IsNullOrEmpty(_saved.refreshToken) ? State.SignedIn : !string.IsNullOrEmpty(_saved.pendingEmail) ? State.CodeSent : State.SignedOut;
             Message = "";
         }
