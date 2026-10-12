@@ -117,6 +117,7 @@ namespace LiANN.MahjongTones
 
         VisualElement NewScreen()
         {
+            ClosePicker();
             _root.Clear();
             _tiles.Clear();
             _tweens.Clear();
@@ -156,7 +157,9 @@ namespace LiANN.MahjongTones
             b.style.alignItems = Align.Center;
             b.style.justifyContent = Justify.Center;
             Pad(b, 10, 18);
-            Radius(b, 24);   // about half the button height; oversized radii turn pills into ellipses
+            Radius(b, 24);
+            // Pill: radius = half the laid-out height (oversized radii turn pills into ellipses).
+            b.RegisterCallback<GeometryChangedEvent>(e => Radius(b, Mathf.Max(8f, e.newRect.height / 2f)));
             Border(b, 2, primary ? Theme.Coral : Theme.BorderStrong);
             b.style.backgroundColor = primary ? Theme.Coral : Theme.Card;
             b.style.marginRight = 8; b.style.marginBottom = 8;
