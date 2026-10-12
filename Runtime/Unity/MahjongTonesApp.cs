@@ -38,6 +38,7 @@ namespace LiANN.MahjongTones
         string _layoutName = "Starter";
         Source _source = Source.Hsk1;
         bool _showPinyin = true, _eye;
+        string _emailDraft = "";   // kept while the account screen re-renders (cooldown countdown)
 
         // runtime
         readonly Tweens _tweens = new Tweens();
@@ -269,16 +270,30 @@ namespace LiANN.MahjongTones
             status.style.marginTop = 8;
             async void Run(System.Threading.Tasks.Task t) { try { await t; } catch (Exception e) { Debug.LogWarning(e.Message); } if (_screen == s) ShowAccount(); }
 
-            TextField Field(string placeholder)
+            TextField Field(string label, string hint, string value = "")
             {
-                var f = new TextField { value = "" };
+                var f = new TextField { value = value };
                 f.style.fontSize = 18;
                 f.style.minWidth = 260; f.style.maxWidth = 420;
                 f.style.marginBottom = 10;
-                var tip = Text(placeholder, 13, Theme.Muted, true);
-                card.Add(tip);
+#if UNITY_2023_1_OR_NEWER
+                f.textEdition.placeholder = hint;
+#endif
+                // A visible box, so testers can see where to type (retest finding 5).
+                var input = f.Q(className: TextField.inputUssClassName);
+                if (input != null)
+                {
+                    Border(input, 2, Theme.BorderStrong);
+                    Radius(input, 10);
+                    Pad(input, 8, 12);
+                    input.style.backgroundColor = Theme.Card;
+                    f.RegisterCallback<FocusInEvent>(_ => Border(input, 2, Theme.Coral));
+                    f.RegisterCallback<FocusOutEvent>(_ => Border(input, 2, Theme.BorderStrong));
+                }
+                card.Add(Text(label, 13, Theme.Muted, true));
                 return f;
             }
+            VisualElement Row() => new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
 
             switch (_account.Status)
             {
@@ -294,14 +309,25 @@ namespace LiANN.MahjongTones
                     break;
                 case AccountClient.State.SignedOut:
                 {
-                    var email = Field("EMAIL");
+                    var email = Field("EMAIL", "you@example.com", _emailDraft);
+                    email.RegisterValueChangedCallback(e => _emailDraft = e.newValue);
                     card.Add(email);
-                    card.Add(Button("Send me a code", () => Run(_account.SendCode(email.value)), true));
+                    var row = Row();
+                    int wait = _account.ResendInSeconds;
+                    string label = _account.SendingCode ? "Sending…" : wait > 0 ? $"Send me a code ({wait} s)" : "Send me a code";
+                    var send = Button(label, () => { if (!_account.SendingCode && _account.ResendInSeconds == 0) { status.text = "Sending…"; Run(_account.SendCode(email.value)); } }, true);
+                    if (_account.SendingCode || wait > 0)
+                    {
+                        send.SetEnabled(false); send.style.opacity = 0.55f;
+                        if (wait > 0) s.schedule.Execute(() => { if (_screen == s && _account.Status == AccountClient.State.SignedOut) ShowAccount(); }).StartingIn(1000);
+                    }
+                    row.Add(send);
+                    card.Add(row);
                     break;
                 }
                 case AccountClient.State.CodeSent:
                 {
-                    var code = Field("CODE FROM THE EMAIL");
+                    var code = Field("CODE FROM THE EMAIL", "6-digit code");
                     card.Add(code);
                     var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
                     row.Add(Button("Sign in", () => Run(_account.VerifyCode(code.value)), true));
@@ -329,7 +355,9 @@ namespace LiANN.MahjongTones
             }
             card.Add(status);
             s.Add(card);
-            s.Add(Button("Back", ShowStart));
+            var back = Button("Back", ShowStart);
+            back.style.alignSelf = Align.FlexStart;   // sized to its text, like the other screens
+            s.Add(back);
         }
 
         void ShowHelp()
