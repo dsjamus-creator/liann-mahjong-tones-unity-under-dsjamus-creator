@@ -20,12 +20,19 @@ namespace LiANN.MahjongTones.Tests
             var json = File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "words.json"));
             var list = JsonSerializer.Deserialize<WordList>(json, new JsonSerializerOptions { IncludeFields = true });
             var cases = new List<object>();
+            var groups = list.tonePairs.Select(t => (IList<string>)t.keys).ToList();
+            var runs = new List<(string layout, PlayMode mode, string seed, bool tonePairs)>();
             foreach (var layoutName in new[] { "Starter", "Small" })
-            foreach (var mode in new[] { PlayMode.Practice, PlayMode.Challenge })
-            foreach (var seed in new[] { "vector-1", "vector-2", "daily:2026-10-12" })
             {
-                var pool = list.words.Where(w => w.hskBand == 1).Select(w => new Word(w)).ToList();
-                var g = new Game(Layout.ByName(layoutName), pool, mode, seed);
+                foreach (var mode in new[] { PlayMode.Practice, PlayMode.Challenge })
+                foreach (var seed in new[] { "vector-1", "vector-2", "daily:2026-10-12" })
+                    runs.Add((layoutName, mode, seed, false));
+                foreach (var seed in new[] { "tones-1", "tones-2" }) runs.Add((layoutName, PlayMode.Practice, seed, true));
+            }
+            foreach (var (layoutName, mode, seed, tonePairs) in runs)
+            {
+                var pool = list.words.Where(w => tonePairs ? w.hskBand <= 3 : w.hskBand == 1).Select(w => new Word(w)).ToList();
+                var g = new Game(Layout.ByName(layoutName), pool, mode, seed, tonePairs ? groups : null);
                 var board = g.Tiles.Select(t => new { slot = t.SlotId, word = g.Words[t.WordIndex].ReadingKey, kind = t.Kind == TileKind.WordTile ? "A" : "B" }).ToList();
                 var moves = new List<object>();
                 int step = 0;
@@ -46,7 +53,7 @@ namespace LiANN.MahjongTones.Tests
                     moves.Add(new { word = g.Words[w].ReadingKey, wordSlot = a, meaningSlot = b, wrongToneFirst = wrongFirst, score = g.Score, streak = g.Streak, tilesLeft = g.TilesLeft, autoReshuffle = g.LastAutoReshuffle });
                     step++;
                 }
-                cases.Add(new { layout = layoutName, mode = mode.ToString(), seed, pool = "words.json, hskBand == 1", words = g.Words.Select(x => x.ReadingKey), board, moves, finalScore = g.Score });
+                cases.Add(new { layout = layoutName, mode = mode.ToString(), seed, pool = tonePairs ? "words.json, hskBand <= 3, with tonePairs groups" : "words.json, hskBand == 1", words = g.Words.Select(x => x.ReadingKey), board, moves, finalScore = g.Score });
             }
             return new { schemaVersion = 1, spec = "PINYIN-MAHJONG-DESIGN-SPEC §4.1 + §6.1", script = "always take the lowest-numbered open pair (word order); every third match (0-based index % 3 == 2) first answers each tone wrong (1 -> 2, else -> 1)", cases };
         }

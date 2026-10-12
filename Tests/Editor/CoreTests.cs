@@ -237,5 +237,43 @@ namespace LiANN.MahjongTones.Tests
                 Assert.IsTrue(g.Results.All(r => r.Matched && r.Perfect));
             }
         }
+
+        [Test]
+        public void ChallengeUndoDoesNotRefundShufflesOrPenalties()
+        {
+            var g = new Game(Layout.Small24(), Pool(30), PlayMode.Challenge, "undo-refund");
+            int w = g.OpenPairs()[0];
+            var (a, b) = SlotsOf(g, w);
+            g.Select(a); g.Select(b); g.SubmitTones(g.Words[w].Tones);
+            int afterMatch = g.Score;
+            Assert.IsTrue(g.Shuffle());
+            Assert.IsNotNull(g.Hint());
+            Assert.AreEqual(afterMatch - 20 - 15, g.Score);
+            Assert.IsTrue(g.Undo());   // undoes the shuffle
+            Assert.AreEqual(1, g.ShufflesUsed, "shuffles stay spent");
+            Assert.AreEqual(afterMatch - 35, g.Score, "penalties stay deducted");
+            Assert.IsTrue(g.Undo());   // undoes the match
+            Assert.AreEqual(0, g.Score, "match points removed, never below 0");
+            Assert.IsTrue(g.Shuffle()); Assert.IsFalse(g.Shuffle(), "only 2 shuffles in Challenge, even after undo");
+        }
+
+        [TestCase("sports", "sport")]
+        [TestCase("how?", "how")]
+        [TestCase("To Receive", "receive")]
+        [TestCase("glass", "glass")]
+        [TestCase("bus", "bus")]
+        public void LabelKeysNormalise(string label, string key) => Assert.AreEqual(key, BoardGenerator.LabelKey(label));
+
+        [Test]
+        public void TonePairBoardsVary()
+        {
+            var pool = new List<Word> { W("yi1ban1", "一般", "ordinary"), W("yi1ban4", "一半", "half"), W("si1ji1", "司机", "driver"), W("si4ji4", "四季", "four seasons"),
+                W("na3ge5", "哪个", "which"), W("na4ge5", "那个", "that one"), W("you2yong3", "游泳", "to swim"), W("you3yong4", "有用", "useful") };
+            pool.AddRange(Pool(30));
+            var groups = new List<IList<string>> { new[] { "yi1ban1", "yi1ban4" }, new[] { "si1ji1", "si4ji4" }, new[] { "na3ge5", "na4ge5" }, new[] { "you2yong3", "you3yong4" } };
+            var firsts = new HashSet<string>();
+            for (int s = 0; s < 20; s++) firsts.Add(BoardGenerator.SelectWords(pool, 4, new Rng("tp" + s), groups)[0].ReadingKey);
+            Assert.Greater(firsts.Count, 1, "group order must depend on the seed");
+        }
     }
 }

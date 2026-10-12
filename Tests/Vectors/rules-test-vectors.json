@@ -1090,6 +1090,368 @@
       "finalScore": 279
     },
     {
+      "layout": "Starter",
+      "mode": "Practice",
+      "seed": "tones-1",
+      "pool": "words.json, hskBand <= 3, with tonePairs groups",
+      "words": [
+        "you2yong3",
+        "you3yong4",
+        "si1ji1",
+        "si4ji4",
+        "yi1ban1",
+        "yi1ban4",
+        "na3ge5",
+        "na4ge5"
+      ],
+      "board": [
+        {
+          "slot": 0,
+          "word": "you2yong3",
+          "kind": "A"
+        },
+        {
+          "slot": 1,
+          "word": "na4ge5",
+          "kind": "B"
+        },
+        {
+          "slot": 2,
+          "word": "na3ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 3,
+          "word": "you2yong3",
+          "kind": "B"
+        },
+        {
+          "slot": 4,
+          "word": "you3yong4",
+          "kind": "B"
+        },
+        {
+          "slot": 5,
+          "word": "si1ji1",
+          "kind": "B"
+        },
+        {
+          "slot": 6,
+          "word": "yi1ban4",
+          "kind": "B"
+        },
+        {
+          "slot": 7,
+          "word": "na3ge5",
+          "kind": "B"
+        },
+        {
+          "slot": 8,
+          "word": "si4ji4",
+          "kind": "A"
+        },
+        {
+          "slot": 9,
+          "word": "yi1ban4",
+          "kind": "A"
+        },
+        {
+          "slot": 10,
+          "word": "yi1ban1",
+          "kind": "A"
+        },
+        {
+          "slot": 11,
+          "word": "si4ji4",
+          "kind": "B"
+        },
+        {
+          "slot": 12,
+          "word": "si1ji1",
+          "kind": "A"
+        },
+        {
+          "slot": 13,
+          "word": "na4ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 14,
+          "word": "yi1ban1",
+          "kind": "B"
+        },
+        {
+          "slot": 15,
+          "word": "you3yong4",
+          "kind": "A"
+        }
+      ],
+      "moves": [
+        {
+          "word": "you2yong3",
+          "wordSlot": 0,
+          "meaningSlot": 3,
+          "wrongToneFirst": false,
+          "score": 68,
+          "streak": 1,
+          "tilesLeft": 14,
+          "autoReshuffle": false
+        },
+        {
+          "word": "you3yong4",
+          "wordSlot": 15,
+          "meaningSlot": 4,
+          "wrongToneFirst": false,
+          "score": 149,
+          "streak": 2,
+          "tilesLeft": 12,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si1ji1",
+          "wordSlot": 12,
+          "meaningSlot": 5,
+          "wrongToneFirst": true,
+          "score": 197,
+          "streak": 0,
+          "tilesLeft": 10,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si4ji4",
+          "wordSlot": 8,
+          "meaningSlot": 11,
+          "wrongToneFirst": false,
+          "score": 257,
+          "streak": 1,
+          "tilesLeft": 8,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban1",
+          "wordSlot": 10,
+          "meaningSlot": 14,
+          "wrongToneFirst": false,
+          "score": 314,
+          "streak": 2,
+          "tilesLeft": 6,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban4",
+          "wordSlot": 9,
+          "meaningSlot": 6,
+          "wrongToneFirst": true,
+          "score": 326,
+          "streak": 0,
+          "tilesLeft": 4,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na3ge5",
+          "wordSlot": 2,
+          "meaningSlot": 7,
+          "wrongToneFirst": false,
+          "score": 354,
+          "streak": 1,
+          "tilesLeft": 2,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na4ge5",
+          "wordSlot": 13,
+          "meaningSlot": 1,
+          "wrongToneFirst": false,
+          "score": 383,
+          "streak": 2,
+          "tilesLeft": 0,
+          "autoReshuffle": false
+        }
+      ],
+      "finalScore": 383
+    },
+    {
+      "layout": "Starter",
+      "mode": "Practice",
+      "seed": "tones-2",
+      "pool": "words.json, hskBand <= 3, with tonePairs groups",
+      "words": [
+        "you2yong3",
+        "you3yong4",
+        "yi1ban1",
+        "yi1ban4",
+        "shou1dao4",
+        "shou4dao4",
+        "si1ji1",
+        "si4ji4"
+      ],
+      "board": [
+        {
+          "slot": 0,
+          "word": "yi1ban4",
+          "kind": "B"
+        },
+        {
+          "slot": 1,
+          "word": "si4ji4",
+          "kind": "A"
+        },
+        {
+          "slot": 2,
+          "word": "yi1ban4",
+          "kind": "A"
+        },
+        {
+          "slot": 3,
+          "word": "you2yong3",
+          "kind": "A"
+        },
+        {
+          "slot": 4,
+          "word": "shou1dao4",
+          "kind": "B"
+        },
+        {
+          "slot": 5,
+          "word": "shou4dao4",
+          "kind": "A"
+        },
+        {
+          "slot": 6,
+          "word": "yi1ban1",
+          "kind": "B"
+        },
+        {
+          "slot": 7,
+          "word": "you3yong4",
+          "kind": "A"
+        },
+        {
+          "slot": 8,
+          "word": "you2yong3",
+          "kind": "B"
+        },
+        {
+          "slot": 9,
+          "word": "yi1ban1",
+          "kind": "A"
+        },
+        {
+          "slot": 10,
+          "word": "si1ji1",
+          "kind": "A"
+        },
+        {
+          "slot": 11,
+          "word": "you3yong4",
+          "kind": "B"
+        },
+        {
+          "slot": 12,
+          "word": "shou1dao4",
+          "kind": "A"
+        },
+        {
+          "slot": 13,
+          "word": "shou4dao4",
+          "kind": "B"
+        },
+        {
+          "slot": 14,
+          "word": "si4ji4",
+          "kind": "B"
+        },
+        {
+          "slot": 15,
+          "word": "si1ji1",
+          "kind": "B"
+        }
+      ],
+      "moves": [
+        {
+          "word": "you2yong3",
+          "wordSlot": 3,
+          "meaningSlot": 8,
+          "wrongToneFirst": false,
+          "score": 68,
+          "streak": 1,
+          "tilesLeft": 14,
+          "autoReshuffle": false
+        },
+        {
+          "word": "you3yong4",
+          "wordSlot": 7,
+          "meaningSlot": 11,
+          "wrongToneFirst": false,
+          "score": 149,
+          "streak": 2,
+          "tilesLeft": 12,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban1",
+          "wordSlot": 9,
+          "meaningSlot": 6,
+          "wrongToneFirst": true,
+          "score": 197,
+          "streak": 0,
+          "tilesLeft": 10,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban4",
+          "wordSlot": 2,
+          "meaningSlot": 0,
+          "wrongToneFirst": false,
+          "score": 237,
+          "streak": 1,
+          "tilesLeft": 8,
+          "autoReshuffle": false
+        },
+        {
+          "word": "shou1dao4",
+          "wordSlot": 12,
+          "meaningSlot": 4,
+          "wrongToneFirst": false,
+          "score": 294,
+          "streak": 2,
+          "tilesLeft": 6,
+          "autoReshuffle": false
+        },
+        {
+          "word": "shou4dao4",
+          "wordSlot": 5,
+          "meaningSlot": 13,
+          "wrongToneFirst": true,
+          "score": 318,
+          "streak": 0,
+          "tilesLeft": 4,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si1ji1",
+          "wordSlot": 10,
+          "meaningSlot": 15,
+          "wrongToneFirst": false,
+          "score": 354,
+          "streak": 1,
+          "tilesLeft": 2,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si4ji4",
+          "wordSlot": 1,
+          "meaningSlot": 14,
+          "wrongToneFirst": false,
+          "score": 387,
+          "streak": 2,
+          "tilesLeft": 0,
+          "autoReshuffle": false
+        }
+      ],
+      "finalScore": 387
+    },
+    {
       "layout": "Small",
       "mode": "Practice",
       "seed": "vector-1",
@@ -2678,6 +3040,536 @@
         }
       ],
       "finalScore": 472
+    },
+    {
+      "layout": "Small",
+      "mode": "Practice",
+      "seed": "tones-1",
+      "pool": "words.json, hskBand <= 3, with tonePairs groups",
+      "words": [
+        "you2yong3",
+        "you3yong4",
+        "si1ji1",
+        "si4ji4",
+        "yi1ban1",
+        "yi1ban4",
+        "na3ge5",
+        "na4ge5",
+        "na3xie1",
+        "na4xie1",
+        "shou1dao4",
+        "shou4dao4"
+      ],
+      "board": [
+        {
+          "slot": 0,
+          "word": "you2yong3",
+          "kind": "A"
+        },
+        {
+          "slot": 1,
+          "word": "na4ge5",
+          "kind": "B"
+        },
+        {
+          "slot": 2,
+          "word": "shou4dao4",
+          "kind": "A"
+        },
+        {
+          "slot": 3,
+          "word": "shou4dao4",
+          "kind": "B"
+        },
+        {
+          "slot": 4,
+          "word": "na4xie1",
+          "kind": "A"
+        },
+        {
+          "slot": 5,
+          "word": "you2yong3",
+          "kind": "B"
+        },
+        {
+          "slot": 6,
+          "word": "yi1ban4",
+          "kind": "B"
+        },
+        {
+          "slot": 7,
+          "word": "na3ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 8,
+          "word": "shou1dao4",
+          "kind": "B"
+        },
+        {
+          "slot": 9,
+          "word": "shou1dao4",
+          "kind": "A"
+        },
+        {
+          "slot": 10,
+          "word": "na3ge5",
+          "kind": "B"
+        },
+        {
+          "slot": 11,
+          "word": "si1ji1",
+          "kind": "B"
+        },
+        {
+          "slot": 12,
+          "word": "you3yong4",
+          "kind": "B"
+        },
+        {
+          "slot": 13,
+          "word": "yi1ban4",
+          "kind": "A"
+        },
+        {
+          "slot": 14,
+          "word": "na3xie1",
+          "kind": "A"
+        },
+        {
+          "slot": 15,
+          "word": "na3xie1",
+          "kind": "B"
+        },
+        {
+          "slot": 16,
+          "word": "na4ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 17,
+          "word": "si4ji4",
+          "kind": "A"
+        },
+        {
+          "slot": 18,
+          "word": "yi1ban1",
+          "kind": "A"
+        },
+        {
+          "slot": 19,
+          "word": "na4xie1",
+          "kind": "B"
+        },
+        {
+          "slot": 20,
+          "word": "si4ji4",
+          "kind": "B"
+        },
+        {
+          "slot": 21,
+          "word": "si1ji1",
+          "kind": "A"
+        },
+        {
+          "slot": 22,
+          "word": "yi1ban1",
+          "kind": "B"
+        },
+        {
+          "slot": 23,
+          "word": "you3yong4",
+          "kind": "A"
+        }
+      ],
+      "moves": [
+        {
+          "word": "you2yong3",
+          "wordSlot": 0,
+          "meaningSlot": 5,
+          "wrongToneFirst": false,
+          "score": 92,
+          "streak": 1,
+          "tilesLeft": 22,
+          "autoReshuffle": false
+        },
+        {
+          "word": "you3yong4",
+          "wordSlot": 23,
+          "meaningSlot": 12,
+          "wrongToneFirst": false,
+          "score": 205,
+          "streak": 2,
+          "tilesLeft": 20,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si1ji1",
+          "wordSlot": 21,
+          "meaningSlot": 11,
+          "wrongToneFirst": true,
+          "score": 285,
+          "streak": 0,
+          "tilesLeft": 18,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si4ji4",
+          "wordSlot": 17,
+          "meaningSlot": 20,
+          "wrongToneFirst": false,
+          "score": 377,
+          "streak": 1,
+          "tilesLeft": 16,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban1",
+          "wordSlot": 18,
+          "meaningSlot": 22,
+          "wrongToneFirst": false,
+          "score": 466,
+          "streak": 2,
+          "tilesLeft": 14,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban4",
+          "wordSlot": 13,
+          "meaningSlot": 6,
+          "wrongToneFirst": true,
+          "score": 494,
+          "streak": 0,
+          "tilesLeft": 12,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na3ge5",
+          "wordSlot": 7,
+          "meaningSlot": 10,
+          "wrongToneFirst": false,
+          "score": 538,
+          "streak": 1,
+          "tilesLeft": 10,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na4ge5",
+          "wordSlot": 16,
+          "meaningSlot": 1,
+          "wrongToneFirst": false,
+          "score": 583,
+          "streak": 2,
+          "tilesLeft": 8,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na3xie1",
+          "wordSlot": 14,
+          "meaningSlot": 15,
+          "wrongToneFirst": true,
+          "score": 599,
+          "streak": 0,
+          "tilesLeft": 6,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na4xie1",
+          "wordSlot": 4,
+          "meaningSlot": 19,
+          "wrongToneFirst": false,
+          "score": 631,
+          "streak": 1,
+          "tilesLeft": 4,
+          "autoReshuffle": false
+        },
+        {
+          "word": "shou1dao4",
+          "wordSlot": 9,
+          "meaningSlot": 8,
+          "wrongToneFirst": false,
+          "score": 672,
+          "streak": 2,
+          "tilesLeft": 2,
+          "autoReshuffle": false
+        },
+        {
+          "word": "shou4dao4",
+          "wordSlot": 2,
+          "meaningSlot": 3,
+          "wrongToneFirst": true,
+          "score": 680,
+          "streak": 0,
+          "tilesLeft": 0,
+          "autoReshuffle": false
+        }
+      ],
+      "finalScore": 680
+    },
+    {
+      "layout": "Small",
+      "mode": "Practice",
+      "seed": "tones-2",
+      "pool": "words.json, hskBand <= 3, with tonePairs groups",
+      "words": [
+        "you2yong3",
+        "you3yong4",
+        "yi1ban1",
+        "yi1ban4",
+        "shou1dao4",
+        "shou4dao4",
+        "si1ji1",
+        "si4ji4",
+        "na3xie1",
+        "na4xie1",
+        "na3ge5",
+        "na4ge5"
+      ],
+      "board": [
+        {
+          "slot": 0,
+          "word": "yi1ban4",
+          "kind": "B"
+        },
+        {
+          "slot": 1,
+          "word": "shou1dao4",
+          "kind": "B"
+        },
+        {
+          "slot": 2,
+          "word": "na3ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 3,
+          "word": "na4xie1",
+          "kind": "B"
+        },
+        {
+          "slot": 4,
+          "word": "na3xie1",
+          "kind": "B"
+        },
+        {
+          "slot": 5,
+          "word": "yi1ban4",
+          "kind": "A"
+        },
+        {
+          "slot": 6,
+          "word": "you2yong3",
+          "kind": "A"
+        },
+        {
+          "slot": 7,
+          "word": "si1ji1",
+          "kind": "A"
+        },
+        {
+          "slot": 8,
+          "word": "na4xie1",
+          "kind": "A"
+        },
+        {
+          "slot": 9,
+          "word": "na4ge5",
+          "kind": "A"
+        },
+        {
+          "slot": 10,
+          "word": "na4ge5",
+          "kind": "B"
+        },
+        {
+          "slot": 11,
+          "word": "yi1ban1",
+          "kind": "B"
+        },
+        {
+          "slot": 12,
+          "word": "you3yong4",
+          "kind": "A"
+        },
+        {
+          "slot": 13,
+          "word": "shou4dao4",
+          "kind": "A"
+        },
+        {
+          "slot": 14,
+          "word": "na3xie1",
+          "kind": "A"
+        },
+        {
+          "slot": 15,
+          "word": "na3ge5",
+          "kind": "B"
+        },
+        {
+          "slot": 16,
+          "word": "si4ji4",
+          "kind": "A"
+        },
+        {
+          "slot": 17,
+          "word": "you2yong3",
+          "kind": "B"
+        },
+        {
+          "slot": 18,
+          "word": "yi1ban1",
+          "kind": "A"
+        },
+        {
+          "slot": 19,
+          "word": "si4ji4",
+          "kind": "B"
+        },
+        {
+          "slot": 20,
+          "word": "you3yong4",
+          "kind": "B"
+        },
+        {
+          "slot": 21,
+          "word": "shou1dao4",
+          "kind": "A"
+        },
+        {
+          "slot": 22,
+          "word": "shou4dao4",
+          "kind": "B"
+        },
+        {
+          "slot": 23,
+          "word": "si1ji1",
+          "kind": "B"
+        }
+      ],
+      "moves": [
+        {
+          "word": "you2yong3",
+          "wordSlot": 6,
+          "meaningSlot": 17,
+          "wrongToneFirst": false,
+          "score": 92,
+          "streak": 1,
+          "tilesLeft": 22,
+          "autoReshuffle": false
+        },
+        {
+          "word": "you3yong4",
+          "wordSlot": 12,
+          "meaningSlot": 20,
+          "wrongToneFirst": false,
+          "score": 205,
+          "streak": 2,
+          "tilesLeft": 20,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban1",
+          "wordSlot": 18,
+          "meaningSlot": 11,
+          "wrongToneFirst": true,
+          "score": 285,
+          "streak": 0,
+          "tilesLeft": 18,
+          "autoReshuffle": false
+        },
+        {
+          "word": "yi1ban4",
+          "wordSlot": 5,
+          "meaningSlot": 0,
+          "wrongToneFirst": false,
+          "score": 341,
+          "streak": 1,
+          "tilesLeft": 16,
+          "autoReshuffle": false
+        },
+        {
+          "word": "shou1dao4",
+          "wordSlot": 21,
+          "meaningSlot": 1,
+          "wrongToneFirst": false,
+          "score": 430,
+          "streak": 2,
+          "tilesLeft": 14,
+          "autoReshuffle": false
+        },
+        {
+          "word": "shou4dao4",
+          "wordSlot": 13,
+          "meaningSlot": 22,
+          "wrongToneFirst": true,
+          "score": 486,
+          "streak": 0,
+          "tilesLeft": 12,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si1ji1",
+          "wordSlot": 7,
+          "meaningSlot": 23,
+          "wrongToneFirst": false,
+          "score": 554,
+          "streak": 1,
+          "tilesLeft": 10,
+          "autoReshuffle": false
+        },
+        {
+          "word": "si4ji4",
+          "wordSlot": 16,
+          "meaningSlot": 19,
+          "wrongToneFirst": false,
+          "score": 619,
+          "streak": 2,
+          "tilesLeft": 8,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na3xie1",
+          "wordSlot": 14,
+          "meaningSlot": 4,
+          "wrongToneFirst": true,
+          "score": 635,
+          "streak": 0,
+          "tilesLeft": 6,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na4xie1",
+          "wordSlot": 8,
+          "meaningSlot": 3,
+          "wrongToneFirst": false,
+          "score": 667,
+          "streak": 1,
+          "tilesLeft": 4,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na3ge5",
+          "wordSlot": 2,
+          "meaningSlot": 15,
+          "wrongToneFirst": false,
+          "score": 700,
+          "streak": 2,
+          "tilesLeft": 2,
+          "autoReshuffle": false
+        },
+        {
+          "word": "na4ge5",
+          "wordSlot": 9,
+          "meaningSlot": 10,
+          "wrongToneFirst": true,
+          "score": 704,
+          "streak": 0,
+          "tilesLeft": 0,
+          "autoReshuffle": false
+        }
+      ],
+      "finalScore": 704
     }
   ]
 }

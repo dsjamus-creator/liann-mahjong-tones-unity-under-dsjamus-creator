@@ -68,6 +68,8 @@ namespace LiANN.MahjongTones
                 panelSettings.referenceResolution = new Vector2Int(900, 1400);
                 panelSettings.screenMatchMode = PanelScreenMatchMode.MatchWidthOrHeight;
                 panelSettings.match = 0.5f;
+                // Unity's default runtime theme gives ScrollView its clipping and scrollbar; inline styles still win.
+                panelSettings.themeStyleSheet = Resources.Load<ThemeStyleSheet>("LiANNMahjongTones/Theme");
             }
             var host = new GameObject("LiANN Mahjong Tones UI");
             host.transform.SetParent(transform, false);
@@ -248,7 +250,9 @@ namespace LiANN.MahjongTones
             };
             foreach (var t in steps) { var l = Text(t, 18, Theme.Ink); l.style.marginBottom = 10; l.style.unityFontDefinition = FontDefinition.FromFont(_hanziFont); card.Add(l); }
             s.Add(card);
-            s.Add(Button("Back", ShowStart, true));
+            var back = Button("Back", ShowStart, true);
+            back.style.alignSelf = Align.FlexStart;
+            s.Add(back);
         }
 
         void ShowStats()
@@ -688,11 +692,13 @@ namespace LiANN.MahjongTones
             var card = Card();
             card.style.marginTop = 16;
             card.Add(Text("Words this round", 18, Theme.Ink, true));
-            var scroll = new ScrollView();
+            var scroll = new ScrollView(ScrollViewMode.Vertical);
             scroll.style.maxHeight = 520;
+            scroll.contentContainer.style.flexShrink = 0;          // rows keep their height and the list scrolls
+            scroll.contentViewport.style.overflow = Overflow.Hidden;
             foreach (var r in _game.Results)
             {
-                var row = new VisualElement { style = { flexDirection = FlexDirection.Row, alignItems = Align.Center, marginTop = 8 } };
+                var row = new VisualElement { style = { flexDirection = FlexDirection.Row, alignItems = Align.Center, marginTop = 8, flexShrink = 0 } };
                 var hz = Text(r.Word.Hanzi, 26, Theme.Ink, true);
                 hz.style.unityFontDefinition = FontDefinition.FromFont(_hanziFont);
                 hz.style.minWidth = 90;

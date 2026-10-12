@@ -18,6 +18,21 @@ namespace LiANN.MahjongTones.Core
         public const int MaxAttempts = 100;
 
         /// <summary>
+        /// Label key for the one-label-per-board rule: lower case, punctuation removed, a leading "to " and a
+        /// plural "s" dropped, so "sport"/"sports" or "how"/"how?" can't share a board (spec §4.1).
+        /// </summary>
+        public static string LabelKey(string label)
+        {
+            var sb = new System.Text.StringBuilder();
+            foreach (char c in (label ?? "").ToLowerInvariant())
+                if (char.IsLetterOrDigit(c) || c == ' ') sb.Append(c);
+            string k = string.Join(" ", sb.ToString().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries));
+            if (k.StartsWith("to ")) k = k.Substring(3);
+            if (k.Length > 3 && k.EndsWith("s") && !k.EndsWith("ss")) k = k.Substring(0, k.Length - 1);
+            return k;
+        }
+
+        /// <summary>
         /// Choose <paramref name="pairs"/> words. Pool is sorted by reading key, Fisher–Yates shuffled,
         /// tone-pair groups (if any) go first and whole; duplicates of hanzi or English label are skipped.
         /// </summary>
@@ -33,22 +48,29 @@ namespace LiANN.MahjongTones.Core
 
             var chosen = new List<Word>();
             var hanzi = new HashSet<string>();
-            var english = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-            bool Fits(Word w) => !hanzi.Contains(w.Hanzi) && !english.Contains(w.English);
-            void Take(Word w) { chosen.Add(w); hanzi.Add(w.Hanzi); english.Add(w.English); }
+            var english = new HashSet<string>(StringComparer.Ordinal);
+            bool Fits(Word w) => !hanzi.Contains(w.Hanzi) && !english.Contains(LabelKey(w.English));
+            void Take(Word w) { chosen.Add(w); hanzi.Add(w.Hanzi); english.Add(LabelKey(w.English)); }
 
             if (tonePairGroups != null)
             {
                 var byKey = new Dictionary<string, Word>();
                 foreach (var w in sorted) byKey[w.ReadingKey] = w;
-                foreach (var group in tonePairGroups)
+                // Groups in seeded random order, so tone-pair boards vary from game to game.
+                var groups = new List<IList<string>>(tonePairGroups);
+                for (int i = groups.Count - 1; i >= 1; i--)
+                {
+                    int j = rng.RandInt(i + 1);
+                    (groups[i], groups[j]) = (groups[j], groups[i]);
+                }
+                foreach (var group in groups)
                 {
                     var members = new List<Word>();
                     foreach (var key in group) if (byKey.TryGetValue(key, out var w)) members.Add(w);
                     if (members.Count != group.Count || chosen.Count + members.Count > pairs) continue;
                     bool ok = true;
-                    var gh = new HashSet<string>(); var ge = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-                    foreach (var w in members) if (!Fits(w) || !gh.Add(w.Hanzi) || !ge.Add(w.English)) ok = false;
+                    var gh = new HashSet<string>(); var ge = new HashSet<string>(StringComparer.Ordinal);
+                    foreach (var w in members) if (!Fits(w) || !gh.Add(w.Hanzi) || !ge.Add(LabelKey(w.English))) ok = false;
                     if (ok) foreach (var w in members) Take(w);
                 }
             }

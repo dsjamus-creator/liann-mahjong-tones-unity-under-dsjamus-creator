@@ -12,6 +12,8 @@ namespace LiANN.MahjongTones.Tests
         float _now;
         Tweens Make() => new Tweens { Now = () => _now };
 
+        [SetUp] public void ResetClock() => _now = 0f;   // NUnit reuses the fixture instance between tests
+
         [Test]
         public void StepsThenFinishesAndCallsDone()
         {

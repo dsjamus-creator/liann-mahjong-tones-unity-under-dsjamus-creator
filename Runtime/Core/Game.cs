@@ -82,7 +82,16 @@ namespace LiANN.MahjongTones.Core
             return open;
         }
 
-        void Penalise(int points) { if (Mode == PlayMode.Challenge) Score = Math.Max(0, Score - points); }
+        /// <summary>Points actually deducted by Challenge penalties so far; undo never refunds them.</summary>
+        public int PenaltyTotal { get; private set; }
+
+        void Penalise(int points)
+        {
+            if (Mode != PlayMode.Challenge) return;
+            int before = Score;
+            Score = Math.Max(0, Score - points);
+            PenaltyTotal += before - Score;
+        }
 
         public SelectOutcome Select(int slotId)
         {
@@ -211,7 +220,7 @@ namespace LiANN.MahjongTones.Core
         {
             readonly (int word, TileKind kind, bool on)[] _tiles;
             readonly (bool matched, bool hinted, int tone, int pair)[] _results;
-            readonly int _score, _streak, _tilesLeft, _shufflesUsed, _shuffleCount;
+            readonly int _score, _streak, _tilesLeft, _shuffleCount, _penaltyTotal;
 
             public Snapshot(Game g)
             {
@@ -221,7 +230,7 @@ namespace LiANN.MahjongTones.Core
                 for (int i = 0; i < g.Results.Length; i++)
                     _results[i] = (g.Results[i].Matched, g.Results[i].Hinted, g.Results[i].WrongToneAttempts, g.Results[i].WrongPairAttempts);
                 _score = g.Score; _streak = g.Streak; _tilesLeft = g.TilesLeft;
-                _shufflesUsed = g.ShufflesUsed; _shuffleCount = g.ShuffleCount;
+                _shuffleCount = g.ShuffleCount; _penaltyTotal = g.PenaltyTotal;
             }
 
             public void Restore(Game g)
@@ -232,8 +241,10 @@ namespace LiANN.MahjongTones.Core
                 }
                 // Learning flags are kept: undoing a match does not erase that a hint or a wrong tone happened.
                 for (int i = 0; i < _results.Length; i++) g.Results[i].Matched = _results[i].matched;
-                g.Score = _score; g.Streak = _streak; g.TilesLeft = _tilesLeft;
-                g.ShufflesUsed = _shufflesUsed; g.ShuffleCount = _shuffleCount;   // hints used stay spent
+                // Undo takes back the move, not the cost of help: penalties taken since the snapshot stay deducted,
+                // and hints and shuffles used stay spent (so Challenge limits can't be reset by undoing).
+                g.Score = Math.Max(0, _score - (g.PenaltyTotal - _penaltyTotal));
+                g.Streak = _streak; g.TilesLeft = _tilesLeft; g.ShuffleCount = _shuffleCount;
                 g.Selected = null; g.PendingWord = null; g.LastAutoReshuffle = false;
             }
         }

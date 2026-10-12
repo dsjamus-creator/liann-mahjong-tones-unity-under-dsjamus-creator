@@ -15,13 +15,13 @@ bao1zi5,包子,1,baozi,dictionary-first-sense,,baozi; bao (steamed stuffed bun)
 bao4zhi3,报纸,3,newspaper,dictionary-first-sense,,"newspaper; newsprint; CL:fen4,qi1,zhang1"
 bei1zi5,杯子,1,cup,dictionary-first-sense,,"cup; glass; CL:ge4,zhi1"
 bei3fang1,北方,3,north,dictionary-first-sense,,north; the northern part a country; China north of the Yellow River
-ben3zi5,本子,2,book,dictionary-first-sense,,book; notebook; CL:ben3; edition
+ben3zi5,本子,2,exercise book,override,,book; notebook; CL:ben3; edition
 bi3ji4,笔记,3,notes,override,,to take down (in writing); notes; a type of literature consisting mainly of short sketches; CL:ben3; handwriting
 bi3ji4ben3,笔记本,3,notebook,dictionary-first-sense,,notebook (stationery) (CL:ben3); (computing) laptop; notebook (abbr. for bi3 ji4 ben3 dian4 nao3)
 bi3jiao4,比较,3,to compare,dictionary-first-sense,,to compare; to contrast; comparatively; relatively; quite; comparison
 bi3sai4,比赛,3,competition,dictionary-first-sense,,"competition (sports etc); match; CL:chang3,ci4; to compete"
 bian4cheng2,变成,3,to change into,dictionary-first-sense,,to change into; to turn into; to become
-bian4hua4,变化,3,to change,dictionary-first-sense,,(intransitive) to change; to vary; change; variation
+bian4hua4,变化,3,change,override,,(intransitive) to change; to vary; change; variation
 biao3yan3,表演,3,performance,override,,play; show; performance; exhibition; to perform; to act; to demonstrate; CL:chang3
 bie2de5,别的,3,else,dictionary-first-sense,,else; other
 bie2ren5,别人,3,other people,dictionary-first-sense,,other people; others; other person
@@ -68,7 +68,7 @@ da3sao3,打扫,3,to clean,dictionary-first-sense,,to clean; to sweep
 da3suan4,打算,3,to plan,dictionary-first-sense,,to plan; to intend; to calculate; plan; intention; calculation; CL:ge4
 da4gai4,大概,3,roughly,dictionary-first-sense,,roughly; probably; rough; approximate; about; general idea
 da4jia1,大家,1,everyone,dictionary-first-sense,,everyone; influential family; great expert; (before a two-syllable verb) considerably; greatly (exaggerate); vehemently (oppose); severely (punish); extensively (refurbish); effusively (praise)
-da4xiao3,大小,3,large and small,dictionary-first-sense,,large and small; size; adults and children; consideration of seniority; at any rate
+da4xiao3,大小,3,size,override,,large and small; size; adults and children; consideration of seniority; at any rate
 da4xiong2mao1,大熊猫,3,giant panda,dictionary-first-sense,,3
 da4xue2,大学,1,university,override,,"the Great Learning, one of the Four Books Si4 shu1 in Confucianism; university; college; CL:suo3"
 da4xue2sheng1,大学生,1,university student,dictionary-first-sense,,university student; college student
@@ -76,7 +76,7 @@ da4yi1,大衣,3,overcoat,dictionary-first-sense,,overcoat; topcoat; cloak; CL:ji
 dan1xin1,担心,3,anxious,dictionary-first-sense,,anxious; worried; uneasy; to worry; to be anxious; loyal heart; loyalty; to devote one's entire mind; variant of dan1 xin1
 dan4gao1,蛋糕,3,cake,dictionary-first-sense,,"cake; CL:kuai4,ge4"
 dan4shi4,但是,2,but,dictionary-first-sense,ke3shi4,but; however
-dang1ran2,当然,3,only natural,dictionary-first-sense,,only natural; as it should be; certainly; of course; without doubt
+dang1ran2,当然,3,of course,override,,only natural; as it should be; certainly; of course; without doubt
 dao4chu4,到处,3,everywhere,dictionary-first-sense,,3
 de2dao4,得到,3,to get,dictionary-first-sense,,to get; to obtain; to receive; to achieve the Dao; to become an immortal
 de5hua4,的话,3,if,dictionary-first-sense,ru2guo3,3
@@ -99,7 +99,7 @@ dong3de5,懂得,3,to understand,dictionary-first-sense,liao3jie3,to understand; 
 dong4wu4,动物,3,animal,dictionary-first-sense,,3
 dong4wu4yuan2,动物园,3,zoo,dictionary-first-sense,,3
 duan3ku4,短裤,3,short pants,dictionary-first-sense,,short pants; shorts
-duan4lian4,锻炼,3,to toughen,dictionary-first-sense,,to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills; to train oneself
+duan4lian4,锻炼,3,to exercise,override,,to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills; to train oneself
 dui4bu5qi3,对不起,1,I'm sorry,dictionary-first-sense,,I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint
 duo1shao5,多少,1,how much?,dictionary-first-sense,,"how much?; how many?; (phone number, student ID etc) what number?"
 er2qie3,而且,3,but also,dictionary-first-sense,,(not only...) but also; moreover; in addition; furthermore
@@ -127,24 +127,24 @@ fu2wu4,服务,3,to serve,dictionary-first-sense,,to serve; service; CL:xiang4
 fu4jin4,附近,3,nearby,dictionary-first-sense,,nearby; neighboring; (in the) vicinity (of); neighborhood
 fu4xi2,复习,3,to review,dictionary-first-sense,,to review; revision; CL:ci4; variant of fu4 xi2
 gan1jing4,干净,3,clean,dictionary-first-sense,,clean; neat
-gan3dao4,感到,3,to feel,dictionary-first-sense,,to feel; to sense; to perceive; to hurry (to some place)
+gan3dao4,感到,3,to feel,dictionary-first-sense,jue2de5,to feel; to sense; to perceive; to hurry (to some place)
 gan3mao4,感冒,3,to catch cold,dictionary-first-sense,,"to catch cold; (common) cold; CL:chang2,ci4; (coll.) to be interested in (often used in the negative); (Tw) to detest; can't stand"
 gan3xing4qu4,感兴趣,3,to be interested,dictionary-first-sense,,3
 gang1cai2,刚才,3,just now,dictionary-first-sense,,"just now; a moment ago; just now (variant of gang1 cai2); steel (as raw material); steel sheets, bars, tubes, ingots, wire etc"
 gang1gang5,刚刚,3,just recently,dictionary-first-sense,,just recently; just a moment ago
 gao1tie3,高铁,3,high speed rail,dictionary-first-sense,,3
-gao1xing4,高兴,1,happy,dictionary-first-sense,kuai4le4,happy; glad; willing (to do sth); in a cheerful mood
+gao1xing4,高兴,1,happy,dictionary-first-sense,,happy; glad; willing (to do sth); in a cheerful mood
 gao1zhong1,高中,2,senior high school,dictionary-first-sense,,2
 gao4su5,告诉,2,to tell,dictionary-first-sense,,to tell; to inform; to let know
 ge1ge5,哥哥,1,older brother,dictionary-first-sense,,"older brother; CL:ge4,wei4"
 ge4zi5,个子,2,stature,dictionary-first-sense,,stature; height; size (of a person or object); (agriculture) bundle of cereal stalks tied together
 gen1ju4,根据,3,according to,dictionary-first-sense,,according to; based on; basis; foundation; CL:ge4
-gong1jiao1che1,公交车,2,public transport vehicle,dictionary-first-sense,,public transport vehicle; town bus; CL:liang4
+gong1jiao1che1,公交车,2,bus,override,,public transport vehicle; town bus; CL:liang4
 gong1jin1,公斤,3,kilogram,dictionary-first-sense,,3
 gong1si1,公司,1,company,dictionary-first-sense,,"company; firm; corporation; CL:jia1; public and private (interests, initiative etc)"
 gong1zuo4,工作,1,to work,dictionary-first-sense,,"to work; (of a machine) to operate; job; work; task; CL:ge4,fen4,xiang4"
 gong1zuo4ri4,工作日,3,workday,dictionary-first-sense,,workday; working day; weekday
-gu4shi5,故事,3,narrative,dictionary-first-sense,,narrative; story; tale
+gu4shi5,故事,3,story,override,,narrative; story; tale
 guan1ji1,关机,3,to turn off,dictionary-first-sense,,to turn off (a machine or device); to finish shooting a film
 guan1yu2,关于,3,pertaining to,dictionary-first-sense,,pertaining to; concerning; with regard to; about; a matter of
 guo2jia1,国家,3,country,dictionary-first-sense,,country; nation; state
@@ -211,12 +211,12 @@ jing1guo4,经过,3,to pass,dictionary-first-sense,,to pass; to go through; proce
 jing1li3,经理,3,manager,dictionary-first-sense,,"manager; director; CL:ge4,wei4,ming2"
 jiu3dian4,酒店,2,hotel,override,,wine shop; pub (public house); hotel; restaurant; (Tw) hostess club
 ju4zi5,句子,3,sentence,dictionary-first-sense,,sentence; CL:ge4; a saw; CL:ba3
-jue2de5,觉得,1,to think that...,dictionary-first-sense,,to think that...; to feel that...; to feel (uncomfortable etc)
+jue2de5,觉得,1,to feel,override,gan3dao4,to think that...; to feel that...; to feel (uncomfortable etc)
 jue2ding4,决定,3,to decide,dictionary-first-sense,,"to decide; to determine; to make up one's mind; decision (CL:ge4,xiang4)"
 ka1fei1,咖啡,2,coffee,dictionary-first-sense,,(loanword) coffee; CL:bei1
 kai1hua1,开花,3,to bloom,dictionary-first-sense,,to bloom; to blossom; to flower; (fig.) to burst; to split open; (fig.) to burst with joy; (fig.) to spring up everywhere; to flourish
 kai1shi3,开始,2,to begin,dictionary-first-sense,,to begin; to start; beginning; start
-kai1xin1,开心,3,to feel happy,dictionary-first-sense,,to feel happy; to rejoice; to have a great time; to make fun of sb
+kai1xin1,开心,3,glad,override,,to feel happy; to rejoice; to have a great time; to make fun of sb
 kai1xue2,开学,2,to start school,dictionary-first-sense,,(of a student) to start school; (of a semester) to begin; (old) to found a school; the start of a new term
 kan4jian4,看见,1,to see,dictionary-first-sense,,to see; to catch sight of
 kan4lai5,看来,3,apparently,dictionary-first-sense,,apparently; it seems that
@@ -229,7 +229,7 @@ ke4ren2,客人,3,visitor,dictionary-first-sense,,visitor; guest; customer; clien
 ke4wen2,课文,3,text,dictionary-first-sense,,text; CL:pian1; Kevin (name)
 kong1tiao2,空调,3,air conditioning,dictionary-first-sense,,air conditioning; air conditioner (including units that have a heating mode); CL:tai2
 ku4zi5,裤子,2,trousers,dictionary-first-sense,,trousers; pants; CL:tiao2
-kuai4le4,快乐,2,happy,dictionary-first-sense,gao1xing4,happy; joyful
+kuai4le4,快乐,2,joyful,override,,happy; joyful
 kuai4zi5,筷子,3,chopsticks,dictionary-first-sense,,"chopsticks; CL:dui4,gen1,ba3,shuang1"
 kuang4quan2shui3,矿泉水,3,mineral water,dictionary-first-sense,,"mineral water; CL:ping2,bei1"
 lai2zi4,来自,3,to come from,dictionary-first-sense,,to come from (a place); From: (in email header)
@@ -267,7 +267,7 @@ mian4qian2,面前,3,in front of,dictionary-first-sense,,in front of; facing; (in
 ming2bai5,明白,3,clear,dictionary-first-sense,qing1chu5,clear; obvious; unequivocal; sensible; reasonable; to understand; to realize
 ming2dan1,名单,3,list of names,dictionary-first-sense,,3
 ming2nian2,明年,1,next year,dictionary-first-sense,,1
-ming2ren2,名人,3,personage,dictionary-first-sense,,"personage; celebrity; Akihito, personal name of the Heisei Ping2 cheng2 emperor of Japan (1933-), reigned 1989-2019"
+ming2ren2,名人,3,celebrity,override,,"personage; celebrity; Akihito, personal name of the Heisei Ping2 cheng2 emperor of Japan (1933-), reigned 1989-2019"
 ming2tian1,明天,1,tomorrow,dictionary-first-sense,,1
 ming2zi5,名字,1,name,dictionary-first-sense,,name (of a person or thing); see song1 ming2
 na3ge5,哪个,1,which,dictionary-first-sense,,which; who
@@ -323,7 +323,7 @@ qiu2chang3,球场,3,stadium,dictionary-first-sense,,"stadium; sports ground; cou
 qu4nian2,去年,1,last year,dictionary-first-sense,,1
 qun2zi5,裙子,3,skirt,dictionary-first-sense,,skirt; CL:tiao2
 ran2hou4,然后,3,then,dictionary-first-sense,,then; after that; afterwards
-re4qing2,热情,3,cordial,dictionary-first-sense,,cordial; enthusiastic; passion; passionate; passionately
+re4qing2,热情,3,warm,override,,cordial; enthusiastic; passion; passionate; passionately
 ren4de5,认得,3,to recognize,dictionary-first-sense,,to recognize; to remember sth (or sb) on seeing it; to know
 ren4shi5,认识,1,to know,dictionary-first-sense,zhi1dao4,to know; to recognize; to be familiar with; to get acquainted with sb; knowledge; understanding; awareness; cognition
 ren4wei2,认为,3,to believe,dictionary-first-sense,xiang1xin4,to believe; to think; to consider; to feel
@@ -352,10 +352,10 @@ shi2hou5,时候,1,time,dictionary-first-sense,shi2jian1,time; length of time; mo
 shi2jian1,时间,1,time,dictionary-first-sense,shi2hou5,(concept of) time; (duration of) time; (point in) time
 shi4jie4,世界,3,world,dictionary-first-sense,,world; event horizon; field of vision
 shi4qing5,事情,2,affair,dictionary-first-sense,,"affair; matter; thing; business; CL:jian4,zhuang1"
-shou1dao4,收到,3,to receive,dictionary-first-sense,shou4dao4,3
+shou1dao4,收到,3,to receive,dictionary-first-sense,,3
 shou3biao3,手表,2,wristwatch,dictionary-first-sense,,"wristwatch; CL:kuai4,zhi1,ge4"
 shou3ji1,手机,1,mobile phone,override,,"cell phone; mobile phone; CL:bu4,tai2"
-shou4dao4,受到,3,to receive,dictionary-first-sense,shou1dao4,"to receive (praise, an education, punishment etc); to be...ed (praised, educated, punished etc)"
+shou4dao4,受到,3,to undergo,override,,"to receive (praise, an education, punishment etc); to be...ed (praised, educated, punished etc)"
 shu1bao1,书包,2,schoolbag,dictionary-first-sense,,"schoolbag; satchel; bookbag; CL:ge4,zhi1"
 shu1dian4,书店,1,bookstore,dictionary-first-sense,,bookstore; CL:jia1; electricity transmission; to transmit electricity
 shu1fu5,舒服,2,comfortable,dictionary-first-sense,,comfortable; feeling well
@@ -371,9 +371,9 @@ sui1ran2,虽然,2,although,dictionary-first-sense,,although; even though (often 
 suo3yi3,所以,2,therefore,dictionary-first-sense,,therefore; as a result; so; the reason why
 ta1men5,他们,1,they,dictionary-first-sense,,they; them; they; them (females)
 tai4yang5,太阳,3,sun,dictionary-first-sense,,sun; sunlight; sunshine; temple (on the side of the human head) (abbr. for tai4 yang2 xue2)
-te4bie2,特别,3,unusual,dictionary-first-sense,,unusual; special; very; especially; particularly; expressly; for a specific purpose; (often followed by shi4) in particular
+te4bie2,特别,3,especially,override,,unusual; special; very; especially; particularly; expressly; for a specific purpose; (often followed by shi4) in particular
 ti2gao1,提高,3,to raise,dictionary-first-sense,,to raise; to increase; to improve
-ti3yu4,体育,3,sports,dictionary-first-sense,,sports; physical education
+ti3yu4,体育,3,PE,override,,sports; physical education
 ti3yu4guan3,体育馆,3,gym,dictionary-first-sense,,gym; gymnasium; stadium; CL:ge4
 tian1qi4,天气,1,weather,dictionary-first-sense,,1
 tiao4wu3,跳舞,2,to dance,dictionary-first-sense,,2
@@ -477,9 +477,9 @@ yi3hou4,以后,3,after,dictionary-first-sense,,after; later; afterwards; followi
 yi3jing1,已经,2,already,dictionary-first-sense,,2
 yi3qian2,以前,3,before,dictionary-first-sense,,before; formerly; previous; ago
 yi3wai4,以外,3,apart from,dictionary-first-sense,chu2le5,apart from; other than; except for; external; outside of; on the other side of; beyond
-yi3wei2,以为,3,to think,dictionary-first-sense,,to think; to believe (often with the implication that the belief is mistaken – unless referring to one's own current belief)
+yi3wei2,以为,3,to wrongly think,override,,to think; to believe (often with the implication that the belief is mistaken – unless referring to one's own current belief)
 yi3zi5,椅子,1,chair,dictionary-first-sense,,"chair; CL:ba3,zhang1"
-yi4si5,意思,2,idea,dictionary-first-sense,,"idea; opinion; meaning; wish; desire; interest; fun; token of appreciation, affection etc; CL:ge4; to give as a small token; to do sth as a gesture of goodwill etc"
+yi4si5,意思,2,meaning,override,,"idea; opinion; meaning; wish; desire; interest; fun; token of appreciation, affection etc; CL:ge4; to give as a small token; to do sth as a gesture of goodwill etc"
 yin1wei4,因为,2,because,dictionary-first-sense,,because; owing to; on account of; phoneme
 yin1yue4,音乐,3,music,dictionary-first-sense,,"music; CL:zhang1,qu3,duan4"
 yin2hang2,银行,3,bank,dictionary-first-sense,,"bank; CL:jia1,ge4"
@@ -511,9 +511,9 @@ yun4dong4yuan2,运动员,3,athlete,dictionary-first-sense,,"athlete; CL:ming2,ge
 zai4jian4,再见,1,goodbye,dictionary-first-sense,,goodbye; see you again later; to reconstruct; to build another; under construction
 zao3fan4,早饭,1,breakfast,dictionary-first-sense,,"breakfast; CL:fen4,dun4,ci4,can1"
 zao3shang5,早上,1,early morning,dictionary-first-sense,,early morning; CL:ge4
-zen3me5,怎么,1,how?,dictionary-first-sense,zen3me5yang4,how?; what?; why?; variant of zen3 me5
-zen3me5yang4,怎么样,1,how?,dictionary-first-sense,zen3me5,how?; how about?; how was it?; how are things?
-zen3yang4,怎样,3,how,dictionary-first-sense,,how; what kind
+zen3me5,怎么,1,how?,dictionary-first-sense,,how?; what?; why?; variant of zen3 me5
+zen3me5yang4,怎么样,1,how about,override,,how?; how about?; how was it?; how are things?
+zen3yang4,怎样,3,in what way,override,,how; what kind
 zhang4fu5,丈夫,2,husband,dictionary-first-sense,,2
 zhao2ji2,着急,3,to worry,dictionary-first-sense,,to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhao1ji2]
 zhao4pian4,照片,3,photo,override,,"photograph; CL:zhang1,fu2; (Internet slang) deceptive photo (pun on zhao4 pian4) (esp. one misleadingly presenting sth in a favorable light)"
