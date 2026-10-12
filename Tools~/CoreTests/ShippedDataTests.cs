@@ -31,5 +31,18 @@ namespace LiANN.MahjongTones.Tests
             foreach (var p in deny.RootElement.EnumerateObject())
                 if (!p.Name.StartsWith("_")) Assert.IsFalse(keys.Contains(p.Name), p.Name + " must not ship: its hanzi and label belong to different words");
         }
+
+        [Test]
+        public void EveryMeaningLabelKeepsItsLongestWordOnOneLine()
+        {
+            var json = File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "words.json"));
+            var words = JsonSerializer.Deserialize<WordList>(json, new JsonSerializerOptions { IncludeFields = true }).words;
+            foreach (var w in words)
+            {
+                float scale = MeaningLabel.FontScale(w.english);
+                Assert.LessOrEqual(scale * MeaningLabel.RenderFactor * MeaningLabel.LongestWordEm(w.english), MeaningLabel.Available + 1e-4f, w.english);
+                Assert.GreaterOrEqual(scale, 0.10f, w.english + " would be too small to read; shorten its label");
+            }
+        }
     }
 }

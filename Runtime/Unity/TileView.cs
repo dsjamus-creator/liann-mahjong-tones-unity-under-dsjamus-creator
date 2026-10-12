@@ -118,8 +118,7 @@ namespace LiANN.MahjongTones
             }
             else
             {
-                int len = _word.English.Length;
-                _main.style.fontSize = size * (len <= 6 ? 0.18f : len <= 12 ? 0.15f : 0.12f);
+                _main.style.fontSize = size * MeaningLabel.FontScale(_word.English);
                 _main.style.paddingLeft = size * 0.06f; _main.style.paddingRight = size * 0.06f;
             }
         }

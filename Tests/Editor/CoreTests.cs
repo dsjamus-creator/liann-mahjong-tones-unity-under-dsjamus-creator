@@ -265,6 +265,17 @@ namespace LiANN.MahjongTones.Tests
         public void LabelKeysNormalise(string label, string key) => Assert.AreEqual(key, BoardGenerator.LabelKey(label));
 
         [Test]
+        public void LongMeaningWordsShrinkToFitOneLine()
+        {
+            // DSJ-PC retest of 3dab0a6: "supermarket" at 0.15 × tile width broke as "supermark / et".
+            float s = MeaningLabel.FontScale("supermarket");
+            Assert.Less(s, 0.15f);
+            Assert.LessOrEqual(s * MeaningLabel.RenderFactor * MeaningLabel.LongestWordEm("supermarket"), MeaningLabel.Available + 1e-4f);
+            Assert.AreEqual(0.18f, MeaningLabel.FontScale("tea"), 1e-6f, "short labels keep their size");
+            Assert.AreEqual(MeaningLabel.LongestWordEm("underground"), MeaningLabel.LongestWordEm("underground railway"), 1e-6f, "only the longest word counts");
+        }
+
+        [Test]
         public void TonePairBoardsVary()
         {
             var pool = new List<Word> { W("yi1ban1", "一般", "ordinary"), W("yi1ban4", "一半", "half"), W("si1ji1", "司机", "driver"), W("si4ji4", "四季", "four seasons"),
