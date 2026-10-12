@@ -37,7 +37,14 @@ namespace LiANN.MahjongTones
         /// launch; otherwise nothing is fetched until the player opens the Account screen.</summary>
         public bool HasSession => !string.IsNullOrEmpty(_saved.refreshToken) || !string.IsNullOrEmpty(_saved.pendingEmail);
         public string Email => _saved.email;
-        public string Message { get; private set; } = "";
+        /// <summary>The line under the account form. A refused "send" shows a live countdown that clears itself at 0.</summary>
+        public string Message
+        {
+            get => !_cooldownNote ? _message : ResendInSeconds > 0 ? $"Check your inbox. You can ask for another code in {ResendInSeconds} s." : "";
+            private set { _message = value; _cooldownNote = false; }
+        }
+        string _message = "";
+        bool _cooldownNote;
 
         readonly Endpoints _ends;
         AuthConfig _auth;
@@ -96,7 +103,7 @@ namespace LiANN.MahjongTones
         public async Task<bool> SendCode(string email)
         {
             if (_auth == null || !_legacyCacheRemoved || SendingCode) return false;
-            if (ResendInSeconds > 0) { Message = $"Check your inbox. You can ask for another code in {ResendInSeconds} s."; return false; }
+            if (ResendInSeconds > 0) { _cooldownNote = true; return false; }
             email = (email ?? "").Trim();
             if (!email.Contains("@") || email.Length < 5) { Message = "Enter your email address."; return false; }
             string body = "{\"email\":" + SetListEvents.Q(email) + ",\"create_user\":true,\"data\":{}}";
@@ -117,6 +124,9 @@ namespace LiANN.MahjongTones
             }
             finally { SendingCode = false; }
         }
+
+        /// <summary>Sends a new code to the address waiting for one (code screen), under the same cooldown.</summary>
+        public Task<bool> ResendCode() => SendCode(_saved.pendingEmail);
 
         public void ChangeEmail() { _saved.pendingEmail = null; Persist(); Status = State.SignedOut; Message = ""; }
 
