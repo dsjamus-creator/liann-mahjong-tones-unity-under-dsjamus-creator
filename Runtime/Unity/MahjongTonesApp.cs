@@ -296,6 +296,21 @@ namespace LiANN.MahjongTones
                 card.Add(Text(label, 13, Theme.Muted, true));
                 return f;
             }
+            // A code request button with the busy state and the 60 s cooldown (each request sends an email). While it
+            // counts down the screen re-renders every second, so the button label and any cooldown note stay current.
+            VisualElement SendButton(string text, Func<System.Threading.Tasks.Task<bool>> send, bool primary)
+            {
+                int wait = _account.ResendInSeconds;
+                var b = Button(_account.SendingCode ? "Sending…" : wait > 0 ? $"{text} ({wait} s)" : text,
+                    () => { if (!_account.SendingCode && _account.ResendInSeconds == 0) { status.text = "Sending…"; Run(send()); } }, primary);
+                if (_account.SendingCode || wait > 0)
+                {
+                    b.SetEnabled(false); b.style.opacity = 0.55f;
+                    var shown = _account.Status;
+                    if (wait > 0) s.schedule.Execute(() => { if (_screen == s && _account.Status == shown) ShowAccount(); }).StartingIn(1000);
+                }
+                return b;
+            }
             VisualElement Row() => new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
 
             switch (_account.Status)
@@ -316,15 +331,7 @@ namespace LiANN.MahjongTones
                     email.RegisterValueChangedCallback(e => _emailDraft = e.newValue);
                     card.Add(email);
                     var row = Row();
-                    int wait = _account.ResendInSeconds;
-                    string label = _account.SendingCode ? "Sending…" : wait > 0 ? $"Send me a code ({wait} s)" : "Send me a code";
-                    var send = Button(label, () => { if (!_account.SendingCode && _account.ResendInSeconds == 0) { status.text = "Sending…"; Run(_account.SendCode(email.value)); } }, true);
-                    if (_account.SendingCode || wait > 0)
-                    {
-                        send.SetEnabled(false); send.style.opacity = 0.55f;
-                        if (wait > 0) s.schedule.Execute(() => { if (_screen == s && _account.Status == AccountClient.State.SignedOut) ShowAccount(); }).StartingIn(1000);
-                    }
-                    row.Add(send);
+                    row.Add(SendButton("Send me a code", () => _account.SendCode(email.value), true));
                     card.Add(row);
                     break;
                 }
@@ -334,6 +341,7 @@ namespace LiANN.MahjongTones
                     card.Add(code);
                     var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
                     row.Add(Button("Sign in", () => Run(_account.VerifyCode(code.value)), true));
+                    row.Add(SendButton("Send a new code", _account.ResendCode, false));
                     row.Add(Button("Use a different email", () => { _account.ChangeEmail(); ShowAccount(); }));
                     card.Add(row);
                     break;

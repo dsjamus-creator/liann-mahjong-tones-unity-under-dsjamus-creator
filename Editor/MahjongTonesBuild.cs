@@ -97,8 +97,13 @@ namespace LiANN.MahjongTones.EditorTools
             PlayerSettings.allowedAutorotateToPortraitUpsideDown = false;
             PlayerSettings.allowedAutorotateToLandscapeLeft = true;
             PlayerSettings.allowedAutorotateToLandscapeRight = true;
+            // Off in the player (battery on phones). Build() puts the project's value back afterwards, because the
+            // Editor reads the same setting and would otherwise stop running frames in Play mode when it loses focus.
+            if (_runInBackgroundBeforeBuild == null) _runInBackgroundBeforeBuild = PlayerSettings.runInBackground;
             PlayerSettings.runInBackground = false;
         }
+
+        static bool? _runInBackgroundBeforeBuild;
 
         static int VersionCode()
         {
@@ -109,13 +114,22 @@ namespace LiANN.MahjongTones.EditorTools
         static void Build(BuildTarget target, string path)
         {
             Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(path)) ?? ".");
-            var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
+            BuildReport report;
+            try
             {
-                scenes = new[] { ScenePath },
-                locationPathName = path,
-                target = target,
-                options = BuildOptions.None,
-            });
+                report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
+                {
+                    scenes = new[] { ScenePath },
+                    locationPathName = path,
+                    target = target,
+                    options = BuildOptions.None,
+                });
+            }
+            finally
+            {
+                if (_runInBackgroundBeforeBuild is bool before) PlayerSettings.runInBackground = before;
+                _runInBackgroundBeforeBuild = null;
+            }
             var s = report.summary;
             Debug.Log($"LiANN Mahjong Tones: {target} build {s.result} → {path} ({s.totalSize / (1024 * 1024)} MB, {s.totalErrors} errors).");
             if (Application.isBatchMode && s.result != BuildResult.Succeeded) EditorApplication.Exit(1);
