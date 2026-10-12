@@ -1,0 +1,5 @@
+{
+ "_note": "Public service addresses only (no keys). The Supabase URL and publishable key are read at run time from the Pinyin API's /v1/auth/config. Empty values turn sign-in off.",
+ "pinyinApiBase": "https://pinyin-tiles-api-staging.onrender.com",
+ "alongsideApiBase": "https://lwl-backend-mhgo.onrender.com"
+}

@@ -98,6 +98,38 @@ namespace LiANN.MahjongTones.Tests
             Assert.AreEqual(900, Scoring.CountdownSeconds("Large"));
         }
 
+        // ---------- AlongSide upload ----------
+
+        [Test]
+        public void NameUuidsMatchRfc4122Version5()
+        {
+            // expected values from Python's uuid.uuid5 with the same namespace
+            Assert.AreEqual("7bb41639-7850-514a-96c3-fbea5489a33a", SetListEvents.NameUuid("liann-mahjong-tones|list|abc"));
+            Assert.AreEqual("e11c30ee-5873-519c-9a63-9827c57077ab", SetListEvents.NameUuid("liann-mahjong-tones|saved|abc|ude:1|uds:2"));
+            Assert.AreEqual("2303f1ef-c44f-55c4-9f93-42ed716f8427", SetListEvents.NameUuid("中文"));
+            Assert.AreEqual("7bb41639-7850-514a-96c3-fbea5489a33a", SetListEvents.ListId("abc"));
+            Assert.AreEqual("e11c30ee-5873-519c-9a63-9827c57077ab", SetListEvents.EventId("abc", "ude:1", "uds:2"));
+        }
+
+        [Test]
+        public void EventsAreIdempotentBatchedAndEscaped()
+        {
+            var words = Enumerable.Range(0, 205).Select(i => ($"ude:{i}", $"uds:{i}", "医生", "2026-10-12T09:00:00Z")).ToList();
+            words.Add(("", "uds:x", "无", "2026-10-12T09:00:00Z"));      // no entry id: skipped
+            var a = SetListEvents.ForList("list-1", "Mahjong \"Tones\"", words);
+            var b = SetListEvents.ForList("list-1", "Mahjong \"Tones\"", words);
+            Assert.AreEqual(205, a.Count);
+            CollectionAssert.AreEqual(a.Select(e => e.EventId), b.Select(e => e.EventId), "same words, same ids");
+            Assert.AreEqual(205, a.Select(e => e.EventId).Distinct().Count());
+            Assert.AreEqual("2026-10-12T09:00:00.000Z", a[0].OccurredAt);
+            var bodies = SetListEvents.Bodies(a);
+            Assert.AreEqual(3, bodies.Count, "100 + 100 + 5");
+            StringAssert.Contains("\"sourceApp\":\"liann-mahjong-tones\"", bodies[0]);
+            StringAssert.Contains("\"setlistName\":\"Mahjong \\\"Tones\\\"\"", bodies[0]);
+            StringAssert.Contains("\"headword\":\"医生\"", bodies[2]);
+            Assert.AreEqual(5, bodies[2].Split(new[] { "\"eventId\"" }, System.StringSplitOptions.None).Length - 1);
+        }
+
         // ---------- generation ----------
 
         static bool Solvable(Layout layout, Game g)

@@ -8,11 +8,11 @@ namespace LiANN.MahjongTones
 {
     /// <summary>
     /// Local SetLists in the Pinyin Tiles word shape {py, entryId, hanzi, display, translation, gloss, savedAt} (spec §13),
-    /// so the shared AlongSide upload can take them without a new format. Upload is added once the shared endpoint exists.
+    /// plus the dictionary senseId, so AccountClient can upload them to AlongSide as game events.
     /// </summary>
     public static class SetListStore
     {
-        [Serializable] public class SavedWord { public string py, entryId, hanzi, display, translation, gloss, savedAt, flag, sourceApp; }
+        [Serializable] public class SavedWord { public string py, entryId, senseId, hanzi, display, translation, gloss, savedAt, flag, sourceApp; }
         [Serializable] public class SetList { public string id, name; public List<SavedWord> words = new List<SavedWord>(); }
         [Serializable] public class Store { public int version = 1; public List<SetList> lists = new List<SetList>(); }
 
@@ -38,7 +38,7 @@ namespace LiANN.MahjongTones
                 if (list.words.Exists(x => x.py == w.ReadingKey)) continue;
                 list.words.Add(new SavedWord
                 {
-                    py = w.ReadingKey, entryId = w.Record.entryId, hanzi = w.Hanzi, display = w.Marked,
+                    py = w.ReadingKey, entryId = w.Record.entryId, senseId = w.Record.senseId, hanzi = w.Hanzi, display = w.Marked,
                     translation = w.English, gloss = w.Record.fullGloss, savedAt = DateTime.UtcNow.ToString("o"),
                     flag = r.WrongToneAttempts > 0 ? "missed-tone" : r.Hinted ? "hinted" : "new",
                     sourceApp = "liann-mahjong-tones",

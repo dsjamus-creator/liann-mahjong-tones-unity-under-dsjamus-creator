@@ -45,6 +45,7 @@ namespace LiANN.MahjongTones
         Font _hanziFont, _uiFont;
         AudioSource _audio;
         VisualElement _root, _screen, _board, _picker;
+        AccountClient _account;
         Label _score, _tilesLeft, _pairs, _time, _seed, _feedback, _hintBtnLabel, _undoBtnLabel, _shuffleBtnLabel;
         readonly Dictionary<int, TileView> _tiles = new Dictionary<int, TileView>();
         float _elapsed, _hintUntil;
@@ -62,6 +63,8 @@ namespace LiANN.MahjongTones
             _uiFont = Resources.Load<Font>("LiANNMahjongTones/Fonts/Nunito-ExtraBold");
             if (_hanziFont == null || _uiFont == null) Debug.LogError("LiANN Mahjong Tones: fonts missing from Resources/LiANNMahjongTones/Fonts.");
             if (_uiFont == null) _uiFont = _hanziFont;
+            _account = new AccountClient();
+            _ = _account.Init();
             _audio = gameObject.AddComponent<AudioSource>();
             _audio.playOnAwake = false;
             // The documented setup is an empty scene with no camera, so there may be no listener and audio would be silent.
@@ -249,7 +252,84 @@ namespace LiANN.MahjongTones
             row.Add(Button("Play", StartRound, true));
             row.Add(Button("How to play", ShowHelp));
             row.Add(Button("Stats", ShowStats));
+            row.Add(Button(_account != null && _account.Status == AccountClient.State.SignedIn ? "Account ✓" : "Account", () => ShowAccount()));
             s.Add(row);
+        }
+
+        // ------------------------------------------------------------------ account (optional, spec §13)
+
+        void ShowAccount(string note = null)
+        {
+            var s = NewScreen();
+            s.Add(Text("Account", 32, Theme.Ink, true));
+            s.Add(Text("Optional. Sign in with the same email as Pinyin Tiles to save your SetLists to AlongSide. You never need an account to play.", 17, Theme.Muted));
+            var card = Card();
+            card.style.marginTop = 16;
+            var status = Text(note ?? _account.Message, 16, Theme.Muted, true);
+            status.style.marginTop = 8;
+            async void Run(System.Threading.Tasks.Task t) { try { await t; } catch (Exception e) { Debug.LogWarning(e.Message); } if (_screen == s) ShowAccount(); }
+
+            TextField Field(string placeholder)
+            {
+                var f = new TextField { value = "" };
+                f.style.fontSize = 18;
+                f.style.minWidth = 260; f.style.maxWidth = 420;
+                f.style.marginBottom = 10;
+                var tip = Text(placeholder, 13, Theme.Muted, true);
+                card.Add(tip);
+                return f;
+            }
+
+            switch (_account.Status)
+            {
+                case AccountClient.State.Loading:
+                    card.Add(Text("Checking the sign-in service…", 18, Theme.Ink, true));
+                    Run(_account.Init());
+                    break;
+                case AccountClient.State.Disabled:
+                case AccountClient.State.Unavailable:
+                    card.Add(Text(_account.Status == AccountClient.State.Disabled ? "Sign-in isn't available right now." : "The sign-in service can't be reached.", 18, Theme.Ink, true));
+                    card.Add(Text("Your SetLists are saved on this device.", 16, Theme.Muted));
+                    card.Add(Button("Try again", () => Run(_account.Init())));
+                    break;
+                case AccountClient.State.SignedOut:
+                {
+                    var email = Field("EMAIL");
+                    card.Add(email);
+                    card.Add(Button("Send me a code", () => Run(_account.SendCode(email.value)), true));
+                    break;
+                }
+                case AccountClient.State.CodeSent:
+                {
+                    var code = Field("CODE FROM THE EMAIL");
+                    card.Add(code);
+                    var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
+                    row.Add(Button("Sign in", () => Run(_account.VerifyCode(code.value)), true));
+                    row.Add(Button("Use a different email", () => { _account.ChangeEmail(); ShowAccount(); }));
+                    card.Add(row);
+                    break;
+                }
+                case AccountClient.State.SignedIn:
+                {
+                    card.Add(Text("Signed in as " + _account.Email, 18, Theme.Ink, true));
+                    int waiting = _account.Pending().Count;
+                    card.Add(Text(waiting == 0 ? "Your SetLists are up to date in AlongSide." : $"{waiting} saved words waiting to upload.", 16, Theme.Muted));
+                    var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap, marginTop = 10 } };
+                    if (waiting > 0) row.Add(Button("Upload now", async () =>
+                    {
+                        status.text = "Uploading…";
+                        string msg;
+                        try { msg = await _account.Upload(); } catch (Exception e) { msg = "Upload failed: " + e.Message; }
+                        if (_screen == s) ShowAccount(msg);
+                    }, true));
+                    row.Add(Button("Sign out", () => Run(_account.SignOut())));
+                    card.Add(row);
+                    break;
+                }
+            }
+            card.Add(status);
+            s.Add(card);
+            s.Add(Button("Back", ShowStart));
         }
 
         void ShowHelp()
@@ -747,11 +827,24 @@ namespace LiANN.MahjongTones
             {
                 int added = SetListStore.Save("LiANN Mahjong Tones", _game.Results);
                 status.text = added > 0 ? $"{added} words saved to your SetList." : "These words are already in your SetList.";
+                if (_account != null && _account.Status == AccountClient.State.SignedIn) UploadAfterSave(status, s);
+                else status.text += " Sign in under Account to save them to AlongSide too.";
             }, true));
             buttons.Add(Button("Play again", StartRound));
             buttons.Add(Button("Menu", ShowStart));
             s.Add(buttons);
             s.Add(status);
+        }
+
+        async void UploadAfterSave(Label status, VisualElement screen)
+        {
+            string before = status.text;
+            try
+            {
+                string msg = await _account.Upload();
+                if (_screen == screen) status.text = before + " " + msg;
+            }
+            catch (Exception e) { Debug.LogWarning("Upload failed: " + e.Message); }
         }
 
         static void UpdateDailyStreak()
