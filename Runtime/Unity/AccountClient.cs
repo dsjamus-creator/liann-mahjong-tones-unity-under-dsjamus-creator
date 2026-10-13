@@ -207,7 +207,7 @@ namespace LiANN.MahjongTones
             var pending = Pending();
             if (pending.Count == 0) return "Your SetLists are up to date in AlongSide.";
             if (!await Refresh(false)) return Status == State.SignedOut ? "Please sign in again to upload." : "AlongSide can't be reached. Your SetLists are kept and will upload later.";
-            int added = 0, unresolved = 0, sent = 0; bool profileNeeded = false;
+            int added = 0, unresolved = 0, sent = 0; bool profileNeeded = false, planNeeded = false;
             var bodies = SetListEvents.Bodies(pending);
             for (int i = 0; i < bodies.Count; i++)
             {
@@ -225,16 +225,18 @@ namespace LiANN.MahjongTones
                         : $"AlongSide couldn't save your SetLists (error {code}). They're kept and will upload later.";
                 }
                 var r = JsonUtility.FromJson<UploadResult>(text) ?? new UploadResult();
-                added += r.added; unresolved += r.unresolved; profileNeeded |= r.learningStatus == "learner_profile_required";
+                added += r.added; unresolved += r.unresolved; profileNeeded |= r.learningStatus == "learner_profile_required"; planNeeded |= r.learningStatus == "plan_required";
                 if (r.learningStatus == "linked" || r.learningStatus == "some_words_unresolved") _saved.profileNeeded = false;
-                // Without a learner profile AlongSide keeps the saves but files them nowhere; they stay pending here and are
+                // Without a learner profile (or a plan) AlongSide keeps the saves but files them nowhere; they stay pending here and are
                 // sent again after the profile is finished, when AlongSide files them (resending is safe: event ids dedupe).
-                if (r.learningStatus != "learner_profile_required")
+                if (r.learningStatus != "learner_profile_required" && r.learningStatus != "plan_required")
                     foreach (var e in pending.Skip(i * SetListEvents.MaxBatch).Take(SetListEvents.MaxBatch)) _saved.uploaded.Add(e.EventId);
                 sent += Math.Min(SetListEvents.MaxBatch, pending.Count - i * SetListEvents.MaxBatch);
             }
             if (profileNeeded) _saved.profileNeeded = true;
             Persist();
+            // One LiANN account C2: saving into AlongSide SetLists needs a plan or a tutor account (when AlongSide enforces it).
+            if (planNeeded) return "Saving to AlongSide SetLists needs a LiANN plan or a tutor account. Your words stay in your SetLists on this device.";
             if (profileNeeded) return $"{sent} words sent. Finish your learner profile in AlongSide and they'll appear in your SetLists.";
             return $"{sent} words sent to AlongSide" + (added > 0 ? $", {added} new" : "") + (unresolved > 0 ? $"; {unresolved} need checking" : "") + ".";
         }
