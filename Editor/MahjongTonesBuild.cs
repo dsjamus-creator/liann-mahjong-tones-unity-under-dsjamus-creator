@@ -28,6 +28,11 @@ namespace LiANN.MahjongTones.EditorTools
         {
             Directory.CreateDirectory(Path.GetDirectoryName(ScenePath));
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            // The game draws with UI Toolkit; a plain camera only stops the Editor's "No cameras rendering" overlay.
+            var cam = new GameObject("Main Camera").AddComponent<Camera>();
+            cam.tag = "MainCamera";
+            cam.clearFlags = CameraClearFlags.SolidColor;
+            cam.backgroundColor = Color.black;
             new GameObject("LiANN Mahjong Tones").AddComponent<MahjongTonesApp>();
             EditorSceneManager.SaveScene(scene, ScenePath);
             // Add, don't replace: the project's own scenes stay in Build Settings (builds below pass ScenePath explicitly).

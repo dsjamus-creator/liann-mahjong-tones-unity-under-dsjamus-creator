@@ -337,7 +337,7 @@ namespace LiANN.MahjongTones
                 }
                 case AccountClient.State.CodeSent:
                 {
-                    var code = Field("CODE FROM THE EMAIL", "6-digit code");
+                    var code = Field("CODE FROM THE EMAIL", "8-digit code");
                     card.Add(code);
                     var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
                     row.Add(Button("Sign in", () => Run(_account.VerifyCode(code.value)), true));
