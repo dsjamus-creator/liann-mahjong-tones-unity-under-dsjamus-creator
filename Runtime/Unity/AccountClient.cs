@@ -218,7 +218,7 @@ namespace LiANN.MahjongTones
                     Persist();
                     // The route is missing or not accepting this source yet (backend PR #102 not deployed): keep the words.
                     if (code == 409 && text.Contains("account_link_required"))
-                        return "This sign-in isn't linked to AlongSide yet. Open \"Link your Pinyin account\" in AlongSide, then upload again. Your SetLists are kept.";
+                        return "This sign-in isn't linked to AlongSide yet. Open \"Link your LiANN account\" in AlongSide, then upload again. Your SetLists are kept.";
                     if (code == 400 || code == 403 || code == 404 || code == 405 || code == 501) return "AlongSide isn't taking Mahjong Tones saves yet. They're kept on this device and will upload later.";
                     Debug.LogWarning($"LiANN Mahjong Tones: upload failed (HTTP {code}).");
                     return code == 0 ? "AlongSide can't be reached. Your SetLists are kept and will upload later."

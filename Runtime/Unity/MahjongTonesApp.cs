@@ -270,7 +270,7 @@ namespace LiANN.MahjongTones
         {
             var s = NewScreen();
             s.Add(Text("Account", 32, Theme.Ink, true));
-            s.Add(Text("Optional. Sign in with the same email as Pinyin Tiles to save your SetLists to AlongSide. You never need an account to play.", 17, Theme.Muted));
+            s.Add(Text("Optional. Sign in with your LiANN account, the same one as the hub and Pinyin Tiles, to save your SetLists to AlongSide. You never need an account to play.", 17, Theme.Muted));
             var card = Card();
             card.style.marginTop = 16;
             var status = Text(note ?? _account.Message, 16, Theme.Muted, true);
