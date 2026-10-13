@@ -207,8 +207,8 @@ namespace LiANN.MahjongTones
             var bodies = SetListEvents.Bodies(pending);
             for (int i = 0; i < bodies.Count; i++)
             {
-                var (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken);
-                if (!ok && code == 401 && await Refresh(true)) (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken);
+                var (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken, timeout: UploadTimeoutSeconds);
+                if (!ok && code == 401 && await Refresh(true)) (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken, timeout: UploadTimeoutSeconds);
                 if (!ok)
                 {
                     Persist();
@@ -228,9 +228,12 @@ namespace LiANN.MahjongTones
 
         static string Url(string b, string path) => b.TrimEnd('/') + path;
 
-        async Task<(bool ok, long code, string text)> Send(string method, string url, string body, string bearer, bool supabase = false)
+        // AlongSide uploads wait longer: a sleeping staging server takes about 20 s to wake (DSJ-PC retest, 13 Oct).
+        const int UploadTimeoutSeconds = 60;
+
+        async Task<(bool ok, long code, string text)> Send(string method, string url, string body, string bearer, bool supabase = false, int timeout = 20)
         {
-            using var req = new UnityWebRequest(url, method) { downloadHandler = new DownloadHandlerBuffer(), timeout = 20 };
+            using var req = new UnityWebRequest(url, method) { downloadHandler = new DownloadHandlerBuffer(), timeout = timeout };
             if (body != null) { req.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(body)); req.SetRequestHeader("Content-Type", "application/json"); }
             if (supabase && _auth != null) req.SetRequestHeader("apikey", _auth.publishableKey);
             if (!string.IsNullOrEmpty(bearer)) req.SetRequestHeader("Authorization", "Bearer " + bearer);
