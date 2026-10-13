@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -31,6 +32,24 @@ namespace LiANN.MahjongTones.Tests
             var deny = JsonDocument.Parse(File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "../../../../data/homophone-denylist.json")));
             foreach (var p in deny.RootElement.EnumerateObject())
                 if (!p.Name.StartsWith("_")) Assert.IsFalse(keys.Contains(p.Name), p.Name + " must not ship: its hanzi and label belong to different words");
+        }
+
+        [Test]
+        public void FormerHomophonesShipWithTheirHskHeadword()
+        {
+            // Restored once the reading set carried the HSK word (pinyin-tiles-playtest PR #6). A regression to the
+            // homophone (一生 for yi1sheng1, ...) would teach the wrong hanzi for the label.
+            var json = File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "words.json"));
+            var words = JsonSerializer.Deserialize<WordList>(json, new JsonSerializerOptions { IncludeFields = true }).words.ToDictionary(w => w.readingKey);
+            var expected = new Dictionary<string, string> {
+                ["yi1sheng1"] = "医生", ["chu1zhong1"] = "初中", ["gong1yuan2"] = "公园", ["hui4yi4"] = "会议",
+                ["jin4lai2"] = "进来", ["zhong1yu2"] = "终于", ["jian3cha2"] = "检查", ["bi4xu1"] = "必须" };
+            foreach (var kv in expected)
+            {
+                Assert.IsTrue(words.ContainsKey(kv.Key), kv.Key + " should ship");
+                Assert.AreEqual(kv.Value, words[kv.Key].hanzi, kv.Key);
+                Assert.IsFalse(string.IsNullOrEmpty(words[kv.Key].senseId), kv.Key + " needs a senseId for AlongSide uploads");
+            }
         }
 
         [Test]
