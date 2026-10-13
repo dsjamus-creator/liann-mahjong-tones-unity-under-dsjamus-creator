@@ -1,5 +1,5 @@
 {
- "_note": "Public service addresses only (no keys). Test builds use the staging services; switch alongsideApiBase to production only for a release build. The Supabase URL and publishable key are read at run time from the Pinyin API's /v1/auth/config. Empty values turn sign-in off.",
+ "_note": "Public service addresses only (no keys). alongsideApiBase is the live AlongSide service (owner decision, 13 Oct 2026): staging cannot send AlongSide sign-in emails, and live accepts a same-email LiANN sign-in without the link page (lwl-backend #122). The Supabase URL and publishable key are read at run time from the Pinyin API's /v1/auth/config. Empty values turn sign-in off.",
  "pinyinApiBase": "https://pinyin-tiles-api-staging.onrender.com",
- "alongsideApiBase": "https://lwl-backend-staging.onrender.com"
+ "alongsideApiBase": "https://lwl-backend-mhgo.onrender.com"
 }

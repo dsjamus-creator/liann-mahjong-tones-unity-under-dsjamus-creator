@@ -62,8 +62,9 @@ Playing never needs an account. **Account** on the start screen signs in with th
 also uploads the words to AlongSide (`POST /learning/game-events`, sourceApp `liann-mahjong-tones`) with stable ids, so
 retries never duplicate. If AlongSide is unreachable, or doesn't accept this game yet, saves stay on the device and
 upload later from the Account screen. Service addresses are in `Runtime/Resources/LiANNMahjongTones/accounts.json`;
-empty values switch sign-in off. **Test builds use the staging services** (`pinyin-tiles-api-staging`, `lwl-backend-staging`),
-so a tester's saves never reach production; switch `alongsideApiBase` to production only for a release build.
+empty values switch sign-in off. Sign-in uses `pinyin-tiles-api-staging`; **uploads go to the live AlongSide service**
+(`lwl-backend-mhgo`, owner decision of 13 October 2026), because staging cannot send AlongSide sign-in emails and live
+accepts a same-email LiANN sign-in without the link page. A tester's saves therefore land in their real AlongSide account.
 The Supabase address returned by the remote config is used only if it is https on a `*.supabase.co` project host, or on
 `supabaseHost` when that is set in `accounts.json`. The game makes no network call at launch unless this device has a
 sign-in in progress or complete; otherwise the services are first contacted when the player opens **Account**.
