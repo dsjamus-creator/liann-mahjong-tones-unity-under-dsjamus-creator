@@ -1,0 +1,10 @@
+{
+  "name": "com.liann.mahjongtones",
+  "version": "0.2.0",
+  "displayName": "LiANN Pinyin Mahjong Tones",
+  "description": "Game 3 of the LiANN Pinyin family: Mahjong Solitaire where each word tile (hanzi + toneless pinyin) matches its meaning tile, then the player sets the tones. Rules shared with the web edition (spec §4.1, §6.1).",
+  "unity": "6000.0",
+  "author": { "name": "Learning with LiANN" },
+  "dependencies": {},
+  "keywords": ["chinese", "pinyin", "mahjong", "education"]
+}

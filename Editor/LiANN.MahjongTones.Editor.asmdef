@@ -1,0 +1,10 @@
+{
+  "name": "LiANN.MahjongTones.Editor",
+  "rootNamespace": "LiANN.MahjongTones.EditorTools",
+  "references": ["LiANN.MahjongTones"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

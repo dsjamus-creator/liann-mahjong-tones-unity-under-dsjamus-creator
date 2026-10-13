@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Runs the Unity-free Core and its NUnit tests outside Unity (CI / cloud). Unity ignores folders ending in ~. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Runtime/Core/**/*.cs" />
+    <Compile Include="../../Tests/Editor/**/*.cs" />
+    <Compile Remove="obj/**;bin/**;../../Tests/Editor/TweensTests.cs" />
+    <None Include="../../Runtime/Resources/LiANNMahjongTones/words.json" Link="words.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('../../Runtime/Resources/LiANNMahjongTones/words.json')" />
+    <None Include="../../Tests/Vectors/rules-test-vectors.json" Link="rules-test-vectors.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('../../Tests/Vectors/rules-test-vectors.json')" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+  </ItemGroup>
+</Project>

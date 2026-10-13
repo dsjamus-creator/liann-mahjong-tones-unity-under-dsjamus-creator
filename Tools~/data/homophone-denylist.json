@@ -1,0 +1,11 @@
+{
+  "_note": "Reading keys whose pronunciation-pack headword is a homophone of the HSK word, so the HSK band and the dictionary's first sense belong to a different word (found in the DSJ-PC test on PR #1, 11 Oct 2026). Excluded until the upstream reading set carries the HSK headword (e.g. 医生 for yi1sheng1).",
+  "yi1sheng1": "headword 一生, HSK word 医生 'doctor'",
+  "chu1zhong1": "headword 初衷, HSK word 初中 'junior high school'",
+  "gong1yuan2": "headword 公元, HSK word 公园 'park'",
+  "hui4yi4": "headword 会意, HSK word 会议 'meeting'",
+  "jin4lai2": "headword 近来, HSK word 进来 'to come in'",
+  "zhong1yu2": "headword 忠于, HSK word 终于 'at last'",
+  "jian3cha2": "headword 检察, HSK word 检查 'inspection'",
+  "bi4xu1": "headword 必需, HSK word 必须 'to have to'"
+}

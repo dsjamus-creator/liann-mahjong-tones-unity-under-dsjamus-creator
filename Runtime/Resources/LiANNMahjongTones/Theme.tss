@@ -1,0 +1,25 @@
+@import url("unity-theme://default");
+
+/* The default theme is only here for ScrollView clipping and the scrollbar. Undo its text spacing so the
+   game keeps the hand-set layout (pills, tile labels) it had without a theme. */
+.unity-text-element, .unity-label {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar in the LiANN palette: slim sage thumb, no arrow buttons. */
+.unity-scroller--vertical {
+    width: 10px;
+}
+.unity-scroller .unity-repeat-button {
+    display: none;
+}
+.unity-scroller .unity-base-slider__tracker {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+.unity-scroller .unity-base-slider__dragger {
+    background-color: #8A9B7E;
+    border-width: 0;
+    border-radius: 5px;
+}
