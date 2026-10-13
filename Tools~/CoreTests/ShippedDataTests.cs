@@ -64,5 +64,29 @@ namespace LiANN.MahjongTones.Tests
                 Assert.GreaterOrEqual(scale, 0.10f, w.english + " would be too small to read; shorten its label");
             }
         }
+    
+        [Test]
+        public void PicturesAreConcreteOnlyAndEveryOneShips()
+        {
+            // Spec D13: pictures only where a fitting icon exists (no stand-ins), rendered PNG + committed .meta for each.
+            string dir = TestContext.CurrentContext.TestDirectory;
+            var words = JsonSerializer.Deserialize<WordList>(File.ReadAllText(Path.Combine(dir, "words.json")), new JsonSerializerOptions { IncludeFields = true }).words;
+            var map = JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(Path.Combine(dir, "../../../../data/picture-map.json")));
+            string pictures = Path.Combine(dir, "../../../../../Runtime/Resources/LiANNMahjongTones/Pictures");
+            var pictured = words.Where(w => !string.IsNullOrEmpty(w.picture)).ToList();
+            Assert.That(pictured.Count, Is.InRange(100, words.Length / 2), "concrete words only, so well under half the list");
+            foreach (var w in words)
+                Assert.AreEqual(map.TryGetValue(w.readingKey, out var icon) ? icon : "", w.picture ?? "", w.readingKey + ": words.json and picture-map.json disagree; run apply_pictures.py");
+            foreach (var icon in pictured.Select(w => w.picture).Distinct())
+            {
+                Assert.IsTrue(File.Exists(Path.Combine(pictures, icon + ".png")), icon + ".png");
+                Assert.IsTrue(File.Exists(Path.Combine(pictures, icon + ".png.meta")), icon + ".png.meta");
+                Assert.IsTrue(File.Exists(Path.Combine(dir, "../../../../data/lucide", icon + ".svg")), icon + ".svg source");
+            }
+            var used = pictured.Select(w => w.picture).ToHashSet();
+            foreach (var png in Directory.GetFiles(pictures, "*.png"))
+                Assert.IsTrue(used.Contains(Path.GetFileNameWithoutExtension(png)), Path.GetFileName(png) + " is not used by any word");
+            Assert.IsTrue(File.Exists(Path.Combine(dir, "../../../../data/lucide/LICENSE")), "Lucide licence ships with the sources");
+        }
     }
 }

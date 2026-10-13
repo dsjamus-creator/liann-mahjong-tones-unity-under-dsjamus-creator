@@ -12,6 +12,7 @@ namespace LiANN.MahjongTones
         static List<Word> _words;
         static List<IList<string>> _tonePairs;
         static readonly Dictionary<string, AudioClip> Clips = new Dictionary<string, AudioClip>();
+        static readonly Dictionary<string, Texture2D> Pictures = new Dictionary<string, Texture2D>();
 
         public static IReadOnlyList<Word> All { get { Load(); return _words; } }
         public static IList<IList<string>> TonePairs { get { Load(); return _tonePairs; } }
@@ -30,6 +31,20 @@ namespace LiANN.MahjongTones
 
         /// <summary>Words for the tone-pair board: every word in a tone-pair group plus HSK 1–3 fillers.</summary>
         public static IEnumerable<Word> TonePairPool() => All.Where(w => w.HskBand <= 3);
+
+        /// <summary>The meaning-tile picture (Resources/LiANNMahjongTones/Pictures), or null when the word has none.</summary>
+        public static Texture2D Picture(Word word)
+        {
+            string id = word.Picture;
+            if (string.IsNullOrEmpty(id)) return null;
+            if (!Pictures.TryGetValue(id, out var tex))
+            {
+                tex = Resources.Load<Texture2D>(Root + "Pictures/" + id);
+                if (tex == null) Debug.LogWarning("LiANN Mahjong Tones: picture '" + id + "' is missing.");
+                Pictures[id] = tex;
+            }
+            return tex;
+        }
 
         public static AudioClip Clip(Word word)
         {

@@ -106,9 +106,16 @@ Homophone mix-ups (the pronunciation pack's headword is a homophone of the HSK w
 (pinyin-tiles-playtest PR #6) the denylist is empty and the 8 words it held ship with their HSK headword; a test guards them.
 Proofread `Tools~/data/english-labels-review.csv` before release (spec §2).
 
+**Pictures on meaning tiles** (spec D13, owner 12 Oct 2026): a start-screen setting, "Meaning tiles show: English /
+English + picture", off by default and remembered on the device (`lmt.pictures`). Only concrete words have a picture
+(139 of 556: foods, transport, places, objects, the body, weather, simple actions); abstract words, colours, family
+members and feelings stay text-only, with no stand-in icons. Icons are Lucide line icons in the tile glyph colour.
+`Tools~/data/picture-map.json` maps reading keys to icons; `Tools~/data/apply_pictures.py` (needs `pip install cairosvg`)
+writes the `picture` field and renders `Runtime/Resources/LiANNMahjongTones/Pictures/*.png`; then run `Tools~/make_meta.py`.
+
 ## Not in this version
 
-Pictures on meaning tiles (D13: moved to the hub's Kids section), Classic 144 layout, sound/music settings,
+Classic 144 layout, sound/music settings,
 hub profiles and plan checks (D19–D22; added when the hub's account service exists).
 
 See `THIRD-PARTY-NOTICES.md` for data, audio and font licences.

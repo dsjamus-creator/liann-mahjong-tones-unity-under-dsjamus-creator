@@ -3,6 +3,38 @@ GUIDs are derived from the path, so re-running never changes an existing GUID. U
 import hashlib, os, sys
 root = sys.argv[1]
 def guid(rel): return hashlib.md5(("com.liann.mahjongtones/" + rel).encode()).hexdigest()
+# Line-art pictures: no mipmaps, no compression (keeps the strokes crisp), alpha is transparency, clamped.
+PNG_IMPORTER = """TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+  isReadable: 0
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  textureType: 0
+  textureShape: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+"""
 made = 0
 for dirpath, dirnames, filenames in os.walk(root):
     dirnames[:] = [d for d in dirnames if not d.startswith('.') and not d.endswith('~')]
@@ -14,6 +46,7 @@ for dirpath, dirnames, filenames in os.walk(root):
         if os.path.exists(meta): continue
         body = f"fileFormatVersion: 2\nguid: {guid(rel)}\n"
         if is_dir: body += "folderAsset: yes\nDefaultImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n"
+        elif name.endswith('.png'): body += PNG_IMPORTER
         with open(meta, 'w', newline='\n') as f: f.write(body)
         made += 1
 print('meta files written:', made)

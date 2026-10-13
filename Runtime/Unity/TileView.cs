@@ -4,11 +4,12 @@ using UnityEngine.UIElements;
 
 namespace LiANN.MahjongTones
 {
-    /// <summary>One porcelain tile: word tile (hanzi + toneless pinyin, coral wedge) or meaning tile (English, coral underline).</summary>
+    /// <summary>One porcelain tile: word tile (hanzi + toneless pinyin, coral wedge) or meaning tile (English, coral underline,
+    /// and a small picture above the English when the Pictures setting is on and the word has one; spec D13).</summary>
     public sealed class TileView : VisualElement
     {
         public readonly int SlotId;
-        readonly VisualElement _shadow, _face, _ring, _underline;
+        readonly VisualElement _shadow, _face, _ring, _underline, _picture;
         readonly Label _main, _sub;
         public float Size { get; private set; }
 
@@ -29,6 +30,12 @@ namespace LiANN.MahjongTones
             _face.style.alignItems = Align.Center;
             _face.style.justifyContent = Justify.Center;
             Add(_face);
+
+            _picture = new VisualElement { pickingMode = PickingMode.Ignore };
+            _picture.style.display = DisplayStyle.None;
+            _picture.style.flexShrink = 0;
+            // Square box and square PNG, so the default background scaling fits the icon exactly.
+            _face.Add(_picture);
 
             _main = new Label { pickingMode = PickingMode.Ignore };
             _sub = new Label { pickingMode = PickingMode.Ignore };
@@ -70,9 +77,12 @@ namespace LiANN.MahjongTones
             e.style.borderTopColor = color; e.style.borderBottomColor = color; e.style.borderLeftColor = color; e.style.borderRightColor = color;
         }
 
-        public void Show(Word word, TileKind kind, bool showPinyin, Font hanziFont, Font uiFont)
+        public void Show(Word word, TileKind kind, bool showPinyin, Font hanziFont, Font uiFont, Texture2D picture = null)
         {
             bool isWord = kind == TileKind.WordTile;
+            _hasPicture = !isWord && picture != null;
+            _picture.style.backgroundImage = _hasPicture ? picture : null;
+            _picture.style.display = _hasPicture ? DisplayStyle.Flex : DisplayStyle.None;
             _face.style.backgroundImage = isWord ? TileArt.WordFace : TileArt.MeaningFace;
             _underline.style.display = isWord ? DisplayStyle.None : DisplayStyle.Flex;
             if (isWord)
@@ -96,7 +106,7 @@ namespace LiANN.MahjongTones
             ApplySize(word, kind);
         }
 
-        Word _word; TileKind _kind;
+        Word _word; TileKind _kind; bool _hasPicture;
 
         void ApplySize(Word word, TileKind kind) { _word = word; _kind = kind; Resize(Size); }
 
@@ -118,7 +128,10 @@ namespace LiANN.MahjongTones
             }
             else
             {
-                _main.style.fontSize = size * MeaningLabel.FontScale(_word.English);
+                // With a picture the label drops to 80% so icon and text share the face; the one-line cap still applies.
+                _main.style.fontSize = size * MeaningLabel.FontScale(_word.English) * (_hasPicture ? 0.8f : 1f);
+                _picture.style.width = size * 0.36f; _picture.style.height = size * 0.36f;
+                _picture.style.marginBottom = size * 0.04f;
                 _main.style.paddingLeft = size * 0.06f; _main.style.paddingRight = size * 0.06f;
             }
         }
