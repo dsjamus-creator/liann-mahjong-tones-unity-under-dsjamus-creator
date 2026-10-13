@@ -354,15 +354,24 @@ namespace LiANN.MahjongTones
                 {
                     card.Add(Text("Signed in as " + _account.Email, 18, Theme.Ink, true));
                     int waiting = _account.Pending().Count;
-                    card.Add(Text(waiting == 0 ? "Your SetLists are up to date in AlongSide." : $"{waiting} saved words waiting to upload.", 16, Theme.Muted));
+                    card.Add(Text(waiting == 0 ? "Your SetLists are up to date in AlongSide." : _account.ProfileNeeded ? $"{waiting} saved words will reach your SetLists after your profile is finished. Then tap Upload now." : $"{waiting} saved words waiting to upload.", 16, Theme.Muted));
+                    if (_account.ProfileNeeded)
+                        card.Add(Text("AlongSide needs your learner profile before your words appear in your SetLists: your name, a username, your date of birth, a parent or guardian if you are under 18, and agreeing to the Terms and Privacy Promise.", 16, Theme.Ink));
                     var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap, marginTop = 10 } };
+                    if (_account.ProfileNeeded) row.Add(Button("Finish your learner profile", async () =>
+                    {
+                        status.text = "Opening AlongSide…";
+                        string msg;
+                        try { msg = await _account.OpenProfile(); } catch (Exception e) { msg = "Couldn't open AlongSide: " + e.Message; }
+                        if (_screen == s) ShowAccount(msg);
+                    }, true));
                     if (waiting > 0) row.Add(Button("Upload now", async () =>
                     {
                         status.text = "Uploading…";
                         string msg;
                         try { msg = await _account.Upload(); } catch (Exception e) { msg = "Upload failed: " + e.Message; }
                         if (_screen == s) ShowAccount(msg);
-                    }, true));
+                    }, !_account.ProfileNeeded));
                     row.Add(Button("Sign out", () => Run(_account.SignOut())));
                     card.Add(row);
                     break;
