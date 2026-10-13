@@ -21,7 +21,8 @@ namespace LiANN.MahjongTones
         [SerializeField] bool darkTheme;
         [SerializeField] bool reducedMotion;
 
-        enum Source { Hsk1, Hsk2, Hsk3, TonePairs, Daily }
+        enum Source { Hsk1, Hsk2, Hsk3, Hsk4, Hsk5, Hsk6, Hsk79, TonePairs, Daily }
+        static int BandOf(Source s) => s == Source.Hsk79 ? 7 : (int)s + 1;   // Hsk1…Hsk6 → 1…6
 
         // settings
         PlayMode _mode = PlayMode.Practice;
@@ -250,7 +251,7 @@ namespace LiANN.MahjongTones
             if (WideScreen) boards.Add(("Large · 72", "Large"));     // Large is for landscape desktop and tablet (spec §7)
             else if (_layoutName == "Large") _layoutName = "Medium";
             card.Add(Chips("Board", boards.ToArray(), () => _layoutName, v => _layoutName = v));
-            card.Add(Chips("Words", new[] { ("HSK 1", Source.Hsk1), ("HSK 2", Source.Hsk2), ("HSK 3", Source.Hsk3), ("Tone pairs", Source.TonePairs), ("Daily challenge", Source.Daily) }, () => _source, v => _source = v));
+            card.Add(Chips("Words", new[] { ("HSK 1", Source.Hsk1), ("HSK 2", Source.Hsk2), ("HSK 3", Source.Hsk3), ("HSK 4", Source.Hsk4), ("HSK 5", Source.Hsk5), ("HSK 6", Source.Hsk6), ("HSK 7–9", Source.Hsk79), ("Tone pairs", Source.TonePairs), ("Daily challenge", Source.Daily) }, () => _source, v => _source = v));
             card.Add(Chips("Word tiles show", new[] { ("Hanzi + pinyin", true), ("Hanzi only", false) }, () => _showPinyin, v => _showPinyin = v));
             card.Add(Chips("Meaning tiles show", new[] { ("English", false), ("English + picture", true) }, () => _showPictures, v => { _showPictures = v; PlayerPrefs.SetInt("lmt.pictures", v ? 1 : 0); PlayerPrefs.Save(); }));
             card.Add(Chips("Theme", new[] { ("Light", false), ("Dark", true) }, () => Theme.Dark, v => { Theme.Dark = v; ShowStart(); }));
@@ -435,7 +436,7 @@ namespace LiANN.MahjongTones
                     break;
                 default:
                     seed = "free:" + DateTime.UtcNow.Ticks;
-                    pool = WordRepository.Band(_source == Source.Hsk1 ? 1 : _source == Source.Hsk2 ? 2 : 3);
+                    pool = WordRepository.Band(BandOf(_source));
                     break;
             }
             _game = new Game(Layout.ByName(_layoutName), pool, _mode, seed, groups);
@@ -869,8 +870,17 @@ namespace LiANN.MahjongTones
             var buttons = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
             buttons.Add(Button("Save to SetList", () =>
             {
-                int added = SetListStore.Save("LiANN Mahjong Tones", _game.Results);
-                status.text = added > 0 ? $"{added} words saved to your SetList." : "These words are already in your SetList.";
+                // One SetList per HSK level, e.g. "Mahjong Tones · HSK 4", so AlongSide and the hub Library show them by level.
+                var saved = new List<string>();
+                int added = 0;
+                foreach (var level in _game.Results.GroupBy(r => r.Word.HskBand).OrderBy(g => g.Key))
+                {
+                    int n = SetListStore.Save("Mahjong Tones · " + Word.BandName(level.Key), level);
+                    added += n;
+                    if (n > 0) saved.Add(Word.BandName(level.Key));
+                }
+                status.text = added > 0 ? $"{added} words saved to your {string.Join(", ", saved)} SetList{(saved.Count > 1 ? "s" : "")}."
+                    : "These words are already in your SetLists.";
                 if (_account != null && _account.Status == AccountClient.State.SignedIn) UploadAfterSave(status, s);
                 else status.text += " Sign in under Account to save them to AlongSide too.";
             }, true));

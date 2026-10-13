@@ -21,7 +21,7 @@ namespace LiANN.MahjongTones.EditorTools
         public const string CompanyName = "Learning with LiANN";
         public const string ProductName = "LiANN Pinyin Mahjong Tones";
         public const string AppId = "com.learningwithliann.mahjongtones";   // confirm with the owner before the first store upload
-        public const string Version = "0.2.0";
+        public const string Version = "0.3.0";
 
         [MenuItem("LiANN/Mahjong Tones/Create play scene", priority = 0)]
         public static void CreateScene()
