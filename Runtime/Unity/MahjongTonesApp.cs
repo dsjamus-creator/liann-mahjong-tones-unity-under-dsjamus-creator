@@ -301,17 +301,30 @@ namespace LiANN.MahjongTones
                 return f;
             }
             // A code request button with the busy state and the 60 s cooldown (each request sends an email). While it
-            // counts down the screen re-renders every second, so the button label and any cooldown note stay current.
+            // counts down only the button label and the cooldown note update, once a second. Rebuilding the whole screen
+            // instead wiped whatever the player was typing into the code box (DSJ-PC test, 13 Oct).
             VisualElement SendButton(string text, Func<System.Threading.Tasks.Task<bool>> send, bool primary)
             {
                 int wait = _account.ResendInSeconds;
+                var label = new Label();
                 var b = Button(_account.SendingCode ? "Sending…" : wait > 0 ? $"{text} ({wait} s)" : text,
-                    () => { if (!_account.SendingCode && _account.ResendInSeconds == 0) { status.text = "Sending…"; Run(send()); } }, primary);
+                    () => { if (!_account.SendingCode && _account.ResendInSeconds == 0) { status.text = "Sending…"; Run(send()); } }, primary, label);
                 if (_account.SendingCode || wait > 0)
                 {
                     b.SetEnabled(false); b.style.opacity = 0.55f;
                     var shown = _account.Status;
-                    if (wait > 0) s.schedule.Execute(() => { if (_screen == s && _account.Status == shown) ShowAccount(); }).StartingIn(1000);
+                    if (wait > 0)
+                    {
+                        IVisualElementScheduledItem tick = null;
+                        tick = s.schedule.Execute(() =>
+                        {
+                            if (_screen != s || _account.Status != shown) { tick?.Pause(); return; }
+                            int left = _account.ResendInSeconds;
+                            label.text = left > 0 ? $"{text} ({left} s)" : text;
+                            if (note == null) status.text = _account.Message;
+                            if (left == 0) { b.SetEnabled(true); b.style.opacity = 1f; tick?.Pause(); }
+                        }).Every(1000).StartingIn(1000);
+                    }
                 }
                 return b;
             }
