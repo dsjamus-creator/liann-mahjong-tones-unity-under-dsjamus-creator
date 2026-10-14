@@ -270,7 +270,7 @@ namespace LiANN.MahjongTones
         {
             var s = NewScreen();
             s.Add(Text("Account", 32, Theme.Ink, true));
-            s.Add(Text("Optional. Sign in with the same email as Pinyin Tiles to save your SetLists to AlongSide. You never need an account to play.", 17, Theme.Muted));
+            s.Add(Text("Optional. Sign in with your LiANN account, the same one as the hub and Pinyin Tiles, to save your SetLists to AlongSide. You never need an account to play.", 17, Theme.Muted));
             var card = Card();
             card.style.marginTop = 16;
             var status = Text(note ?? _account.Message, 16, Theme.Muted, true);
@@ -301,17 +301,30 @@ namespace LiANN.MahjongTones
                 return f;
             }
             // A code request button with the busy state and the 60 s cooldown (each request sends an email). While it
-            // counts down the screen re-renders every second, so the button label and any cooldown note stay current.
+            // counts down only the button label and the cooldown note update, once a second. Rebuilding the whole screen
+            // instead wiped whatever the player was typing into the code box (DSJ-PC test, 13 Oct).
             VisualElement SendButton(string text, Func<System.Threading.Tasks.Task<bool>> send, bool primary)
             {
                 int wait = _account.ResendInSeconds;
+                var label = new Label();
                 var b = Button(_account.SendingCode ? "Sending…" : wait > 0 ? $"{text} ({wait} s)" : text,
-                    () => { if (!_account.SendingCode && _account.ResendInSeconds == 0) { status.text = "Sending…"; Run(send()); } }, primary);
+                    () => { if (!_account.SendingCode && _account.ResendInSeconds == 0) { status.text = "Sending…"; Run(send()); } }, primary, label);
                 if (_account.SendingCode || wait > 0)
                 {
                     b.SetEnabled(false); b.style.opacity = 0.55f;
                     var shown = _account.Status;
-                    if (wait > 0) s.schedule.Execute(() => { if (_screen == s && _account.Status == shown) ShowAccount(); }).StartingIn(1000);
+                    if (wait > 0)
+                    {
+                        IVisualElementScheduledItem tick = null;
+                        tick = s.schedule.Execute(() =>
+                        {
+                            if (_screen != s || _account.Status != shown) { tick?.Pause(); return; }
+                            int left = _account.ResendInSeconds;
+                            label.text = left > 0 ? $"{text} ({left} s)" : text;
+                            if (note == null) status.text = _account.Message;
+                            if (left == 0) { b.SetEnabled(true); b.style.opacity = 1f; tick?.Pause(); }
+                        }).Every(1000).StartingIn(1000);
+                    }
                 }
                 return b;
             }
@@ -341,7 +354,7 @@ namespace LiANN.MahjongTones
                 }
                 case AccountClient.State.CodeSent:
                 {
-                    var code = Field("CODE FROM THE EMAIL", "8-digit code");
+                    var code = Field("CODE FROM THE EMAIL", "6-digit code");
                     card.Add(code);
                     var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
                     row.Add(Button("Sign in", () => Run(_account.VerifyCode(code.value)), true));
@@ -354,15 +367,24 @@ namespace LiANN.MahjongTones
                 {
                     card.Add(Text("Signed in as " + _account.Email, 18, Theme.Ink, true));
                     int waiting = _account.Pending().Count;
-                    card.Add(Text(waiting == 0 ? "Your SetLists are up to date in AlongSide." : $"{waiting} saved words waiting to upload.", 16, Theme.Muted));
+                    card.Add(Text(waiting == 0 ? "Your SetLists are up to date in AlongSide." : _account.ProfileNeeded ? $"{waiting} saved words will reach your SetLists after your profile is finished. Then tap Upload now." : $"{waiting} saved words waiting to upload.", 16, Theme.Muted));
+                    if (_account.ProfileNeeded)
+                        card.Add(Text("AlongSide needs your learner profile before your words appear in your SetLists: your name, a username, your date of birth, a parent or guardian if you are under 18, and agreeing to the Terms and Privacy Promise.", 16, Theme.Ink));
                     var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap, marginTop = 10 } };
+                    if (_account.ProfileNeeded) row.Add(Button("Finish your learner profile", async () =>
+                    {
+                        status.text = "Opening AlongSide…";
+                        string msg;
+                        try { msg = await _account.OpenProfile(); } catch (Exception e) { msg = "Couldn't open AlongSide: " + e.Message; }
+                        if (_screen == s) ShowAccount(msg);
+                    }, true));
                     if (waiting > 0) row.Add(Button("Upload now", async () =>
                     {
                         status.text = "Uploading…";
                         string msg;
                         try { msg = await _account.Upload(); } catch (Exception e) { msg = "Upload failed: " + e.Message; }
                         if (_screen == s) ShowAccount(msg);
-                    }, true));
+                    }, !_account.ProfileNeeded));
                     row.Add(Button("Sign out", () => Run(_account.SignOut())));
                     card.Add(row);
                     break;

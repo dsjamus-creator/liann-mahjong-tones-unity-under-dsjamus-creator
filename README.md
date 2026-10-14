@@ -69,6 +69,14 @@ The Supabase address returned by the remote config is used only if it is https o
 `supabaseHost` when that is set in `accounts.json`. The game makes no network call at launch unless this device has a
 sign-in in progress or complete; otherwise the services are first contacted when the player opens **Account**.
 
+**Learner profile.** AlongSide files uploaded words into SetLists only once the player has a learner profile (name, LWL
+username, date of birth, a guardian if under 18, Terms and Privacy Promise consent). When an upload answers
+`learner_profile_required`, the words stay pending on the device and the Account screen shows **Finish your learner
+profile**. That button asks AlongSide for a one-time pass (`POST /learning/session-pass`, 60 seconds, single use) and
+opens the address it returns in the browser, which signs the browser in and lands on `/student#profile`. Only an address
+on the `alongsideApiBase` server is opened (`ProfileLink`). Afterwards **Upload now** sends the pending words again and
+AlongSide files them; resending is safe because event ids dedupe.
+
 "Send me a code" shows *Sending…* while the request runs and then waits 60 s before another code can be requested,
 because every request sends an email and counts towards Supabase's email limit. The encrypted account store is first
 written when a code is requested (it holds the pending email), so for tests "the store exists" does not by itself mean

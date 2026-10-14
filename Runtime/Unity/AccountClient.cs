@@ -25,10 +25,12 @@ namespace LiANN.MahjongTones
         [Serializable] class UserDto { public string id, email; }
         [Serializable] class SessionDto { public string access_token, refresh_token; public long expires_in, expires_at; public UserDto user; }
         [Serializable] class UploadResult { public int inserted, duplicates, added, existing, unresolved; public string learningStatus; }
+        [Serializable] class PassResult { public string url; }
         [Serializable] class Saved
         {
             public string email, accessToken, refreshToken, userId, pendingEmail;
             public long expiresAt;
+            public bool profileNeeded;   // AlongSide said the learner profile is missing; cleared when an upload links words
             public List<string> uploaded = new List<string>();   // event ids already accepted for userId
         }
 
@@ -37,6 +39,8 @@ namespace LiANN.MahjongTones
         /// launch; otherwise nothing is fetched until the player opens the Account screen.</summary>
         public bool HasSession => !string.IsNullOrEmpty(_saved.refreshToken) || !string.IsNullOrEmpty(_saved.pendingEmail);
         public string Email => _saved.email;
+        /// <summary>AlongSide needs a learner profile before uploaded words reach a SetList (One LiANN account, B3).</summary>
+        public bool ProfileNeeded => _saved.profileNeeded;
         /// <summary>The line under the account form. A refused "send" shows a live countdown that clears itself at 0.</summary>
         public string Message
         {
@@ -203,7 +207,7 @@ namespace LiANN.MahjongTones
             var pending = Pending();
             if (pending.Count == 0) return "Your SetLists are up to date in AlongSide.";
             if (!await Refresh(false)) return Status == State.SignedOut ? "Please sign in again to upload." : "AlongSide can't be reached. Your SetLists are kept and will upload later.";
-            int added = 0, unresolved = 0, sent = 0; bool profileNeeded = false;
+            int added = 0, unresolved = 0, sent = 0; bool profileNeeded = false, planNeeded = false;
             var bodies = SetListEvents.Bodies(pending);
             for (int i = 0; i < bodies.Count; i++)
             {
@@ -214,20 +218,60 @@ namespace LiANN.MahjongTones
                     Persist();
                     // The route is missing or not accepting this source yet (backend PR #102 not deployed): keep the words.
                     if (code == 409 && text.Contains("account_link_required"))
-                        return "This sign-in isn't linked to AlongSide yet. Open \"Link your Pinyin account\" in AlongSide, then upload again. Your SetLists are kept.";
+                        return "This sign-in isn't linked to AlongSide yet. Open \"Link your LiANN account\" in AlongSide, then upload again. Your SetLists are kept.";
                     if (code == 400 || code == 403 || code == 404 || code == 405 || code == 501) return "AlongSide isn't taking Mahjong Tones saves yet. They're kept on this device and will upload later.";
                     Debug.LogWarning($"LiANN Mahjong Tones: upload failed (HTTP {code}).");
                     return code == 0 ? "AlongSide can't be reached. Your SetLists are kept and will upload later."
                         : $"AlongSide couldn't save your SetLists (error {code}). They're kept and will upload later.";
                 }
                 var r = JsonUtility.FromJson<UploadResult>(text) ?? new UploadResult();
-                added += r.added; unresolved += r.unresolved; profileNeeded |= r.learningStatus == "learner_profile_required";
-                foreach (var e in pending.Skip(i * SetListEvents.MaxBatch).Take(SetListEvents.MaxBatch)) _saved.uploaded.Add(e.EventId);
+                added += r.added; unresolved += r.unresolved; profileNeeded |= r.learningStatus == "learner_profile_required"; planNeeded |= r.learningStatus == "plan_required";
+                if (r.learningStatus == "linked" || r.learningStatus == "some_words_unresolved") _saved.profileNeeded = false;
+                // Without a learner profile (or a plan) AlongSide keeps the saves but files them nowhere; they stay pending here and are
+                // sent again after the profile is finished, when AlongSide files them (resending is safe: event ids dedupe).
+                if (r.learningStatus != "learner_profile_required" && r.learningStatus != "plan_required")
+                    foreach (var e in pending.Skip(i * SetListEvents.MaxBatch).Take(SetListEvents.MaxBatch)) _saved.uploaded.Add(e.EventId);
                 sent += Math.Min(SetListEvents.MaxBatch, pending.Count - i * SetListEvents.MaxBatch);
             }
+            if (profileNeeded) _saved.profileNeeded = true;
             Persist();
-            if (profileNeeded) return $"{sent} words sent. They'll appear in AlongSide once your learner profile is set up.";
+            // One LiANN account C2: saving into AlongSide SetLists needs a plan or a tutor account (when AlongSide enforces it).
+            if (planNeeded) return "Saving to AlongSide SetLists needs a LiANN plan or a tutor account. Your words stay in your SetLists on this device.";
+            if (profileNeeded) return $"{sent} words sent. Finish your learner profile in AlongSide and they'll appear in your SetLists.";
             return $"{sent} words sent to AlongSide" + (added > 0 ? $", {added} new" : "") + (unresolved > 0 ? $"; {unresolved} need checking" : "") + ".";
+        }
+
+        /// <summary>
+        /// Opens AlongSide's learner profile form in the browser, already signed in with this account: asks AlongSide for a
+        /// one-time pass (60 seconds, single use) and opens the address it returns. Only AlongSide's own addresses are opened.
+        /// Returns a short message for the player.
+        /// </summary>
+        public async Task<string> OpenProfile()
+        {
+            if (Status != State.SignedIn) return "Sign in first, then finish your learner profile.";
+            string form = ProfileLink.FormUrl(_ends.alongsideApiBase);
+            if (!await Refresh(false)) return Status == State.SignedOut ? "Please sign in again." : "AlongSide can't be reached. Try again in a moment.";
+            string body = "{\"next\":" + SetListEvents.Q(ProfileLink.FormPath) + "}";
+            string passUrl = Url(_ends.alongsideApiBase, ProfileLink.PassPath);
+            var (ok, code, text) = await Send("POST", passUrl, body, _saved.accessToken, timeout: UploadTimeoutSeconds);
+            if (!ok && code == 401 && await Refresh(true)) (ok, code, text) = await Send("POST", passUrl, body, _saved.accessToken, timeout: UploadTimeoutSeconds);
+            if (!ok && code == 404)
+            {
+                // An AlongSide without the pass yet: open the form, where the player signs in with the same email.
+                Application.OpenURL(form);
+                return "AlongSide is open in your browser. Sign in there with " + _saved.email + ", then fill in your profile.";
+            }
+            if (!ok)
+            {
+                Debug.LogWarning($"LiANN Mahjong Tones: profile link failed (HTTP {code}).");
+                return code == 409 ? "This email is already used by a different LiANN sign-in in AlongSide. Sign in there the way you did before."
+                    : code == 0 ? "AlongSide can't be reached. Try again in a moment." : $"AlongSide couldn't open your profile (error {code}). Try again in a moment.";
+            }
+            string url = null;
+            try { url = JsonUtility.FromJson<PassResult>(text)?.url; } catch { url = null; }
+            if (!ProfileLink.IsOnAlongSide(url, _ends.alongsideApiBase)) return "AlongSide sent an unexpected address, so nothing was opened.";
+            Application.OpenURL(url);
+            return "AlongSide is open in your browser. Save your profile there, then come back and upload again.";
         }
 
         static string Url(string b, string path) => b.TrimEnd('/') + path;
