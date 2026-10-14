@@ -259,6 +259,8 @@ namespace LiANN.MahjongTones
             title.style.marginBottom = 6;
             p.Add(title);
             p.Add(Text("Match each word tile to its meaning, then set the tones.", 18, Theme.Muted));
+            if (_account?.LearnerName != null)
+                p.Add(Text($"Playing as {_account.LearnerName}. Saved words go to {_account.LearnerName}'s SetLists. Change under Account.", 16, Theme.Ink, true));
 
             var card = Card();
             card.style.marginTop = 20;
@@ -384,6 +386,17 @@ namespace LiANN.MahjongTones
                 case AccountClient.State.SignedIn:
                 {
                     card.Add(Text("Signed in as " + _account.Email, 18, Theme.Ink, true));
+                    // Who's playing (One LiANN account C3): the household's child profiles, when AlongSide has them switched on.
+                    if (!_account.HouseholdLoaded) Run(_account.RefreshHousehold());
+                    if (_account.Children.Count > 0)
+                    {
+                        var who = new List<(string, string)> { ("Me", "") };
+                        foreach (var c in _account.Children) who.Add((c.name, c.id));
+                        var chips = Chips("Who's playing?", who.ToArray(), () => _account.LearnerId, id => { _account.SetLearner(id); ShowAccount(); });
+                        chips.style.marginTop = 12;
+                        card.Add(chips);
+                        card.Add(Text("Each person's saved words go to their own SetLists in AlongSide.", 15, Theme.Muted));
+                    }
                     int waiting = _account.Pending().Count;
                     card.Add(Text(waiting == 0 ? "Your SetLists are up to date in AlongSide." : _account.ProfileNeeded ? $"{waiting} saved words will reach your SetLists after your profile is finished. Then tap Upload now." : $"{waiting} saved words waiting to upload.", 16, Theme.Muted));
                     if (_account.ProfileNeeded)

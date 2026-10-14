@@ -88,8 +88,9 @@ namespace LiANN.MahjongTones.Core
             return DateTime.UtcNow.ToString("yyyy-MM-dd'T'HH:mm:ss.fff'Z'", CultureInfo.InvariantCulture);
         }
 
-        /// <summary>Splits events into request bodies of at most <see cref="MaxBatch"/> events.</summary>
-        public static List<string> Bodies(IList<GameEvent> events)
+        /// <summary>Splits events into request bodies of at most <see cref="MaxBatch"/> events. A household child's saves
+        /// carry their <paramref name="profileId"/> (One LiANN account C3); an adult's own saves carry none.</summary>
+        public static List<string> Bodies(IList<GameEvent> events, string profileId = null)
         {
             var bodies = new List<string>();
             for (int i = 0; i < events.Count; i += MaxBatch)
@@ -109,7 +110,9 @@ namespace LiANN.MahjongTones.Core
                       .Append(",\"headword\":").Append(Q(e.Headword)).Append('}')
                       .Append(",\"occurredAt\":").Append(Q(e.OccurredAt)).Append('}');
                 }
-                bodies.Add(sb.Append("]}").ToString());
+                sb.Append(']');
+                if (!string.IsNullOrEmpty(profileId)) sb.Append(",\"profileId\":").Append(Q(profileId));
+                bodies.Add(sb.Append('}').ToString());
             }
             return bodies;
         }
