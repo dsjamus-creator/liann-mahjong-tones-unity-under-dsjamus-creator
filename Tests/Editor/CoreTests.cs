@@ -130,6 +130,20 @@ namespace LiANN.MahjongTones.Tests
             Assert.AreEqual(5, bodies[2].Split(new[] { "\"eventId\"" }, System.StringSplitOptions.None).Length - 1);
         }
 
+        [Test]
+        public void ChildSavesCarryTheirProfileAndOwnIds()
+        {
+            // One LiANN account C3: a child's list is a different local list, so the same word gets a different event id,
+            // and its upload names the child's profile. An adult's own upload names none.
+            var word = new[] { ("ude:1", "uds:1", "你好", "2026-10-12T09:00:00Z") };
+            var adult = SetListEvents.ForList("list-adult", "Mahjong Tones", word);
+            var child = SetListEvents.ForList("list-child", "Mahjong Tones", word);
+            Assert.AreNotEqual(adult[0].EventId, child[0].EventId);
+            string body = SetListEvents.Bodies(child, "99999999-8888-4777-8666-555555555555")[0];
+            StringAssert.EndsWith("],\"profileId\":\"99999999-8888-4777-8666-555555555555\"}", body);
+            StringAssert.DoesNotContain("profileId", SetListEvents.Bodies(adult)[0]);
+        }
+
         // ---------- generation ----------
 
         static bool Solvable(Layout layout, Game g)

@@ -13,10 +13,15 @@ namespace LiANN.MahjongTones
     public static class SetListStore
     {
         [Serializable] public class SavedWord { public string py, entryId, senseId, hanzi, display, translation, gloss, savedAt, flag, sourceApp; }
-        [Serializable] public class SetList { public string id, name; public List<SavedWord> words = new List<SavedWord>(); }
+        // learner: "" for the signed-in adult, or a household child's profile id (One LiANN account C3). Each learner has
+        // their own lists, so their saved words get their own event ids and never mix with an adult's.
+        [Serializable] public class SetList { public string id, name, learner = ""; public List<SavedWord> words = new List<SavedWord>(); }
         [Serializable] public class Store { public int version = 1; public List<SetList> lists = new List<SetList>(); }
 
         static string FilePath => Path.Combine(Application.persistentDataPath, "liann-tones.setlists.v1.json");
+
+        /// <summary>Who is playing: "" for the signed-in adult, or a child profile id. Set by AccountClient.</summary>
+        public static string ActiveLearner { get; set; } = "";
 
         public static Store Load()
         {
@@ -29,8 +34,9 @@ namespace LiANN.MahjongTones
         public static int Save(string listName, IEnumerable<WordResult> results)
         {
             var store = Load();
-            var list = store.lists.Find(l => l.name == listName);
-            if (list == null) { list = new SetList { id = Guid.NewGuid().ToString("N"), name = listName }; store.lists.Add(list); }
+            string learner = ActiveLearner ?? "";
+            var list = store.lists.Find(l => l.name == listName && (l.learner ?? "") == learner);
+            if (list == null) { list = new SetList { id = Guid.NewGuid().ToString("N"), name = listName, learner = learner }; store.lists.Add(list); }
             int added = 0;
             foreach (var r in results)
             {

@@ -26,11 +26,15 @@ namespace LiANN.MahjongTones
         [Serializable] class SessionDto { public string access_token, refresh_token; public long expires_in, expires_at; public UserDto user; }
         [Serializable] class UploadResult { public int inserted, duplicates, added, existing, unresolved; public string learningStatus; }
         [Serializable] class PassResult { public string url; }
+        [Serializable] class HouseholdInfo { public string id, plan, role; }
+        [Serializable] class ChildDto { public string id, name; }
+        [Serializable] class HouseholdDto { public HouseholdInfo household; public ChildDto[] children; }
         [Serializable] class Saved
         {
             public string email, accessToken, refreshToken, userId, pendingEmail;
             public long expiresAt;
             public bool profileNeeded;   // AlongSide said the learner profile is missing; cleared when an upload links words
+            public string learner = "", learnerName = "";  // who is playing: "" for this account's adult, or a child's profile id
             public List<string> uploaded = new List<string>();   // event ids already accepted for userId
         }
 
@@ -39,6 +43,46 @@ namespace LiANN.MahjongTones
         /// launch; otherwise nothing is fetched until the player opens the Account screen.</summary>
         public bool HasSession => !string.IsNullOrEmpty(_saved.refreshToken) || !string.IsNullOrEmpty(_saved.pendingEmail);
         public string Email => _saved.email;
+
+        // ---- Who's playing (One LiANN account C3) ----
+        // Children come from AlongSide's household (Family plan). A 404 means households are switched off: no choice shown.
+        List<(string id, string name)> _children = new List<(string id, string name)>();
+        public IReadOnlyList<(string id, string name)> Children => _children;
+        /// <summary>True once the household has been asked for in this session (successfully or not).</summary>
+        public bool HouseholdLoaded { get; private set; }
+        /// <summary>The child playing now, or null when it is this account's adult.</summary>
+        public string LearnerName => string.IsNullOrEmpty(_saved.learner) ? null : _saved.learnerName;
+        public string LearnerId => _saved.learner ?? "";
+
+        public async Task RefreshHousehold()
+        {
+            HouseholdLoaded = true;   // asked once per session, whatever the answer, so screens never loop on it
+            if (Status != State.SignedIn || !await Refresh(false)) return;
+            var (ok, code, text) = await Send("GET", Url(_ends.alongsideApiBase, "/learning/household"), null, _saved.accessToken);
+            if (!ok)
+            {
+                if (code == 404 || code == 401 || code == 403) _children.Clear();   // switched off, or not allowed: no child profiles
+                else return;                                                         // unreachable: keep what we had
+            }
+            else
+            {
+                HouseholdDto dto = null;
+                try { dto = JsonUtility.FromJson<HouseholdDto>(text); } catch { dto = null; }
+                _children = (dto?.children ?? new ChildDto[0]).Where(c => !string.IsNullOrEmpty(c?.id) && !string.IsNullOrEmpty(c.name))
+                    .Select(c => (c.id, c.name)).ToList();
+            }
+            SetLearner(_saved.learner);
+        }
+
+        /// <summary>Chooses who is playing; anything that is not a current child of this household means the adult.</summary>
+        public void SetLearner(string profileId)
+        {
+            var child = _children.FirstOrDefault(c => c.id == profileId);
+            _saved.learner = child.id ?? "";
+            _saved.learnerName = child.name ?? "";
+            SetListStore.ActiveLearner = _saved.learner;
+            Persist();
+        }
         /// <summary>AlongSide needs a learner profile before uploaded words reach a SetList (One LiANN account, B3).</summary>
         public bool ProfileNeeded => _saved.profileNeeded;
         /// <summary>The line under the account form. A refused "send" shows a live countdown that clears itself at 0.</summary>
@@ -65,6 +109,8 @@ namespace LiANN.MahjongTones
             catch { _saved = null; }
             _saved ??= new Saved();
             _saved.uploaded ??= new List<string>();
+            _saved.learner ??= ""; _saved.learnerName ??= "";
+            SetListStore.ActiveLearner = _saved.learner;
         }
 
         bool Persist()
@@ -156,6 +202,7 @@ namespace LiANN.MahjongTones
             if (!string.IsNullOrEmpty(_saved.accessToken) && _auth != null)
                 await Send("POST", Url(_auth.supabaseUrl, "/auth/v1/logout"), "{}", _saved.accessToken, true);
             _saved = new Saved();
+            SetListStore.ActiveLearner = ""; _children.Clear(); HouseholdLoaded = false;
             bool cleared = ProtectedAccountStore.Delete();
             Status = !cleared ? State.Unavailable : _auth != null && _auth.enabled ? State.SignedOut : State.Disabled;
             Message = cleared ? "Signed out. Your SetLists stay on this device."
@@ -166,7 +213,11 @@ namespace LiANN.MahjongTones
         {
             if (s == null || string.IsNullOrEmpty(s.access_token)) return false;
             string newUser = s.user?.id;
-            if (!string.IsNullOrEmpty(newUser) && newUser != _saved.userId) _saved.uploaded = new List<string>();   // markers belong to one account
+            if (!string.IsNullOrEmpty(newUser) && newUser != _saved.userId)
+            {
+                _saved.uploaded = new List<string>();   // markers belong to one account
+                _saved.learner = ""; _saved.learnerName = ""; SetListStore.ActiveLearner = ""; _children.Clear(); HouseholdLoaded = false;   // so does the household
+            }
             _saved.accessToken = s.access_token;
             _saved.refreshToken = string.IsNullOrEmpty(s.refresh_token) ? _saved.refreshToken : s.refresh_token;
             _saved.expiresAt = s.expires_at > 0 ? s.expires_at : DateTimeOffset.UtcNow.ToUnixTimeSeconds() + Math.Max(60, s.expires_in);
@@ -192,54 +243,79 @@ namespace LiANN.MahjongTones
         }
 
         /// <summary>Saved words not yet accepted by AlongSide for this account.</summary>
-        public List<GameEvent> Pending()
+        public List<GameEvent> Pending() => PendingByLearner().SelectMany(g => g.events).ToList();
+
+        /// <summary>Pending saves per learner: "" for this account's adult, else a child's profile id. A child's lists upload
+        /// only while that child is in this account's household, so another adult's child never reaches this account.</summary>
+        List<(string learner, List<GameEvent> events)> PendingByLearner()
         {
             var done = new HashSet<string>(_saved.uploaded);
-            var all = new List<GameEvent>();
+            var groups = new List<(string learner, List<GameEvent> events)>();
             foreach (var list in SetListStore.Load().lists)
-                all.AddRange(SetListEvents.ForList(list.id, list.name, list.words.Select(w => (w.entryId, w.senseId, w.hanzi, w.savedAt))));
-            return all.Where(e => !done.Contains(e.EventId)).ToList();
+            {
+                string learner = list.learner ?? "";
+                if (learner != "" && !_children.Any(c => c.id == learner)) continue;
+                var events = SetListEvents.ForList(list.id, list.name, list.words.Select(w => (w.entryId, w.senseId, w.hanzi, w.savedAt)))
+                    .Where(e => !done.Contains(e.EventId)).ToList();
+                if (events.Count == 0) continue;
+                int at = groups.FindIndex(g => g.learner == learner);
+                if (at < 0) groups.Add((learner, events)); else groups[at].events.AddRange(events);
+            }
+            return groups;
         }
 
         /// <summary>Uploads pending saves. Returns a short message for the player.</summary>
         public async Task<string> Upload()
         {
             if (Status != State.SignedIn) return "Sign in to save your SetLists to AlongSide.";
-            var pending = Pending();
-            if (pending.Count == 0) return "Your SetLists are up to date in AlongSide.";
+            if (!HouseholdLoaded) await RefreshHousehold();   // a child's lists upload only once their household is known
+            var groups = PendingByLearner();
+            if (groups.Count == 0) return "Your SetLists are up to date in AlongSide.";
             if (!await Refresh(false)) return Status == State.SignedOut ? "Please sign in again to upload." : "AlongSide can't be reached. Your SetLists are kept and will upload later.";
-            int added = 0, unresolved = 0, sent = 0; bool profileNeeded = false, planNeeded = false;
-            var bodies = SetListEvents.Bodies(pending);
-            for (int i = 0; i < bodies.Count; i++)
+            int added = 0, unresolved = 0, sent = 0; bool profileNeeded = false, planNeeded = false; string childGone = null;
+            foreach (var (learner, pending) in groups)
             {
-                var (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken, timeout: UploadTimeoutSeconds);
-                if (!ok && code == 401 && await Refresh(true)) (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken, timeout: UploadTimeoutSeconds);
-                if (!ok)
+                // A household child's saves carry their profile id and land in their own SetLists (One LiANN account C3).
+                var bodies = SetListEvents.Bodies(pending, learner == "" ? null : learner);
+                for (int i = 0; i < bodies.Count; i++)
                 {
-                    Persist();
-                    // The route is missing or not accepting this source yet (backend PR #102 not deployed): keep the words.
-                    if (code == 409 && text.Contains("account_link_required"))
-                        return "This sign-in isn't linked to AlongSide yet. Open \"Link your LiANN account\" in AlongSide, then upload again. Your SetLists are kept.";
-                    if (code == 400 || code == 403 || code == 404 || code == 405 || code == 501) return "AlongSide isn't taking Mahjong Tones saves yet. They're kept on this device and will upload later.";
-                    Debug.LogWarning($"LiANN Mahjong Tones: upload failed (HTTP {code}).");
-                    return code == 0 ? "AlongSide can't be reached. Your SetLists are kept and will upload later."
-                        : $"AlongSide couldn't save your SetLists (error {code}). They're kept and will upload later.";
+                    var (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken, timeout: UploadTimeoutSeconds);
+                    if (!ok && code == 401 && await Refresh(true)) (ok, code, text) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/game-events"), bodies[i], _saved.accessToken, timeout: UploadTimeoutSeconds);
+                    if (!ok && code == 403 && learner != "" && text.Contains("profile_not_in_household"))
+                    {
+                        childGone = _children.FirstOrDefault(c => c.id == learner).name ?? "A child";   // removed from the household
+                        break;
+                    }
+                    if (!ok)
+                    {
+                        Persist();
+                        // The route is missing or not accepting this source yet (backend PR #102 not deployed): keep the words.
+                        if (code == 409 && text.Contains("account_link_required"))
+                            return "This sign-in isn't linked to AlongSide yet. Open \"Link your LiANN account\" in AlongSide, then upload again. Your SetLists are kept.";
+                        if (code == 400 || code == 403 || code == 404 || code == 405 || code == 501) return "AlongSide isn't taking Mahjong Tones saves yet. They're kept on this device and will upload later.";
+                        Debug.LogWarning($"LiANN Mahjong Tones: upload failed (HTTP {code}).");
+                        return code == 0 ? "AlongSide can't be reached. Your SetLists are kept and will upload later."
+                            : $"AlongSide couldn't save your SetLists (error {code}). They're kept and will upload later.";
+                    }
+                    var r = JsonUtility.FromJson<UploadResult>(text) ?? new UploadResult();
+                    added += r.added; unresolved += r.unresolved; planNeeded |= r.learningStatus == "plan_required";
+                    // The learner-profile prompt is about this account's adult; a child's record is made with their profile.
+                    if (learner == "") profileNeeded |= r.learningStatus == "learner_profile_required";
+                    if (learner == "" && (r.learningStatus == "linked" || r.learningStatus == "some_words_unresolved")) _saved.profileNeeded = false;
+                    // Without a learner profile (or a plan) AlongSide keeps the saves but files them nowhere; they stay pending here and are
+                    // sent again after the profile is finished, when AlongSide files them (resending is safe: event ids dedupe).
+                    if (r.learningStatus != "learner_profile_required" && r.learningStatus != "plan_required")
+                        foreach (var e in pending.Skip(i * SetListEvents.MaxBatch).Take(SetListEvents.MaxBatch)) _saved.uploaded.Add(e.EventId);
+                    sent += Math.Min(SetListEvents.MaxBatch, pending.Count - i * SetListEvents.MaxBatch);
                 }
-                var r = JsonUtility.FromJson<UploadResult>(text) ?? new UploadResult();
-                added += r.added; unresolved += r.unresolved; profileNeeded |= r.learningStatus == "learner_profile_required"; planNeeded |= r.learningStatus == "plan_required";
-                if (r.learningStatus == "linked" || r.learningStatus == "some_words_unresolved") _saved.profileNeeded = false;
-                // Without a learner profile (or a plan) AlongSide keeps the saves but files them nowhere; they stay pending here and are
-                // sent again after the profile is finished, when AlongSide files them (resending is safe: event ids dedupe).
-                if (r.learningStatus != "learner_profile_required" && r.learningStatus != "plan_required")
-                    foreach (var e in pending.Skip(i * SetListEvents.MaxBatch).Take(SetListEvents.MaxBatch)) _saved.uploaded.Add(e.EventId);
-                sent += Math.Min(SetListEvents.MaxBatch, pending.Count - i * SetListEvents.MaxBatch);
             }
             if (profileNeeded) _saved.profileNeeded = true;
             Persist();
             // One LiANN account C2: saving into AlongSide SetLists needs a plan or a tutor account (when AlongSide enforces it).
             if (planNeeded) return "Saving to AlongSide SetLists needs a LiANN plan or a tutor account. Your words stay in your SetLists on this device.";
             if (profileNeeded) return $"{sent} words sent. Finish your learner profile in AlongSide and they'll appear in your SetLists.";
-            return $"{sent} words sent to AlongSide" + (added > 0 ? $", {added} new" : "") + (unresolved > 0 ? $"; {unresolved} need checking" : "") + ".";
+            string gone = childGone == null ? "" : $" {childGone}'s profile is no longer in your household, so their words stay on this device.";
+            return $"{sent} words sent to AlongSide" + (added > 0 ? $", {added} new" : "") + (unresolved > 0 ? $"; {unresolved} need checking" : "") + "." + gone;
         }
 
         /// <summary>
