@@ -19,9 +19,29 @@ namespace LiANN.MahjongTones.Tests
             Assert.IsTrue(list.words.All(r => r.entryId.StartsWith("ude:") && r.senseId != null && r.senseId.StartsWith("uds:")), "every word has its dictionary entry and sense ids");
             var pool = list.words.Select(r => new Word(r)).ToList();
             Assert.IsTrue(pool.All(w => w.Syllables.Length >= 2 && !string.IsNullOrWhiteSpace(w.English)));
-            foreach (int band in new[] { 1, 2, 3 })
+            var bands = pool.Select(w => w.HskBand).Distinct().OrderBy(b => b).ToArray();
+            CollectionAssert.AreEqual(new[] { 1, 2, 3, 4, 5, 6, 7 }, bands, "HSK 1-6 plus 7-9 (stored as band 7)");
+            foreach (int band in bands)
                 for (int seed = 0; seed < 50; seed++)
                     foreach (var name in Layout.Names) Assert.DoesNotThrow(() => new Game(Layout.ByName(name), pool.Where(x => x.HskBand == band), PlayMode.Practice, $"real-{name}-{band}-{seed}"), $"{name} band {band} seed {seed}");
+        }
+
+        [Test]
+        public void BandNamesCoverSevenToNineAsOneLevel()
+        {
+            Assert.AreEqual("HSK 1", Word.BandName(1));
+            Assert.AreEqual("HSK 6", Word.BandName(6));
+            Assert.AreEqual("HSK 7–9", Word.BandName(7));
+        }
+
+        [Test]
+        public void TonePairsStayWithinHskOneToThree()
+        {
+            // The Tone pairs board draws from HSK 1-3, and the shared rule vectors (web edition) depend on these groups.
+            var json = File.ReadAllText(Path.Combine(TestContext.CurrentContext.TestDirectory, "words.json"));
+            var list = JsonSerializer.Deserialize<WordList>(json, new JsonSerializerOptions { IncludeFields = true });
+            var band = list.words.ToDictionary(w => w.readingKey, w => w.hskBand);
+            foreach (var g in list.tonePairs) foreach (var k in g.keys) Assert.LessOrEqual(band[k], 3, k);
         }
 
         [Test]

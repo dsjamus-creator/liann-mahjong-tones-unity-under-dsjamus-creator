@@ -184,7 +184,7 @@ namespace LiANN.MahjongTones
         public async Task<bool> VerifyCode(string code)
         {
             code = (code ?? "").Trim();
-            if (code.Length < 6 || !code.All(char.IsDigit)) { Message = "Enter the code from the email (6 to 8 digits)."; return false; }
+            if (code.Length < 6 || !code.All(char.IsDigit)) { Message = "Enter the 6-digit code from the email."; return false; }
             string body = "{\"email\":" + SetListEvents.Q(_saved.pendingEmail) + ",\"token\":" + SetListEvents.Q(code) + ",\"type\":\"email\"}";
             var (ok, _, text) = await Send("POST", Url(_auth.supabaseUrl, "/auth/v1/verify"), body, null, true);
             if (!ok) { Message = "That code is wrong, expired or already used. Request a new one."; return false; }

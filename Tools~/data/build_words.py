@@ -2,7 +2,7 @@
 
 Usage: python3 -I build_words.py <pinyin-tiles-playtest checkout> <package root> [<lwl-backend>/data/unified-dictionary.ndjson]
 
-Keeps HSK 1-3 words that have a recorded MP3 in the Tiles pronunciation pack, a parseable reading key and
+Keeps HSK 1-6 and 7-9 words (7-9 is one band in the pack, stored as hskBand 7) that have a recorded MP3 in the Tiles pronunciation pack, a parseable reading key and
 a short English label (1-3 words after overrides). Same-hanzi words with two readings are dropped, because the
 tone answer would be ambiguous. Homophone mix-ups are dropped: keys in homophone-denylist.json, and, when the unified
 dictionary is given, any key whose HSK-band gloss sense does not belong to the headword's own dictionary entry
@@ -38,6 +38,24 @@ if len(sys.argv) > 3:
         dictionary[r["entryId"]].append(r)
 overrides = {k: v for k, v in json.load(open(os.path.join(here, "label-overrides.json"), encoding="utf-8")).items() if not k.startswith("_")}
 
+# Mirror of Runtime/Core/MeaningLabel.cs: a label whose longest word would need a font under 0.10 of the tile width
+# is unreadable, so the word is skipped (ShippedDataTests.EveryMeaningLabelKeepsItsLongestWordOnOneLine enforces it).
+_LOWER = [0.557,0.610,0.478,0.610,0.549,0.382,0.615,0.595,0.268,0.273,0.558,0.333,0.889,
+          0.595,0.589,0.610,0.610,0.412,0.492,0.404,0.590,0.534,0.861,0.559,0.533,0.480]
+_UPPER = [0.753,0.695,0.684,0.774,0.605,0.570,0.742,0.780,0.297,0.372,0.688,0.573,0.876,
+          0.753,0.796,0.664,0.796,0.696,0.641,0.632,0.743,0.727,1.120,0.685,0.631,0.615]
+_OTHER = {"-": 0.44, "'": 0.256, "?": 0.468, ",": 0.26, ".": 0.26, "(": 0.382, ")": 0.382, "/": 0.331}
+def _em(c):
+    if "a" <= c <= "z": return _LOWER[ord(c) - 97]
+    if "A" <= c <= "Z": return _UPPER[ord(c) - 65]
+    return _OTHER.get(c, 0.65)
+def label_fits(label):
+    n = len(label); scale = 0.18 if n <= 6 else 0.15 if n <= 12 else 0.12
+    longest = max((sum(_em(c) for c in part) for part in label.split()), default=0)
+    if longest > 0: scale = min(scale, 0.88 / (1.18 * longest))
+    return scale >= 0.10 + 1e-6
+
+BANDS = {"1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7-9": 7}   # pack band -> hskBand (7 = HSK 7-9)
 KEY = re.compile(r"^(?:[a-z]+[1-5])+$")
 
 def first_clause(s):
@@ -72,7 +90,7 @@ for old in os.listdir(out_audio):   # start clean so dropped words leave no clip
 for key in sorted(entries):
     e = entries[key]
     band = e.get("hskBand")
-    if band not in ("1", "2", "3"):
+    if band not in BANDS:
         continue
     if not KEY.match(key) or len(re.findall(r"\d", key)) < 2:
         dropped["reading key"].append(key); continue
@@ -88,11 +106,13 @@ for key in sorted(entries):
     label = overrides.get(key) or short_label(g[0] if g else "")
     if not label or len(label.split()) > 3:
         dropped["no short English label"].append(key); continue
+    if not label_fits(label):
+        dropped["label too long for a tile"].append(key); continue
     shutil.copyfile(path, os.path.join(out_audio, key + ".mp3"))
     kept.append({
         "readingKey": key, "entryId": e["entryId"], "hanzi": e["headword"], "english": label,
         # some gloss rows carry the HSK band in slot 1 instead of the full gloss; fall back to slot 0 then
-        "fullGloss": (g[1] if g and len(g) > 1 and not str(g[1]).strip().isdigit() else (g[0] if g else "")), "hskBand": int(band),
+        "fullGloss": (g[1] if g and len(g) > 1 and not str(g[1]).strip().isdigit() else (g[0] if g else "")), "hskBand": BANDS[band],
         "audio": key, "picture": "",  # filled by apply_pictures.py from picture-map.json
         "_labelSource": "override" if key in overrides else "dictionary-first-sense",
     })
@@ -104,6 +124,7 @@ for w in kept:
 
 groups = defaultdict(list)
 for w in kept:
+    if w["hskBand"] > 3: continue   # Tone pairs stays an HSK 1-3 board; also keeps the shared web/Unity rule vectors stable
     groups[re.sub(r"\d", "", w["readingKey"])].append(w["readingKey"])
 tone_pairs = [sorted(v) for k, v in sorted(groups.items()) if len(v) > 1]
 

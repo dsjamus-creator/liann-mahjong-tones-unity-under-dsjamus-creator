@@ -70,6 +70,9 @@ namespace LiANN.MahjongTones.Core
         public string Picture => Record.picture ?? "";
         public int HskBand => Record.hskBand;
 
+        /// <summary>Display name of an HSK band: "HSK 1" … "HSK 6", and "HSK 7–9" for band 7 (the pack keeps 7–9 as one band).</summary>
+        public static string BandName(int hskBand) => hskBand >= 7 ? "HSK 7–9" : "HSK " + hskBand;
+
         /// <summary>Toneless pinyin for Tile A, e.g. "yiban", "lüxing".</summary>
         public string Toneless => string.Concat(Syllables).Replace('v', 'ü');
 

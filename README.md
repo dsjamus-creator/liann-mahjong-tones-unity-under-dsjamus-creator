@@ -10,7 +10,7 @@ Design source of truth: `PINYIN-MAHJONG-DESIGN-SPEC (2026-10-11).md` in
 |---|---|
 | `Runtime/Core/` | Unity-free game rules: four layouts (Starter 16, Small 24, Medium 36, Large 72) and the free-tile rule, seeded RNG (mulberry32 + FNV-1a), solvable board generator, tone checking, scoring, undo / hint / shuffle, and the AlongSide SetList event format. Identical to the web edition. |
 | `Runtime/Unity/` | `MahjongTonesApp` — builds the whole UI in UI Toolkit from code: start screen, board, tone picker, results, stats, account. Porcelain tiles baked in code to match Pinyin Tiles (D8). `AccountClient` — optional sign-in and SetList upload to AlongSide; `ProtectedAccountStore` and its Android/iOS plugins hold the session outside plaintext files. |
-| `Runtime/Resources/LiANNMahjongTones/` | `words.json` (556 HSK 1–3 words with recorded audio, dictionary entry and sense ids), `accounts.json` (public service addresses), `Audio/*.mp3`, `Fonts/` (Noto Sans SC Bold subset, Nunito ExtraBold). |
+| `Runtime/Resources/LiANNMahjongTones/` | `words.json` (7,634 HSK 1–6 and 7–9 words with recorded audio, dictionary entry and sense ids), `accounts.json` (public service addresses), `Audio/*.mp3`, `Fonts/` (Noto Sans SC Bold subset, Nunito ExtraBold). |
 | `Editor/` | **LiANN → Mahjong Tones** menu: create the play scene; build Android (App Bundle), iOS (Xcode project) and Windows. |
 | `Tests/Editor/` | NUnit tests (run in Unity's Test Runner). |
 | `Tests/Vectors/rules-test-vectors.json` | Seeded boards + scripted play-throughs. The web edition must reproduce them exactly. |
@@ -40,7 +40,7 @@ Menu **LiANN → Mahjong Tones → Build Android / Build iOS / Build Windows** (
 Unity.exe -batchmode -quit -projectPath . -executeMethod LiANN.MahjongTones.EditorTools.MahjongTonesBuild.BuildAndroid
 ```
 
-- App id `com.learningwithliann.mahjongtones` and version 0.2.0 are set in `Editor/MahjongTonesBuild.cs`; confirm the id
+- App id `com.learningwithliann.mahjongtones` and version 0.3.0 are set in `Editor/MahjongTonesBuild.cs`; confirm the id
   before the first store upload. Portrait and landscape are both allowed.
 - **Android with Minify (R8) on:** the Android build menu adds a keep rule for `SecureSessionStore` to
   `Assets/Plugins/Android/proguard-user.txt`; also tick **Player Settings → Publishing Settings → Custom Proguard File**,
@@ -98,7 +98,8 @@ Before distribution, verify a sign-in, app restart, token refresh, upload, and s
 ```
 python3 -I Tools~/data/build_words.py <pinyin-tiles-playtest checkout> . <dictionary>
                                                                             # words.json, MP3s, english-labels-review.csv
-python3 -I Tools~/fonts/get_fonts.py .                                      # font subsets (after words change)
+python3 -I Tools~/fonts/get_fonts.py . <NotoSansSC_700Bold.ttf>              # font subsets (after words change); the
+                                                                            # full Noto Sans SC Bold is needed for HSK 4-9
 python3 -I Tools~/data/add_sense_ids.py . <dictionary>                      # senseId + gloss repair, in place
 LIANN_WRITE_VECTORS=1 dotnet test Tools~/CoreTests                          # shared vectors (web edition must match)
 python3 -I Tools~/make_meta.py .                                            # .meta files for new assets
@@ -114,9 +115,17 @@ Homophone mix-ups (the pronunciation pack's headword is a homophone of the HSK w
 (pinyin-tiles-playtest PR #6) the denylist is empty and the 8 words it held ship with their HSK headword; a test guards them.
 Proofread `Tools~/data/english-labels-review.csv` before release (spec §2).
 
+**HSK levels and SetLists** (owner, 13 Oct 2026): the start screen offers HSK 1, 2, 3, 4, 5, 6 and 7–9. The pronunciation
+pack keeps HSK 7–9 as one band, stored as `hskBand` 7. Counts: HSK 1 139, HSK 2 103, HSK 3 314, HSK 4 696, HSK 5 1,177,
+HSK 6 1,320, HSK 7–9 3,885. HSK 1–3 and the six tone-pair groups are unchanged; Tone pairs and the Daily challenge stay on
+HSK 1–3. Words whose short English label would need a font under 0.10 of the tile width are skipped
+(`label too long for a tile`); `Tools~/data/english-labels-review.csv` lists every label for proofreading.
+**Save to SetList** files each word under its level, as "Mahjong Tones · HSK 4" and so on, so AlongSide and the hub
+Library show one list per level. Lists saved before 0.3.0 keep their old name.
+
 **Pictures on meaning tiles** (spec D13, owner 12 Oct 2026): a start-screen setting, "Meaning tiles show: English /
 English + picture", off by default and remembered on the device (`lmt.pictures`). Only concrete words have a picture
-(139 of 556: foods, transport, places, objects, the body, weather, simple actions); abstract words, colours, family
+(139 of the 556 HSK 1–3 words; none yet for HSK 4–9: foods, transport, places, objects, the body, weather, simple actions); abstract words, colours, family
 members and feelings stay text-only, with no stand-in icons. Icons are Lucide line icons in the tile glyph colour.
 `Tools~/data/picture-map.json` maps reading keys to icons; `Tools~/data/apply_pictures.py` (needs `pip install cairosvg`)
 writes the `picture` field and renders `Runtime/Resources/LiANNMahjongTones/Pictures/*.png`; then run `Tools~/make_meta.py`.
