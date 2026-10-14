@@ -109,7 +109,8 @@ namespace LiANN.MahjongTones
             if (_auth == null || !_legacyCacheRemoved || SendingCode) return false;
             if (ResendInSeconds > 0) { _cooldownNote = true; return false; }
             email = (email ?? "").Trim();
-            if (!email.Contains("@") || email.Length < 5) { Message = "Enter your email address."; return false; }
+            if (email.Length == 0) { Message = "Enter your email address."; return false; }
+            if (!EmailAddress.LooksValid(email)) { Message = $"Check the email address: \"{email}\" isn't a valid address."; return false; }
             string body = "{\"email\":" + SetListEvents.Q(email) + ",\"create_user\":true,\"data\":{}}";
             SendingCode = true;
             try

@@ -135,6 +135,18 @@ namespace LiANN.MahjongTones
 
         // ------------------------------------------------------------------ UI helpers
 
+        /// <summary>A vertically scrolling page inside a screen: menus and forms scroll when the window is short instead
+        /// of squeezing their rows (the board screen does not use it).</summary>
+        static VisualElement Page(VisualElement screen)
+        {
+            var scroll = new ScrollView(ScrollViewMode.Vertical);
+            scroll.style.flexGrow = 1;
+            scroll.contentContainer.style.flexShrink = 0;
+            scroll.contentViewport.style.overflow = Overflow.Hidden;
+            screen.Add(scroll);
+            return scroll;
+        }
+
         VisualElement NewScreen()
         {
             ClosePicker();
@@ -158,6 +170,7 @@ namespace LiANN.MahjongTones
             l.style.unityFontStyleAndWeight = heavy ? FontStyle.Bold : FontStyle.Normal;
             l.style.whiteSpace = WhiteSpace.Normal;
             l.style.marginTop = 0; l.style.marginBottom = 0;
+            l.style.flexShrink = 0;
             return l;
         }
 
@@ -183,6 +196,7 @@ namespace LiANN.MahjongTones
             Border(b, 2, primary ? Theme.Coral : Theme.BorderStrong);
             b.style.backgroundColor = primary ? Theme.Coral : Theme.Card;
             b.style.marginRight = 8; b.style.marginBottom = 8;
+            b.style.flexShrink = 0;   // keep the pill's height; a squeezed pill let its label spill out (DSJ-PC test, 13 Oct)
             var l = labelOut ?? new Label();
             l.text = text;
             l.style.fontSize = 18;
@@ -198,7 +212,8 @@ namespace LiANN.MahjongTones
             var box = new VisualElement();
             box.style.marginBottom = 18;
             box.Add(Text(title.ToUpperInvariant(), 13, Theme.Muted, true));
-            var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap, marginTop = 6 } };
+            box.style.flexShrink = 0;
+            var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap, marginTop = 6, flexShrink = 0 } };
             void Render()
             {
                 row.Clear();
@@ -222,6 +237,7 @@ namespace LiANN.MahjongTones
             Radius(c, 18);
             Pad(c, 20, 20);
             c.style.marginBottom = 16;
+            c.style.flexShrink = 0;
             return c;
         }
 
@@ -237,11 +253,12 @@ namespace LiANN.MahjongTones
         {
             _game = null;
             var s = NewScreen();
-            s.Add(Text("SOLO PLAY", 14, Theme.Muted, true));
+            var p = Page(s);
+            p.Add(Text("SOLO PLAY", 14, Theme.Muted, true));
             var title = Text("LiANN Pinyin Mahjong Tones", 40, Theme.Ink, true);
             title.style.marginBottom = 6;
-            s.Add(title);
-            s.Add(Text("Match each word tile to its meaning, then set the tones.", 18, Theme.Muted));
+            p.Add(title);
+            p.Add(Text("Match each word tile to its meaning, then set the tones.", 18, Theme.Muted));
 
             var card = Card();
             card.style.marginTop = 20;
@@ -254,14 +271,14 @@ namespace LiANN.MahjongTones
             card.Add(Chips("Word tiles show", new[] { ("Hanzi + pinyin", true), ("Hanzi only", false) }, () => _showPinyin, v => _showPinyin = v));
             card.Add(Chips("Meaning tiles show", new[] { ("English", false), ("English + picture", true) }, () => _showPictures, v => { _showPictures = v; PlayerPrefs.SetInt("lmt.pictures", v ? 1 : 0); PlayerPrefs.Save(); }));
             card.Add(Chips("Theme", new[] { ("Light", false), ("Dark", true) }, () => Theme.Dark, v => { Theme.Dark = v; ShowStart(); }));
-            s.Add(card);
+            p.Add(card);
 
             var row = new VisualElement { style = { flexDirection = FlexDirection.Row, flexWrap = Wrap.Wrap } };
             row.Add(Button("Play", StartRound, true));
             row.Add(Button("How to play", ShowHelp));
             row.Add(Button("Stats", ShowStats));
             row.Add(Button(_account != null && _account.Status == AccountClient.State.SignedIn ? "Account ✓" : "Account", () => ShowAccount()));
-            s.Add(row);
+            p.Add(row);
         }
 
         // ------------------------------------------------------------------ account (optional, spec §13)
@@ -269,8 +286,9 @@ namespace LiANN.MahjongTones
         void ShowAccount(string note = null)
         {
             var s = NewScreen();
-            s.Add(Text("Account", 32, Theme.Ink, true));
-            s.Add(Text("Optional. Sign in with your LiANN account, the same one as the hub and Pinyin Tiles, to save your SetLists to AlongSide. You never need an account to play.", 17, Theme.Muted));
+            var p = Page(s);
+            p.Add(Text("Account", 32, Theme.Ink, true));
+            p.Add(Text("Optional. Sign in with your LiANN account, the same one as the hub and Pinyin Tiles, to save your SetLists to AlongSide. You never need an account to play.", 17, Theme.Muted));
             var card = Card();
             card.style.marginTop = 16;
             var status = Text(note ?? _account.Message, 16, Theme.Muted, true);
@@ -391,16 +409,17 @@ namespace LiANN.MahjongTones
                 }
             }
             card.Add(status);
-            s.Add(card);
+            p.Add(card);
             var back = Button("Back", ShowStart);
             back.style.alignSelf = Align.FlexStart;   // sized to its text, like the other screens
-            s.Add(back);
+            p.Add(back);
         }
 
         void ShowHelp()
         {
             var s = NewScreen();
-            s.Add(Text("How to play", 32, Theme.Ink, true));
+            var p = Page(s);
+            p.Add(Text("How to play", 32, Theme.Ink, true));
             var card = Card();
             string[] steps =
             {
@@ -410,16 +429,17 @@ namespace LiANN.MahjongTones
                 "4  Right tones clear the pair and say the word. Clear the board to win.",
             };
             foreach (var t in steps) { var l = Text(t, 18, Theme.Ink); l.style.marginBottom = 10; l.style.unityFontDefinition = FontDefinition.FromFont(_hanziFont); card.Add(l); }
-            s.Add(card);
+            p.Add(card);
             var back = Button("Back", ShowStart, true);
             back.style.alignSelf = Align.FlexStart;
-            s.Add(back);
+            p.Add(back);
         }
 
         void ShowStats()
         {
             var s = NewScreen();
-            s.Add(Text("Stats", 32, Theme.Ink, true));
+            var p = Page(s);
+            p.Add(Text("Stats", 32, Theme.Ink, true));
             foreach (var layout in Layout.Names)
             {
                 var card = Card();
@@ -427,13 +447,13 @@ namespace LiANN.MahjongTones
                 int games = PlayerPrefs.GetInt($"lmt.{layout}.games"), wins = PlayerPrefs.GetInt($"lmt.{layout}.wins");
                 int best = PlayerPrefs.GetInt($"lmt.{layout}.bestScore"); float bestTime = PlayerPrefs.GetFloat($"lmt.{layout}.bestTime");
                 card.Add(Text($"Games {games} · Wins {wins} · Best score {best} · Best time {(bestTime > 0 ? Clock(bestTime) : "—")}", 17, Theme.Muted));
-                s.Add(card);
+                p.Add(card);
             }
-            s.Add(Text($"Daily streak: {PlayerPrefs.GetInt("lmt.daily.streak")}", 17, Theme.Muted));
+            p.Add(Text($"Daily streak: {PlayerPrefs.GetInt("lmt.daily.streak")}", 17, Theme.Muted));
             var row = new VisualElement { style = { flexDirection = FlexDirection.Row, marginTop = 12 } };
             row.Add(Button("Back", ShowStart, true));
             row.Add(Button("Reset stats", () => { foreach (var k in new[] { "games", "wins", "bestScore", "bestTime" }) foreach (var l in Layout.Names) PlayerPrefs.DeleteKey($"lmt.{l}.{k}"); ShowStats(); }));
-            s.Add(row);
+            p.Add(row);
         }
 
         // ------------------------------------------------------------------ round
