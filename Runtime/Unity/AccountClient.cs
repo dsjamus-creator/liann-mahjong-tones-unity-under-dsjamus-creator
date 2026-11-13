@@ -25,6 +25,14 @@ namespace LiANN.MahjongTones
         [Serializable] class UserDto { public string id, email; }
         [Serializable] class SessionDto { public string access_token, refresh_token; public long expires_in, expires_at; public UserDto user; }
         [Serializable] class UploadResult { public int inserted, duplicates, added, existing, unresolved; public string learningStatus; }
+        [Serializable] class PracticeIdentity { public string entryId, senseId, readingKey; }
+        [Serializable] class PracticeEvent
+        {
+            public string eventId, sourceApp, occurredAt;
+            public bool correct;
+            public PracticeIdentity wordIdentity;
+        }
+        [Serializable] class PracticeBatch { public PracticeEvent[] events; }
         [Serializable] class PassResult { public string url; }
         [Serializable] class HouseholdInfo { public string id, plan, role; }
         [Serializable] class ChildDto { public string id, name; }
@@ -36,6 +44,7 @@ namespace LiANN.MahjongTones
             public bool profileNeeded;   // AlongSide said the learner profile is missing; cleared when an upload links words
             public string learner = "", learnerName = "";  // who is playing: "" for this account's adult, or a child's profile id
             public List<string> uploaded = new List<string>();   // event ids already accepted for userId
+            public List<PracticeEvent> practiceEvents = new List<PracticeEvent>();   // durable retry queue for shared SetList progress
         }
 
         public State Status { get; private set; } = State.Loading;
@@ -108,7 +117,7 @@ namespace LiANN.MahjongTones
             try { _saved = _legacyCacheRemoved ? JsonUtility.FromJson<Saved>(ProtectedAccountStore.Load()) : null; }
             catch { _saved = null; }
             _saved ??= new Saved();
-            _saved.uploaded ??= new List<string>();
+            _saved.uploaded ??= new List<string>(); _saved.practiceEvents ??= new List<PracticeEvent>();
             _saved.learner ??= ""; _saved.learnerName ??= "";
             SetListStore.ActiveLearner = _saved.learner;
         }
@@ -140,6 +149,7 @@ namespace LiANN.MahjongTones
             { _auth = null; Status = State.Unavailable; Message = "Sign-in is unavailable: the sign-in service sent an unexpected address."; return; }
             Status = !string.IsNullOrEmpty(_saved.refreshToken) ? State.SignedIn : !string.IsNullOrEmpty(_saved.pendingEmail) ? State.CodeSent : State.SignedOut;
             Message = "";
+            if (Status == State.SignedIn) _ = FlushPracticeEvents();
         }
 
         /// <summary>True while a code request is in flight; the account screen disables its button.</summary>
@@ -262,6 +272,47 @@ namespace LiANN.MahjongTones
                 if (at < 0) groups.Add((learner, events)); else groups[at].events.AddRange(events);
             }
             return groups;
+        }
+
+        /// <summary>Queue a signed-in learner's result and upload it against their canonical SetList word.</summary>
+        public async Task RecordPractice(Word word, bool correct)
+        {
+            if (Status != State.SignedIn || word?.Record == null || string.IsNullOrEmpty(word.Record.entryId)) return;
+            _saved.practiceEvents.Add(new PracticeEvent
+            {
+                eventId = Guid.NewGuid().ToString(),
+                sourceApp = "liann-mahjong-tones",
+                correct = correct,
+                occurredAt = DateTime.UtcNow.ToString("o"),
+                wordIdentity = new PracticeIdentity
+                {
+                    entryId = word.Record.entryId,
+                    senseId = word.Record.senseId,
+                    readingKey = word.ReadingKey,
+                },
+            });
+            Persist();
+            await FlushPracticeEvents();
+        }
+
+        async Task FlushPracticeEvents()
+        {
+            if (Status != State.SignedIn || _saved.practiceEvents == null || _saved.practiceEvents.Count == 0) return;
+            if (!await Refresh(false)) return;
+            while (_saved.practiceEvents.Count > 0)
+            {
+                var batch = _saved.practiceEvents.Take(100).ToArray();
+                string body = JsonUtility.ToJson(new PracticeBatch { events = batch });
+                if (!string.IsNullOrEmpty(_saved.learner))
+                    body = body.Substring(0, body.Length - 1) + ",\"profileId\":" + SetListEvents.Q(_saved.learner) + "}";
+                var (ok, code, _) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/progress/events"), body, _saved.accessToken, timeout: UploadTimeoutSeconds);
+                if (!ok && code == 401 && await Refresh(true))
+                    (ok, code, _) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/progress/events"), body, _saved.accessToken, timeout: UploadTimeoutSeconds);
+                if (!ok) return; // Keep the locally protected queue for the next sign-in/network retry.
+                var sent = new HashSet<string>(batch.Select(e => e.eventId));
+                _saved.practiceEvents.RemoveAll(e => sent.Contains(e.eventId));
+                Persist();
+            }
         }
 
         /// <summary>Uploads pending saves. Returns a short message for the player.</summary>
