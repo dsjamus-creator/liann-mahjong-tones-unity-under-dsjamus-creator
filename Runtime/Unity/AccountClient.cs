@@ -28,11 +28,17 @@ namespace LiANN.MahjongTones
         [Serializable] class PracticeIdentity { public string entryId, senseId, readingKey; }
         [Serializable] class PracticeEvent
         {
+            public string eventId, sourceApp, occurredAt, profileId;
+            public bool correct;
+            public PracticeIdentity wordIdentity;
+        }
+        [Serializable] class PracticePayloadEvent
+        {
             public string eventId, sourceApp, occurredAt;
             public bool correct;
             public PracticeIdentity wordIdentity;
         }
-        [Serializable] class PracticeBatch { public PracticeEvent[] events; }
+        [Serializable] class PracticeBatch { public PracticePayloadEvent[] events; }
         [Serializable] class PassResult { public string url; }
         [Serializable] class HouseholdInfo { public string id, plan, role; }
         [Serializable] class ChildDto { public string id, name; }
@@ -277,11 +283,12 @@ namespace LiANN.MahjongTones
         /// <summary>Queue a signed-in learner's result and upload it against their canonical SetList word.</summary>
         public async Task RecordPractice(Word word, bool correct)
         {
-            if (Status != State.SignedIn || word?.Record == null || string.IsNullOrEmpty(word.Record.entryId)) return;
+            if ((Status != State.SignedIn && Status != State.Loading) || string.IsNullOrEmpty(_saved.userId) || word?.Record == null || string.IsNullOrEmpty(word.Record.entryId)) return;
             _saved.practiceEvents.Add(new PracticeEvent
             {
                 eventId = Guid.NewGuid().ToString(),
                 sourceApp = "liann-mahjong-tones",
+                profileId = _saved.learner ?? "",
                 correct = correct,
                 occurredAt = DateTime.UtcNow.ToString("o"),
                 wordIdentity = new PracticeIdentity
@@ -301,10 +308,16 @@ namespace LiANN.MahjongTones
             if (!await Refresh(false)) return;
             while (_saved.practiceEvents.Count > 0)
             {
-                var batch = _saved.practiceEvents.Take(100).ToArray();
+                // Keep adult and child evidence separate so switching the active household profile cannot reassign queued work.
+                string learner = _saved.practiceEvents[0].profileId ?? "";
+                var queued = _saved.practiceEvents.Where(e => (e.profileId ?? "") == learner).Take(100).ToArray();
+                var batch = queued.Select(e => new PracticePayloadEvent {
+                    eventId = e.eventId, sourceApp = e.sourceApp, occurredAt = e.occurredAt,
+                    correct = e.correct, wordIdentity = e.wordIdentity,
+                }).ToArray();
                 string body = JsonUtility.ToJson(new PracticeBatch { events = batch });
-                if (!string.IsNullOrEmpty(_saved.learner))
-                    body = body.Substring(0, body.Length - 1) + ",\"profileId\":" + SetListEvents.Q(_saved.learner) + "}";
+                if (!string.IsNullOrEmpty(learner))
+                    body = body.Substring(0, body.Length - 1) + ",\"profileId\":" + SetListEvents.Q(learner) + "}";
                 var (ok, code, _) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/progress/events"), body, _saved.accessToken, timeout: UploadTimeoutSeconds);
                 if (!ok && code == 401 && await Refresh(true))
                     (ok, code, _) = await Send("POST", Url(_ends.alongsideApiBase, "/learning/progress/events"), body, _saved.accessToken, timeout: UploadTimeoutSeconds);
