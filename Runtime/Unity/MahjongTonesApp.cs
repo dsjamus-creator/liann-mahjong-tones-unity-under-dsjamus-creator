@@ -712,6 +712,7 @@ namespace LiANN.MahjongTones
 
             var (a, b) = _pendingSlots;
             var result = _game.SubmitTones(_pickedTones);
+            if (_account != null) _ = _account.RecordPractice(word, result == ToneOutcome.Cleared);
             ClosePicker();
             if (result == ToneOutcome.Cleared) AnimateClear(word, a, b);
             else
